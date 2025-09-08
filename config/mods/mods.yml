@@ -1,0 +1,706 @@
+---
+apis:
+  anthropic:
+    api-key: null
+    api-key-env: ANTHROPIC_API_KEY
+    base-url: https://api.anthropic.com/v1
+    models:
+      claude-3-5-sonnet-20240620:
+        max-input-chars: 680000
+      claude-3-5-sonnet-20241022:
+        max-input-chars: 680000
+      claude-3-5-sonnet-latest:
+        aliases: ['4o-mini']
+        max-input-chars: 680000
+      claude-3-7-sonnet-20250219:
+        max-input-chars: 680000
+      claude-3-7-sonnet-latest:
+        aliases: ['claude3.7-sonnet', 'claude-3-7-sonnet', 'sonnet-3.7']
+        max-input-chars: 680000
+      claude-3-opus-20240229:
+        aliases: ['claude3-opus', 'opus']
+        max-input-chars: 680000
+      claude-sonnet-4-20250514:
+        aliases: ['claude-sonnet-4', 'sonnet-4']
+        max-input-chars: 680000
+  azure:
+    api-key: null
+    api-key-env: AZURE_OPENAI_KEY
+    # Set to 'azure-ad' to use Active Directory
+    # Azure OpenAI setup: https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource
+    base-url: https://YOUR_RESOURCE_NAME.openai.azure.com
+    models:
+      gpt-35:
+        aliases: ['35t']
+        fallback: null
+        max-input-chars: 12250
+      gpt-35-turbo:
+        aliases: ['az35t']
+        fallback: gpt-35
+        max-input-chars: 12250
+      gpt-4:
+        aliases: ['az4']
+        fallback: gpt-35-turbo
+        max-input-chars: 24500
+      o1-mini:
+        aliases: ['o1-mini']
+        max-input-chars: 128000
+      o1-preview:
+        aliases: ['o1-preview']
+        max-input-chars: 128000
+  cerebras:
+    api-key: null
+    api-key-env: CEREBRAS_API_KEY
+    base-url: https://api.cerebras.ai/v1
+    models:
+      qwen-3-coder-480b:
+        aliases: ['qwen-3-coder']
+        max-completion-tokens: 40000
+        max-input-chars: 131072
+  chutes:
+    api-key: null
+    api-key-env: CHUTES_API_KEY
+    base-url: https://llm.chutes.ai/v1
+    models:
+      Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8:
+        max-completion-tokens: 32767
+        max-input-chars: 262144
+      openai/gpt-oss-120b:
+        max-completion-tokens: 32767
+        max-input-chars: 128000
+  cohere:
+    base-url: https://api.cohere.com/v1
+    models:
+      command-r:
+        max-input-chars: 128000
+      command-r-plus:
+        max-input-chars: 128000
+  copilot:
+    base-url: https://api.githubcopilot.com
+    models:
+      claude-3.5-sonnet:
+        aliases: ['gpt-4.5', 'gpt4.5']
+        max-input-chars: 680000
+      gemini-2.0-flash-001:
+        aliases: ['gm2f', 'flash-2', 'gemini-2-flash']
+        max-input-chars: 4194304
+      gpt-3.5-turbo:
+        aliases: ['35t']
+        max-input-chars: 12250
+      gpt-4:
+        aliases: ['4']
+        max-input-chars: 24500
+      gpt-4o-2024-05-13:
+        aliases: ['4o-2024', '4o', 'gpt-4o']
+        max-input-chars: 392000
+      o1-mini:
+        aliases: ['o1-mini', 'o1m', 'o1-mini-2024-09-12']
+        max-input-chars: 128000
+      o1-preview:
+        aliases: ['o1-preview']
+        max-input-chars: 128000
+      o1-preview-2024-09-12:
+        aliases: ['o1-preview', 'o1p']
+        max-input-chars: 128000
+      o3-mini:
+        aliases: ['o3m', 'o3-mini']
+        max-input-chars: 128000
+  # DeepSeek
+  # https://api-docs.deepseek.com
+  deepseek:
+    api-key: null
+    api-key-env: DEEPSEEK_API_KEY
+    base-url: https://api.deepseek.com/
+    models:
+      deepseek-chat:
+        aliases: ['35t-1106']
+        max-input-chars: 384000
+      deepseek-reasoner:
+        aliases: ['r1']
+        max-input-chars: 384000
+  featherless:
+    api-key-env: FEATHERLESS_API_KEY
+    base-url: https://api.featherless.ai/v1
+    models:
+      openai/gpt-oss-120b:
+        max-completion-tokens: 4096
+        max-input-chars: 16384
+  # GitHub Models
+  # https://github.com/marketplace/models
+  github-models:
+    api-key: null
+    api-key-env: GITHUB_PERSONAL_ACCESS_TOKEN
+    base-url: https://models.github.ai/inference
+    models:
+      ai21-labs/AI21-Jamba-1.5-Large:
+        max-input-chars: 392000
+      ai21-labs/AI21-Jamba-1.5-Mini:
+        max-input-chars: 392000
+      cohere/Cohere-command-r:
+        max-input-chars: 392000
+      cohere/Cohere-command-r-08-2024:
+        max-input-chars: 392000
+      cohere/Cohere-command-r-plus:
+        max-input-chars: 392000
+      cohere/Cohere-command-r-plus-08-2024:
+        max-input-chars: 392000
+      cohere/Cohere-embed-v3-english:
+        max-input-chars: 392000
+      cohere/Cohere-embed-v3-multilingual:
+        max-input-chars: 392000
+      cohere/cohere-command-a:
+        max-input-chars: 392000
+      core42/jais-30b-chat:
+        max-input-chars: 392000
+      deepseek/DeepSeek-R1:
+        max-input-chars: 392000
+      deepseek/DeepSeek-V3-0324:
+        max-input-chars: 392000
+      meta/Llama-3.2-11B-Vision-Instruct:
+        max-input-chars: 392000
+      meta/Llama-3.2-90B-Vision-Instruct:
+        max-input-chars: 392000
+      meta/Llama-3.3-70B-Instruct:
+        max-input-chars: 392000
+      meta/Llama-4-Maverick-17B-128E-Instruct-FP8:
+        max-input-chars: 392000
+      meta/Llama-4-Scout-17B-16E-Instruct:
+        max-input-chars: 392000
+      meta/Meta-Llama-3-70B-Instruct:
+        max-input-chars: 392000
+      meta/Meta-Llama-3-8B-Instruct:
+        max-input-chars: 392000
+      meta/Meta-Llama-3.1-405B-Instruct:
+        max-input-chars: 392000
+      meta/Meta-Llama-3.1-70B-Instruct:
+        max-input-chars: 392000
+      meta/Meta-Llama-3.1-8B-Instruct:
+        max-input-chars: 392000
+      microsoft/MAI-DS-R1:
+        max-input-chars: 392000
+      microsoft/Phi-3-medium-128k-instruct:
+        max-input-chars: 392000
+      microsoft/Phi-3-medium-4k-instruct:
+        max-input-chars: 392000
+      microsoft/Phi-3-mini-128k-instruct:
+        max-input-chars: 392000
+      microsoft/Phi-3-mini-4k-instruct:
+        max-input-chars: 392000
+      microsoft/Phi-3-small-128k-instruct:
+        max-input-chars: 392000
+      microsoft/Phi-3-small-8k-instruct:
+        max-input-chars: 392000
+      microsoft/Phi-3.5-MoE-instruct:
+        max-input-chars: 392000
+      microsoft/Phi-3.5-mini-instruct:
+        max-input-chars: 392000
+      microsoft/Phi-3.5-vision-instruct:
+        max-input-chars: 392000
+      microsoft/Phi-4:
+        max-input-chars: 392000
+      microsoft/Phi-4-mini-instruct:
+        max-input-chars: 392000
+      microsoft/Phi-4-mini-reasoning:
+        max-input-chars: 392000
+      microsoft/Phi-4-multimodal-instruct:
+        max-input-chars: 392000
+      microsoft/Phi-4-reasoning:
+        max-input-chars: 392000
+      mistral-ai/Codestral-2501:
+        max-input-chars: 392000
+      mistral-ai/Ministral-3B:
+        max-input-chars: 392000
+      mistral-ai/Mistral-Large-2411:
+        max-input-chars: 392000
+      mistral-ai/Mistral-Nemo:
+        max-input-chars: 392000
+      mistral-ai/mistral-medium-2505:
+        max-input-chars: 392000
+      mistral-ai/mistral-small-2503:
+        max-input-chars: 392000
+      openai/gpt-4.1:
+        max-input-chars: 392000
+      openai/o3-mini:
+        max-input-chars: 392000
+      openai/o4-mini:
+        max-input-chars: 392000
+      openai/text-embedding-3-large:
+        max-input-chars: 392000
+      openai/text-embedding-3-small:
+        max-input-chars: 392000
+      xai/grok-3:
+        max-input-chars: 392000
+      xai/grok-3-mini:
+        max-input-chars: 392000
+  google:
+    models:
+      gemini-1.5-flash-latest:
+        aliases: ['gmf', 'flash', 'gemini-1.5-flash']
+        max-input-chars: 392000
+      gemini-1.5-pro-latest:
+        aliases: ['gmp', 'gemini', 'gemini-1.5-pro']
+        max-input-chars: 392000
+      gemini-2.0-flash-001:
+        aliases: ['4o']
+        max-input-chars: 4194304
+      gemini-2.0-flash-lite:
+        aliases: ['gm2fl', 'flash-2-lite', 'gemini-2-flash-lite']
+        max-input-chars: 4194304
+  groq:
+    api-key: null
+    api-key-env: GROQ_API_KEY
+    base-url: https://api.groq.com/openai/v1
+    models:
+      deepseek-r1-distill-llama-70b:
+        aliases: ['deepseek-r1-llama', 'r1-llama']
+        max-input-chars: 392000
+      deepseek-r1-distill-llama-70b-specdec:
+        aliases: ['deepseek-r1-specdec', 'r1-llama-specdec']
+        max-completion-tokens: 49152
+        max-input-chars: 392000
+      deepseek-r1-distill-qwen-32b:
+        aliases: ['4']
+        max-completion-tokens: 49152
+        max-input-chars: 392000
+      # Production models
+      gemma2-9b-it:
+        aliases: ['gemma2', 'gemma']
+        max-input-chars: 24500
+      llama-3.1-8b-instant:
+        aliases: ['llama3.1-8b', 'llama3.1-instant']
+        max-completion-tokens: 24500
+        max-input-chars: 392000
+      llama-3.2-11b-vision-preview:
+        aliases: ['llama3.2-vision', 'llama3.2-11b-vision']
+        max-completion-tokens: 24500
+        max-input-chars: 392000
+      llama-3.2-1b-preview:
+        aliases: ['llama3.2-1b']
+        max-completion-tokens: 24500
+        max-input-chars: 392000
+      llama-3.2-3b-preview:
+        aliases: ['llama3.2-3b']
+        max-completion-tokens: 24500
+        max-input-chars: 392000
+      llama-3.2-90b-vision-preview:
+        aliases: ['llama3.2-90b-vision']
+        max-completion-tokens: 24500
+        max-input-chars: 392000
+      llama-3.3-70b-specdec:
+        aliases: ['llama3.3-specdec']
+        max-input-chars: 24500
+      llama-3.3-70b-versatile:
+        aliases: ['llama3.3', 'llama3.3-70b', 'llama3.3-versatile']
+        max-completion-tokens: 98000
+        max-input-chars: 392000
+      llama-guard-3-8b:
+        aliases: ['llama-guard']
+        max-input-chars: 24500
+      llama3-70b-8192:
+        aliases: ['llama3', 'llama3-70b']
+        fallback: llama3-8b-8192
+        max-input-chars: 24500
+      llama3-8b-8192:
+        aliases: ['llama3-8b']
+        max-input-chars: 24500
+      meta-llama/llama-4-maverick-17b-128e-instruct:
+        aliases: ['llama4', 'llama4-maverick']
+        max-input-chars: 392000
+      meta-llama/llama-4-scout-17b-16e-instruct:
+        aliases: ['llama4-scout']
+        max-input-chars: 392000
+      # Preview models
+      mistral-saba-24b:
+        aliases: ['saba', 'mistral-saba', 'saba-24b']
+        max-input-chars: 98000
+      mixtral-8x7b-32768:
+        aliases: ['mixtral']
+        max-input-chars: 98000
+      qwen-2.5-coder-32b:
+        aliases: ['qwen-coder', 'qwen2.5-coder', 'qwen-2.5-coder']
+        max-input-chars: 392000
+  localai:
+    # LocalAI setup instructions: https://github.com/go-skynet/LocalAI#example-use-gpt4all-j-model
+    base-url: http://localhost:8080
+    models:
+      ggml-gpt4all-j:
+        aliases: ['local', '4all']
+        fallback: null
+        max-input-chars: 12250
+  mistral:
+    api-key: null
+    api-key-env: MISTRAL_API_KEY
+    base-url: https://api.mistral.ai/v1
+    models:
+      mistral-large-latest:
+        aliases: ['mistral-large']
+        max-input-chars: 384000
+      open-mistral-nemo:
+        aliases: ['mistral-nemo']
+        max-input-chars: 384000
+  ollama:
+    base-url: http://localhost:11434
+    models:
+      llama3.2:1b:
+        aliases: ['llama3.2_1b']
+        max-input-chars: 650000
+      llama3.2:3b:
+        aliases: ['llama3.2']
+        max-input-chars: 650000
+      llama3:70b:
+        aliases: ['llama3']
+        max-input-chars: 650000
+  openai:
+    api-key: null
+    api-key-env: OPENAI_API_KEY
+    base-url: https://api.openai.com/v1
+    models:
+      gpt-3.5:
+        aliases: ['35']
+        fallback: null
+        max-input-chars: 12250
+      gpt-3.5-turbo:
+        fallback: gpt-3.5
+        max-input-chars: 12250
+      gpt-3.5-turbo-1106:
+        fallback: gpt-3.5-turbo
+        max-input-chars: 12250
+      gpt-3.5-turbo-16k:
+        aliases: ['35t16k']
+        fallback: gpt-3.5
+        max-input-chars: 44500
+      gpt-4:
+        fallback: gpt-3.5-turbo
+        max-input-chars: 24500
+      gpt-4-1106-preview:
+        fallback: gpt-4
+        max-input-chars: 392000
+      gpt-4-32k:
+        aliases: ['32k']
+        fallback: gpt-4
+        max-input-chars: 98000
+      gpt-4.5-preview:
+        fallback: gpt-4
+        max-input-chars: 392000
+      gpt-4.5-preview-2025-02-27:
+        fallback: gpt-4
+        max-input-chars: 392000
+      gpt-4o:
+        fallback: gpt-4
+        max-input-chars: 392000
+      gpt-4o-mini:
+        fallback: gpt-4o
+        max-input-chars: 392000
+      o1:
+        aliases: ['o1']
+        max-input-chars: 200000
+      o1-mini:
+        aliases: ['o1-mini']
+        max-input-chars: 128000
+      o1-preview:
+        aliases: ['o1-preview']
+        max-input-chars: 128000
+      o3-mini:
+        aliases: ['o3m', 'o3-mini']
+        max-input-chars: 200000
+  openrouter:
+    api-key: null
+    api-key-env: OPENROUTER_API_KEY
+    base-url: https://openrouter.ai/api/v1
+    models:
+      openrouter/sonoma-dusk-alpha:
+        aliases: ['sonoma-dusk-alpha']
+        max-completion-tokens: 128000
+        max-tokens: 2000000
+      openrouter/sonoma-sky-alpha:
+        aliases: ['sonoma-sky-alpha']
+        max-completion-tokens: 128000
+        max-tokens: 2000000
+  perplexity:
+    api-key: null
+    api-key-env: PERPLEXITY_API_KEY
+    base-url: https://api.perplexity.ai
+    models:
+      llama-3.1-sonar-huge-128k-online:
+        aliases: ['llam31-huge']
+        max-input-chars: 127072
+      llama-3.1-sonar-large-128k-online:
+        aliases: ['llam31-large']
+        max-input-chars: 127072
+      llama-3.1-sonar-small-128k-online:
+        aliases: ['llam31-small']
+        max-input-chars: 127072
+  runpod:
+    api-key: null
+    api-key-env: RUNPOD_API_KEY
+    # https://docs.runpod.io/serverless/workers/vllm/openai-compatibility
+    base-url: https://api.runpod.ai/v2/${YOUR_ENDPOINT}/openai/v1
+    models:
+      openchat/openchat-3.5-1210:
+        aliases: ['openchat']
+        max-input-chars: 8192
+  sambanova:
+    api-key: null
+    api-key-env: SAMBANOVA_API_KEY
+    base-url: https://api.sambanova.ai/v1
+    # api-key-cmd: rbw get -f OPENAI_API_KEY chat.openai.com
+    models:
+      # Preview models
+      DeepSeek-R1:
+        aliases: ['deepseek-r1-sambanova', 'deepseek-r1-preview']
+        max-input-chars: 24500
+      # Production models
+      DeepSeek-R1-Distill-Llama-70B:
+        aliases: ['deepseek-r1-llama-sambanova', 'deepseek-r1-distill']
+        max-input-chars: 98000
+      Llama-3.1-Tulu-3-405B:
+        aliases: ['llama3.1-tulu', 'tulu-405b']
+        max-input-chars: 49000
+      Llama-3.2-11B-Vision-Instruct:
+        aliases: ['llama3.2-vision-11b', 'llama3.2-11b-vision-sambanova']
+        max-input-chars: 12250
+      Llama-3.2-90B-Vision-Instruct:
+        aliases: ['llama3.2-vision-90b', 'llama3.2-90b-vision-sambanova']
+        max-input-chars: 12250
+      Meta-Llama-3.1-405B-Instruct:
+        aliases: ['llama3.1-405b-sambanova']
+        max-input-chars: 49000
+      Meta-Llama-3.1-70B-Instruct:
+        aliases: ['llama3.1-70b-sambanova']
+        max-input-chars: 392000
+      Meta-Llama-3.1-8B-Instruct:
+        aliases: ['llama3.1-8b-sambanova']
+        max-input-chars: 49000
+      Meta-Llama-3.2-1B-Instruct:
+        aliases: ['llama3.2-1b-sambanova']
+        max-input-chars: 49000
+      Meta-Llama-3.2-3B-Instruct:
+        aliases: ['llama3.2-3b-sambanova']
+        max-input-chars: 24500
+      Meta-Llama-3.3-70B-Instruct:
+        aliases: ['llama3.3-sambanova', 'llama3.3-70b-sambanova']
+        max-input-chars: 392000
+      Meta-Llama-Guard-3-8B:
+        aliases: ['llama-guard-sambanova']
+        max-input-chars: 24500
+      QwQ-32B-Preview:
+        aliases: ['qwq-sambanova', 'qwq-32b']
+        max-input-chars: 49000
+      Qwen2.5-72B-Instruct:
+        aliases: ['qwen2.5-sambanova', 'qwen2.5-72b']
+        max-input-chars: 49000
+      Qwen2.5-Coder-32B-Instruct:
+        aliases: ['qwen2.5-coder-sambanova', 'qwen-coder-sambanova']
+        max-input-chars: 49000
+# OpenAI compatible REST API (openai, localai, anthropic, ...)
+default-api: cerebras
+# Default model (gpt-3.5-turbo, gpt-4, ggml-gpt4all-j...)
+default-model: qwen-3-coder-480b
+# Your desired level of fanciness
+fanciness: 10
+  # Example, a role called `shell`:
+  # shell:
+  #   - you are a shell expert
+  #   - you do not explain anything
+  #   - you simply output one liners to solve the problems you're asked
+  #   - you do not provide any explanation whatsoever, ONLY the command
+# Ask for the response to be formatted as markdown unless otherwise set
+format: false
+# Text to append when using the -f flag
+format-text:
+  json: Format the response as json without enclosing backticks.
+  markdown: Format the response as markdown without enclosing backticks.
+# Include the prompt from the arguments and stdin, truncate stdin to specified number of lines
+include-prompt: 0
+# Include the prompt from the arguments in the response
+include-prompt-args: false
+#
+max-completion-tokens: 65535
+# Default character limit on input to model
+max-input-chars: 100000000
+# Maximum number of times to retry API calls
+max-retries: 5
+# MCP Servers configurations
+mcp-servers:
+  # Example: GitHub MCP via Docker:
+  # github:
+  #   command: docker
+  #   env:
+  #     - GITHUB_PERSONAL_ACCESS_TOKEN=xxxyyy
+  #   args:
+  #     - run
+  #     - "-i"
+  #     - "--rm"
+  #     - "-e"
+  #     - GITHUB_PERSONAL_ACCESS_TOKEN
+  #     - "ghcr.io/github/github-mcp-server"
+  # Timeout for MCP server calls, defaults to 15 seconds
+  ask-pplx:
+    alwaysAllow:
+      - perplexity_ask
+    args:
+      - /usr/local/lib/node_modules/server-perplexity-ask/dist/index.js
+    command: /usr/local/bin/node
+    disabled: true
+    disabledTools: []
+    env:
+      - PERPLEXITY_API_KEY=pplx-***
+    type: stdio
+  codex:
+    args:
+      - mcp
+    command: /Users/adam/bin/codexx
+    timeout: 600
+  control-the-browser:
+    active: false
+    alwaysAllow:
+      - browser_close
+      - browser_resize
+      - browser_console_messages
+      - browser_handle_dialog
+      - browser_evaluate
+      - browser_file_upload
+      - browser_install
+      - browser_press_key
+      - browser_navigate
+      - browser_type
+      - browser_wait_for
+      - browser_tab_close
+      - browser_tab_select
+      - browser_tab_new
+      - browser_hover
+      - browser_select_option
+      - browser_navigate_back
+      - browser_navigate_forward
+      - browser_tab_list
+      - browser_drag
+      - browser_network_requests
+      - browser_take_screenshot
+      - browser_snapshot
+      - browser_click
+    args:
+      - /usr/local/lib/node_modules/@playwright/mcp/cli.js
+    command: /usr/local/bin/node
+    disabled: false
+    disabledTools: []
+    env: []
+    timeout: 600
+    type: stdio
+  deep-research:
+    alwaysAllow: []
+    args:
+      - /usr/local/lib/node_modules/@pinkpixel/deep-research-mcp/dist/index.js
+    command: /usr/local/bin/node
+    disabled: true
+    env:
+      - CRAWL_LIMIT='15'
+      - CRAWL_MAX_DEPTH='2'
+      - CRAWL_TIMEOUT='300'
+      - FILE_WRITE_ENABLED='true'
+      - FILE_WRITE_LINE_LIMIT='300'
+      - MAX_SEARCH_RESULTS='10'
+      - SEARCH_TIMEOUT='120'
+      - TAVILY_API_KEY=tvly-***
+  exa-search:
+    active: true
+    alwaysAllow:
+      - web_search_exa
+    args:
+      - /usr/local/lib/node_modules/exa-mcp-server/build/index.js
+    command: /usr/local/bin/node
+    disabled: true
+    disabledTools: []
+    env:
+      - EXA_API_KEY=***
+    type: stdio
+  gemini-cli:
+    active: true
+    alwaysAllow: []
+    args:
+      - /usr/local/lib/node_modules/gemini-mcp-tool/dist/index.js
+    command: /usr/local/bin/node
+    disabled: false
+    disabledTools: []
+    env: []
+    type: stdio
+  hyper-mcp:
+    active: true
+    alwaysAllow:
+      - think
+      - c7_resolve_library_id
+      - c7_get_library_docs
+      - fetch
+      - time
+      - read_file
+      - read_multiple_files
+      - search_files
+      - get_file_info
+    args: []
+    command: /Users/adam/.cargo/bin/hyper-mcp
+    disabledTools:
+      - hash
+      - myip
+      - gh-list-issues
+      - gh-create-issue
+      - gh-get-issue
+      - gh-update-issue
+      - gh-add-issue-comment
+      - gh-get-file-contents
+      - gh-create-or-update-file
+      - gh-create-branch
+      - gh-list-pull-requests
+      - gh-create-pull-request
+      - gh-get-repo-contributors
+      - gh-get-repo-collaborators
+      - gh-get-repo-details
+      - gh-list-repos
+      - gh-create-gist
+      - gh-get-gist
+      - gh-update-gist
+      - gh-delete-gist
+      - write_file
+      - edit_file
+      - create_dir
+      - list_dir
+      - move_file
+    env: []
+    type: stdio
+  screenshot-fast:
+    alwaysAllow:
+      - capture_console
+      - take_screenshot
+    args:
+      - /usr/local/lib/node_modules/@just-every/mcp-screenshot-website-fast/bin/mcp-screenshot-website.js
+      - serve
+    command: /usr/local/bin/node
+    disabled: true
+    disabledTools:
+      - take_screencast
+    env: []
+    timeout: 300
+    type: stdio
+mcp-timeout: 15s
+# Turn off the client-side limit on the size of the input into the model
+no-limit: false
+# Quiet mode (hide the spinner while loading and stderr messages for success)
+quiet: false
+# Render output as raw text when connected to a TTY
+raw: false
+role: default
+# System role to use
+# List of predefined system messages that can be used as roles
+roles:
+  default: []
+# Text to show while generating
+status-text: Generating
+temp: 1
+# Theme to use in the forms; valid choices are charm, catppuccin, dracula, and base16
+theme: charm
+# TopK, only sample from the top K options for each subsequent token, -1 to disable
+topk: 50
+# TopP, an alternative to # Temperature (randomness) of results, from 0.0 to 2.0, -1.0 to disable
+topp: 1
+# Maximum number of tokens in response
+# max-tokens: 100
+# Wrap formatted output at specific width (default is 80)
+word-wrap: 80

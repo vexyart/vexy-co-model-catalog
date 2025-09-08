@@ -1,0 +1,5056 @@
+approval_policy = "never"
+disable_response_storage = false
+file_opener = "cursor"
+hide_agent_reasoning = true
+model = "gpt-5"
+model_provider = "openai"
+model_reasoning_effort = "low"
+model_reasoning_summary = "auto"
+project_doc_max_bytes = 32768
+
+[sandbox]
+mode = "workspace-write"
+network_access = true
+writable_roots = [
+  "/tmp",
+]
+
+[sandbox_workspace_write]
+network_access = true
+
+[shell_environment_policy]
+exclude = [
+  "AWS_*",
+  "AZURE_*",
+  "GOOGLE_*",
+]
+ignore_default_excludes = false
+include_only = []
+inherit = "core"
+
+[tui]
+disable_mouse_capture = false
+
+[history]
+persistence = "save-all"
+
+# mcp_servers
+
+[mcp_servers]
+[mcp_servers.ask-pplx]
+alwaysAllow = ["perplexity_ask"]
+args = ["/usr/local/lib/node_modules/server-perplexity-ask/dist/index.js"]
+command = "/usr/local/bin/node"
+type = "stdio"
+
+[mcp_servers.ask-pplx.env]
+PERPLEXITY_API_KEY = "pplx-***"
+
+[mcp_servers.codex]
+alwaysAllow = ["codex"]
+args = ["mcp"]
+command = "/Users/adam/bin/codexx"
+disabled = false
+timeout = 600
+active = true
+
+[mcp_servers.control-the-browser]
+alwaysAllow = [
+  "browser_close",
+  "browser_resize",
+  "browser_console_messages",
+  "browser_handle_dialog",
+  "browser_evaluate",
+  "browser_file_upload",
+  "browser_install",
+  "browser_press_key",
+  "browser_navigate",
+  "browser_type",
+  "browser_wait_for",
+  "browser_tab_close",
+  "browser_tab_select",
+  "browser_tab_new",
+  "browser_hover",
+  "browser_select_option",
+  "browser_navigate_back",
+  "browser_navigate_forward",
+  "browser_tab_list",
+  "browser_drag",
+  "browser_network_requests",
+  "browser_take_screenshot",
+  "browser_snapshot",
+  "browser_click",
+]
+args = ["/usr/local/lib/node_modules/@playwright/mcp/cli.js"]
+command = "/usr/local/bin/node"
+disabled = false
+disabledTools = []
+timeout = 600
+type = "stdio"
+active = false
+
+# [mcp_servers.deep-research]
+# command = "/usr/local/bin/node"
+# args = [
+#   "/usr/local/lib/node_modules/@pinkpixel/deep-research-mcp/dist/index.js",
+# ]
+
+# [mcp_servers.deep-research.env]
+# TAVILY_API_KEY = "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"
+# SEARCH_TIMEOUT = "120"
+# CRAWL_TIMEOUT = "300"
+# MAX_SEARCH_RESULTS = "10"
+# CRAWL_MAX_DEPTH = "2"
+# CRAWL_LIMIT = "15"
+# FILE_WRITE_ENABLED = "true"
+# FILE_WRITE_LINE_LIMIT = "300"
+
+[mcp_servers.exa-search]
+alwaysAllow = ["web_search_exa"]
+args = ["/usr/local/lib/node_modules/exa-mcp-server/build/index.js"]
+command = "/usr/local/bin/node"
+disabled = false
+disabledTools = []
+type = "stdio"
+active = true
+
+[mcp_servers.exa-search.env]
+EXA_API_KEY = "0da89771-a62d-435c-a243-0b49fa05b789"
+
+[mcp_servers.gemini-cli]
+alwaysAllow = []
+args = ["/usr/local/lib/node_modules/gemini-mcp-tool/dist/index.js"]
+command = "/usr/local/bin/node"
+disabled = false
+disabledTools = []
+type = "stdio"
+active = true
+
+# [mcp_servers.hyper-mcp]
+# alwaysAllow = [
+#     "think",
+#     "c7_resolve_library_id",
+#     "c7_get_library_docs",
+#     "fetch",
+#     "time",
+#     "read_file",
+#     "read_multiple_files",
+#     "search_files",
+#     "get_file_info",
+# ]
+# args = []
+# command = "/Users/adam/.cargo/bin/hyper-mcp"
+# disabledTools = [
+#     "hash",
+#     "myip",
+#     "gh-list-issues",
+#     "gh-create-issue",
+#     "gh-get-issue",
+#     "gh-update-issue",
+#     "gh-add-issue-comment",
+#     "gh-get-file-contents",
+#     "gh-create-or-update-file",
+#     "gh-create-branch",
+#     "gh-list-pull-requests",
+#     "gh-create-pull-request",
+#     "gh-get-repo-contributors",
+#     "gh-get-repo-collaborators",
+#     "gh-get-repo-details",
+#     "gh-list-repos",
+#     "gh-create-gist",
+#     "gh-get-gist",
+#     "gh-update-gist",
+#     "gh-delete-gist",
+#     "write_file",
+#     "edit_file",
+#     "create_dir",
+#     "list_dir",
+#     "move_file",
+# ]
+# type = "stdio"
+# active = true
+
+# model_providers
+
+[model_providers]
+[model_providers.aihorde]
+base_url = "https://oai.aihorde.net/v1"
+env_key = "AIHORDE_KEY"
+name = "aihorde"
+wire_api = "chat"
+
+[model_providers.cerebras]
+base_url = "https://api.cerebras.ai/v1"
+env_key = "CEREBRAS_API_KEY"
+name = "cerebras"
+wire_api = "chat"
+
+[model_providers.chutes]
+base_url = "https://llm.chutes.ai/v1"
+env_key = "CHUTES_API_KEY"
+name = "chutes"
+wire_api = "chat"
+
+[model_providers.featherless]
+base_url = "https://api.featherless.ai/v1"
+env_key = "FEATHERLESS_API_KEY"
+name = "featherless"
+wire_api = "chat"
+
+[model_providers.gemini]
+base_url = "https://generativelanguage.googleapis.com/v1beta/openai"
+env_key = "GOOGLE_API_KEY"
+name = "gemini"
+wire_api = "chat"
+
+[model_providers.groq]
+base_url = "https://api.groq.com/openai/v1"
+env_key = "GROQ_API_KEY"
+name = "groq"
+wire_api = "chat"
+
+[model_providers.infermatic]
+base_url = "https://api.totalgpt.ai/v1"
+env_key = "INFERMATIC_API_KEY"
+name = "infermatic"
+wire_api = "chat"
+
+[model_providers.llm7]
+base_url = "https://api.llm7.io/v1"
+env_key = "LLM7_API_KEY"
+name = "llm7"
+wire_api = "chat"
+
+[model_providers.lmstudio]
+base_url = "http://othello.local:1234/v1"
+env_key = "LMSTUDIO_API_KEY"
+name = "lmstudio"
+wire_api = "chat"
+
+[model_providers.mancer]
+base_url = "https://neuro.mancer.tech/oai/v1"
+env_key = "MANCER_API_KEY"
+name = "mancer"
+wire_api = "chat"
+
+[model_providers.openai]
+base_url = "https://api.openai.com/v1"
+env_key = "OPENAI_API_KEY"
+name = "openai"
+wire_api = "responses"
+
+[model_providers.openai-chat-completions]
+base_url = "https://api.openai.com/v1"
+env_key = "OPENAI_API_KEY"
+name = "openai-legacy"
+wire_api = "chat"
+
+[model_providers.openrouter]
+base_url = "https://openrouter.ai/api/v1"
+env_key = "OPENROUTER_API_KEY"
+name = "openrouter"
+wire_api = "chat"
+
+[model_providers.poe]
+base_url = "https://api.poe.com/v1"
+env_key = "POE_API_KEY"
+name = "poe"
+wire_api = "chat"
+
+[model_providers.pollinations]
+base_url = "https://text.pollinations.ai/openai"
+env_key = "POLLINATIONS_API_KEY"
+name = "pollinations"
+wire_api = "chat"
+
+# profiles
+
+[profiles]
+# profiles.aih
+
+[profiles.or_sonoma_dusk_alpha]
+approval_policy = "never"
+model = "openrouter/sonoma-dusk-alpha"
+model_context_window = 2000000
+model_max_output_tokens = 128000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.or_sonoma_sky_alpha]
+approval_policy = "never"
+model = "openrouter/sonoma-sky-alpha"
+model_context_window = 2000000
+model_max_output_tokens = 128000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.cerebras_code]
+approval_policy = "never"
+model = "qwen-3-coder-480b"
+model_provider = "cerebras"
+model_reasoning_effort = "high"
+
+[profiles.aih_deepseek_ai_deepseek]
+approval_policy = "never"
+model = "deepseek-ai/DeepSeek-V3"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_anubis_70b]
+approval_policy = "never"
+model = "koboldcpp/Anubis-70B-v1.1"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_broken_tut]
+approval_policy = "never"
+model = "koboldcpp/Broken-Tutu-24B-Unslop-v2.0"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_darkidol_l]
+approval_policy = "never"
+model = "koboldcpp/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored.Q8_0"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_fimbulvetr]
+approval_policy = "never"
+model = "koboldcpp/Fimbulvetr-11B-v2"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_gaslit_tra]
+approval_policy = "never"
+model = "koboldcpp/Gaslit-Transgression-24B-v1.0.Q4_K_S"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_gemmasutra]
+approval_policy = "never"
+model = "koboldcpp/Gemmasutra-Mini-2B-v1"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_impish_mag]
+approval_policy = "never"
+model = "koboldcpp/Impish_Magic_24B"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_impish_nem]
+approval_policy = "never"
+model = "koboldcpp/Impish_Nemo_12B"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_judas_the_]
+approval_policy = "never"
+model = "koboldcpp/Judas-The-Uncensored-3.2-1B-Q8_0-GGUF"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_kobbletiny]
+approval_policy = "never"
+model = "koboldcpp/KobbleTiny-1.1B"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_l3_8b_sthe]
+approval_policy = "never"
+model = "koboldcpp/L3-8B-Stheno-v3.2.i1-Q5_K_M"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_l3_super_n]
+approval_policy = "never"
+model = "koboldcpp/L3-Super-Nova-RP-8B"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_llama2_13b]
+approval_policy = "never"
+model = "koboldcpp/LLaMA2-13B-Tiefighter"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_llama_3_lu]
+approval_policy = "never"
+model = "koboldcpp/Llama-3-Lumimaid-8B-v0.1"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_mawdistica]
+approval_policy = "never"
+model = "koboldcpp/Mawdistical-Squelching-Fantasies-8B"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_nemomixunl]
+approval_policy = "never"
+model = "koboldcpp/NemoMix Unleashed-12B_Q6_K.gguf"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_omega_dark]
+approval_policy = "never"
+model = "koboldcpp/Omega-Darker-Gaslight_The-Final-Forgoten-Fever-Dream"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_qwen3_0_6b]
+approval_policy = "never"
+model = "koboldcpp/Qwen3-0.6B.GGUF"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_qwen_qwen3]
+approval_policy = "never"
+model = "koboldcpp/Qwen_Qwen3-1.7B-Q4_K_M"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_steelskull]
+approval_policy = "never"
+model = "koboldcpp/Steelskull_L3.3-Electra-R1-70b-Q4_K_M"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_wizzgptv7]
+approval_policy = "never"
+model = "koboldcpp/WizzGPTv7"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_digo_prayu]
+approval_policy = "never"
+model = "koboldcpp/digo-prayudha/unsloth-llama-3.2-1b-gguf"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_gemma_3_27]
+approval_policy = "never"
+model = "koboldcpp/gemma-3-270m-it-Q8_0"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_mini_magnu]
+approval_policy = "never"
+model = "koboldcpp/mini-magnum-12b-v1.1"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_mradermach]
+approval_policy = "never"
+model = "koboldcpp/mradermacher/pythia-70m-deduped.f16.gguf"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_tabbyapi_behemoth_x_]
+approval_policy = "never"
+model = "tabbyAPI/Behemoth-X-123B-v2-exl2_5.0bpw"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.fast]
+approval_policy = "never"
+model = "codex-mini-latest"
+model_provider = "openai"
+model_reasoning_effort = "low"
+
+[profiles.gpt41]
+approval_policy = "never"
+model = "gpt-4.1"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.gpt41m]
+approval_policy = "never"
+model = "gpt-4.1-mini"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.gpt41n]
+approval_policy = "never"
+model = "gpt-4.1-nano"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.gpt41nn]
+approval_policy = "never"
+model = "openai/gpt-4.1-nano:nitro"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.gpt4o]
+approval_policy = "never"
+model = "gpt-4o"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.gpt5]
+approval_policy = "never"
+model = "gpt-5"
+model_provider = "openai"
+model_reasoning_effort = "low"
+
+[profiles.gpt5m]
+approval_policy = "never"
+model = "gpt-5-mini"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.gpt5n]
+approval_policy = "never"
+model = "gpt-5-nano"
+model_provider = "openai"
+model_reasoning_effort = "low"
+
+[profiles.mini]
+approval_policy = "never"
+model = "codex-mini-latest"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.o1p]
+approval_policy = "never"
+model = "o1-pro"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.o3]
+approval_policy = "never"
+model = "o3"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.o3deep]
+approval_policy = "never"
+model = "o3-deep-research"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.o3p]
+approval_policy = "never"
+model = "o3-pro"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.o4m]
+approval_policy = "never"
+model = "o4-mini"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.o4mdeep]
+approval_policy = "never"
+model = "o4-mini-deep-research"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_agentica_org_deepcod]
+approval_policy = "never"
+model = "agentica-org/deepcoder-14b-preview:free"
+model_context_window = 96000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_ai21_jamba_large_1_7]
+approval_policy = "never"
+model = "ai21/jamba-large-1.7"
+model_context_window = 256000
+model_max_output_tokens = 4096
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_ai21_jamba_mini_1_7]
+approval_policy = "never"
+model = "ai21/jamba-mini-1.7"
+model_context_window = 256000
+model_max_output_tokens = 4096
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_aion_labs_aion_1_0]
+approval_policy = "never"
+model = "aion-labs/aion-1.0"
+model_context_window = 131072
+model_max_output_tokens = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_aion_labs_aion_1_0_m]
+approval_policy = "never"
+model = "aion-labs/aion-1.0-mini"
+model_context_window = 131072
+model_max_output_tokens = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_aion_labs_aion_rp_ll]
+approval_policy = "never"
+model = "aion-labs/aion-rp-llama-3.1-8b"
+model_context_window = 32768
+model_max_output_tokens = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_alfredpros_codellama]
+approval_policy = "never"
+model = "alfredpros/codellama-7b-instruct-solidity"
+model_context_window = 8192
+model_max_output_tokens = 8192
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_alpindale_goliath_12]
+approval_policy = "never"
+model = "alpindale/goliath-120b"
+model_context_window = 6144
+model_max_output_tokens = 512
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_amazon_nova_lite_v1]
+approval_policy = "never"
+model = "amazon/nova-lite-v1"
+model_context_window = 300000
+model_max_output_tokens = 5120
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_amazon_nova_micro_v1]
+approval_policy = "never"
+model = "amazon/nova-micro-v1"
+model_context_window = 128000
+model_max_output_tokens = 5120
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_amazon_nova_pro_v1]
+approval_policy = "never"
+model = "amazon/nova-pro-v1"
+model_context_window = 300000
+model_max_output_tokens = 5120
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_anthracite_org_magnu]
+approval_policy = "never"
+model = "anthracite-org/magnum-v4-72b"
+model_context_window = 16384
+model_max_output_tokens = 1024
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_anthropic_claude_3_5]
+approval_policy = "never"
+model = "anthropic/claude-3.5-sonnet:beta"
+model_context_window = 200000
+model_max_output_tokens = 8192
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_anthropic_claude_3_7]
+approval_policy = "never"
+model = "anthropic/claude-3.7-sonnet:thinking"
+model_context_window = 200000
+model_max_output_tokens = 64000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_anthropic_claude_3_h]
+approval_policy = "never"
+model = "anthropic/claude-3-haiku:beta"
+model_context_window = 200000
+model_max_output_tokens = 4096
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_anthropic_claude_3_o]
+approval_policy = "never"
+model = "anthropic/claude-3-opus:beta"
+model_context_window = 200000
+model_max_output_tokens = 4096
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_anthropic_claude_opu]
+approval_policy = "never"
+model = "anthropic/claude-opus-4.1"
+model_context_window = 200000
+model_max_output_tokens = 32000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_anthropic_claude_son]
+approval_policy = "never"
+model = "anthropic/claude-sonnet-4"
+model_context_window = 200000
+model_max_output_tokens = 64000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_arcee_ai_coder_large]
+approval_policy = "never"
+model = "arcee-ai/coder-large"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_arcee_ai_maestro_rea]
+approval_policy = "never"
+model = "arcee-ai/maestro-reasoning"
+model_context_window = 131072
+model_max_output_tokens = 32000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_arcee_ai_spotlight]
+approval_policy = "never"
+model = "arcee-ai/spotlight"
+model_context_window = 131072
+model_max_output_tokens = 65537
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_arcee_ai_virtuoso_la]
+approval_policy = "never"
+model = "arcee-ai/virtuoso-large"
+model_context_window = 131072
+model_max_output_tokens = 64000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_arliai_qwq_32b_arlia]
+approval_policy = "never"
+model = "arliai/qwq-32b-arliai-rpr-v1:free"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_baidu_ernie_4_5_300b]
+approval_policy = "never"
+model = "baidu/ernie-4.5-300b-a47b"
+model_context_window = 123000
+model_max_output_tokens = 12000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_bytedance_ui_tars_1_]
+approval_policy = "never"
+model = "bytedance/ui-tars-1.5-7b"
+model_context_window = 128000
+model_max_output_tokens = 2048
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_cognitivecomputation]
+approval_policy = "never"
+model = "cognitivecomputations/dolphin3.0-r1-mistral-24b:free"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_cohere_command]
+approval_policy = "never"
+model = "cohere/command"
+model_context_window = 4096
+model_max_output_tokens = 4000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_cohere_command_a]
+approval_policy = "never"
+model = "cohere/command-a"
+model_context_window = 256000
+model_max_output_tokens = 8192
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_cohere_command_r]
+approval_policy = "never"
+model = "cohere/command-r"
+model_context_window = 128000
+model_max_output_tokens = 4000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_cohere_command_r7b_1]
+approval_policy = "never"
+model = "cohere/command-r7b-12-2024"
+model_context_window = 128000
+model_max_output_tokens = 4000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_cohere_command_r_03_]
+approval_policy = "never"
+model = "cohere/command-r-03-2024"
+model_context_window = 128000
+model_max_output_tokens = 4000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_cohere_command_r_08_]
+approval_policy = "never"
+model = "cohere/command-r-08-2024"
+model_context_window = 128000
+model_max_output_tokens = 4000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_cohere_command_r_plu]
+approval_policy = "never"
+model = "cohere/command-r-plus-08-2024"
+model_context_window = 128000
+model_max_output_tokens = 4000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_deepseek_deepseek_ch]
+approval_policy = "never"
+model = "deepseek/deepseek-chat-v3-0324:free"
+model_context_window = 163840
+model_max_output_tokens = 163840
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_deepseek_deepseek_pr]
+approval_policy = "never"
+model = "deepseek/deepseek-prover-v2"
+model_context_window = 163840
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_deepseek_deepseek_r1]
+approval_policy = "never"
+model = "deepseek/deepseek-r1:free"
+model_context_window = 163840
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_deepseek_deepseek_v3]
+approval_policy = "never"
+model = "deepseek/deepseek-v3-base"
+model_context_window = 163840
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_eleutherai_llemma_7b]
+approval_policy = "never"
+model = "eleutherai/llemma_7b"
+model_context_window = 4096
+model_max_output_tokens = 4096
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_featherless_qwerky_7]
+approval_policy = "never"
+model = "featherless/qwerky-72b:free"
+model_context_window = 32768
+model_max_output_tokens = 4096
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_google_gemini_2_0_fl]
+approval_policy = "never"
+model = "google/gemini-2.0-flash-lite-001"
+model_context_window = 1048576
+model_max_output_tokens = 8192
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_google_gemini_2_5_fl]
+approval_policy = "never"
+model = "google/gemini-2.5-flash-lite-preview-06-17"
+model_context_window = 1048576
+model_max_output_tokens = 65535
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_google_gemini_2_5_pr]
+approval_policy = "never"
+model = "google/gemini-2.5-pro-preview-05-06"
+model_context_window = 1048576
+model_max_output_tokens = 65535
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_google_gemini_flash_]
+approval_policy = "never"
+model = "google/gemini-flash-1.5-8b"
+model_context_window = 1000000
+model_max_output_tokens = 8192
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_google_gemini_pro_1_]
+approval_policy = "never"
+model = "google/gemini-pro-1.5"
+model_context_window = 2000000
+model_max_output_tokens = 8192
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_google_gemma_2_27b_i]
+approval_policy = "never"
+model = "google/gemma-2-27b-it"
+model_context_window = 8192
+model_max_output_tokens = 2048
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_google_gemma_2_9b_it]
+approval_policy = "never"
+model = "google/gemma-2-9b-it:free"
+model_context_window = 8192
+model_max_output_tokens = 8192
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_google_gemma_3_12b_i]
+approval_policy = "never"
+model = "google/gemma-3-12b-it:free"
+model_context_window = 96000
+model_max_output_tokens = 8192
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_google_gemma_3_27b_i]
+approval_policy = "never"
+model = "google/gemma-3-27b-it:free"
+model_context_window = 96000
+model_max_output_tokens = 8192
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_google_gemma_3_4b_it]
+approval_policy = "never"
+model = "google/gemma-3-4b-it:free"
+model_context_window = 32768
+model_max_output_tokens = 8192
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_google_gemma_3n_e2b_]
+approval_policy = "never"
+model = "google/gemma-3n-e2b-it:free"
+model_context_window = 8192
+model_max_output_tokens = 2048
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_google_gemma_3n_e4b_]
+approval_policy = "never"
+model = "google/gemma-3n-e4b-it:free"
+model_context_window = 8192
+model_max_output_tokens = 2048
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_gryphe_mythomax_l2_1]
+approval_policy = "never"
+model = "gryphe/mythomax-l2-13b"
+model_context_window = 4096
+model_max_output_tokens = 4096
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_inception_mercury]
+approval_policy = "never"
+model = "inception/mercury"
+model_context_window = 128000
+model_max_output_tokens = 16384
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_inception_mercury_co]
+approval_policy = "never"
+model = "inception/mercury-coder"
+model_context_window = 128000
+model_max_output_tokens = 16384
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_infermatic_mn_infero]
+approval_policy = "never"
+model = "infermatic/mn-inferor-12b"
+model_context_window = 8192
+model_max_output_tokens = 8192
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_inflection_inflectio]
+approval_policy = "never"
+model = "inflection/inflection-3-productivity"
+model_context_window = 8000
+model_max_output_tokens = 1024
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_liquid_lfm_3b]
+approval_policy = "never"
+model = "liquid/lfm-3b"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_liquid_lfm_40b]
+approval_policy = "never"
+model = "liquid/lfm-40b"
+model_context_window = 65536
+model_max_output_tokens = 65536
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_liquid_lfm_7b]
+approval_policy = "never"
+model = "liquid/lfm-7b"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_mancer_weaver]
+approval_policy = "never"
+model = "mancer/weaver"
+model_context_window = 8000
+model_max_output_tokens = 1000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_meta_llama_llama_3_1]
+approval_policy = "never"
+model = "meta-llama/llama-3.1-8b-instruct"
+model_context_window = 131072
+model_max_output_tokens = 16384
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_meta_llama_llama_3_2]
+approval_policy = "never"
+model = "meta-llama/llama-3.2-90b-vision-instruct"
+model_context_window = 131072
+model_max_output_tokens = 2048
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_meta_llama_llama_3_3]
+approval_policy = "never"
+model = "meta-llama/llama-3.3-70b-instruct:free"
+model_context_window = 65536
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_meta_llama_llama_3_7]
+approval_policy = "never"
+model = "meta-llama/llama-3-70b-instruct"
+model_context_window = 8192
+model_max_output_tokens = 16384
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_meta_llama_llama_3_8]
+approval_policy = "never"
+model = "meta-llama/llama-3-8b-instruct"
+model_context_window = 8192
+model_max_output_tokens = 16384
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_meta_llama_llama_4_m]
+approval_policy = "never"
+model = "meta-llama/llama-4-maverick"
+model_context_window = 1048576
+model_max_output_tokens = 16384
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_meta_llama_llama_4_s]
+approval_policy = "never"
+model = "meta-llama/llama-4-scout"
+model_context_window = 1048576
+model_max_output_tokens = 1048576
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_meta_llama_llama_gua]
+approval_policy = "never"
+model = "meta-llama/llama-guard-4-12b"
+model_context_window = 163840
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_microsoft_mai_ds_r1]
+approval_policy = "never"
+model = "microsoft/mai-ds-r1"
+model_context_window = 163840
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_microsoft_mai_ds_r1f]
+approval_policy = "never"
+model = "microsoft/mai-ds-r1:free"
+model_context_window = 163840
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_microsoft_phi_3_5_mi]
+approval_policy = "never"
+model = "microsoft/phi-3.5-mini-128k-instruct"
+model_context_window = 128000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_microsoft_phi_3_medi]
+approval_policy = "never"
+model = "microsoft/phi-3-medium-128k-instruct"
+model_context_window = 128000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_microsoft_phi_3_mini]
+approval_policy = "never"
+model = "microsoft/phi-3-mini-128k-instruct"
+model_context_window = 128000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_microsoft_phi_4]
+approval_policy = "never"
+model = "microsoft/phi-4"
+model_context_window = 16384
+model_max_output_tokens = 16384
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_microsoft_phi_4_mult]
+approval_policy = "never"
+model = "microsoft/phi-4-multimodal-instruct"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_microsoft_phi_4_reas]
+approval_policy = "never"
+model = "microsoft/phi-4-reasoning-plus"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_microsoft_wizardlm_2]
+approval_policy = "never"
+model = "microsoft/wizardlm-2-8x22b"
+model_context_window = 65536
+model_max_output_tokens = 65536
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_minimax_minimax_01]
+approval_policy = "never"
+model = "minimax/minimax-01"
+model_context_window = 1000192
+model_max_output_tokens = 1000192
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_minimax_minimax_m1]
+approval_policy = "never"
+model = "minimax/minimax-m1"
+model_context_window = 1000000
+model_max_output_tokens = 40000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_mistralai_codestral_]
+approval_policy = "never"
+model = "mistralai/codestral-2508"
+model_context_window = 256000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_mistralai_devstral_m]
+approval_policy = "never"
+model = "mistralai/devstral-medium"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_mistralai_devstral_s]
+approval_policy = "never"
+model = "mistralai/devstral-small-2505:free"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_mistralai_magistral_]
+approval_policy = "never"
+model = "mistralai/magistral-small-2506"
+model_context_window = 40000
+model_max_output_tokens = 40000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_mistralai_ministral_]
+approval_policy = "never"
+model = "mistralai/ministral-8b"
+model_context_window = 128000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_mistralai_mistral_7b]
+approval_policy = "never"
+model = "mistralai/mistral-7b-instruct:free"
+model_context_window = 32768
+model_max_output_tokens = 16384
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_mistralai_mistral_la]
+approval_policy = "never"
+model = "mistralai/mistral-large-2411"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_mistralai_mistral_me]
+approval_policy = "never"
+model = "mistralai/mistral-medium-3"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_mistralai_mistral_ne]
+approval_policy = "never"
+model = "mistralai/mistral-nemo:free"
+model_context_window = 131072
+model_max_output_tokens = 128000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_mistralai_mistral_sa]
+approval_policy = "never"
+model = "mistralai/mistral-saba"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_mistralai_mistral_sm]
+approval_policy = "never"
+model = "mistralai/mistral-small-3.2-24b-instruct:free"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_mistralai_mistral_ti]
+approval_policy = "never"
+model = "mistralai/mistral-tiny"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_mistralai_mixtral_8x]
+approval_policy = "never"
+model = "mistralai/mixtral-8x7b-instruct"
+model_context_window = 32768
+model_max_output_tokens = 16384
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_mistralai_pixtral_12]
+approval_policy = "never"
+model = "mistralai/pixtral-12b"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_mistralai_pixtral_la]
+approval_policy = "never"
+model = "mistralai/pixtral-large-2411"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_moonshotai_kimi_dev_]
+approval_policy = "never"
+model = "moonshotai/kimi-dev-72b:free"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_moonshotai_kimi_k2]
+approval_policy = "never"
+model = "moonshotai/kimi-k2"
+model_context_window = 63000
+model_max_output_tokens = 63000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_moonshotai_kimi_k2fr]
+approval_policy = "never"
+model = "moonshotai/kimi-k2:free"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_moonshotai_kimi_vl_a]
+approval_policy = "never"
+model = "moonshotai/kimi-vl-a3b-thinking:free"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_morph_morph_v3_fast]
+approval_policy = "never"
+model = "morph/morph-v3-fast"
+model_context_window = 81920
+model_max_output_tokens = 38000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_morph_morph_v3_large]
+approval_policy = "never"
+model = "morph/morph-v3-large"
+model_context_window = 81920
+model_max_output_tokens = 38000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_neversleep_llama_3_1]
+approval_policy = "never"
+model = "neversleep/llama-3.1-lumimaid-8b"
+model_context_window = 40000
+model_max_output_tokens = 40000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_neversleep_llama_3_l]
+approval_policy = "never"
+model = "neversleep/llama-3-lumimaid-70b"
+model_context_window = 8192
+model_max_output_tokens = 4096
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_neversleep_noromaid_]
+approval_policy = "never"
+model = "neversleep/noromaid-20b"
+model_context_window = 8192
+model_max_output_tokens = 2048
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_nousresearch_deepher]
+approval_policy = "never"
+model = "nousresearch/deephermes-3-mistral-24b-preview"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_nousresearch_hermes_]
+approval_policy = "never"
+model = "nousresearch/hermes-3-llama-3.1-70b"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_nousresearch_nous_he]
+approval_policy = "never"
+model = "nousresearch/nous-hermes-2-mixtral-8x7b-dpo"
+model_context_window = 32768
+model_max_output_tokens = 2048
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_nvidia_llama_3_1_nem]
+approval_policy = "never"
+model = "nvidia/llama-3.1-nemotron-ultra-253b-v1:free"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_nvidia_llama_3_3_nem]
+approval_policy = "never"
+model = "nvidia/llama-3.3-nemotron-super-49b-v1"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_chatgpt_4o_la]
+approval_policy = "never"
+model = "openai/chatgpt-4o-latest"
+model_context_window = 128000
+model_max_output_tokens = 16384
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_codex_mini]
+approval_policy = "never"
+model = "openai/codex-mini"
+model_context_window = 200000
+model_max_output_tokens = 100000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_3_5_turbo]
+approval_policy = "never"
+model = "openai/gpt-3.5-turbo-instruct"
+model_context_window = 4095
+model_max_output_tokens = 4096
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_4]
+approval_policy = "never"
+model = "openai/gpt-4"
+model_context_window = 8191
+model_max_output_tokens = 4096
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_4_0314]
+approval_policy = "never"
+model = "openai/gpt-4-0314"
+model_context_window = 8191
+model_max_output_tokens = 4096
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_4_1]
+approval_policy = "never"
+model = "openai/gpt-4.1"
+model_context_window = 1047576
+model_max_output_tokens = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_4_1106_pr]
+approval_policy = "never"
+model = "openai/gpt-4-1106-preview"
+model_context_window = 128000
+model_max_output_tokens = 4096
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_4_1_mini]
+approval_policy = "never"
+model = "openai/gpt-4.1-mini"
+model_context_window = 1047576
+model_max_output_tokens = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_4_1_nano]
+approval_policy = "never"
+model = "openai/gpt-4.1-nano"
+model_context_window = 1047576
+model_max_output_tokens = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_4_turbo]
+approval_policy = "never"
+model = "openai/gpt-4-turbo"
+model_context_window = 128000
+model_max_output_tokens = 4096
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_4_turbo_p]
+approval_policy = "never"
+model = "openai/gpt-4-turbo-preview"
+model_context_window = 128000
+model_max_output_tokens = 4096
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_4o]
+approval_policy = "never"
+model = "openai/gpt-4o"
+model_context_window = 128000
+model_max_output_tokens = 16384
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_4o_2024_0]
+approval_policy = "never"
+model = "openai/gpt-4o-2024-08-06"
+model_context_window = 128000
+model_max_output_tokens = 16384
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_4o_2024_1]
+approval_policy = "never"
+model = "openai/gpt-4o-2024-11-20"
+model_context_window = 128000
+model_max_output_tokens = 16384
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_4o_mini]
+approval_policy = "never"
+model = "openai/gpt-4o-mini"
+model_context_window = 128000
+model_max_output_tokens = 16384
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_4o_mini_2]
+approval_policy = "never"
+model = "openai/gpt-4o-mini-2024-07-18"
+model_context_window = 128000
+model_max_output_tokens = 16384
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_4o_mini_s]
+approval_policy = "never"
+model = "openai/gpt-4o-mini-search-preview"
+model_context_window = 128000
+model_max_output_tokens = 16384
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_4o_search]
+approval_policy = "never"
+model = "openai/gpt-4o-search-preview"
+model_context_window = 128000
+model_max_output_tokens = 16384
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_4oextende]
+approval_policy = "never"
+model = "openai/gpt-4o:extended"
+model_context_window = 128000
+model_max_output_tokens = 64000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_5]
+approval_policy = "never"
+model = "openai/gpt-5"
+model_context_window = 400000
+model_max_output_tokens = 128000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_5_chat]
+approval_policy = "never"
+model = "openai/gpt-5-chat"
+model_context_window = 400000
+model_max_output_tokens = 128000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_5_mini]
+approval_policy = "never"
+model = "openai/gpt-5-mini"
+model_context_window = 400000
+model_max_output_tokens = 128000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_5_nano]
+approval_policy = "never"
+model = "openai/gpt-5-nano"
+model_context_window = 400000
+model_max_output_tokens = 128000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_oss_120b]
+approval_policy = "never"
+model = "openai/gpt-oss-120b"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_oss_20b]
+approval_policy = "never"
+model = "openai/gpt-oss-20b"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_gpt_oss_20bfr]
+approval_policy = "never"
+model = "openai/gpt-oss-20b:free"
+model_context_window = 131072
+model_max_output_tokens = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_o1]
+approval_policy = "never"
+model = "openai/o1"
+model_context_window = 200000
+model_max_output_tokens = 100000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_o1_mini]
+approval_policy = "never"
+model = "openai/o1-mini"
+model_context_window = 128000
+model_max_output_tokens = 65536
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_o1_mini_2024_]
+approval_policy = "never"
+model = "openai/o1-mini-2024-09-12"
+model_context_window = 128000
+model_max_output_tokens = 65536
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_o1_pro]
+approval_policy = "never"
+model = "openai/o1-pro"
+model_context_window = 200000
+model_max_output_tokens = 100000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_o3]
+approval_policy = "never"
+model = "openai/o3"
+model_context_window = 200000
+model_max_output_tokens = 100000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_o3_mini]
+approval_policy = "never"
+model = "openai/o3-mini"
+model_context_window = 200000
+model_max_output_tokens = 100000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_o3_mini_high]
+approval_policy = "never"
+model = "openai/o3-mini-high"
+model_context_window = 200000
+model_max_output_tokens = 100000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_o3_pro]
+approval_policy = "never"
+model = "openai/o3-pro"
+model_context_window = 200000
+model_max_output_tokens = 100000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_o4_mini]
+approval_policy = "never"
+model = "openai/o4-mini"
+model_context_window = 200000
+model_max_output_tokens = 100000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openai_o4_mini_high]
+approval_policy = "never"
+model = "openai/o4-mini-high"
+model_context_window = 200000
+model_max_output_tokens = 100000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_opengvlab_internvl3_]
+approval_policy = "never"
+model = "opengvlab/internvl3-14b"
+model_context_window = 12288
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openrouter_auto]
+approval_policy = "never"
+model = "openrouter/auto"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_perplexity_r1_1776]
+approval_policy = "never"
+model = "perplexity/r1-1776"
+model_context_window = 128000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_perplexity_sonar]
+approval_policy = "never"
+model = "perplexity/sonar"
+model_context_window = 127072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_perplexity_sonar_dee]
+approval_policy = "never"
+model = "perplexity/sonar-deep-research"
+model_context_window = 128000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_perplexity_sonar_pro]
+approval_policy = "never"
+model = "perplexity/sonar-pro"
+model_context_window = 200000
+model_max_output_tokens = 8000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_perplexity_sonar_rea]
+approval_policy = "never"
+model = "perplexity/sonar-reasoning-pro"
+model_context_window = 128000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_pygmalionai_mythalio]
+approval_policy = "never"
+model = "pygmalionai/mythalion-13b"
+model_context_window = 4096
+model_max_output_tokens = 4096
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen2_5_vl_32b_]
+approval_policy = "never"
+model = "qwen/qwen2.5-vl-32b-instruct:free"
+model_context_window = 8192
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen2_5_vl_72b_]
+approval_policy = "never"
+model = "qwen/qwen2.5-vl-72b-instruct:free"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen3_14b]
+approval_policy = "never"
+model = "qwen/qwen3-14b"
+model_context_window = 40960
+model_max_output_tokens = 40960
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen3_14bfree]
+approval_policy = "never"
+model = "qwen/qwen3-14b:free"
+model_context_window = 40960
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen3_235b_a22b]
+approval_policy = "never"
+model = "qwen/qwen3-235b-a22b:free"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen3_30b_a3b]
+approval_policy = "never"
+model = "qwen/qwen3-30b-a3b"
+model_context_window = 40960
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen3_30b_a3b_i]
+approval_policy = "never"
+model = "qwen/qwen3-30b-a3b-instruct-2507"
+model_context_window = 131072
+model_max_output_tokens = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen3_30b_a3bfr]
+approval_policy = "never"
+model = "qwen/qwen3-30b-a3b:free"
+model_context_window = 40960
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen3_32b]
+approval_policy = "never"
+model = "qwen/qwen3-32b"
+model_context_window = 40960
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen3_4bfree]
+approval_policy = "never"
+model = "qwen/qwen3-4b:free"
+model_context_window = 40960
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen3_8b]
+approval_policy = "never"
+model = "qwen/qwen3-8b"
+model_context_window = 128000
+model_max_output_tokens = 20000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen3_8bfree]
+approval_policy = "never"
+model = "qwen/qwen3-8b:free"
+model_context_window = 40960
+model_max_output_tokens = 40960
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen3_coder]
+approval_policy = "never"
+model = "qwen/qwen3-coder:nitro"
+model_context_window = 262144
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen3_coderfree]
+approval_policy = "never"
+model = "qwen/qwen3-coder:free"
+model_context_window = 262144
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen_2_5_72b_in]
+approval_policy = "never"
+model = "qwen/qwen-2.5-72b-instruct:free"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen_2_5_7b_ins]
+approval_policy = "never"
+model = "qwen/qwen-2.5-7b-instruct"
+model_context_window = 32768
+model_max_output_tokens = 16384
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen_2_5_coder_]
+approval_policy = "never"
+model = "qwen/qwen-2.5-coder-32b-instruct:free"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen_2_5_vl_7b_]
+approval_policy = "never"
+model = "qwen/qwen-2.5-vl-7b-instruct"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen_2_72b_inst]
+approval_policy = "never"
+model = "qwen/qwen-2-72b-instruct"
+model_context_window = 32768
+model_max_output_tokens = 4096
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen_max]
+approval_policy = "never"
+model = "qwen/qwen-max"
+model_context_window = 32768
+model_max_output_tokens = 8192
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen_plus]
+approval_policy = "never"
+model = "qwen/qwen-plus"
+model_context_window = 131072
+model_max_output_tokens = 8192
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen_turbo]
+approval_policy = "never"
+model = "qwen/qwen-turbo"
+model_context_window = 1000000
+model_max_output_tokens = 8192
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen_vl_max]
+approval_policy = "never"
+model = "qwen/qwen-vl-max"
+model_context_window = 7500
+model_max_output_tokens = 1500
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwen_vl_plus]
+approval_policy = "never"
+model = "qwen/qwen-vl-plus"
+model_context_window = 7500
+model_max_output_tokens = 1500
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwq_32b]
+approval_policy = "never"
+model = "qwen/qwq-32b"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwq_32b_preview]
+approval_policy = "never"
+model = "qwen/qwq-32b-preview"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_qwen_qwq_32bfree]
+approval_policy = "never"
+model = "qwen/qwq-32b:free"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_raifle_sorcererlm_8x]
+approval_policy = "never"
+model = "raifle/sorcererlm-8x22b"
+model_context_window = 16000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_rekaai_reka_flash_3f]
+approval_policy = "never"
+model = "rekaai/reka-flash-3:free"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_sao10k_l3_1_euryale_]
+approval_policy = "never"
+model = "sao10k/l3.1-euryale-70b"
+model_context_window = 131072
+model_max_output_tokens = 16384
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_sao10k_l3_3_euryale_]
+approval_policy = "never"
+model = "sao10k/l3.3-euryale-70b"
+model_context_window = 131072
+model_max_output_tokens = 16384
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_sao10k_l3_euryale_70]
+approval_policy = "never"
+model = "sao10k/l3-euryale-70b"
+model_context_window = 8192
+model_max_output_tokens = 8192
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_sao10k_l3_lunaris_8b]
+approval_policy = "never"
+model = "sao10k/l3-lunaris-8b"
+model_context_window = 8192
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_sarvamai_sarvam_mfre]
+approval_policy = "never"
+model = "sarvamai/sarvam-m:free"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_scb10x_llama3_1_typh]
+approval_policy = "never"
+model = "scb10x/llama3.1-typhoon2-70b-instruct"
+model_context_window = 8192
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_shisa_ai_shisa_v2_ll]
+approval_policy = "never"
+model = "shisa-ai/shisa-v2-llama3.3-70b:free"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_sophosympatheia_midn]
+approval_policy = "never"
+model = "sophosympatheia/midnight-rose-70b"
+model_context_window = 4096
+model_max_output_tokens = 2048
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_switchpoint_router]
+approval_policy = "never"
+model = "switchpoint/router"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_tencent_hunyuan_a13b]
+approval_policy = "never"
+model = "tencent/hunyuan-a13b-instruct:free"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_thedrummer_anubis_70]
+approval_policy = "never"
+model = "thedrummer/anubis-70b-v1.1"
+model_context_window = 131072
+model_max_output_tokens = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_thedrummer_anubis_pr]
+approval_policy = "never"
+model = "thedrummer/anubis-pro-105b-v1"
+model_context_window = 131072
+model_max_output_tokens = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_thedrummer_rocinante]
+approval_policy = "never"
+model = "thedrummer/rocinante-12b"
+model_context_window = 8192
+model_max_output_tokens = 8192
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_thedrummer_skyfall_3]
+approval_policy = "never"
+model = "thedrummer/skyfall-36b-v2"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_thedrummer_unslopnem]
+approval_policy = "never"
+model = "thedrummer/unslopnemo-12b"
+model_context_window = 32000
+model_max_output_tokens = 32000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_thedrummer_valkyrie_]
+approval_policy = "never"
+model = "thedrummer/valkyrie-49b-v1"
+model_context_window = 131072
+model_max_output_tokens = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_thudm_glm_4_1v_9b_th]
+approval_policy = "never"
+model = "thudm/glm-4.1v-9b-thinking"
+model_context_window = 65536
+model_max_output_tokens = 8000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_thudm_glm_4_32b]
+approval_policy = "never"
+model = "thudm/glm-4-32b"
+model_context_window = 32000
+model_max_output_tokens = 32000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_thudm_glm_z1_32bfree]
+approval_policy = "never"
+model = "thudm/glm-z1-32b:free"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_tngtech_deepseek_r1t]
+approval_policy = "never"
+model = "tngtech/deepseek-r1t2-chimera:free"
+model_context_window = 163840
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_undi95_remm_slerp_l2]
+approval_policy = "never"
+model = "undi95/remm-slerp-l2-13b"
+model_context_window = 6144
+model_max_output_tokens = 1024
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_x_ai_grok_2_1212]
+approval_policy = "never"
+model = "x-ai/grok-2-1212"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_x_ai_grok_2_vision_1]
+approval_policy = "never"
+model = "x-ai/grok-2-vision-1212"
+model_context_window = 32768
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_x_ai_grok_3]
+approval_policy = "never"
+model = "x-ai/grok-3"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_x_ai_grok_3_beta]
+approval_policy = "never"
+model = "x-ai/grok-3-beta"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_x_ai_grok_3_mini]
+approval_policy = "never"
+model = "x-ai/grok-3-mini"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_x_ai_grok_3_mini_bet]
+approval_policy = "never"
+model = "x-ai/grok-3-mini-beta"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_x_ai_grok_4]
+approval_policy = "never"
+model = "x-ai/grok-4"
+model_context_window = 256000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_x_ai_grok_vision_bet]
+approval_policy = "never"
+model = "x-ai/grok-vision-beta"
+model_context_window = 8192
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_z_ai_glm_4_32b]
+approval_policy = "never"
+model = "z-ai/glm-4-32b"
+model_context_window = 128000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_z_ai_glm_4_5]
+approval_policy = "never"
+model = "z-ai/glm-4.5"
+model_context_window = 98304
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_z_ai_glm_4_5_air]
+approval_policy = "never"
+model = "z-ai/glm-4.5-air"
+model_context_window = 131072
+model_max_output_tokens = 96000
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_z_ai_glm_4_5_airfree]
+approval_policy = "never"
+model = "z-ai/glm-4.5-air:free"
+model_context_window = 131072
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.chu_arliai_qwq_32b_arlia]
+approval_policy = "never"
+model = "ArliAI/QwQ-32B-ArliAI-RpR-v1"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.chu_nousresearch_deepher]
+approval_policy = "never"
+model = "NousResearch/DeepHermes-3-Mistral-24B-Preview"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.chu_qwen_qwen2_5_72b_ins]
+approval_policy = "never"
+model = "Qwen/Qwen2.5-72B-Instruct"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.chu_qwen_qwen2_5_coder_3]
+approval_policy = "never"
+model = "Qwen/Qwen2.5-Coder-32B-Instruct"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.chu_qwen_qwen2_5_vl_32b_]
+approval_policy = "never"
+model = "Qwen/Qwen2.5-VL-32B-Instruct"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 16384
+
+[profiles.chu_qwen_qwen2_5_vl_72b_]
+approval_policy = "never"
+model = "Qwen/Qwen2.5-VL-72B-Instruct"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.chu_qwen_qwen3_14b]
+approval_policy = "never"
+model = "Qwen/Qwen3-14B"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 40960
+
+[profiles.chu_qwen_qwen3_235b_a22b]
+approval_policy = "never"
+model = "Qwen/Qwen3-235B-A22B-Thinking-2507"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 262144
+
+[profiles.chu_qwen_qwen3_30b_a3b]
+approval_policy = "never"
+model = "Qwen/Qwen3-30B-A3B"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 40960
+
+[profiles.chu_qwen_qwen3_32b]
+approval_policy = "never"
+model = "Qwen/Qwen3-32B"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 40960
+
+[profiles.chu_qwen_qwen3_8b]
+approval_policy = "never"
+model = "Qwen/Qwen3-8B"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 40960
+
+[profiles.chu_qwen_qwen3_coder_30b]
+approval_policy = "never"
+model = "Qwen/Qwen3-Coder-30B-A3B-Instruct"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 262144
+
+[profiles.chu_qwen_qwen3_coder_480]
+approval_policy = "never"
+model = "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 262144
+
+[profiles.chu_salesforce_xgen_smal]
+approval_policy = "never"
+model = "Salesforce/xgen-small-9B-instruct-r"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 262144
+
+[profiles.chu_tesslate_uigen_x_32b]
+approval_policy = "never"
+model = "Tesslate/UIGEN-X-32B-0727"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 40960
+
+[profiles.chu_thedrummer_cydonia_2]
+approval_policy = "never"
+model = "TheDrummer/Cydonia-24B-v2.1"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.chu_thedrummer_gemmasutr]
+approval_policy = "never"
+model = "TheDrummer/Gemmasutra-Pro-27B-v1.1"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.chu_thedrummer_skyfall_3]
+approval_policy = "never"
+model = "TheDrummer/Skyfall-36B-v2"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.chu_thedrummer_tunguska_]
+approval_policy = "never"
+model = "TheDrummer/Tunguska-39B-v1"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.chu_agentica_org_deepcod]
+approval_policy = "never"
+model = "agentica-org/DeepCoder-14B-Preview"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 96000
+
+[profiles.chu_all_hands_openhands_]
+approval_policy = "never"
+model = "all-hands/openhands-lm-32b-v0.1-ep3"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 16384
+
+[profiles.chu_chutesai_devstral_sm]
+approval_policy = "never"
+model = "chutesai/Devstral-Small-2505"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.chu_chutesai_llama_4_mav]
+approval_policy = "never"
+model = "chutesai/Llama-4-Maverick-17B-128E-Instruct-FP8"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.chu_chutesai_mistral_sma]
+approval_policy = "never"
+model = "chutesai/Mistral-Small-3.2-24B-Instruct-2506"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.chu_cognitivecomputation]
+approval_policy = "never"
+model = "cognitivecomputations/Dolphin3.0-R1-Mistral-24B"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.chu_deepseek_ai_deepseek]
+approval_policy = "never"
+model = "deepseek-ai/DeepSeek-V3-Base"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 163840
+
+[profiles.chu_internlm_intern_s1]
+approval_policy = "never"
+model = "internlm/Intern-S1"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+
+[profiles.chu_microsoft_mai_ds_r1_]
+approval_policy = "never"
+model = "microsoft/MAI-DS-R1-FP8"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 163840
+
+[profiles.chu_moonshotai_kimi_dev_]
+approval_policy = "never"
+model = "moonshotai/Kimi-Dev-72B"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.chu_moonshotai_kimi_k2_i]
+approval_policy = "never"
+model = "moonshotai/Kimi-K2-Instruct"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 75000
+
+[profiles.chu_moonshotai_kimi_vl_a]
+approval_policy = "never"
+model = "moonshotai/Kimi-VL-A3B-Thinking"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.chu_nvidia_llama_3_3_nem]
+approval_policy = "never"
+model = "nvidia/Llama-3_3-Nemotron-Super-49B-v1_5"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.chu_openai_gpt_oss_120b]
+approval_policy = "never"
+model = "openai/gpt-oss-120b"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.chu_shisa_ai_shisa_v2_ll]
+approval_policy = "never"
+model = "shisa-ai/shisa-v2-llama3.3-70b"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.chu_stepfun_ai_step3]
+approval_policy = "never"
+model = "stepfun-ai/step3"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 65536
+
+[profiles.chu_tencent_hunyuan_a13b]
+approval_policy = "never"
+model = "tencent/Hunyuan-A13B-Instruct"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.chu_tngtech_deepseek_r1t]
+approval_policy = "never"
+model = "tngtech/DeepSeek-R1T-Chimera"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 163840
+
+[profiles.chu_tngtech_deepseek_tng]
+approval_policy = "never"
+model = "tngtech/DeepSeek-TNG-R1T2-Chimera"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 163840
+
+[profiles.chu_tplr_templar_i]
+approval_policy = "never"
+model = "tplr/TEMPLAR-I"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 2048
+
+[profiles.chu_unsloth_llama_3_2_1b]
+approval_policy = "never"
+model = "unsloth/Llama-3.2-1B-Instruct"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 16384
+
+[profiles.chu_unsloth_llama_3_2_3b]
+approval_policy = "never"
+model = "unsloth/Llama-3.2-3B-Instruct"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 16384
+
+[profiles.chu_unsloth_mistral_nemo]
+approval_policy = "never"
+model = "unsloth/Mistral-Nemo-Instruct-2407"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.chu_unsloth_mistral_smal]
+approval_policy = "never"
+model = "unsloth/Mistral-Small-24B-Instruct-2501"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.chu_unsloth_gemma_2_9b_i]
+approval_policy = "never"
+model = "unsloth/gemma-2-9b-it"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.chu_unsloth_gemma_3_12b_]
+approval_policy = "never"
+model = "unsloth/gemma-3-12b-it"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 96000
+
+[profiles.chu_unsloth_gemma_3_27b_]
+approval_policy = "never"
+model = "unsloth/gemma-3-27b-it"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 96000
+
+[profiles.chu_unsloth_gemma_3_4b_i]
+approval_policy = "never"
+model = "unsloth/gemma-3-4b-it"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 96000
+
+[profiles.chu_zai_org_glm_4_32b_04]
+approval_policy = "never"
+model = "zai-org/GLM-4-32B-0414"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.chu_zai_org_glm_4_5_air]
+approval_policy = "never"
+model = "zai-org/GLM-4.5-Air"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.chu_zai_org_glm_4_5_fp8]
+approval_policy = "never"
+model = "zai-org/GLM-4.5-FP8"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 98304
+
+[profiles.chu_zai_org_glm_4_5v_fp8]
+approval_policy = "never"
+model = "zai-org/GLM-4.5V-FP8"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 65536
+
+[profiles.chu_zai_org_glm_z1_32b_0]
+approval_policy = "never"
+model = "zai-org/GLM-Z1-32B-0414"
+model_provider = "chutes"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.cer_gpt_oss_120b]
+approval_policy = "never"
+model = "gpt-oss-120b"
+model_provider = "cerebras"
+model_reasoning_effort = "high"
+
+[profiles.cer_llama_3_3_70b]
+approval_policy = "never"
+model = "llama-3.3-70b"
+model_provider = "cerebras"
+model_reasoning_effort = "high"
+
+[profiles.cer_llama_4_maverick_17b]
+approval_policy = "never"
+model = "llama-4-maverick-17b-128e-instruct"
+model_provider = "cerebras"
+model_reasoning_effort = "high"
+
+[profiles.cer_llama_4_scout_17b_16]
+approval_policy = "never"
+model = "llama-4-scout-17b-16e-instruct"
+model_provider = "cerebras"
+model_reasoning_effort = "high"
+
+[profiles.cer_llama3_1_8b]
+approval_policy = "never"
+model = "llama3.1-8b"
+model_provider = "cerebras"
+model_reasoning_effort = "high"
+
+[profiles.cer_qwen_3_235b_a22b_ins]
+approval_policy = "never"
+model = "qwen-3-235b-a22b-instruct-2507"
+model_provider = "cerebras"
+model_reasoning_effort = "high"
+
+[profiles.cer_qwen_3_235b_a22b_thi]
+approval_policy = "never"
+model = "qwen-3-235b-a22b-thinking-2507"
+model_provider = "cerebras"
+model_reasoning_effort = "high"
+
+[profiles.cer_qwen_3_32b]
+approval_policy = "never"
+model = "qwen-3-32b"
+model_provider = "cerebras"
+model_reasoning_effort = "high"
+
+[profiles.cer_qwen_3_coder_480b]
+approval_policy = "never"
+model = "qwen-3-coder-480b"
+model_provider = "cerebras"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_aqa]
+approval_policy = "never"
+model = "models/aqa"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_embedding_001]
+approval_policy = "never"
+model = "models/embedding-001"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_embedding_gec]
+approval_policy = "never"
+model = "models/embedding-gecko-001"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemini_1_5_fl]
+approval_policy = "never"
+model = "models/gemini-1.5-flash-latest"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemini_1_5_pr]
+approval_policy = "never"
+model = "models/gemini-1.5-pro-latest"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemini_2_0_fl]
+approval_policy = "never"
+model = "models/gemini-2.0-flash-thinking-exp-1219"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemini_2_0_pr]
+approval_policy = "never"
+model = "models/gemini-2.0-pro-exp-02-05"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemini_2_5_fl]
+approval_policy = "never"
+model = "models/gemini-2.5-flash-preview-tts"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemini_2_5_pr]
+approval_policy = "never"
+model = "models/gemini-2.5-pro-preview-tts"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemini_embedd]
+approval_policy = "never"
+model = "models/gemini-embedding-exp-03-07"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemini_exp_12]
+approval_policy = "never"
+model = "models/gemini-exp-1206"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemini_live_2]
+approval_policy = "never"
+model = "models/gemini-live-2.5-flash-preview"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemma_3_12b_i]
+approval_policy = "never"
+model = "models/gemma-3-12b-it"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemma_3_1b_it]
+approval_policy = "never"
+model = "models/gemma-3-1b-it"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemma_3_27b_i]
+approval_policy = "never"
+model = "models/gemma-3-27b-it"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemma_3_4b_it]
+approval_policy = "never"
+model = "models/gemma-3-4b-it"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemma_3n_e2b_]
+approval_policy = "never"
+model = "models/gemma-3n-e2b-it"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemma_3n_e4b_]
+approval_policy = "never"
+model = "models/gemma-3n-e4b-it"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_imagen_3_0_ge]
+approval_policy = "never"
+model = "models/imagen-3.0-generate-002"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_imagen_4_0_fa]
+approval_policy = "never"
+model = "models/imagen-4.0-fast-generate-001"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_imagen_4_0_ge]
+approval_policy = "never"
+model = "models/imagen-4.0-generate-preview-06-06"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_imagen_4_0_ul]
+approval_policy = "never"
+model = "models/imagen-4.0-ultra-generate-preview-06-06"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_learnlm_2_0_f]
+approval_policy = "never"
+model = "models/learnlm-2.0-flash-experimental"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_text_embeddin]
+approval_policy = "never"
+model = "models/text-embedding-004"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_veo_2_0_gener]
+approval_policy = "never"
+model = "models/veo-2.0-generate-001"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_veo_3_0_fast_]
+approval_policy = "never"
+model = "models/veo-3.0-fast-generate-preview"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_veo_3_0_gener]
+approval_policy = "never"
+model = "models/veo-3.0-generate-preview"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.llm_bidara]
+approval_policy = "never"
+model = "bidara"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_codestral_2405]
+approval_policy = "never"
+model = "codestral-2405"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_codestral_2501]
+approval_policy = "never"
+model = "codestral-2501"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_elixposearch]
+approval_policy = "never"
+model = "elixposearch"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_gpt_4_1_nano_2025_04]
+approval_policy = "never"
+model = "gpt-4.1-nano-2025-04-14"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_gpt_4o_mini_2024_07_]
+approval_policy = "never"
+model = "gpt-4o-mini-2024-07-18"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_gpt_5_nano_2025_08_0]
+approval_policy = "never"
+model = "gpt-5-nano-2025-08-07"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_llama_3_1_8b_instruc]
+approval_policy = "never"
+model = "llama-3.1-8b-instruct-fp8"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_llama_4_scout_17b_16]
+approval_policy = "never"
+model = "llama-4-scout-17b-16e-instruct"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_llama_fast_roblox]
+approval_policy = "never"
+model = "llama-fast-roblox"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_ministral_3b_2410]
+approval_policy = "never"
+model = "ministral-3b-2410"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_ministral_8b_2410]
+approval_policy = "never"
+model = "ministral-8b-2410"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mirexa]
+approval_policy = "never"
+model = "mirexa"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mistral_large_2402]
+approval_policy = "never"
+model = "mistral-large-2402"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mistral_large_2407]
+approval_policy = "never"
+model = "mistral-large-2407"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mistral_large_2411]
+approval_policy = "never"
+model = "mistral-large-2411"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mistral_medium]
+approval_policy = "never"
+model = "mistral-medium"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mistral_nemo_roblox]
+approval_policy = "never"
+model = "mistral-nemo-roblox"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mistral_saba_2502]
+approval_policy = "never"
+model = "mistral-saba-2502"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mistral_small_2402]
+approval_policy = "never"
+model = "mistral-small-2402"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mistral_small_2409]
+approval_policy = "never"
+model = "mistral-small-2409"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mistral_small_2501]
+approval_policy = "never"
+model = "mistral-small-2501"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mistral_small_2503]
+approval_policy = "never"
+model = "mistral-small-2503"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mistral_small_3_1_24]
+approval_policy = "never"
+model = "mistral-small-3.1-24b-instruct-2503"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_nova_fast]
+approval_policy = "never"
+model = "nova-fast"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_open_mistral_7b]
+approval_policy = "never"
+model = "open-mistral-7b"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_open_mistral_nemo]
+approval_policy = "never"
+model = "open-mistral-nemo"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_open_mixtral_8x22b]
+approval_policy = "never"
+model = "open-mixtral-8x22b"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_open_mixtral_8x7b]
+approval_policy = "never"
+model = "open-mixtral-8x7b"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_pixtral_12b_2409]
+approval_policy = "never"
+model = "pixtral-12b-2409"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_pixtral_large_2411]
+approval_policy = "never"
+model = "pixtral-large-2411"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_qwen2_5_coder_32b_in]
+approval_policy = "never"
+model = "qwen2.5-coder-32b-instruct"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_roblox_rp]
+approval_policy = "never"
+model = "roblox-rp"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_rtist]
+approval_policy = "never"
+model = "rtist"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.poe_app_creator]
+approval_policy = "never"
+model = "App-Creator"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_aya_expanse_32b]
+approval_policy = "never"
+model = "Aya-Expanse-32B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_aya_vision]
+approval_policy = "never"
+model = "Aya-Vision"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_bagoodex_web_search]
+approval_policy = "never"
+model = "Bagoodex-Web-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_bria_eraser]
+approval_policy = "never"
+model = "Bria-Eraser"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_cartesia]
+approval_policy = "never"
+model = "Cartesia"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_chatgpt_4o_latest]
+approval_policy = "never"
+model = "ChatGPT-4o-Latest"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_clarity_upscaler]
+approval_policy = "never"
+model = "Clarity-Upscaler"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_haiku_3]
+approval_policy = "never"
+model = "Claude-Haiku-3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_haiku_3_5]
+approval_policy = "never"
+model = "Claude-Haiku-3.5"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_haiku_3_5_sea]
+approval_policy = "never"
+model = "Claude-Haiku-3.5-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_opus_3]
+approval_policy = "never"
+model = "Claude-Opus-3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_opus_4]
+approval_policy = "never"
+model = "Claude-Opus-4"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_opus_4_reason]
+approval_policy = "never"
+model = "Claude-Opus-4-Reasoning"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_opus_4_search]
+approval_policy = "never"
+model = "Claude-Opus-4-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_opus_4_1]
+approval_policy = "never"
+model = "Claude-Opus-4.1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_sonnet_3_5]
+approval_policy = "never"
+model = "Claude-Sonnet-3.5"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_sonnet_3_5_ju]
+approval_policy = "never"
+model = "Claude-Sonnet-3.5-June"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_sonnet_3_5_se]
+approval_policy = "never"
+model = "Claude-Sonnet-3.5-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_sonnet_3_7]
+approval_policy = "never"
+model = "Claude-Sonnet-3.7"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_sonnet_3_7_re]
+approval_policy = "never"
+model = "Claude-Sonnet-3.7-Reasoning"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_sonnet_3_7_se]
+approval_policy = "never"
+model = "Claude-Sonnet-3.7-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_sonnet_4]
+approval_policy = "never"
+model = "Claude-Sonnet-4"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_sonnet_4_reas]
+approval_policy = "never"
+model = "Claude-Sonnet-4-Reasoning"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_sonnet_4_sear]
+approval_policy = "never"
+model = "Claude-Sonnet-4-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_command_r]
+approval_policy = "never"
+model = "Command-R"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_command_r_plus]
+approval_policy = "never"
+model = "Command-R-Plus"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_dall_e_3]
+approval_policy = "never"
+model = "DALL-E-3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepclaude]
+approval_policy = "never"
+model = "DeepClaude"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_r1]
+approval_policy = "never"
+model = "DeepSeek-R1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_r1_di]
+approval_policy = "never"
+model = "DeepSeek-R1-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_r1_distill]
+approval_policy = "never"
+model = "DeepSeek-R1-Distill"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_r1_fw]
+approval_policy = "never"
+model = "DeepSeek-R1-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_r1_turbo_di]
+approval_policy = "never"
+model = "DeepSeek-R1-Turbo-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_v3]
+approval_policy = "never"
+model = "DeepSeek-V3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_v3_di]
+approval_policy = "never"
+model = "DeepSeek-V3-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_v3_turbo_di]
+approval_policy = "never"
+model = "DeepSeek-V3-Turbo-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_v3_fw]
+approval_policy = "never"
+model = "Deepseek-V3-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_dream_machine]
+approval_policy = "never"
+model = "Dream-Machine"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_dreamina_3_1]
+approval_policy = "never"
+model = "Dreamina-3.1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_elevenlabs]
+approval_policy = "never"
+model = "ElevenLabs"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_fill]
+approval_policy = "never"
+model = "FLUX-Fill"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_inpaint]
+approval_policy = "never"
+model = "FLUX-Inpaint"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_krea]
+approval_policy = "never"
+model = "FLUX-Krea"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_dev]
+approval_policy = "never"
+model = "FLUX-dev"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_dev_di]
+approval_policy = "never"
+model = "FLUX-dev-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_dev_finetuner]
+approval_policy = "never"
+model = "FLUX-dev-finetuner"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_pro]
+approval_policy = "never"
+model = "FLUX-pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_pro_1_t]
+approval_policy = "never"
+model = "FLUX-pro-1-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_pro_1_1]
+approval_policy = "never"
+model = "FLUX-pro-1.1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_pro_1_1_t]
+approval_policy = "never"
+model = "FLUX-pro-1.1-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_pro_1_1_ultra]
+approval_policy = "never"
+model = "FLUX-pro-1.1-ultra"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_schnell]
+approval_policy = "never"
+model = "FLUX-schnell"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_schnell_di]
+approval_policy = "never"
+model = "FLUX-schnell-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_1_dev_fw]
+approval_policy = "never"
+model = "Flux-1-Dev-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_1_schnell_fw]
+approval_policy = "never"
+model = "Flux-1-Schnell-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_kontext_max]
+approval_policy = "never"
+model = "Flux-Kontext-Max"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_kontext_pro]
+approval_policy = "never"
+model = "Flux-Kontext-Pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_schnell_t]
+approval_policy = "never"
+model = "Flux-Schnell-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_glm_4_5]
+approval_policy = "never"
+model = "GLM-4.5"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_3_5_turbo]
+approval_policy = "never"
+model = "GPT-3.5-Turbo"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_3_5_turbo_instru]
+approval_policy = "never"
+model = "GPT-3.5-Turbo-Instruct"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_3_5_turbo_raw]
+approval_policy = "never"
+model = "GPT-3.5-Turbo-Raw"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4_classic]
+approval_policy = "never"
+model = "GPT-4-Classic"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4_classic_0314]
+approval_policy = "never"
+model = "GPT-4-Classic-0314"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4_turbo]
+approval_policy = "never"
+model = "GPT-4-Turbo"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4_1]
+approval_policy = "never"
+model = "GPT-4.1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4_1_mini]
+approval_policy = "never"
+model = "GPT-4.1-mini"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4_1_nano]
+approval_policy = "never"
+model = "GPT-4.1-nano"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4o]
+approval_policy = "never"
+model = "GPT-4o"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4o_aug]
+approval_policy = "never"
+model = "GPT-4o-Aug"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4o_search]
+approval_policy = "never"
+model = "GPT-4o-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4o_mini]
+approval_policy = "never"
+model = "GPT-4o-mini"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4o_mini_search]
+approval_policy = "never"
+model = "GPT-4o-mini-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_5]
+approval_policy = "never"
+model = "GPT-5"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_5_chat]
+approval_policy = "never"
+model = "GPT-5-Chat"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_5_mini]
+approval_policy = "never"
+model = "GPT-5-mini"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_5_nano]
+approval_policy = "never"
+model = "GPT-5-nano"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_image_1]
+approval_policy = "never"
+model = "GPT-Image-1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_oss_120b]
+approval_policy = "never"
+model = "GPT-OSS-120B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_oss_120b_t]
+approval_policy = "never"
+model = "GPT-OSS-120B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_oss_20b]
+approval_policy = "never"
+model = "GPT-OSS-20B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_oss_20b_t]
+approval_policy = "never"
+model = "GPT-OSS-20B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_researcher]
+approval_policy = "never"
+model = "GPT-Researcher"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemini_1_5_flash]
+approval_policy = "never"
+model = "Gemini-1.5-Flash"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemini_1_5_flash_sea]
+approval_policy = "never"
+model = "Gemini-1.5-Flash-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemini_1_5_pro]
+approval_policy = "never"
+model = "Gemini-1.5-Pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemini_1_5_pro_searc]
+approval_policy = "never"
+model = "Gemini-1.5-Pro-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemini_2_0_flash]
+approval_policy = "never"
+model = "Gemini-2.0-Flash"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemini_2_0_flash_lit]
+approval_policy = "never"
+model = "Gemini-2.0-Flash-Lite"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemini_2_0_flash_pre]
+approval_policy = "never"
+model = "Gemini-2.0-Flash-Preview"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemini_2_5_flash]
+approval_policy = "never"
+model = "Gemini-2.5-Flash"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemini_2_5_flash_lit]
+approval_policy = "never"
+model = "Gemini-2.5-Flash-Lite-Preview"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemini_2_5_pro]
+approval_policy = "never"
+model = "Gemini-2.5-Pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemma_2_27b_t]
+approval_policy = "never"
+model = "Gemma-2-27b-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemma_3_27b]
+approval_policy = "never"
+model = "Gemma-3-27B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_grok_2]
+approval_policy = "never"
+model = "Grok-2"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_grok_3]
+approval_policy = "never"
+model = "Grok-3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_grok_3_mini]
+approval_policy = "never"
+model = "Grok-3-Mini"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_grok_4]
+approval_policy = "never"
+model = "Grok-4"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_hailuo_02]
+approval_policy = "never"
+model = "Hailuo-02"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_hailuo_02_pro]
+approval_policy = "never"
+model = "Hailuo-02-Pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_hailuo_02_standard]
+approval_policy = "never"
+model = "Hailuo-02-Standard"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_hailuo_ai]
+approval_policy = "never"
+model = "Hailuo-AI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_hailuo_director_01]
+approval_policy = "never"
+model = "Hailuo-Director-01"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_hailuo_live]
+approval_policy = "never"
+model = "Hailuo-Live"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_hailuo_speech_02]
+approval_policy = "never"
+model = "Hailuo-Speech-02"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_hermes_3_70b]
+approval_policy = "never"
+model = "Hermes-3-70B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_hidream_i1_full]
+approval_policy = "never"
+model = "Hidream-I1-full"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_ideogram]
+approval_policy = "never"
+model = "Ideogram"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_ideogram_v2]
+approval_policy = "never"
+model = "Ideogram-v2"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_ideogram_v2a]
+approval_policy = "never"
+model = "Ideogram-v2a"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_ideogram_v2a_turbo]
+approval_policy = "never"
+model = "Ideogram-v2a-Turbo"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_ideogram_v3]
+approval_policy = "never"
+model = "Ideogram-v3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_imagen_3]
+approval_policy = "never"
+model = "Imagen-3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_imagen_3_fast]
+approval_policy = "never"
+model = "Imagen-3-Fast"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_imagen_4]
+approval_policy = "never"
+model = "Imagen-4"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_imagen_4_fast]
+approval_policy = "never"
+model = "Imagen-4-Fast"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_imagen_4_ultra_exp]
+approval_policy = "never"
+model = "Imagen-4-Ultra-Exp"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_inception_mercury]
+approval_policy = "never"
+model = "Inception-Mercury"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_inception_mercury_co]
+approval_policy = "never"
+model = "Inception-Mercury-Coder"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_kimi_k2]
+approval_policy = "never"
+model = "Kimi-K2"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_kimi_k2_instruct_n]
+approval_policy = "never"
+model = "Kimi-K2-Instruct-N"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_kimi_k2_t]
+approval_policy = "never"
+model = "Kimi-K2-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_kling_1_5_pro]
+approval_policy = "never"
+model = "Kling-1.5-Pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_kling_1_6_pro]
+approval_policy = "never"
+model = "Kling-1.6-Pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_kling_2_0_master]
+approval_policy = "never"
+model = "Kling-2.0-Master"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_kling_2_1_master]
+approval_policy = "never"
+model = "Kling-2.1-Master"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_kling_2_1_pro]
+approval_policy = "never"
+model = "Kling-2.1-Pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_kling_2_1_std]
+approval_policy = "never"
+model = "Kling-2.1-Std"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_kling_pro_effects]
+approval_policy = "never"
+model = "Kling-Pro-Effects"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_liveportrait]
+approval_policy = "never"
+model = "LivePortrait"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_70b_fp16]
+approval_policy = "never"
+model = "Llama-3-70B-FP16"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_70b_t]
+approval_policy = "never"
+model = "Llama-3-70B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_70b_groq]
+approval_policy = "never"
+model = "Llama-3-70b-Groq"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_8b_t]
+approval_policy = "never"
+model = "Llama-3-8B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_8b_groq]
+approval_policy = "never"
+model = "Llama-3-8b-Groq"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_405b]
+approval_policy = "never"
+model = "Llama-3.1-405B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_405b_fp16]
+approval_policy = "never"
+model = "Llama-3.1-405B-FP16"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_405b_fw]
+approval_policy = "never"
+model = "Llama-3.1-405B-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_405b_t]
+approval_policy = "never"
+model = "Llama-3.1-405B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_70b]
+approval_policy = "never"
+model = "Llama-3.1-70B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_70b_fp16]
+approval_policy = "never"
+model = "Llama-3.1-70B-FP16"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_70b_fw]
+approval_policy = "never"
+model = "Llama-3.1-70B-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_70b_t]
+approval_policy = "never"
+model = "Llama-3.1-70B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_8b]
+approval_policy = "never"
+model = "Llama-3.1-8B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_8b_di]
+approval_policy = "never"
+model = "Llama-3.1-8B-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_8b_fp16]
+approval_policy = "never"
+model = "Llama-3.1-8B-FP16"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_8b_fw]
+approval_policy = "never"
+model = "Llama-3.1-8B-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_8b_t_128k]
+approval_policy = "never"
+model = "Llama-3.1-8B-T-128k"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_nemotron]
+approval_policy = "never"
+model = "Llama-3.1-Nemotron"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_3_70b]
+approval_policy = "never"
+model = "Llama-3.3-70B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_3_70b_di]
+approval_policy = "never"
+model = "Llama-3.3-70B-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_3_70b_fw]
+approval_policy = "never"
+model = "Llama-3.3-70B-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_3_70b_vers]
+approval_policy = "never"
+model = "Llama-3.3-70B-Vers"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_4_maverick]
+approval_policy = "never"
+model = "Llama-4-Maverick"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_4_maverick_b10]
+approval_policy = "never"
+model = "Llama-4-Maverick-B10"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_4_maverick_t]
+approval_policy = "never"
+model = "Llama-4-Maverick-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_4_scout]
+approval_policy = "never"
+model = "Llama-4-Scout"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_4_scout_b10]
+approval_policy = "never"
+model = "Llama-4-Scout-B10"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_4_scout_cs]
+approval_policy = "never"
+model = "Llama-4-Scout-CS"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_4_scout_t]
+approval_policy = "never"
+model = "Llama-4-Scout-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_luma_photon]
+approval_policy = "never"
+model = "Luma-Photon"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_luma_photon_flash]
+approval_policy = "never"
+model = "Luma-Photon-Flash"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_lyria]
+approval_policy = "never"
+model = "Lyria"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_markitdown]
+approval_policy = "never"
+model = "MarkItDown"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_minimax_m1]
+approval_policy = "never"
+model = "MiniMax-M1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_mistral_7b_v0_3_di]
+approval_policy = "never"
+model = "Mistral-7B-v0.3-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_mistral_7b_v0_3_t]
+approval_policy = "never"
+model = "Mistral-7B-v0.3-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_mistral_large_2]
+approval_policy = "never"
+model = "Mistral-Large-2"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_mistral_medium]
+approval_policy = "never"
+model = "Mistral-Medium"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_mistral_nemo]
+approval_policy = "never"
+model = "Mistral-NeMo"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_mistral_small_3]
+approval_policy = "never"
+model = "Mistral-Small-3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_mistral_small_3_1]
+approval_policy = "never"
+model = "Mistral-Small-3.1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_mistral_small_3_2]
+approval_policy = "never"
+model = "Mistral-Small-3.2"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_mixtral8x22b_inst_fw]
+approval_policy = "never"
+model = "Mixtral8x22b-Inst-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_mochi_preview]
+approval_policy = "never"
+model = "Mochi-preview"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_omnihuman]
+approval_policy = "never"
+model = "OmniHuman"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_openai_gpt_oss_120b]
+approval_policy = "never"
+model = "OpenAI-GPT-OSS-120B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_openai_gpt_oss_20b]
+approval_policy = "never"
+model = "OpenAI-GPT-OSS-20B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_orpheus_tts]
+approval_policy = "never"
+model = "Orpheus-TTS"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_perplexity_deep_rese]
+approval_policy = "never"
+model = "Perplexity-Deep-Research"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_perplexity_r1_1776]
+approval_policy = "never"
+model = "Perplexity-R1-1776"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_perplexity_sonar]
+approval_policy = "never"
+model = "Perplexity-Sonar"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_perplexity_sonar_pro]
+approval_policy = "never"
+model = "Perplexity-Sonar-Pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_perplexity_sonar_rsn]
+approval_policy = "never"
+model = "Perplexity-Sonar-Rsn-Pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_phi_4_di]
+approval_policy = "never"
+model = "Phi-4-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_phoenix_1_0]
+approval_policy = "never"
+model = "Phoenix-1.0"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_pika]
+approval_policy = "never"
+model = "Pika"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_pixverse_v4_5]
+approval_policy = "never"
+model = "Pixverse-v4.5"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_playai_dialog]
+approval_policy = "never"
+model = "PlayAI-Dialog"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_playai_tts]
+approval_policy = "never"
+model = "PlayAI-TTS"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_poe_system_bot]
+approval_policy = "never"
+model = "Poe-System-Bot"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_python]
+approval_policy = "never"
+model = "Python"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwq_32b_b10]
+approval_policy = "never"
+model = "QwQ-32B-B10"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwq_32b_preview_t]
+approval_policy = "never"
+model = "QwQ-32B-Preview-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwq_32b_t]
+approval_policy = "never"
+model = "QwQ-32B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen_2_5_72b_t]
+approval_policy = "never"
+model = "Qwen-2.5-72B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen_2_5_7b_t]
+approval_policy = "never"
+model = "Qwen-2.5-7B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen_2_5_coder_32b_t]
+approval_policy = "never"
+model = "Qwen-2.5-Coder-32B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen_2_5_vl_32b]
+approval_policy = "never"
+model = "Qwen-2.5-VL-32b"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen_3_235b_2507_t]
+approval_policy = "never"
+model = "Qwen-3-235B-2507-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen_72b_t]
+approval_policy = "never"
+model = "Qwen-72B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen2_72b_instruct_t]
+approval_policy = "never"
+model = "Qwen2-72B-Instruct-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen2_5_coder_32b]
+approval_policy = "never"
+model = "Qwen2.5-Coder-32B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen2_5_vl_72b_t]
+approval_policy = "never"
+model = "Qwen2.5-VL-72B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen3_235b_2507_cs]
+approval_policy = "never"
+model = "Qwen3-235B-2507-CS"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen3_235b_2507_fw]
+approval_policy = "never"
+model = "Qwen3-235B-2507-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen3_235b_a22b]
+approval_policy = "never"
+model = "Qwen3-235B-A22B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen3_235b_a22b_di]
+approval_policy = "never"
+model = "Qwen3-235B-A22B-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen3_32b_cs]
+approval_policy = "never"
+model = "Qwen3-32B-CS"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen3_coder_480b_fw]
+approval_policy = "never"
+model = "Qwen3-Coder-480B-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen3_coder_480b_t]
+approval_policy = "never"
+model = "Qwen3-Coder-480B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_ray2]
+approval_policy = "never"
+model = "Ray2"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_recraft_v3]
+approval_policy = "never"
+model = "Recraft-V3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_reka_core]
+approval_policy = "never"
+model = "Reka-Core"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_reka_flash]
+approval_policy = "never"
+model = "Reka-Flash"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_reka_research]
+approval_policy = "never"
+model = "Reka-Research"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_restyler]
+approval_policy = "never"
+model = "Restyler"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_retro_diffusion_core]
+approval_policy = "never"
+model = "Retro-Diffusion-Core"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_runway]
+approval_policy = "never"
+model = "Runway"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_runway_gen_4_turbo]
+approval_policy = "never"
+model = "Runway-Gen-4-Turbo"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_sana_t2i]
+approval_policy = "never"
+model = "Sana-T2I"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_seedance_1_0_lite]
+approval_policy = "never"
+model = "Seedance-1.0-Lite"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_seedance_1_0_pro]
+approval_policy = "never"
+model = "Seedance-1.0-Pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_seedream_3_0]
+approval_policy = "never"
+model = "Seedream-3.0"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_sketch_to_image]
+approval_policy = "never"
+model = "Sketch-to-Image"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_solar_pro_2]
+approval_policy = "never"
+model = "Solar-Pro-2"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_sora]
+approval_policy = "never"
+model = "Sora"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_stablediffusion3_2b]
+approval_policy = "never"
+model = "StableDiffusion3-2B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_stablediffusion3_5_l]
+approval_policy = "never"
+model = "StableDiffusion3.5-L"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_stablediffusion3_5_t]
+approval_policy = "never"
+model = "StableDiffusion3.5-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_stablediffusionxl]
+approval_policy = "never"
+model = "StableDiffusionXL"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_tako]
+approval_policy = "never"
+model = "Tako"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_topazlabs]
+approval_policy = "never"
+model = "TopazLabs"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_trellis_3d]
+approval_policy = "never"
+model = "Trellis-3D"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_twelvelabs]
+approval_policy = "never"
+model = "TwelveLabs"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_unreal_speech_tts]
+approval_policy = "never"
+model = "Unreal-Speech-TTS"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_veo_2]
+approval_policy = "never"
+model = "Veo-2"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_veo_2_video]
+approval_policy = "never"
+model = "Veo-2-Video"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_veo_3]
+approval_policy = "never"
+model = "Veo-3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_veo_3_fast]
+approval_policy = "never"
+model = "Veo-3-Fast"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_wan_2_1]
+approval_policy = "never"
+model = "Wan-2.1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_wan_2_2]
+approval_policy = "never"
+model = "Wan-2.2"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_web_search]
+approval_policy = "never"
+model = "Web-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_o1]
+approval_policy = "never"
+model = "o1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_o1_mini]
+approval_policy = "never"
+model = "o1-mini"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_o1_pro]
+approval_policy = "never"
+model = "o1-pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_o3]
+approval_policy = "never"
+model = "o3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_o3_deep_research]
+approval_policy = "never"
+model = "o3-deep-research"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_o3_mini]
+approval_policy = "never"
+model = "o3-mini"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_o3_mini_high]
+approval_policy = "never"
+model = "o3-mini-high"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_o3_pro]
+approval_policy = "never"
+model = "o3-pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_o4_mini]
+approval_policy = "never"
+model = "o4-mini"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_o4_mini_deep_researc]
+approval_policy = "never"
+model = "o4-mini-deep-research"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_remove_background]
+approval_policy = "never"
+model = "remove-background"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.pol_bidara]
+approval_policy = "never"
+model = "bidara"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_elixposearch]
+approval_policy = "never"
+model = "elixposearch"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_evil]
+approval_policy = "never"
+model = "evil"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_gpt_5_nano]
+approval_policy = "never"
+model = "gpt-5-nano"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_llama_fast_roblox]
+approval_policy = "never"
+model = "llama-fast-roblox"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_llama_roblox]
+approval_policy = "never"
+model = "llama-roblox"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_llamascout]
+approval_policy = "never"
+model = "llamascout"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_midijourney]
+approval_policy = "never"
+model = "midijourney"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_mirexa]
+approval_policy = "never"
+model = "mirexa"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_mistral]
+approval_policy = "never"
+model = "mistral"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_mistral_nemo_roblox]
+approval_policy = "never"
+model = "mistral-nemo-roblox"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_mistral_roblox]
+approval_policy = "never"
+model = "mistral-roblox"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_nova_fast]
+approval_policy = "never"
+model = "nova-fast"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_openai]
+approval_policy = "never"
+model = "openai"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_openai_audio]
+approval_policy = "never"
+model = "openai-audio"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_openai_fast]
+approval_policy = "never"
+model = "openai-fast"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_openai_large]
+approval_policy = "never"
+model = "openai-large"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_openai_roblox]
+approval_policy = "never"
+model = "openai-roblox"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_qwen_coder]
+approval_policy = "never"
+model = "qwen-coder"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_roblox_rp]
+approval_policy = "never"
+model = "roblox-rp"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_rtist]
+approval_policy = "never"
+model = "rtist"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_sur]
+approval_policy = "never"
+model = "sur"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_unity]
+approval_policy = "never"
+model = "unity"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.lms_darkidol_longwriter_]
+approval_policy = "never"
+model = "darkidol-longwriter-v13-8b-uncensored-1048k"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_deepseek_r1_distill_]
+approval_policy = "never"
+model = "deepseek-r1-distill-qwen-14b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_dragon_mistral_7b_v0]
+approval_policy = "never"
+model = "dragon-mistral-7b-v0"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_fix_json]
+approval_policy = "never"
+model = "fix-json"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_florence_2_base_ft]
+approval_policy = "never"
+model = "florence-2-base-ft"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_florence_2_large_ft]
+approval_policy = "never"
+model = "florence-2-large-ft"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_gemma_3_270m_it_qat]
+approval_policy = "never"
+model = "gemma-3-270m-it-qat"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_google_gemma_3_1b]
+approval_policy = "never"
+model = "google/gemma-3-1b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_google_gemma_3_4b]
+approval_policy = "never"
+model = "google/gemma-3-4b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_granite_4_0_tiny_pre]
+approval_policy = "never"
+model = "granite-4.0-tiny-preview"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_huihui_qwen3_14b_abl]
+approval_policy = "never"
+model = "huihui-qwen3-14b-abliterated-v2"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_llama_3_1_8b_sarcasm]
+approval_policy = "never"
+model = "llama-3.1-8b-sarcasm"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_llama_3_2_8x3b_moe_d]
+approval_policy = "never"
+model = "llama-3.2-8x3b-moe-dark-champion-instruct-uncensored-abliterated-18.4b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_llama3_2_entity]
+approval_policy = "never"
+model = "llama3.2-entity"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_llama3_2_entity_1b]
+approval_policy = "never"
+model = "llama3.2-entity-1b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_longwriter_v_7b_dpo_]
+approval_policy = "never"
+model = "longwriter-v-7b-dpo-i1"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_magistral_small_2507]
+approval_policy = "never"
+model = "magistral-small-2507-rebased-vision-i1"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_meta_llama_3_1_8b_in]
+approval_policy = "never"
+model = "meta-llama-3.1-8b-instruct-summarizer"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_minicpm4_0_5b]
+approval_policy = "never"
+model = "minicpm4-0.5b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_minicpm4_8b]
+approval_policy = "never"
+model = "minicpm4-8b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_mistral_7b_instruct_]
+approval_policy = "never"
+model = "mistral-7b-instruct-v0.3-196k-dq68-mlx"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_mistral_7b_pii_entit]
+approval_policy = "never"
+model = "mistral-7b-pii-entity-extractor"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_mistral_7b_sarcasm_s]
+approval_policy = "never"
+model = "mistral-7b-sarcasm-scrolls-v2"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_mistral_small_24b_in]
+approval_policy = "never"
+model = "mistral-small-24b-instruct-2501-writer-i1"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_mistralai_voxtral_mi]
+approval_policy = "never"
+model = "mistralai_voxtral-mini-3b-2507"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_mungert_text_embeddi]
+approval_policy = "never"
+model = "mungert/text-embedding-qwen3-embedding-0.6b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_numarkdown_8b_thinki]
+approval_policy = "never"
+model = "numarkdown-8b-thinking-i1"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_ocr_vlm_qwen2_5vl_3b]
+approval_policy = "never"
+model = "ocr_vlm-qwen2.5vl-3b-final"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_ocrflux_3b]
+approval_policy = "never"
+model = "ocrflux-3b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_olmocr_7b_0725]
+approval_policy = "never"
+model = "olmocr-7b-0725"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_openai_gpt_oss_20b]
+approval_policy = "never"
+model = "openai/gpt-oss-20b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_openai_gpt_oss_20b_n]
+approval_policy = "never"
+model = "openai_gpt-oss-20b-neo"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_osmosis_structure_0_]
+approval_policy = "never"
+model = "osmosis-structure-0.6b@q8_0"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_pixtral_12b_i1]
+approval_policy = "never"
+model = "pixtral-12b-i1"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen_qwen2_5_vl_7b]
+approval_policy = "never"
+model = "qwen/qwen2.5-vl-7b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen_text_embedding_]
+approval_policy = "never"
+model = "qwen/text-embedding-qwen3-embedding-0.6b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen2_audio_7b_instr]
+approval_policy = "never"
+model = "qwen2-audio-7b-instruct-i1"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen2_5_omni_3b]
+approval_policy = "never"
+model = "qwen2.5-omni-3b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen2_5_omni_7b]
+approval_policy = "never"
+model = "qwen2.5-omni-7b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen3_30b_a3b_instru]
+approval_policy = "never"
+model = "qwen3-30b-a3b-instruct-2507"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen3_30b_a3b_thinki]
+approval_policy = "never"
+model = "qwen3-30b-a3b-thinking-2507"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen3_4b_instruct_25]
+approval_policy = "never"
+model = "qwen3-4b-instruct-2507"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen3_4b_thinking_25]
+approval_policy = "never"
+model = "qwen3-4b-thinking-2507"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen3_8b_320k_contex]
+approval_policy = "never"
+model = "qwen3-8b-320k-context-10x-massive"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen3_coder_30b_a3b_]
+approval_policy = "never"
+model = "qwen3-coder-30b-a3b-instruct-1m"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_r3_qwen3_14b_skywork]
+approval_policy = "never"
+model = "r3-qwen3-14b-skywork-i1"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_skycaptioner_v1]
+approval_policy = "never"
+model = "skycaptioner-v1"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_category_tool]
+approval_policy = "never"
+model = "slim-category-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_emotions_tool]
+approval_policy = "never"
+model = "slim-emotions-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_extract_qwen_1_]
+approval_policy = "never"
+model = "slim-extract-qwen-1.5b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_extract_tiny_to]
+approval_policy = "never"
+model = "slim-extract-tiny-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_extract_tool]
+approval_policy = "never"
+model = "slim-extract-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_intent_tool]
+approval_policy = "never"
+model = "slim-intent-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_ner]
+approval_policy = "never"
+model = "slim-ner"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_ner_tool]
+approval_policy = "never"
+model = "slim-ner-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_nli_tool]
+approval_policy = "never"
+model = "slim-nli-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_q_gen_tiny_tool]
+approval_policy = "never"
+model = "slim-q-gen-tiny-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_qa_gen_tiny_too]
+approval_policy = "never"
+model = "slim-qa-gen-tiny-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_sa_ner_tool]
+approval_policy = "never"
+model = "slim-sa-ner-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_sentiment_tool]
+approval_policy = "never"
+model = "slim-sentiment-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_sql_tool]
+approval_policy = "never"
+model = "slim-sql-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_summary_tool]
+approval_policy = "never"
+model = "slim-summary-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_tags_tool]
+approval_policy = "never"
+model = "slim-tags-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_topics_tool]
+approval_policy = "never"
+model = "slim-topics-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_xsum_tool]
+approval_policy = "never"
+model = "slim-xsum-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_text_embedding_bge_m]
+approval_policy = "never"
+model = "text-embedding-bge-m3"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_text_embedding_jina_]
+approval_policy = "never"
+model = "text-embedding-jina-embeddings-v4-text-retrieval@q8_0"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_text_embedding_mxbai]
+approval_policy = "never"
+model = "text-embedding-mxbai-embed-xsmall-v1-i1"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_text_embedding_nomic]
+approval_policy = "never"
+model = "text-embedding-nomic-embed-text-v2"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_text_embedding_qwen3]
+approval_policy = "never"
+model = "text-embedding-qwen3-embedding-8b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+

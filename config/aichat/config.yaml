@@ -1,0 +1,177 @@
+---
+agent_prelude: null
+# ---- clients ----
+clients:now I want to commit all fuck
+  - api_base: https://api.openai.com/v1
+    api_key: sk-proj-***
+    type: openai
+  - api_base: https://generativelanguage.googleapis.com/v1beta
+    api_key: '***'
+    patch:
+      chat_completions:
+        .*:
+          body:
+            safetySettings:
+              - category: HARM_CATEGORY_HARASSMENT
+                threshold: BLOCK_NONE
+              - category: HARM_CATEGORY_HATE_SPEECH
+                threshold: BLOCK_NONE
+              - category: HARM_CATEGORY_SEXUALLY_EXPLICIT
+                threshold: BLOCK_NONE
+              - category: HARM_CATEGORY_DANGEROUS_CONTENT
+                threshold: BLOCK_NONE
+    type: gemini
+  - api_base: https://api.anthropic.com/v1
+    api_key: sk-ant-***
+    type: claude
+  - api_base: https://api.mistral.ai/v1
+    api_key: '***'
+    name: mistral
+    type: openai-compatible
+  - api_base: https://api.ai21.com/studio/v1
+    api_key: '***'
+    name: ai12
+    type: openai-compatible
+  - api_base: https://api.cohere.ai/v2
+    api_key: '***'
+    type: cohere
+  - api_base: https://api.perplexity.ai
+    api_key: pplx-***
+    name: perplexity
+    type: openai-compatible
+  - api_base: https://api.groq.com/openai/v1
+    api_key: gsk_***
+    name: groq
+    type: openai-compatible
+  - api_base: https://api.jina.ai/v1
+    api_key: jina_***
+    name: jina
+    type: openai-compatible
+  - api_base: https://api.voyageai.com/v1
+    api_key: pa-***
+    name: voyageai
+    type: openai-compatible
+  - api_base: https://openrouter.ai/api/v1
+    api_key: sk-or-v1-***
+    models:
+      - max_input_tokens: 2000000
+        max_output_tokens: 128000
+        name: openrouter/sonoma-sky-alpha
+      - max_input_tokens: 2000000
+        max_output_tokens: 128000
+        name: openrouter/sonoma-dusk-alpha
+    name: openrouter
+    type: openai-compatible
+  - api_base: https://llm.chutes.ai/v1
+    api_key: cpk_***
+    models:
+      - max_input_tokens: 128000
+        max_output_tokens: 32767
+        name: openai/gpt-oss-120b
+      - max_input_tokens: 262144
+        max_output_tokens: 32767
+        name: Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8
+    name: chutes
+    type: openai-compatible
+  - api_base: https://api.cerebras.ai/v1
+    api_key: csk-***
+    models:
+      - max_input_tokens: 131072
+        max_output_tokens: 40000
+        name: qwen-3-coder-480b
+    name: cerebras
+    type: openai-compatible
+cmd_prelude: null
+# Compress session when token count reaches or exceeds this threshold
+compress_threshold: 4000
+document_loaders:
+  docx: pandoc --to plain $1
+  # You can add custom loaders using the following syntax:
+  #   <file-extension>: <command-to-load-the-file>
+  # Note: Use `$1` for input file and `$2` for output file. If `$2` is omitted, use stdout as output.
+  pdf: pdftotext $1 -
+editor: cursor
+function_calling: true
+# ---- apperence ----
+highlight: true
+# Custom REPL left/right prompts, see https://github.com/sigoden/aichat/wiki/Custom-REPL-Prompt for more details
+left_prompt: '{color.green}{?session {?agent {agent}>}{session}{?role /}}{!session {?agent {agent}>}}{role}{?rag @{rag}}{color.cyan}{?session )}{!session >}{color.reset} '
+light_theme: false
+mapping_tools:
+  fs: fs_cat,fs_ls,fs_mkdir,fs_rm,fs_write
+model: cerebras:qwen-3-coder-480b
+rag_chunk_overlap: null
+rag_chunk_size: null
+# ---- RAG ----
+# See [RAG-Guide](https://github.com/sigoden/aichat/wiki/RAG-Guide) for more details.
+rag_embedding_model: null
+rag_reranker_model: null
+# Defines the query structure using variables like __CONTEXT__ and __INPUT__ to tailor searches to specific needs
+rag_template: |
+  Answer the query based on the context while respecting the rules. (user query, some textual context and rules, all inside xml tags)
+
+  <context>
+  __CONTEXT__
+  </context>
+
+  <rules>
+  - If you don't know, just say so.
+  - If you are not sure, ask for clarification.
+  - Answer in the same language as the user query.
+  - If the context appears unreadable or of poor quality, tell the user then answer as best as you can.
+  - If the answer is not in the context but you think you know the answer, explain that to the user then answer with your own knowledge.
+  - Answer directly and without using xml tags.
+  </rules>
+
+  <user_query>
+  __INPUT__
+  </user_query>
+
+# Define document loaders to control how RAG and `.file`/`--file` load files of specific formats.
+rag_top_k: 5
+# ---- prelude ----
+repl_prelude: null
+right_prompt: '{color.purple}{?session {?consume_tokens {consume_tokens}({consume_percent}%)}{!consume_tokens {consume_tokens}}}{color.reset}'
+save: true
+# ---- session ----
+# Controls the persistence of the session. if true, auto save; if false, not save; if null, asking the user
+save_session: null
+save_shell_history: true
+# ---- misc ----
+serve_addr: 127.0.0.1:8010
+# ---- behavior ----
+stream: true
+# Text prompt used for creating a concise summary of session message
+summarize_prompt: TLDR the discussion briefly in 200 words or less to use as a prompt for future context.
+# Text prompt used for including the summary of the entire session
+summary_prompt: 'This is a TLDR of the chat history as a recap: '
+use_tools: null
+user_agent: null
+wrap: 'no'
+wrap_code: false
+  # All clients have the following configuration:
+  # - type: xxxx
+  #   name: xxxx                                      # Only use it to distinguish clients with the same client type. Optional
+  #   models:
+  #     - name: xxxx                                  # Chat model
+  #       max_input_tokens: 100000
+  #       supports_vision: true
+  #       supports_# ---- function-calling ----
+# Visit https://github.com/sigoden/llm-functions for setup instructions
+  #     - name: xxxx                                  # Embedding model
+  #       type: embedding
+  #       default_chunk_size: 1500
+  #       max_batch_size: 100
+  #     - name: xxxx                                  # Reranker model
+  #       type: reranker
+  #   patch:                                          # Patch api
+  #     chat_completions:                             # Api type, possible values: chat_completions, embeddings, and rerank
+  #       <regex>:                                    # The regex to match model names, e.g. '.*' 'gpt-4o' 'gpt-4o|gpt-4-.*'
+  #         url: ''                                   # Patch request url
+  #         body:                                     # Patch request body
+  #           <json>
+  #         headers:                                  # Patch request headers
+  #           <key>: <value>
+  #   extra:
+  #     proxy: socks5://127.0.0.1:1080                # Set proxy
+  #     connect_timeout: 10                           # Set timeout in seconds for connect to api
