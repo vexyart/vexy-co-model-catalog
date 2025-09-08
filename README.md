@@ -1,13 +1,21 @@
-# 
+# Vexy Co Model Catalog
 
+A robust, import-safe Python library and CLI tool for fetching, normalizing, and storing AI model catalogs from various providers. Supports 45+ AI providers including OpenAI, Anthropic, Groq, and others, enabling seamless integration with third-party tools like aichat, codex, and mods.
 
+## Overview
+
+The vexy-co-model-catalog project unifies AI model catalog management across the rapidly evolving landscape of AI providers. It serves as critical infrastructure for developers and tools that need reliable, normalized access to model information from diverse providers.
 
 ## Features
 
-- Modern Python packaging with PEP 621 compliance
-- Type hints and runtime type checking
-- Comprehensive test suite and documentation
-- CI/CD ready configuration
+- **Multi-Provider Support**: Fetch models from 45+ AI providers (OpenAI, Anthropic, Groq, etc.)
+- **Unified Format**: Normalize diverse provider APIs into consistent data structures  
+- **Tool Integration**: Generate configuration files for aichat, codex, mods, and other CLI tools
+- **Multiple Output Formats**: JSON, TXT, and TOML generation per provider
+- **Import-Safe Architecture**: Lightweight package imports with lazy loading
+- **Modern Python**: Type hints, async support, and PEP 621 compliance
+- **Comprehensive Testing**: Full test suite with provider mocking and integration tests
+- **CI/CD Ready**: Automated testing, linting, and release configuration
 
 ## Installation
 
