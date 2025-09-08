@@ -6,7 +6,7 @@ clients:
     api_key: sk-proj-***
     type: openai
   - api_base: https://generativelanguage.googleapis.com/v1beta
-    api_key: "***"
+    api_key: '***'
     patch:
       chat_completions:
         .*:
@@ -22,37 +22,37 @@ clients:
                 threshold: BLOCK_NONE
     type: gemini
   - api_base: https://api.anthropic.com/v1
-    api_key: "sk-ant-***"
+    api_key: sk-ant-***
     type: claude
   - api_base: https://api.mistral.ai/v1
-    api_key: "***"
+    api_key: '***'
     name: mistral
     type: openai-compatible
   - api_base: https://api.ai21.com/studio/v1
-    api_key: "***"
+    api_key: '***'
     name: ai12
     type: openai-compatible
   - api_base: https://api.cohere.ai/v2
-    api_key: "***"
+    api_key: '***'
     type: cohere
   - api_base: https://api.perplexity.ai
-    api_key: "pplx-***"
+    api_key: pplx-***
     name: perplexity
     type: openai-compatible
   - api_base: https://api.groq.com/openai/v1
-    api_key: "gsk_***"
+    api_key: gsk_***
     name: groq
     type: openai-compatible
   - api_base: https://api.jina.ai/v1
-    api_key: "jina_***"
+    api_key: jina_***
     name: jina
     type: openai-compatible
   - api_base: https://api.voyageai.com/v1
-    api_key: "pa-***"
+    api_key: pa-***
     name: voyageai
     type: openai-compatible
   - api_base: https://openrouter.ai/api/v1
-    api_key: "sk-or-v1-***"
+    api_key: sk-or-v1-***
     models:
       - max_input_tokens: 2000000
         max_output_tokens: 128000
@@ -63,7 +63,7 @@ clients:
     name: openrouter
     type: openai-compatible
   - api_base: https://llm.chutes.ai/v1
-    api_key: "cpk_***"
+    api_key: cpk_***
     models:
       - max_input_tokens: 128000
         max_output_tokens: 32767
@@ -74,7 +74,7 @@ clients:
     name: chutes
     type: openai-compatible
   - api_base: https://api.cerebras.ai/v1
-    api_key: "csk-***"
+    api_key: csk-***
     models:
       - max_input_tokens: 131072
         max_output_tokens: 40000
