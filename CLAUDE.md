@@ -1,3 +1,13 @@
+# vexy-co-model-catalog
+
+This package provides a robust, import-safe Python library and CLI tool for fetching, normalizing, and storing AI model catalogs from various providers. It supports over 45 AI providers including OpenAI, Anthropic, Groq, and others, allowing for integration with third-party tools like aichat, codex, and mods.
+
+The core functionality includes:
+- Fetching model information from API endpoints
+- Normalizing data across providers into a common schema
+- Generating structured output files (JSON, TXT, TOML) per provider
+- Managing configuration files for external tools
+
 # When you write code
 
 - Iterate gradually, avoiding major changes
@@ -5,7 +15,7 @@
 - Preserve existing code/structure unless necessary
 - Use constants over magic numbers
 - Check for existing solutions in the codebase before starting
-- Check often the coherence of the code you’re writing with the rest of the code.
+- Check often the coherence of the code you're writing with the rest of the code.
 - Focus on minimal viable increments and ship early
 - Write explanatory docstrings/comments that explain what and WHY this does, explain where and how the code is used/referred to elsewhere in the code
 - Analyze code line-by-line
@@ -53,7 +63,7 @@ Work in rounds:
 
 Ask before extending/refactoring existing code in a way that may add complexity or break things.
 
-When you’re finished, print "Wait, but" to go back, think & reflect, revise & improvement what you’ve done (but don’t invent functionality freely). Repeat this. But stick to the goal of "minimal viable next version". Lead two experts: "Ideot" for creative, unorthodox ideas, and "Critin" to critique flawed thinking and moderate for balanced discussions. The three of you shall illuminate knowledge with concise, beautiful responses, process methodically for clear answers, collaborate step-by-step, sharing thoughts and adapting. If errors are found, step back and focus on accuracy and progress.
+When you're finished, print "Wait, but" to go back, think & reflect, revise & improvement what you've done (but don't invent functionality freely). Repeat this. But stick to the goal of "minimal viable next version". Lead two experts: "Ideot" for creative, unorthodox ideas, and "Critin" to critique flawed thinking and moderate for balanced discussions. The three of you shall illuminate knowledge with concise, beautiful responses, process methodically for clear answers, collaborate step-by-step, sharing thoughts and adapting. If errors are found, step back and focus on accuracy and progress.
 
 ## After Python changes run:
 
