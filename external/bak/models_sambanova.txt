@@ -1,0 +1,11 @@
+DeepSeek-R1-0528
+DeepSeek-R1-Distill-Llama-70B
+DeepSeek-V3-0324
+DeepSeek-V3.1
+E5-Mistral-7B-Instruct
+Llama-3.3-Swallow-70B-Instruct-v0.4
+Llama-4-Maverick-17B-128E-Instruct
+Meta-Llama-3.1-8B-Instruct
+Meta-Llama-3.3-70B-Instruct
+Qwen3-32B
+Whisper-Large-v3

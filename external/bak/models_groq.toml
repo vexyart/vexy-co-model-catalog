@@ -1,0 +1,157 @@
+[model_providers.groq]
+base_url = "https://api.groq.com/openai/v1"
+name = "groq"
+wire_api = "chat"
+env_key = "GROQ_API_KEY"
+
+[profiles.gro_allam_2_7b]
+approval_policy = "never"
+model = "allam-2-7b"
+model_provider = "groq"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.gro_deepseek_r1_distill_]
+approval_policy = "never"
+model = "deepseek-r1-distill-llama-70b"
+model_provider = "groq"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.gro_gemma2_9b_it]
+approval_policy = "never"
+model = "gemma2-9b-it"
+model_provider = "groq"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.gro_groq_compound]
+approval_policy = "never"
+model = "groq/compound"
+model_provider = "groq"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 8192
+
+[profiles.gro_groq_compound_mini]
+approval_policy = "never"
+model = "groq/compound-mini"
+model_provider = "groq"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 8192
+
+[profiles.gro_llama_3_1_8b_instant]
+approval_policy = "never"
+model = "llama-3.1-8b-instant"
+model_provider = "groq"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.gro_llama_3_3_70b_versat]
+approval_policy = "never"
+model = "llama-3.3-70b-versatile"
+model_provider = "groq"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 32768
+
+[profiles.gro_meta_llama_llama_4_m]
+approval_policy = "never"
+model = "meta-llama/llama-4-maverick-17b-128e-instruct"
+model_provider = "groq"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 8192
+
+[profiles.gro_meta_llama_llama_4_s]
+approval_policy = "never"
+model = "meta-llama/llama-4-scout-17b-16e-instruct"
+model_provider = "groq"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 8192
+
+[profiles.gro_meta_llama_llama_gua]
+approval_policy = "never"
+model = "meta-llama/llama-guard-4-12b"
+model_provider = "groq"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 1024
+
+[profiles.gro_meta_llama_llama_pro]
+approval_policy = "never"
+model = "meta-llama/llama-prompt-guard-2-86m"
+model_provider = "groq"
+model_reasoning_effort = "high"
+model_context_window = 512
+model_max_output_tokens = 512
+
+[profiles.gro_moonshotai_kimi_k2_i]
+approval_policy = "never"
+model = "moonshotai/kimi-k2-instruct-0905"
+model_provider = "groq"
+model_reasoning_effort = "high"
+model_context_window = 262144
+model_max_output_tokens = 16384
+
+[profiles.gro_openai_gpt_oss_120b]
+approval_policy = "never"
+model = "openai/gpt-oss-120b"
+model_provider = "groq"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 65536
+
+[profiles.gro_openai_gpt_oss_20b]
+approval_policy = "never"
+model = "openai/gpt-oss-20b"
+model_provider = "groq"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 65536
+
+[profiles.gro_playai_tts]
+approval_policy = "never"
+model = "playai-tts"
+model_provider = "groq"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.gro_playai_tts_arabic]
+approval_policy = "never"
+model = "playai-tts-arabic"
+model_provider = "groq"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.gro_qwen_qwen3_32b]
+approval_policy = "never"
+model = "qwen/qwen3-32b"
+model_provider = "groq"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 40960
+
+[profiles.gro_whisper_large_v3]
+approval_policy = "never"
+model = "whisper-large-v3"
+model_provider = "groq"
+model_reasoning_effort = "high"
+model_context_window = 448
+model_max_output_tokens = 448
+
+[profiles.gro_whisper_large_v3_tur]
+approval_policy = "never"
+model = "whisper-large-v3-turbo"
+model_provider = "groq"
+model_reasoning_effort = "high"
+model_context_window = 448
+model_max_output_tokens = 448

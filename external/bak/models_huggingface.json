@@ -1,0 +1,2456 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "CohereLabs/aya-expanse-32b",
+      "object": "model",
+      "created": 1729665764,
+      "owned_by": "CohereLabs",
+      "providers": [
+        {
+          "provider": "cohere",
+          "status": "live",
+          "supports_tools": false,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "CohereLabs/aya-expanse-8b",
+      "object": "model",
+      "created": 1729665253,
+      "owned_by": "CohereLabs",
+      "providers": [
+        {
+          "provider": "cohere",
+          "status": "live",
+          "supports_tools": false,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "CohereLabs/aya-vision-32b",
+      "object": "model",
+      "created": 1740951400,
+      "owned_by": "CohereLabs",
+      "providers": [
+        {
+          "provider": "cohere",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "CohereLabs/aya-vision-8b",
+      "object": "model",
+      "created": 1740938806,
+      "owned_by": "CohereLabs",
+      "providers": [
+        {
+          "provider": "cohere",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "CohereLabs/c4ai-command-a-03-2025",
+      "object": "model",
+      "created": 1741684205,
+      "owned_by": "CohereLabs",
+      "providers": [
+        {
+          "provider": "cohere",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "CohereLabs/c4ai-command-r-plus",
+      "object": "model",
+      "created": 1712150824,
+      "owned_by": "CohereLabs",
+      "providers": [
+        {
+          "provider": "cohere",
+          "status": "live",
+          "supports_tools": true,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "CohereLabs/c4ai-command-r-v01",
+      "object": "model",
+      "created": 1710172254,
+      "owned_by": "CohereLabs",
+      "providers": [
+        {
+          "provider": "cohere",
+          "status": "live",
+          "supports_tools": true,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "CohereLabs/c4ai-command-r7b-12-2024",
+      "object": "model",
+      "created": 1733932505,
+      "owned_by": "CohereLabs",
+      "providers": [
+        {
+          "provider": "cohere",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "CohereLabs/c4ai-command-r7b-arabic-02-2025",
+      "object": "model",
+      "created": 1740643869,
+      "owned_by": "CohereLabs",
+      "providers": [
+        {
+          "provider": "cohere",
+          "status": "live",
+          "supports_tools": true,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "CohereLabs/command-a-reasoning-08-2025",
+      "object": "model",
+      "created": 1755012430,
+      "owned_by": "CohereLabs",
+      "providers": [
+        {
+          "provider": "cohere",
+          "status": "live",
+          "supports_tools": true,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "CohereLabs/command-a-translate-08-2025",
+      "object": "model",
+      "created": 1756300537,
+      "owned_by": "CohereLabs",
+      "providers": [
+        {
+          "provider": "cohere",
+          "status": "live",
+          "supports_tools": true,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "CohereLabs/command-a-vision-07-2025",
+      "object": "model",
+      "created": 1753689307,
+      "owned_by": "CohereLabs",
+      "providers": [
+        {
+          "provider": "cohere",
+          "status": "live",
+          "supports_tools": false,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "HuggingFaceTB/SmolLM3-3B",
+      "object": "model",
+      "created": 1751969505,
+      "owned_by": "HuggingFaceTB",
+      "providers": [
+        {
+          "provider": "hf-inference",
+          "status": "live",
+          "supports_tools": true,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "MiniMaxAI/MiniMax-M1-80k",
+      "object": "model",
+      "created": 1749802874,
+      "owned_by": "MiniMaxAI",
+      "providers": [
+        {
+          "provider": "novita",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "NousResearch/Hermes-2-Pro-Llama-3-8B",
+      "object": "model",
+      "created": 1714436178,
+      "owned_by": "NousResearch",
+      "providers": [
+        {
+          "provider": "novita",
+          "status": "live",
+          "context_length": 8192,
+          "pricing": {
+            "input": 0.14,
+            "output": 0.14
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "NousResearch/Hermes-3-Llama-3.1-405B",
+      "object": "model",
+      "created": 1723525073,
+      "owned_by": "NousResearch",
+      "providers": [
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 1,
+            "output": 3
+          },
+          "supports_tools": false,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "NousResearch/Hermes-3-Llama-3.1-70B",
+      "object": "model",
+      "created": 1722263277,
+      "owned_by": "NousResearch",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "hyperbolic",
+          "status": "live",
+          "context_length": 12288,
+          "pricing": {
+            "input": 0.4,
+            "output": 0.4
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "NousResearch/Hermes-4-405B",
+      "object": "model",
+      "created": 1754448677,
+      "owned_by": "NousResearch",
+      "providers": [
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 1,
+            "output": 3
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "NousResearch/Hermes-4-70B",
+      "object": "model",
+      "created": 1755531557,
+      "owned_by": "NousResearch",
+      "providers": [
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.13,
+            "output": 0.4
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "Qwen/QwQ-32B",
+      "object": "model",
+      "created": 1741184219,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "hyperbolic",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.2,
+            "output": 0.2
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "nebius",
+          "status": "live"
+        },
+        {
+          "provider": "nscale",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "Qwen/QwQ-32B-Preview",
+      "object": "model",
+      "created": 1732722655,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "together",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen2-VL-72B-Instruct",
+      "object": "model",
+      "created": 1726547134,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 32768,
+          "pricing": {
+            "input": 0.13,
+            "output": 0.4
+          },
+          "supports_tools": false,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen2.5-32B-Instruct",
+      "object": "model",
+      "created": 1726546675,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.13,
+            "output": 0.4
+          },
+          "supports_tools": true,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen2.5-72B-Instruct",
+      "object": "model",
+      "created": 1726487791,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "together",
+          "status": "live"
+        },
+        {
+          "provider": "hyperbolic",
+          "status": "live"
+        },
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.25,
+            "output": 0.75
+          },
+          "supports_tools": true,
+          "supports_structured_output": true
+        },
+        {
+          "provider": "novita",
+          "status": "live",
+          "context_length": 32000,
+          "pricing": {
+            "input": 0.38,
+            "output": 0.4
+          },
+          "supports_tools": true,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen2.5-7B-Instruct",
+      "object": "model",
+      "created": 1726487740,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "together",
+          "status": "live",
+          "context_length": 32768,
+          "pricing": {
+            "input": 0.3,
+            "output": 0.3
+          },
+          "supports_tools": true,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen2.5-Coder-32B-Instruct",
+      "object": "model",
+      "created": 1730879390,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "together",
+          "status": "live"
+        },
+        {
+          "provider": "hyperbolic",
+          "status": "live",
+          "context_length": 32768,
+          "pricing": {
+            "input": 0.2,
+            "output": 0.2
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.1,
+            "output": 0.3
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "nscale",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen2.5-Coder-3B-Instruct",
+      "object": "model",
+      "created": 1730879378,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "nscale",
+          "status": "live",
+          "supports_tools": false,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen2.5-Coder-7B",
+      "object": "model",
+      "created": 1726487844,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 32768,
+          "pricing": {
+            "input": 0.03,
+            "output": 0.09
+          },
+          "supports_tools": false,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen2.5-Coder-7B-Instruct",
+      "object": "model",
+      "created": 1726580329,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "nscale",
+          "status": "live",
+          "supports_tools": false,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen2.5-VL-32B-Instruct",
+      "object": "model",
+      "created": 1742570595,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "fireworks-ai",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen2.5-VL-72B-Instruct",
+      "object": "model",
+      "created": 1737951124,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "hyperbolic",
+          "status": "live",
+          "context_length": 32768,
+          "pricing": {
+            "input": 0.6,
+            "output": 0.6
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 32000,
+          "pricing": {
+            "input": 0.25,
+            "output": 0.75
+          },
+          "supports_tools": false,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen2.5-VL-7B-Instruct",
+      "object": "model",
+      "created": 1737883597,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "hyperbolic",
+          "status": "live",
+          "context_length": 32768,
+          "pricing": {
+            "input": 0.2,
+            "output": 0.2
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen3-14B",
+      "object": "model",
+      "created": 1745725365,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 40960,
+          "pricing": {
+            "input": 0.08,
+            "output": 0.24
+          },
+          "supports_tools": true,
+          "supports_structured_output": true
+        },
+        {
+          "provider": "nscale",
+          "status": "live",
+          "supports_tools": true,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen3-235B-A22B",
+      "object": "model",
+      "created": 1745726026,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "together",
+          "status": "live"
+        },
+        {
+          "provider": "fireworks-ai",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.22,
+            "output": 0.88
+          },
+          "supports_tools": true,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "nebius",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        },
+        {
+          "provider": "nscale",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen3-235B-A22B-FP8",
+      "object": "model",
+      "created": 1745850968,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "together",
+          "status": "live",
+          "context_length": 40960,
+          "pricing": {
+            "input": 0.2,
+            "output": 0.6
+          },
+          "supports_tools": true,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "object": "model",
+      "created": 1753080416,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "together",
+          "status": "live"
+        },
+        {
+          "provider": "cerebras",
+          "status": "live",
+          "pricing": {
+            "input": 0.6,
+            "output": 1.2
+          },
+          "supports_tools": true,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "fireworks-ai",
+          "status": "live",
+          "context_length": 262144,
+          "pricing": {
+            "input": 0.22,
+            "output": 0.88
+          },
+          "supports_tools": true,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "hyperbolic",
+          "status": "live"
+        },
+        {
+          "provider": "nebius",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        },
+        {
+          "provider": "nscale",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "object": "model",
+      "created": 1753419545,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "cerebras",
+          "status": "live",
+          "pricing": {
+            "input": 0.6,
+            "output": 1.2
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "fireworks-ai",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen3-30B-A3B",
+      "object": "model",
+      "created": 1745725385,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "fireworks-ai",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.15,
+            "output": 0.6
+          },
+          "supports_tools": true,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 40960,
+          "pricing": {
+            "input": 0.3,
+            "output": 0.9
+          },
+          "supports_tools": true,
+          "supports_structured_output": true
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+      "object": "model",
+      "created": 1753687887,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "nebius",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen3-30B-A3B-Thinking-2507",
+      "object": "model",
+      "created": 1753787111,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "nebius",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen3-32B",
+      "object": "model",
+      "created": 1745725979,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "sambanova",
+          "status": "live"
+        },
+        {
+          "provider": "cerebras",
+          "status": "live",
+          "pricing": {
+            "input": 0.4,
+            "output": 0.8
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "nebius",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        },
+        {
+          "provider": "nscale",
+          "status": "live"
+        },
+        {
+          "provider": "groq",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen3-4B",
+      "object": "model",
+      "created": 1745725289,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 40960,
+          "pricing": {
+            "input": 0.08,
+            "output": 0.24
+          },
+          "supports_tools": true,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen3-4B-Instruct-2507",
+      "object": "model",
+      "created": 1754391483,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "nscale",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen3-4B-Thinking-2507",
+      "object": "model",
+      "created": 1754391747,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "nscale",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen3-8B",
+      "object": "model",
+      "created": 1745725341,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "nscale",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "object": "model",
+      "created": 1753945495,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "fireworks-ai",
+          "status": "live"
+        },
+        {
+          "provider": "nebius",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+      "object": "model",
+      "created": 1753195958,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "together",
+          "status": "live"
+        },
+        {
+          "provider": "cerebras",
+          "status": "live"
+        },
+        {
+          "provider": "fireworks-ai",
+          "status": "live"
+        },
+        {
+          "provider": "hyperbolic",
+          "status": "live",
+          "supports_tools": false,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "nebius",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",
+      "object": "model",
+      "created": 1753197829,
+      "owned_by": "Qwen",
+      "providers": [
+        {
+          "provider": "together",
+          "status": "live",
+          "context_length": 262144,
+          "pricing": {
+            "input": 2,
+            "output": 2
+          },
+          "supports_tools": false,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "Sao10K/L3-70B-Euryale-v2.1",
+      "object": "model",
+      "created": 1718134069,
+      "owned_by": "Sao10K",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live",
+          "context_length": 8192,
+          "pricing": {
+            "input": 1.48,
+            "output": 1.48
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "Sao10K/L3-8B-Lunaris-v1",
+      "object": "model",
+      "created": 1719362412,
+      "owned_by": "Sao10K",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live",
+          "context_length": 8192,
+          "pricing": {
+            "input": 0.05,
+            "output": 0.05
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "Sao10K/L3-8B-Stheno-v3.2",
+      "object": "model",
+      "created": 1717583457,
+      "owned_by": "Sao10K",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live",
+          "context_length": 8192,
+          "pricing": {
+            "input": 0.05,
+            "output": 0.05
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "SentientAGI/Dobby-Unhinged-Llama-3.3-70B",
+      "object": "model",
+      "created": 1739304442,
+      "owned_by": "SentientAGI",
+      "providers": [
+        {
+          "provider": "fireworks-ai",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.9,
+            "output": 0.9
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "aaditya/Llama3-OpenBioLLM-70B",
+      "object": "model",
+      "created": 1713925272,
+      "owned_by": "aaditya",
+      "providers": [
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 8192,
+          "pricing": {
+            "input": 0.13,
+            "output": 0.4
+          },
+          "supports_tools": false,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "alpindale/WizardLM-2-8x22B",
+      "object": "model",
+      "created": 1713235019,
+      "owned_by": "alpindale",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live",
+          "context_length": 65535,
+          "pricing": {
+            "input": 0.62,
+            "output": 0.62
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "arcee-ai/AFM-4.5B",
+      "object": "model",
+      "created": 1753801458,
+      "owned_by": "arcee-ai",
+      "providers": [
+        {
+          "provider": "together",
+          "status": "live",
+          "context_length": 65536,
+          "pricing": {
+            "input": 0.1,
+            "output": 0.4
+          },
+          "supports_tools": false,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "baichuan-inc/Baichuan-M2-32B",
+      "object": "model",
+      "created": 1754808013,
+      "owned_by": "baichuan-inc",
+      "providers": [
+        {
+          "provider": "novita",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.07,
+            "output": 0.07
+          },
+          "supports_tools": false,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "baidu/ERNIE-4.5-0.3B-PT",
+      "object": "model",
+      "created": 1751091102,
+      "owned_by": "baidu",
+      "providers": [
+        {
+          "provider": "novita",
+          "status": "live",
+          "context_length": 120000,
+          "supports_tools": false,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "baidu/ERNIE-4.5-21B-A3B-PT",
+      "object": "model",
+      "created": 1751091210,
+      "owned_by": "baidu",
+      "providers": [
+        {
+          "provider": "novita",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "baidu/ERNIE-4.5-300B-A47B-Base-PT",
+      "object": "model",
+      "created": 1751089026,
+      "owned_by": "baidu",
+      "providers": [
+        {
+          "provider": "novita",
+          "status": "live",
+          "context_length": 123000,
+          "pricing": {
+            "input": 0.28,
+            "output": 1.1
+          },
+          "supports_tools": false,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "baidu/ERNIE-4.5-VL-28B-A3B-PT",
+      "object": "model",
+      "created": 1751089833,
+      "owned_by": "baidu",
+      "providers": [
+        {
+          "provider": "novita",
+          "status": "live",
+          "context_length": 30000,
+          "pricing": {
+            "input": 0.14,
+            "output": 0.56
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "baidu/ERNIE-4.5-VL-424B-A47B-Base-PT",
+      "object": "model",
+      "created": 1751089776,
+      "owned_by": "baidu",
+      "providers": [
+        {
+          "provider": "novita",
+          "status": "live",
+          "context_length": 123000,
+          "pricing": {
+            "input": 0.42,
+            "output": 1.25
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-Prover-V2-671B",
+      "object": "model",
+      "created": 1745993675,
+      "owned_by": "deepseek-ai",
+      "providers": [
+        {
+          "provider": "novita",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1",
+      "object": "model",
+      "created": 1737344767,
+      "owned_by": "deepseek-ai",
+      "providers": [
+        {
+          "provider": "sambanova",
+          "status": "live"
+        },
+        {
+          "provider": "together",
+          "status": "live"
+        },
+        {
+          "provider": "fireworks-ai",
+          "status": "live"
+        },
+        {
+          "provider": "hyperbolic",
+          "status": "live",
+          "context_length": 163840,
+          "pricing": {
+            "input": 2,
+            "output": 2
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "nebius",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-0528",
+      "object": "model",
+      "created": 1748425602,
+      "owned_by": "deepseek-ai",
+      "providers": [
+        {
+          "provider": "sambanova",
+          "status": "live"
+        },
+        {
+          "provider": "together",
+          "status": "live"
+        },
+        {
+          "provider": "fireworks-ai",
+          "status": "live"
+        },
+        {
+          "provider": "hyperbolic",
+          "status": "live",
+          "supports_tools": true,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "nebius",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+      "object": "model",
+      "created": 1748516867,
+      "owned_by": "deepseek-ai",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+      "object": "model",
+      "created": 1737364413,
+      "owned_by": "deepseek-ai",
+      "providers": [
+        {
+          "provider": "sambanova",
+          "status": "live"
+        },
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.25,
+            "output": 0.75
+          },
+          "supports_tools": false,
+          "supports_structured_output": true
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        },
+        {
+          "provider": "nscale",
+          "status": "live"
+        },
+        {
+          "provider": "groq",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+      "object": "model",
+      "created": 1737364182,
+      "owned_by": "deepseek-ai",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live",
+          "context_length": 32000,
+          "pricing": {
+            "input": 0.04,
+            "output": 0.04
+          },
+          "supports_tools": false,
+          "supports_structured_output": true
+        },
+        {
+          "provider": "nscale",
+          "status": "live",
+          "supports_tools": false,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+      "object": "model",
+      "created": 1737363858,
+      "owned_by": "deepseek-ai",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "nscale",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+      "object": "model",
+      "created": 1737364707,
+      "owned_by": "deepseek-ai",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live",
+          "context_length": 64000,
+          "pricing": {
+            "input": 0.15,
+            "output": 0.15
+          },
+          "supports_tools": false,
+          "supports_structured_output": true
+        },
+        {
+          "provider": "nscale",
+          "status": "live",
+          "supports_tools": false,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+      "object": "model",
+      "created": 1737364740,
+      "owned_by": "deepseek-ai",
+      "providers": [
+        {
+          "provider": "novita",
+          "status": "live"
+        },
+        {
+          "provider": "nscale",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+      "object": "model",
+      "created": 1737364574,
+      "owned_by": "deepseek-ai",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "nscale",
+          "status": "live",
+          "supports_tools": false,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3",
+      "object": "model",
+      "created": 1735131143,
+      "owned_by": "deepseek-ai",
+      "providers": [
+        {
+          "provider": "together",
+          "status": "live"
+        },
+        {
+          "provider": "fireworks-ai",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.9,
+            "output": 0.9
+          },
+          "supports_tools": true,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "nebius",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3-0324",
+      "object": "model",
+      "created": 1742808502,
+      "owned_by": "deepseek-ai",
+      "providers": [
+        {
+          "provider": "sambanova",
+          "status": "live",
+          "context_length": 32768,
+          "pricing": {
+            "input": 3,
+            "output": 4.5
+          },
+          "supports_tools": true,
+          "supports_structured_output": true
+        },
+        {
+          "provider": "together",
+          "status": "live"
+        },
+        {
+          "provider": "fireworks-ai",
+          "status": "live"
+        },
+        {
+          "provider": "hyperbolic",
+          "status": "live"
+        },
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 32768,
+          "pricing": {
+            "input": 0.75,
+            "output": 2.25
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3.1",
+      "object": "model",
+      "created": 1755743872,
+      "owned_by": "deepseek-ai",
+      "providers": [
+        {
+          "provider": "together",
+          "status": "live"
+        },
+        {
+          "provider": "fireworks-ai",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "dphn/dolphin-2.9.2-mixtral-8x22b",
+      "object": "model",
+      "created": 1716934597,
+      "owned_by": "dphn",
+      "providers": [
+        {
+          "provider": "novita",
+          "status": "live",
+          "context_length": 16000,
+          "pricing": {
+            "input": 0.9,
+            "output": 0.9
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "google/gemma-2-2b-it",
+      "object": "model",
+      "created": 1721127099,
+      "owned_by": "google",
+      "providers": [
+        {
+          "provider": "nebius",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "google/gemma-2-9b-it",
+      "object": "model",
+      "created": 1719216341,
+      "owned_by": "google",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 8192,
+          "pricing": {
+            "input": 0.03,
+            "output": 0.09
+          },
+          "supports_tools": false,
+          "supports_structured_output": true
+        },
+        {
+          "provider": "groq",
+          "status": "live",
+          "context_length": 8192,
+          "pricing": {
+            "input": 0.2,
+            "output": 0.2
+          },
+          "supports_tools": true,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "google/gemma-3-27b-it",
+      "object": "model",
+      "created": 1740856219,
+      "owned_by": "google",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "nebius",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "marin-community/marin-8b-instruct",
+      "object": "model",
+      "created": 1747241066,
+      "owned_by": "marin-community",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "together",
+          "status": "live",
+          "context_length": 4096,
+          "pricing": {
+            "input": 0.18000000000000002,
+            "output": 0.18000000000000002
+          },
+          "supports_tools": false,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "meta-llama/Llama-3.1-405B-Instruct",
+      "object": "model",
+      "created": 1721154284,
+      "owned_by": "meta-llama",
+      "providers": [
+        {
+          "provider": "sambanova",
+          "status": "live",
+          "supports_tools": true,
+          "supports_structured_output": true
+        },
+        {
+          "provider": "fireworks-ai",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 3,
+            "output": 3
+          },
+          "supports_tools": true,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 1,
+            "output": 3
+          },
+          "supports_tools": true,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "meta-llama/Llama-3.1-70B-Instruct",
+      "object": "model",
+      "created": 1721146066,
+      "owned_by": "meta-llama",
+      "providers": [
+        {
+          "provider": "fireworks-ai",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.9,
+            "output": 0.9
+          },
+          "supports_tools": true,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "hyperbolic",
+          "status": "staging",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.4,
+            "output": 0.4
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.13,
+            "output": 0.4
+          },
+          "supports_tools": true,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "meta-llama/Llama-3.1-8B-Instruct",
+      "object": "model",
+      "created": 1721292960,
+      "owned_by": "meta-llama",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "sambanova",
+          "status": "live"
+        },
+        {
+          "provider": "cerebras",
+          "status": "live",
+          "pricing": {
+            "input": 0.1,
+            "output": 0.1
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "fireworks-ai",
+          "status": "live"
+        },
+        {
+          "provider": "hyperbolic",
+          "status": "staging"
+        },
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.03,
+            "output": 0.09
+          },
+          "supports_tools": true,
+          "supports_structured_output": true
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        },
+        {
+          "provider": "nscale",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "meta-llama/Llama-3.2-1B-Instruct",
+      "object": "model",
+      "created": 1726672367,
+      "owned_by": "meta-llama",
+      "providers": [
+        {
+          "provider": "novita",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "meta-llama/Llama-3.2-3B-Instruct",
+      "object": "model",
+      "created": 1726672760,
+      "owned_by": "meta-llama",
+      "providers": [
+        {
+          "provider": "together",
+          "status": "live"
+        },
+        {
+          "provider": "hyperbolic",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.1,
+            "output": 0.1
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "meta-llama/Llama-3.3-70B-Instruct",
+      "object": "model",
+      "created": 1732637327,
+      "owned_by": "meta-llama",
+      "providers": [
+        {
+          "provider": "sambanova",
+          "status": "live"
+        },
+        {
+          "provider": "together",
+          "status": "live"
+        },
+        {
+          "provider": "cerebras",
+          "status": "live",
+          "pricing": {
+            "input": 0.85,
+            "output": 1.2
+          },
+          "supports_tools": true,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "fireworks-ai",
+          "status": "live"
+        },
+        {
+          "provider": "hyperbolic",
+          "status": "live"
+        },
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.25,
+            "output": 0.75
+          },
+          "supports_tools": true,
+          "supports_structured_output": true
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        },
+        {
+          "provider": "nscale",
+          "status": "live"
+        },
+        {
+          "provider": "groq",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "object": "model",
+      "created": 1743545840,
+      "owned_by": "meta-llama",
+      "providers": [
+        {
+          "provider": "sambanova",
+          "status": "live"
+        },
+        {
+          "provider": "cerebras",
+          "status": "live",
+          "pricing": {
+            "input": 0.2,
+            "output": 0.6
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "fireworks-ai",
+          "status": "live"
+        },
+        {
+          "provider": "groq",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+      "object": "model",
+      "created": 1743540422,
+      "owned_by": "meta-llama",
+      "providers": [
+        {
+          "provider": "together",
+          "status": "live",
+          "context_length": 1048576,
+          "pricing": {
+            "input": 0.27,
+            "output": 0.85
+          },
+          "supports_tools": true,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "novita",
+          "status": "live",
+          "context_length": 1048576,
+          "pricing": {
+            "input": 0.17,
+            "output": 0.85
+          },
+          "supports_tools": true,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "object": "model",
+      "created": 1743600857,
+      "owned_by": "meta-llama",
+      "providers": [
+        {
+          "provider": "together",
+          "status": "live"
+        },
+        {
+          "provider": "cerebras",
+          "status": "live",
+          "pricing": {
+            "input": 0.65,
+            "output": 0.85
+          },
+          "supports_tools": true,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "fireworks-ai",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        },
+        {
+          "provider": "nscale",
+          "status": "live"
+        },
+        {
+          "provider": "groq",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "meta-llama/Llama-Guard-4-12B",
+      "object": "model",
+      "created": 1745407825,
+      "owned_by": "meta-llama",
+      "providers": [
+        {
+          "provider": "groq",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.2,
+            "output": 0.2
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "meta-llama/Meta-Llama-3-70B-Instruct",
+      "object": "model",
+      "created": 1713346494,
+      "owned_by": "meta-llama",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "together",
+          "status": "live",
+          "context_length": 8192,
+          "pricing": {
+            "input": 0.88,
+            "output": 0.88
+          },
+          "supports_tools": false,
+          "supports_structured_output": true
+        },
+        {
+          "provider": "hyperbolic",
+          "status": "live",
+          "context_length": 8192,
+          "pricing": {
+            "input": 0.4,
+            "output": 0.4
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "novita",
+          "status": "live",
+          "context_length": 8192,
+          "pricing": {
+            "input": 0.51,
+            "output": 0.74
+          },
+          "supports_tools": false,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "object": "model",
+      "created": 1713346512,
+      "owned_by": "meta-llama",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "microsoft/phi-4",
+      "object": "model",
+      "created": 1733917649,
+      "owned_by": "microsoft",
+      "providers": [
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 16384,
+          "pricing": {
+            "input": 0.1,
+            "output": 0.3
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "moonshotai/Kimi-K2-Instruct",
+      "object": "model",
+      "created": 1752195312,
+      "owned_by": "moonshotai",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "together",
+          "status": "live"
+        },
+        {
+          "provider": "fireworks-ai",
+          "status": "live"
+        },
+        {
+          "provider": "nebius",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "moonshotai/Kimi-K2-Instruct-0905",
+      "object": "model",
+      "created": 1756870476,
+      "owned_by": "moonshotai",
+      "providers": [
+        {
+          "provider": "together",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        },
+        {
+          "provider": "groq",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "nvidia/Llama-3_1-Nemotron-Ultra-253B-v1",
+      "object": "model",
+      "created": 1744051630,
+      "owned_by": "nvidia",
+      "providers": [
+        {
+          "provider": "nebius",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "nvidia/Llama-3_3-Nemotron-Super-49B-v1",
+      "object": "model",
+      "created": 1742089188,
+      "owned_by": "nvidia",
+      "providers": [
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.13,
+            "output": 0.4
+          },
+          "supports_tools": false,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-oss-120b",
+      "object": "model",
+      "created": 1754346786,
+      "owned_by": "openai",
+      "providers": [
+        {
+          "provider": "together",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.15,
+            "output": 0.6
+          },
+          "supports_tools": true,
+          "supports_structured_output": true
+        },
+        {
+          "provider": "cerebras",
+          "status": "live",
+          "pricing": {
+            "input": 0.25,
+            "output": 0.69
+          },
+          "supports_tools": true,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "fireworks-ai",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.15,
+            "output": 0.6
+          },
+          "supports_tools": true,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "hyperbolic",
+          "status": "live",
+          "supports_tools": true,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.15,
+            "output": 0.6
+          },
+          "supports_tools": true,
+          "supports_structured_output": true
+        },
+        {
+          "provider": "novita",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.1,
+            "output": 0.5
+          },
+          "supports_tools": true,
+          "supports_structured_output": true
+        },
+        {
+          "provider": "nscale",
+          "status": "live",
+          "supports_tools": true,
+          "supports_structured_output": true
+        },
+        {
+          "provider": "groq",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.15,
+            "output": 0.75
+          },
+          "supports_tools": true,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-oss-20b",
+      "object": "model",
+      "created": 1754346809,
+      "owned_by": "openai",
+      "providers": [
+        {
+          "provider": "together",
+          "status": "live",
+          "supports_tools": true,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "fireworks-ai",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.05,
+            "output": 0.2
+          },
+          "supports_tools": true,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "hyperbolic",
+          "status": "live",
+          "supports_tools": false,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "nebius",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.05,
+            "output": 0.2
+          },
+          "supports_tools": true,
+          "supports_structured_output": true
+        },
+        {
+          "provider": "novita",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.05,
+            "output": 0.2
+          },
+          "supports_tools": false,
+          "supports_structured_output": false
+        },
+        {
+          "provider": "nscale",
+          "status": "live",
+          "supports_tools": true,
+          "supports_structured_output": true
+        },
+        {
+          "provider": "groq",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.1,
+            "output": 0.5
+          },
+          "supports_tools": true,
+          "supports_structured_output": false
+        }
+      ]
+    },
+    {
+      "id": "tokyotech-llm/Llama-3.3-Swallow-70B-Instruct-v0.4",
+      "object": "model",
+      "created": 1740976430,
+      "owned_by": "tokyotech-llm",
+      "providers": [
+        {
+          "provider": "sambanova",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.6,
+            "output": 1.2
+          },
+          "supports_tools": false,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "zai-org/GLM-4-32B-0414",
+      "object": "model",
+      "created": 1744030421,
+      "owned_by": "zai-org",
+      "providers": [
+        {
+          "provider": "featherless-ai",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "zai-org/GLM-4.1V-9B-Thinking",
+      "object": "model",
+      "created": 1751120650,
+      "owned_by": "zai-org",
+      "providers": [
+        {
+          "provider": "novita",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "zai-org/GLM-4.5",
+      "object": "model",
+      "created": 1752981936,
+      "owned_by": "zai-org",
+      "providers": [
+        {
+          "provider": "fireworks-ai",
+          "status": "live"
+        },
+        {
+          "provider": "nebius",
+          "status": "live"
+        },
+        {
+          "provider": "novita",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "zai-org/GLM-4.5-Air",
+      "object": "model",
+      "created": 1752981955,
+      "owned_by": "zai-org",
+      "providers": [
+        {
+          "provider": "fireworks-ai",
+          "status": "live"
+        },
+        {
+          "provider": "nebius",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "zai-org/GLM-4.5-Air-FP8",
+      "object": "model",
+      "created": 1752982200,
+      "owned_by": "zai-org",
+      "providers": [
+        {
+          "provider": "together",
+          "status": "live",
+          "context_length": 131072,
+          "pricing": {
+            "input": 0.2,
+            "output": 1.1
+          },
+          "supports_tools": false,
+          "supports_structured_output": true
+        }
+      ]
+    },
+    {
+      "id": "zai-org/GLM-4.5V",
+      "object": "model",
+      "created": 1754834130,
+      "owned_by": "zai-org",
+      "providers": [
+        {
+          "provider": "novita",
+          "status": "live"
+        }
+      ]
+    }
+  ]
+}

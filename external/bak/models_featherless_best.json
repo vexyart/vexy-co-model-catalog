@@ -1,0 +1,302 @@
+[
+  {
+    "available_on_current_plan": true,
+    "context_length": 131072,
+    "created": 1751691797,
+    "id": "anna-ssi/Qwen2.5-1.5B-Open-R1-Distill",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "qwen25-1b5",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 131072,
+    "created": 1751918136,
+    "id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "qwen25-1b5",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 40960,
+    "created": 1751086119,
+    "id": "Qwen/Qwen3-1.7B",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "qwen3-1b7",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 40960,
+    "created": 1751691160,
+    "id": "Blancy/Qwen3-1.7B-Open-R1-GRPO",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "qwen3-1b7",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 32768,
+    "created": 1733881539,
+    "id": "recursal/QRWKV6-32B-Instruct-Preview-v0.1",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "qrwkv-32b-32k",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 32768,
+    "created": 1733881539,
+    "id": "recursal/RWKV6Qwen2.5-32B-QwQ-Preview",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "qrwkv-32b-32k",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 32768,
+    "created": 1738122184,
+    "id": "deepseek-ai/DeepSeek-R1-0528",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "deepseek-v3-lc",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 32768,
+    "created": 1742238329,
+    "id": "featherless-ai/QRWKV-72B",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "qrwkv-72b-32k",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 32768,
+    "created": 1742928105,
+    "id": "deepseek-ai/DeepSeek-V3-0324",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "deepseek-v3-lc",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 32768,
+    "created": 1749756594,
+    "id": "puettmann/LlaMaestra-3.2-1B-Translation",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "llama32-1b",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 32768,
+    "created": 1749756582,
+    "id": "alpindale/Llama-3.2-1B-Instruct",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "llama32-1b",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 32768,
+    "created": 1749756674,
+    "id": "RLHFlow/LLaMA3.2-1B-SFT",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "llama32-1b",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 32768,
+    "created": 1749757098,
+    "id": "ThinkAgents/ThinkAgent-1B",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "llama32-1b",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 32768,
+    "created": 1749842147,
+    "id": "amang1802/Llama3.2-1B-summary-length-exp3",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "llama32-1b",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 16384,
+    "created": 1718910906,
+    "id": "Qwen/Qwen2-72B-Instruct",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "qwen2-72b-lc",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 16384,
+    "created": 1721236841,
+    "id": "tsavage68/Summary_L3_1000steps_1e7rate_SFT2",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "llama31-8b-16k",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 16384,
+    "created": 1722075281,
+    "id": "mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "llama31-8b-16k",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 16384,
+    "created": 1722506686,
+    "id": "IntervitensInc/Mistral-Nemo-Base-2407-chatml",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "mistral-nemo-12b-lc",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 16384,
+    "created": 1722506686,
+    "id": "Kooten/Mistral-Nemo-Instruct-2407-norefuse-OAS",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "mistral-nemo-12b-lc",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 16384,
+    "created": 1722506686,
+    "id": "nothingiisreal/Celeste-12B-V1.6",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "mistral-nemo-12b-lc",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 16384,
+    "created": 1722624090,
+    "id": "NousResearch/Meta-Llama-3.1-70B-Instruct",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "llama31-70b-16k",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 16384,
+    "created": 1726069091,
+    "id": "ArliAI/Llama-3.1-70B-ArliAI-RPMax-v1.1",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "llama31-70b-16k",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 16384,
+    "created": 1726695335,
+    "id": "abacusai/Dracarys-Llama-3.1-70B-Instruct",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "llama31-70b-16k",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 16384,
+    "created": 1732550582,
+    "id": "allenai/Llama-3.1-Tulu-3-70B",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "llama31-70b-16k",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 16384,
+    "created": 1747094411,
+    "id": "Qwen/Qwen3-32B",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "qwen3-32b",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 16384,
+    "created": 1747094436,
+    "id": "shuttleai/shuttle-3.5",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "qwen3-32b",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 16384,
+    "created": 1747103197,
+    "id": "dnotitia/Smoothie-Qwen3-32B",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "qwen3-32b",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 16384,
+    "created": 1747103220,
+    "id": "roslein/Qwen3-32B-abliterated",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "qwen3-32b",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 16384,
+    "created": 1751684341,
+    "id": "agentica-org/DeepSWE-Preview",
+    "is_gated": false,
+    "max_completion_tokens": 4096,
+    "model_class": "qwen3-32b",
+    "owned_by": "Feather"
+  },
+  {
+    "available_on_current_plan": true,
+    "context_length": 16384,
+    "created": 1752500077,
+    "id": "moonshotai/Kimi-K2-Instruct",
+    "is_gated": false,
+    "max_completion_tokens": 16384,
+    "model_class": "kimi-k2",
+    "owned_by": "Feather"
+  }
+]

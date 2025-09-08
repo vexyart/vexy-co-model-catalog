@@ -1,0 +1,77 @@
+[model_providers.friendli]
+base_url = "https://api.friendli.ai/serverless/v1"
+name = "friendli"
+wire_api = "chat"
+env_key = "FRIENDLI_TOKEN"
+
+[profiles.fri_lgai_exaone_exaone_4]
+approval_policy = "never"
+model = "LGAI-EXAONE/EXAONE-4.0.1-32B"
+model_provider = "friendli"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.fri_qwen_qwen3_235b_a22b]
+approval_policy = "never"
+model = "Qwen/Qwen3-235B-A22B-Thinking-2507"
+model_provider = "friendli"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.fri_qwen_qwen3_30b_a3b]
+approval_policy = "never"
+model = "Qwen/Qwen3-30B-A3B"
+model_provider = "friendli"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 8000
+
+[profiles.fri_qwen_qwen3_32b]
+approval_policy = "never"
+model = "Qwen/Qwen3-32B"
+model_provider = "friendli"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 8000
+
+[profiles.fri_deepseek_ai_deepseek]
+approval_policy = "never"
+model = "deepseek-ai/DeepSeek-R1-0528"
+model_provider = "friendli"
+model_reasoning_effort = "high"
+model_context_window = 163840
+model_max_output_tokens = 163840
+
+[profiles.fri_meta_llama_3_1_8b_in]
+approval_policy = "never"
+model = "meta-llama-3.1-8b-instruct"
+model_provider = "friendli"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 8000
+
+[profiles.fri_meta_llama_3_3_70b_i]
+approval_policy = "never"
+model = "meta-llama-3.3-70b-instruct"
+model_provider = "friendli"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.fri_meta_llama_llama_4_m]
+approval_policy = "never"
+model = "meta-llama/Llama-4-Maverick-17B-128E-Instruct"
+model_provider = "friendli"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 8000
+
+[profiles.fri_meta_llama_llama_4_s]
+approval_policy = "never"
+model = "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+model_provider = "friendli"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 8000

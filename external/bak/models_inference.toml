@@ -1,0 +1,71 @@
+[model_providers.inference]
+base_url = "https://api.inference.net/v1"
+name = "inference"
+wire_api = "chat"
+env_key = "INFERENCENET_API_KEY"
+
+[profiles.inf_deepseek_deepseek_r1]
+approval_policy = "never"
+model = "deepseek/deepseek-r1/fp-8"
+model_provider = "inference"
+model_reasoning_effort = "high"
+
+[profiles.inf_deepseek_deepseek_v3]
+approval_policy = "never"
+model = "deepseek/deepseek-v3/fp-8"
+model_provider = "inference"
+model_reasoning_effort = "high"
+
+[profiles.inf_deepseek_r1_distill_]
+approval_policy = "never"
+model = "deepseek/r1-distill-llama-70b/fp-8"
+model_provider = "inference"
+model_reasoning_effort = "high"
+
+[profiles.inf_google_gemma_3_27b_i]
+approval_policy = "never"
+model = "google/gemma-3-27b-instruct/bf-16"
+model_provider = "inference"
+model_reasoning_effort = "high"
+
+[profiles.inf_meta_llama_llama_3_1]
+approval_policy = "never"
+model = "meta-llama/llama-3.1-8b-instruct/fp-16"
+model_provider = "inference"
+model_reasoning_effort = "high"
+
+[profiles.inf_meta_llama_llama_3_2]
+approval_policy = "never"
+model = "meta-llama/llama-3.2-3b-instruct/fp-16"
+model_provider = "inference"
+model_reasoning_effort = "high"
+
+[profiles.inf_meta_llama_llama_3_3]
+approval_policy = "never"
+model = "meta-llama/llama-3.3-70b-instruct/fp-8"
+model_provider = "inference"
+model_reasoning_effort = "high"
+
+[profiles.inf_mistralai_mistral_ne]
+approval_policy = "never"
+model = "mistralai/mistral-nemo-12b-instruct/fp-8"
+model_provider = "inference"
+model_reasoning_effort = "high"
+
+[profiles.inf_qwen_qwen2_5_7b_inst]
+approval_policy = "never"
+model = "qwen/qwen2.5-7b-instruct/bf-16"
+model_provider = "inference"
+model_reasoning_effort = "high"
+
+[profiles.inf_qwen_qwen3_30b_a3b_f]
+approval_policy = "never"
+model = "qwen/qwen3-30b-a3b/fp8"
+model_provider = "inference"
+model_reasoning_effort = "high"
+
+[profiles.inf_qwen_qwq_32b_fp_8]
+approval_policy = "never"
+model = "qwen/qwq-32b/fp-8"
+model_provider = "inference"
+model_reasoning_effort = "high"

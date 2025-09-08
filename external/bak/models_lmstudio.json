@@ -1,0 +1,325 @@
+{
+  "data": [
+    {
+      "id": "darkidol-longwriter-v13-8b-uncensored-1048k",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "deepseek-r1-distill-qwen-1.5b-nexaquant",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "deepseek-r1-distill-qwen-14b",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "florence-2-base-ft",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "florence-2-large-ft",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "google/gemma-3-1b",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "google/gemma-3-4b",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "granite-4.0-tiny-preview",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "huihui-qwen3-14b-abliterated-v2",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "llama3.2-entity",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "llama3.2-entity-1b",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "meta-llama-3.1-8b-instruct-summarizer",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "minicpm4-0.5b",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "minicpm4-8b",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "mistral-7b-pii-entity-extractor",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "mistral-small-24b-instruct-2501-writer-i1",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "mistralai_voxtral-mini-3b-2507",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "mungert/text-embedding-qwen3-embedding-0.6b",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "numarkdown-8b-thinking-i1",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "ocr_vlm-qwen2.5vl-3b-final",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "ocrflux-3b",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "olmocr-7b-0725",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "openai/gpt-oss-20b",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "osmosis-structure-0.6b@q5_k_m",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "osmosis-structure-0.6b@q8_0",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "pixtral-12b-i1",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "qwen/qwen2.5-vl-7b",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "qwen/qwen3-4b-2507",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "qwen/qwen3-4b-thinking-2507",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "qwen/text-embedding-qwen3-embedding-0.6b",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "qwen2-audio-7b-instruct-i1",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "qwen2.5-omni-3b",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "qwen2.5-omni-7b",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "qwen3-30b-a3b-instruct-2507",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "qwen3-30b-a3b-thinking-2507",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "qwen3-8b-320k-context-10x-massive",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "qwen3-coder-30b-a3b-instruct-1m",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "r3-qwen3-14b-skywork-i1",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "skycaptioner-v1",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "slim-category-tool",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "slim-emotions-tool",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "slim-extract-tiny-tool",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "slim-extract-tool",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "slim-intent-tool",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "slim-ner",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "slim-ner-tool",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "slim-nli-tool",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "slim-q-gen-tiny-tool",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "slim-qa-gen-tiny-tool",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "slim-sa-ner-tool",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "slim-sentiment-tool",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "slim-sql-tool",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "slim-summary-tool",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "slim-tags-tool",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "slim-topics-tool",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "slim-xsum-tool",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "text-embedding-bge-m3",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "text-embedding-jina-embeddings-v4-text-retrieval@q3_k_m",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "text-embedding-jina-embeddings-v4-text-retrieval@q8_0",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "text-embedding-mxbai-embed-xsmall-v1-i1",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "text-embedding-nomic-embed-text-v1.5",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "text-embedding-nomic-embed-text-v2",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "text-embedding-qwen3-embedding-4b",
+      "object": "model",
+      "owned_by": "organization_owner"
+    },
+    {
+      "id": "text-embedding-qwen3-embedding-8b",
+      "object": "model",
+      "owned_by": "organization_owner"
+    }
+  ],
+  "object": "list"
+}

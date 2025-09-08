@@ -1,0 +1,173 @@
+[model_providers.gemini]
+base_url = "https://generativelanguage.googleapis.com/v1beta/openai"
+name = "gemini"
+wire_api = "chat"
+env_key = "GOOGLE_API_KEY"
+
+[profiles.gem_models_aqa]
+approval_policy = "never"
+model = "models/aqa"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_embedding_001]
+approval_policy = "never"
+model = "models/embedding-001"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_embedding_gec]
+approval_policy = "never"
+model = "models/embedding-gecko-001"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemini_1_5_fl]
+approval_policy = "never"
+model = "models/gemini-1.5-flash-latest"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemini_1_5_pr]
+approval_policy = "never"
+model = "models/gemini-1.5-pro-latest"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemini_2_0_fl]
+approval_policy = "never"
+model = "models/gemini-2.0-flash-thinking-exp-1219"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemini_2_0_pr]
+approval_policy = "never"
+model = "models/gemini-2.0-pro-exp-02-05"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemini_2_5_fl]
+approval_policy = "never"
+model = "models/gemini-2.5-flash-preview-tts"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemini_2_5_pr]
+approval_policy = "never"
+model = "models/gemini-2.5-pro-preview-tts"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemini_embedd]
+approval_policy = "never"
+model = "models/gemini-embedding-exp-03-07"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemini_exp_12]
+approval_policy = "never"
+model = "models/gemini-exp-1206"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemini_live_2]
+approval_policy = "never"
+model = "models/gemini-live-2.5-flash-preview"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemma_3_12b_i]
+approval_policy = "never"
+model = "models/gemma-3-12b-it"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemma_3_1b_it]
+approval_policy = "never"
+model = "models/gemma-3-1b-it"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemma_3_27b_i]
+approval_policy = "never"
+model = "models/gemma-3-27b-it"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemma_3_4b_it]
+approval_policy = "never"
+model = "models/gemma-3-4b-it"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemma_3n_e2b_]
+approval_policy = "never"
+model = "models/gemma-3n-e2b-it"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_gemma_3n_e4b_]
+approval_policy = "never"
+model = "models/gemma-3n-e4b-it"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_imagen_3_0_ge]
+approval_policy = "never"
+model = "models/imagen-3.0-generate-002"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_imagen_4_0_fa]
+approval_policy = "never"
+model = "models/imagen-4.0-fast-generate-001"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_imagen_4_0_ge]
+approval_policy = "never"
+model = "models/imagen-4.0-generate-preview-06-06"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_imagen_4_0_ul]
+approval_policy = "never"
+model = "models/imagen-4.0-ultra-generate-preview-06-06"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_learnlm_2_0_f]
+approval_policy = "never"
+model = "models/learnlm-2.0-flash-experimental"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_lyria_realtim]
+approval_policy = "never"
+model = "models/lyria-realtime-exp"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_text_embeddin]
+approval_policy = "never"
+model = "models/text-embedding-004"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_veo_2_0_gener]
+approval_policy = "never"
+model = "models/veo-2.0-generate-001"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_veo_3_0_fast_]
+approval_policy = "never"
+model = "models/veo-3.0-fast-generate-preview"
+model_provider = "gemini"
+model_reasoning_effort = "high"
+
+[profiles.gem_models_veo_3_0_gener]
+approval_policy = "never"
+model = "models/veo-3.0-generate-preview"
+model_provider = "gemini"
+model_reasoning_effort = "high"

@@ -1,0 +1,1721 @@
+[model_providers.poe]
+base_url = "https://api.poe.com/v1"
+name = "poe"
+wire_api = "chat"
+env_key = "POE_API_KEY"
+
+[profiles.poe_aya_expanse_32b]
+approval_policy = "never"
+model = "Aya-Expanse-32B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_aya_vision]
+approval_policy = "never"
+model = "Aya-Vision"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_bagoodex_web_search]
+approval_policy = "never"
+model = "Bagoodex-Web-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_bria_eraser]
+approval_policy = "never"
+model = "Bria-Eraser"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_cartesia_sonic]
+approval_policy = "never"
+model = "Cartesia-Sonic"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_chatgpt_4o_latest]
+approval_policy = "never"
+model = "ChatGPT-4o-Latest"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_clarity_upscaler]
+approval_policy = "never"
+model = "Clarity-Upscaler"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_haiku_3]
+approval_policy = "never"
+model = "Claude-Haiku-3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_haiku_3_5]
+approval_policy = "never"
+model = "Claude-Haiku-3.5"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_haiku_3_5_sea]
+approval_policy = "never"
+model = "Claude-Haiku-3.5-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_opus_3]
+approval_policy = "never"
+model = "Claude-Opus-3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_opus_4]
+approval_policy = "never"
+model = "Claude-Opus-4"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_opus_4_reason]
+approval_policy = "never"
+model = "Claude-Opus-4-Reasoning"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_opus_4_search]
+approval_policy = "never"
+model = "Claude-Opus-4-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_opus_4_1]
+approval_policy = "never"
+model = "Claude-Opus-4.1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_sonnet_3_5]
+approval_policy = "never"
+model = "Claude-Sonnet-3.5"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_sonnet_3_5_ju]
+approval_policy = "never"
+model = "Claude-Sonnet-3.5-June"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_sonnet_3_5_se]
+approval_policy = "never"
+model = "Claude-Sonnet-3.5-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_sonnet_3_7]
+approval_policy = "never"
+model = "Claude-Sonnet-3.7"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_sonnet_3_7_re]
+approval_policy = "never"
+model = "Claude-Sonnet-3.7-Reasoning"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_sonnet_3_7_se]
+approval_policy = "never"
+model = "Claude-Sonnet-3.7-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_sonnet_4]
+approval_policy = "never"
+model = "Claude-Sonnet-4"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_sonnet_4_reas]
+approval_policy = "never"
+model = "Claude-Sonnet-4-Reasoning"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_claude_sonnet_4_sear]
+approval_policy = "never"
+model = "Claude-Sonnet-4-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_command_r]
+approval_policy = "never"
+model = "Command-R"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_command_r_plus]
+approval_policy = "never"
+model = "Command-R-Plus"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_dall_e_3]
+approval_policy = "never"
+model = "DALL-E-3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepclaude]
+approval_policy = "never"
+model = "DeepClaude"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_prover_v2]
+approval_policy = "never"
+model = "DeepSeek-Prover-V2"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_r1]
+approval_policy = "never"
+model = "DeepSeek-R1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_r1_di]
+approval_policy = "never"
+model = "DeepSeek-R1-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_r1_distill]
+approval_policy = "never"
+model = "DeepSeek-R1-Distill"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_r1_fw]
+approval_policy = "never"
+model = "DeepSeek-R1-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_r1_n]
+approval_policy = "never"
+model = "DeepSeek-R1-N"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_r1_turbo_di]
+approval_policy = "never"
+model = "DeepSeek-R1-Turbo-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_v3]
+approval_policy = "never"
+model = "DeepSeek-V3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_v3_di]
+approval_policy = "never"
+model = "DeepSeek-V3-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_v3_turbo_di]
+approval_policy = "never"
+model = "DeepSeek-V3-Turbo-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_v3_1]
+approval_policy = "never"
+model = "DeepSeek-V3.1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_v3_1_chat]
+approval_policy = "never"
+model = "DeepSeek-V3.1-Chat"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_v3_1_n]
+approval_policy = "never"
+model = "DeepSeek-V3.1-N"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_deepseek_v3_fw]
+approval_policy = "never"
+model = "Deepseek-V3-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_dream_machine]
+approval_policy = "never"
+model = "Dream-Machine"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_dreamina_3_1]
+approval_policy = "never"
+model = "Dreamina-3.1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_elevenlabs_music]
+approval_policy = "never"
+model = "ElevenLabs-Music"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_elevenlabs_v2_5_turb]
+approval_policy = "never"
+model = "ElevenLabs-v2.5-Turbo"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_elevenlabs_v3]
+approval_policy = "never"
+model = "ElevenLabs-v3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_fill]
+approval_policy = "never"
+model = "FLUX-Fill"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_inpaint]
+approval_policy = "never"
+model = "FLUX-Inpaint"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_krea]
+approval_policy = "never"
+model = "FLUX-Krea"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_dev]
+approval_policy = "never"
+model = "FLUX-dev"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_dev_di]
+approval_policy = "never"
+model = "FLUX-dev-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_dev_finetuner]
+approval_policy = "never"
+model = "FLUX-dev-finetuner"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_pro]
+approval_policy = "never"
+model = "FLUX-pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_pro_1_t]
+approval_policy = "never"
+model = "FLUX-pro-1-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_pro_1_1]
+approval_policy = "never"
+model = "FLUX-pro-1.1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_pro_1_1_t]
+approval_policy = "never"
+model = "FLUX-pro-1.1-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_pro_1_1_ultra]
+approval_policy = "never"
+model = "FLUX-pro-1.1-ultra"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_schnell]
+approval_policy = "never"
+model = "FLUX-schnell"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_schnell_di]
+approval_policy = "never"
+model = "FLUX-schnell-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_1_dev_fw]
+approval_policy = "never"
+model = "Flux-1-Dev-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_1_schnell_fw]
+approval_policy = "never"
+model = "Flux-1-Schnell-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_kontext_max]
+approval_policy = "never"
+model = "Flux-Kontext-Max"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_kontext_pro]
+approval_policy = "never"
+model = "Flux-Kontext-Pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_flux_schnell_t]
+approval_policy = "never"
+model = "Flux-Schnell-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_glm_4_5]
+approval_policy = "never"
+model = "GLM-4.5"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_glm_4_5_air]
+approval_policy = "never"
+model = "GLM-4.5-Air"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_glm_4_5_air_t]
+approval_policy = "never"
+model = "GLM-4.5-Air-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_glm_4_5_fw]
+approval_policy = "never"
+model = "GLM-4.5-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_glm_4_5_omni]
+approval_policy = "never"
+model = "GLM-4.5-Omni"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_3_5_turbo]
+approval_policy = "never"
+model = "GPT-3.5-Turbo"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_3_5_turbo_instru]
+approval_policy = "never"
+model = "GPT-3.5-Turbo-Instruct"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_3_5_turbo_raw]
+approval_policy = "never"
+model = "GPT-3.5-Turbo-Raw"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4_classic]
+approval_policy = "never"
+model = "GPT-4-Classic"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4_classic_0314]
+approval_policy = "never"
+model = "GPT-4-Classic-0314"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4_turbo]
+approval_policy = "never"
+model = "GPT-4-Turbo"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4_1]
+approval_policy = "never"
+model = "GPT-4.1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4_1_mini]
+approval_policy = "never"
+model = "GPT-4.1-mini"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4_1_nano]
+approval_policy = "never"
+model = "GPT-4.1-nano"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4o]
+approval_policy = "never"
+model = "GPT-4o"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4o_aug]
+approval_policy = "never"
+model = "GPT-4o-Aug"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4o_search]
+approval_policy = "never"
+model = "GPT-4o-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4o_mini]
+approval_policy = "never"
+model = "GPT-4o-mini"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_4o_mini_search]
+approval_policy = "never"
+model = "GPT-4o-mini-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_5]
+approval_policy = "never"
+model = "GPT-5"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_5_chat]
+approval_policy = "never"
+model = "GPT-5-Chat"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_5_mini]
+approval_policy = "never"
+model = "GPT-5-mini"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_5_nano]
+approval_policy = "never"
+model = "GPT-5-nano"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_image_1]
+approval_policy = "never"
+model = "GPT-Image-1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_oss_120b]
+approval_policy = "never"
+model = "GPT-OSS-120B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_oss_120b_cs]
+approval_policy = "never"
+model = "GPT-OSS-120B-CS"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_oss_120b_omni]
+approval_policy = "never"
+model = "GPT-OSS-120B-Omni"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_oss_120b_t]
+approval_policy = "never"
+model = "GPT-OSS-120B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_oss_20b]
+approval_policy = "never"
+model = "GPT-OSS-20B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_oss_20b_t]
+approval_policy = "never"
+model = "GPT-OSS-20B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gpt_researcher]
+approval_policy = "never"
+model = "GPT-Researcher"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemini_1_5_flash]
+approval_policy = "never"
+model = "Gemini-1.5-Flash"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemini_1_5_flash_sea]
+approval_policy = "never"
+model = "Gemini-1.5-Flash-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemini_1_5_pro]
+approval_policy = "never"
+model = "Gemini-1.5-Pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemini_1_5_pro_searc]
+approval_policy = "never"
+model = "Gemini-1.5-Pro-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemini_2_0_flash]
+approval_policy = "never"
+model = "Gemini-2.0-Flash"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemini_2_0_flash_lit]
+approval_policy = "never"
+model = "Gemini-2.0-Flash-Lite"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemini_2_0_flash_pre]
+approval_policy = "never"
+model = "Gemini-2.0-Flash-Preview"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemini_2_5_flash]
+approval_policy = "never"
+model = "Gemini-2.5-Flash"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemini_2_5_flash_ima]
+approval_policy = "never"
+model = "Gemini-2.5-Flash-Image"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemini_2_5_flash_lit]
+approval_policy = "never"
+model = "Gemini-2.5-Flash-Lite"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemini_2_5_pro]
+approval_policy = "never"
+model = "Gemini-2.5-Pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemma_2_27b_t]
+approval_policy = "never"
+model = "Gemma-2-27b-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_gemma_3_27b]
+approval_policy = "never"
+model = "Gemma-3-27B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_grok_2]
+approval_policy = "never"
+model = "Grok-2"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_grok_3]
+approval_policy = "never"
+model = "Grok-3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_grok_3_mini]
+approval_policy = "never"
+model = "Grok-3-Mini"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_grok_4]
+approval_policy = "never"
+model = "Grok-4"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_grok_code_fast_1]
+approval_policy = "never"
+model = "Grok-Code-Fast-1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_hailuo_02]
+approval_policy = "never"
+model = "Hailuo-02"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_hailuo_02_pro]
+approval_policy = "never"
+model = "Hailuo-02-Pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_hailuo_02_standard]
+approval_policy = "never"
+model = "Hailuo-02-Standard"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_hailuo_ai]
+approval_policy = "never"
+model = "Hailuo-AI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_hailuo_director_01]
+approval_policy = "never"
+model = "Hailuo-Director-01"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_hailuo_live]
+approval_policy = "never"
+model = "Hailuo-Live"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_hailuo_speech_02]
+approval_policy = "never"
+model = "Hailuo-Speech-02"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_hermes_3_70b]
+approval_policy = "never"
+model = "Hermes-3-70B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_hidream_i1_full]
+approval_policy = "never"
+model = "Hidream-I1-full"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_ideogram]
+approval_policy = "never"
+model = "Ideogram"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_ideogram_v2]
+approval_policy = "never"
+model = "Ideogram-v2"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_ideogram_v2a]
+approval_policy = "never"
+model = "Ideogram-v2a"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_ideogram_v2a_turbo]
+approval_policy = "never"
+model = "Ideogram-v2a-Turbo"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_ideogram_v3]
+approval_policy = "never"
+model = "Ideogram-v3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_imagen_3]
+approval_policy = "never"
+model = "Imagen-3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_imagen_3_fast]
+approval_policy = "never"
+model = "Imagen-3-Fast"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_imagen_4]
+approval_policy = "never"
+model = "Imagen-4"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_imagen_4_fast]
+approval_policy = "never"
+model = "Imagen-4-Fast"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_imagen_4_ultra]
+approval_policy = "never"
+model = "Imagen-4-Ultra"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_inception_mercury]
+approval_policy = "never"
+model = "Inception-Mercury"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_inception_mercury_co]
+approval_policy = "never"
+model = "Inception-Mercury-Coder"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_kimi_k2]
+approval_policy = "never"
+model = "Kimi-K2"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_kimi_k2_0905_t]
+approval_policy = "never"
+model = "Kimi-K2-0905-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_kimi_k2_instruct]
+approval_policy = "never"
+model = "Kimi-K2-Instruct"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_kimi_k2_t]
+approval_policy = "never"
+model = "Kimi-K2-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_kling_1_5_pro]
+approval_policy = "never"
+model = "Kling-1.5-Pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_kling_1_6_pro]
+approval_policy = "never"
+model = "Kling-1.6-Pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_kling_2_0_master]
+approval_policy = "never"
+model = "Kling-2.0-Master"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_kling_2_1_master]
+approval_policy = "never"
+model = "Kling-2.1-Master"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_kling_2_1_pro]
+approval_policy = "never"
+model = "Kling-2.1-Pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_kling_2_1_std]
+approval_policy = "never"
+model = "Kling-2.1-Std"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_kling_pro_effects]
+approval_policy = "never"
+model = "Kling-Pro-Effects"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_linkup_deep_search]
+approval_policy = "never"
+model = "Linkup-Deep-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_linkup_standard]
+approval_policy = "never"
+model = "Linkup-Standard"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_liveportrait]
+approval_policy = "never"
+model = "LivePortrait"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_70b_fp16]
+approval_policy = "never"
+model = "Llama-3-70B-FP16"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_70b_t]
+approval_policy = "never"
+model = "Llama-3-70B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_8b_t]
+approval_policy = "never"
+model = "Llama-3-8B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_405b]
+approval_policy = "never"
+model = "Llama-3.1-405B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_405b_fp16]
+approval_policy = "never"
+model = "Llama-3.1-405B-FP16"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_405b_fw]
+approval_policy = "never"
+model = "Llama-3.1-405B-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_405b_t]
+approval_policy = "never"
+model = "Llama-3.1-405B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_70b]
+approval_policy = "never"
+model = "Llama-3.1-70B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_70b_fp16]
+approval_policy = "never"
+model = "Llama-3.1-70B-FP16"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_70b_fw]
+approval_policy = "never"
+model = "Llama-3.1-70B-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_70b_t]
+approval_policy = "never"
+model = "Llama-3.1-70B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_8b]
+approval_policy = "never"
+model = "Llama-3.1-8B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_8b_cs]
+approval_policy = "never"
+model = "Llama-3.1-8B-CS"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_8b_di]
+approval_policy = "never"
+model = "Llama-3.1-8B-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_8b_fp16]
+approval_policy = "never"
+model = "Llama-3.1-8B-FP16"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_8b_fw]
+approval_policy = "never"
+model = "Llama-3.1-8B-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_8b_t_128k]
+approval_policy = "never"
+model = "Llama-3.1-8B-T-128k"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_1_nemotron]
+approval_policy = "never"
+model = "Llama-3.1-Nemotron"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_3_70b]
+approval_policy = "never"
+model = "Llama-3.3-70B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_3_70b_cs]
+approval_policy = "never"
+model = "Llama-3.3-70B-CS"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_3_70b_di]
+approval_policy = "never"
+model = "Llama-3.3-70B-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_3_70b_fw]
+approval_policy = "never"
+model = "Llama-3.3-70B-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_3_70b_n]
+approval_policy = "never"
+model = "Llama-3.3-70B-N"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_3_3_70b_omni]
+approval_policy = "never"
+model = "Llama-3.3-70B-Omni"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_4_maverick]
+approval_policy = "never"
+model = "Llama-4-Maverick"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_4_maverick_b10]
+approval_policy = "never"
+model = "Llama-4-Maverick-B10"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_4_maverick_t]
+approval_policy = "never"
+model = "Llama-4-Maverick-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_4_scout]
+approval_policy = "never"
+model = "Llama-4-Scout"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_4_scout_b10]
+approval_policy = "never"
+model = "Llama-4-Scout-B10"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_4_scout_cs]
+approval_policy = "never"
+model = "Llama-4-Scout-CS"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_llama_4_scout_t]
+approval_policy = "never"
+model = "Llama-4-Scout-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_luma_photon]
+approval_policy = "never"
+model = "Luma-Photon"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_luma_photon_flash]
+approval_policy = "never"
+model = "Luma-Photon-Flash"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_lyria]
+approval_policy = "never"
+model = "Lyria"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_magistral_medium_250]
+approval_policy = "never"
+model = "Magistral-Medium-2506-Thinking"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_markitdown]
+approval_policy = "never"
+model = "MarkItDown"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_minimax_m1]
+approval_policy = "never"
+model = "MiniMax-M1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_mistral_7b_v0_3_di]
+approval_policy = "never"
+model = "Mistral-7B-v0.3-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_mistral_7b_v0_3_t]
+approval_policy = "never"
+model = "Mistral-7B-v0.3-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_mistral_large_2]
+approval_policy = "never"
+model = "Mistral-Large-2"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_mistral_medium]
+approval_policy = "never"
+model = "Mistral-Medium"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_mistral_medium_3]
+approval_policy = "never"
+model = "Mistral-Medium-3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_mistral_nemo]
+approval_policy = "never"
+model = "Mistral-NeMo"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_mistral_small_3]
+approval_policy = "never"
+model = "Mistral-Small-3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_mistral_small_3_1]
+approval_policy = "never"
+model = "Mistral-Small-3.1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_mistral_small_3_2]
+approval_policy = "never"
+model = "Mistral-Small-3.2"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_mixtral8x22b_inst_fw]
+approval_policy = "never"
+model = "Mixtral8x22b-Inst-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_mochi_preview]
+approval_policy = "never"
+model = "Mochi-preview"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_omnihuman]
+approval_policy = "never"
+model = "OmniHuman"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_openai_gpt_oss_120b]
+approval_policy = "never"
+model = "OpenAI-GPT-OSS-120B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_openai_gpt_oss_20b]
+approval_policy = "never"
+model = "OpenAI-GPT-OSS-20B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_orpheus_tts]
+approval_policy = "never"
+model = "Orpheus-TTS"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_perplexity_deep_rese]
+approval_policy = "never"
+model = "Perplexity-Deep-Research"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_perplexity_sonar]
+approval_policy = "never"
+model = "Perplexity-Sonar"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_perplexity_sonar_pro]
+approval_policy = "never"
+model = "Perplexity-Sonar-Pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_perplexity_sonar_rsn]
+approval_policy = "never"
+model = "Perplexity-Sonar-Rsn-Pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_phi_4_di]
+approval_policy = "never"
+model = "Phi-4-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_phoenix_1_0]
+approval_policy = "never"
+model = "Phoenix-1.0"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_pika]
+approval_policy = "never"
+model = "Pika"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_pixverse_v4_5]
+approval_policy = "never"
+model = "Pixverse-v4.5"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_playai_dialog]
+approval_policy = "never"
+model = "PlayAI-Dialog"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_playai_tts]
+approval_policy = "never"
+model = "PlayAI-TTS"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_poe_system_bot]
+approval_policy = "never"
+model = "Poe-System-Bot"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_python]
+approval_policy = "never"
+model = "Python"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwq_32b_b10]
+approval_policy = "never"
+model = "QwQ-32B-B10"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwq_32b_preview_t]
+approval_policy = "never"
+model = "QwQ-32B-Preview-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwq_32b_t]
+approval_policy = "never"
+model = "QwQ-32B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen_2_5_72b_t]
+approval_policy = "never"
+model = "Qwen-2.5-72B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen_2_5_7b_t]
+approval_policy = "never"
+model = "Qwen-2.5-7B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen_2_5_coder_32b_t]
+approval_policy = "never"
+model = "Qwen-2.5-Coder-32B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen_2_5_vl_32b]
+approval_policy = "never"
+model = "Qwen-2.5-VL-32b"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen_3_235b_2507_t]
+approval_policy = "never"
+model = "Qwen-3-235B-2507-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen_72b_t]
+approval_policy = "never"
+model = "Qwen-72B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen_edit]
+approval_policy = "never"
+model = "Qwen-Edit"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen_image]
+approval_policy = "never"
+model = "Qwen-Image"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen_image_20b]
+approval_policy = "never"
+model = "Qwen-Image-20B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen2_72b_instruct_t]
+approval_policy = "never"
+model = "Qwen2-72B-Instruct-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen2_5_coder_32b]
+approval_policy = "never"
+model = "Qwen2.5-Coder-32B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen2_5_vl_72b_t]
+approval_policy = "never"
+model = "Qwen2.5-VL-72B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen3_235b_2507_cs]
+approval_policy = "never"
+model = "Qwen3-235B-2507-CS"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen3_235b_2507_fw]
+approval_policy = "never"
+model = "Qwen3-235B-2507-FW"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen3_235b_a22b]
+approval_policy = "never"
+model = "Qwen3-235B-A22B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen3_235b_a22b_di]
+approval_policy = "never"
+model = "Qwen3-235B-A22B-DI"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen3_235b_a22b_n]
+approval_policy = "never"
+model = "Qwen3-235B-A22B-N"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen3_235b_think_cs]
+approval_policy = "never"
+model = "Qwen3-235B-Think-CS"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen3_30b_a3b_instru]
+approval_policy = "never"
+model = "Qwen3-30B-A3B-Instruct"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen3_32b_cs]
+approval_policy = "never"
+model = "Qwen3-32B-CS"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen3_480b_coder_cs]
+approval_policy = "never"
+model = "Qwen3-480B-Coder-CS"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen3_coder]
+approval_policy = "never"
+model = "Qwen3-Coder"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen3_coder_30b_a3b]
+approval_policy = "never"
+model = "Qwen3-Coder-30B-A3B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen3_coder_480b_n]
+approval_policy = "never"
+model = "Qwen3-Coder-480B-N"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_qwen3_coder_480b_t]
+approval_policy = "never"
+model = "Qwen3-Coder-480B-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_ray2]
+approval_policy = "never"
+model = "Ray2"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_recraft_v3]
+approval_policy = "never"
+model = "Recraft-V3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_reka_core]
+approval_policy = "never"
+model = "Reka-Core"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_reka_flash]
+approval_policy = "never"
+model = "Reka-Flash"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_reka_research]
+approval_policy = "never"
+model = "Reka-Research"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_restyler]
+approval_policy = "never"
+model = "Restyler"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_retro_diffusion_core]
+approval_policy = "never"
+model = "Retro-Diffusion-Core"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_runway]
+approval_policy = "never"
+model = "Runway"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_runway_gen_4_turbo]
+approval_policy = "never"
+model = "Runway-Gen-4-Turbo"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_sana_t2i]
+approval_policy = "never"
+model = "Sana-T2I"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_seededit_3_0]
+approval_policy = "never"
+model = "SeedEdit-3.0"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_seedance_1_0_lite]
+approval_policy = "never"
+model = "Seedance-1.0-Lite"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_seedance_1_0_pro]
+approval_policy = "never"
+model = "Seedance-1.0-Pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_seedream_3_0]
+approval_policy = "never"
+model = "Seedream-3.0"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_sketch_to_image]
+approval_policy = "never"
+model = "Sketch-to-Image"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_solar_pro_2]
+approval_policy = "never"
+model = "Solar-Pro-2"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_sora]
+approval_policy = "never"
+model = "Sora"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_stablediffusion3_2b]
+approval_policy = "never"
+model = "StableDiffusion3-2B"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_stablediffusion3_5_l]
+approval_policy = "never"
+model = "StableDiffusion3.5-L"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_stablediffusion3_5_t]
+approval_policy = "never"
+model = "StableDiffusion3.5-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_stablediffusionxl]
+approval_policy = "never"
+model = "StableDiffusionXL"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_tako]
+approval_policy = "never"
+model = "Tako"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_topazlabs]
+approval_policy = "never"
+model = "TopazLabs"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_trellis_3d]
+approval_policy = "never"
+model = "Trellis-3D"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_twelvelabs]
+approval_policy = "never"
+model = "TwelveLabs"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_unreal_speech_tts]
+approval_policy = "never"
+model = "Unreal-Speech-TTS"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_veo_2]
+approval_policy = "never"
+model = "Veo-2"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_veo_2_video]
+approval_policy = "never"
+model = "Veo-2-Video"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_veo_3]
+approval_policy = "never"
+model = "Veo-3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_veo_3_fast]
+approval_policy = "never"
+model = "Veo-3-Fast"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_wan_2_1]
+approval_policy = "never"
+model = "Wan-2.1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_wan_2_2]
+approval_policy = "never"
+model = "Wan-2.2"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_web_search]
+approval_policy = "never"
+model = "Web-Search"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_whisper_v3_large_t]
+approval_policy = "never"
+model = "Whisper-V3-Large-T"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_o1]
+approval_policy = "never"
+model = "o1"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_o1_mini]
+approval_policy = "never"
+model = "o1-mini"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_o1_pro]
+approval_policy = "never"
+model = "o1-pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_o3]
+approval_policy = "never"
+model = "o3"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_o3_deep_research]
+approval_policy = "never"
+model = "o3-deep-research"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_o3_mini]
+approval_policy = "never"
+model = "o3-mini"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_o3_mini_high]
+approval_policy = "never"
+model = "o3-mini-high"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_o3_pro]
+approval_policy = "never"
+model = "o3-pro"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_o4_mini]
+approval_policy = "never"
+model = "o4-mini"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_o4_mini_deep_researc]
+approval_policy = "never"
+model = "o4-mini-deep-research"
+model_provider = "poe"
+model_reasoning_effort = "high"
+
+[profiles.poe_remove_background]
+approval_policy = "never"
+model = "remove-background"
+model_provider = "poe"
+model_reasoning_effort = "high"

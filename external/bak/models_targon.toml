@@ -1,0 +1,47 @@
+[model_providers.targon]
+base_url = "https://api.targon.com/v1"
+name = "targon"
+wire_api = "chat"
+env_key = "TARGON_API_KEY"
+
+[profiles.tar_qwen_qwen3_235b_a22b]
+approval_policy = "never"
+model = "Qwen/Qwen3-235B-A22B-Instruct-2507"
+model_provider = "targon"
+model_reasoning_effort = "high"
+model_context_window = 262144
+
+[profiles.tar_qwen_qwen3_coder_480]
+approval_policy = "never"
+model = "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8"
+model_provider = "targon"
+model_reasoning_effort = "high"
+model_context_window = 262144
+
+[profiles.tar_deepseek_ai_deepseek]
+approval_policy = "never"
+model = "deepseek-ai/DeepSeek-V3-0324"
+model_provider = "targon"
+model_reasoning_effort = "high"
+model_context_window = 163840
+
+[profiles.tar_moonshotai_kimi_k2_i]
+approval_policy = "never"
+model = "moonshotai/Kimi-K2-Instruct"
+model_provider = "targon"
+model_reasoning_effort = "high"
+model_context_window = 63000
+
+[profiles.tar_openai_gpt_oss_120b]
+approval_policy = "never"
+model = "openai/gpt-oss-120b"
+model_provider = "targon"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.tar_zai_org_glm_4_5]
+approval_policy = "never"
+model = "zai-org/GLM-4.5"
+model_provider = "targon"
+model_reasoning_effort = "high"
+model_context_window = 131072

@@ -1,0 +1,545 @@
+{
+  "data": [
+    {
+      "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "name": "Qwen3-235B-A22B-Instruct-2507",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "description": "Qwen3-235B-A22B-Instruct-2507",
+      "context_length": 262144,
+      "max_completion_tokens": 262144,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.00000035",
+        "completion": "0.0000012",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "Qwen/Qwen3-32B",
+      "name": "Qwen3 32B",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "Qwen/Qwen3-32B",
+      "description": "Qwen3 32B",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.0000001",
+        "completion": "0.00000045",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "Qwen/Qwen3-Coder",
+      "name": "Qwen3 Coder",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "Qwen/Qwen3-Coder",
+      "description": "Qwen3 Coder",
+      "context_length": 262144,
+      "max_completion_tokens": 262144,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.0000007",
+        "completion": "0.0000025",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "claude-3-5-haiku-20241022",
+      "name": "claude-3-5-haiku-20241022",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "claude-3-5-haiku-20241022",
+      "description": "claude-3-5-haiku-20241022",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.0000009",
+        "completion": "0.0000045",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "claude-3-5-sonnet-20241022",
+      "name": "claude-3-5-sonnet-20241022",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "claude-3-5-sonnet-20241022",
+      "description": "claude-3-5-sonnet-20241022",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.0000027",
+        "completion": "0.0000135",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "claude-3-7-sonnet-20250219",
+      "name": "claude-3-7-sonnet-20250219",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "claude-3-7-sonnet-20250219",
+      "description": "claude-3-7-sonnet-20250219",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.0000027",
+        "completion": "0.0000135",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "claude-3-7-sonnet-20250219-thinking",
+      "name": "claude-3-7-sonnet-20250219-thinking",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "claude-3-7-sonnet-20250219-thinking",
+      "description": "claude-3-7-sonnet-20250219-thinking",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.0000027",
+        "completion": "0.0000135",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "claude-opus-4-1-20250805",
+      "name": "claude-opus-4-1-20250805",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "claude-opus-4-1-20250805",
+      "description": "claude-opus-4-1-20250805",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.0000135",
+        "completion": "0.0000675",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "claude-opus-4-1-20250805-thinking",
+      "name": "claude-opus-4-1-20250805-thinking",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "claude-opus-4-1-20250805-thinking",
+      "description": "claude-opus-4-1-20250805-thinking",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.0000135",
+        "completion": "0.0000675",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "claude-sonnet-4-20250514",
+      "name": "claude-sonnet-4-20250514",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "claude-sonnet-4-20250514",
+      "description": "claude-sonnet-4-20250514",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.0000027",
+        "completion": "0.0000135",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "claude-sonnet-4-20250514-thinking",
+      "name": "claude-sonnet-4-20250514-thinking",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "claude-sonnet-4-20250514-thinking",
+      "description": "claude-sonnet-4-20250514-thinking",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.0000027",
+        "completion": "0.0000135",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-0528",
+      "name": "DeepSeek-R1-0528",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "deepseek-ai/DeepSeek-R1-0528",
+      "description": "DeepSeek-R1-0528",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.00000045",
+        "completion": "0.00000215",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3-0324",
+      "name": "DeepSeek-V3-0324",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "deepseek-ai/DeepSeek-V3-0324",
+      "description": "DeepSeek-V3-0324",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.00000032",
+        "completion": "0.00000115",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3.1",
+      "name": "DeepSeek-V3.1",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "deepseek-ai/DeepSeek-V3.1",
+      "description": "DeepSeek-V3.1",
+      "context_length": 65535,
+      "max_completion_tokens": 32768,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.00000045",
+        "completion": "0.0000015",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "gemini-2.5-flash",
+      "name": "gemini-2.5-flash",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "gemini-2.5-flash",
+      "description": "gemini-2.5-flash",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.00000018",
+        "completion": "0.0000015",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "gemini-2.5-flash-image-preview",
+      "name": "gemini-2.5-flash-image-preview",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "gemini-2.5-flash-image-preview",
+      "description": "gemini-2.5-flash-image-preview",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.00000018",
+        "completion": "0.000018",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "gemini-2.5-flash-lite",
+      "name": "gemini-2.5-flash-lite",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "gemini-2.5-flash-lite",
+      "description": "gemini-2.5-flash-lite",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.00000006",
+        "completion": "0.00000024",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "gemini-2.5-flash-lite-preview-06-17",
+      "name": "gemini-2.5-flash-lite-preview-06-17",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "gemini-2.5-flash-lite-preview-06-17",
+      "description": "gemini-2.5-flash-lite-preview-06-17",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.00000006",
+        "completion": "0.00000024",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "gemini-2.5-flash-preview-05-20",
+      "name": "gemini-2.5-flash-preview-05-20",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "gemini-2.5-flash-preview-05-20",
+      "description": "gemini-2.5-flash-preview-05-20",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.00000018",
+        "completion": "0.0000015",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "gemini-2.5-flash-thinking",
+      "name": "gemini-2.5-flash-thinking",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "gemini-2.5-flash-thinking",
+      "description": "gemini-2.5-flash-thinking",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.00000018",
+        "completion": "0.0000015",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "gemini-2.5-pro",
+      "name": "gemini-2.5-pro",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "gemini-2.5-pro",
+      "description": "gemini-2.5-pro",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.00000075",
+        "completion": "0.000006",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "gemini-2.5-pro-preview-06-05",
+      "name": "gemini-2.5-pro-preview-06-05",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "gemini-2.5-pro-preview-06-05",
+      "description": "gemini-2.5-pro-preview-06-05",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.00000075",
+        "completion": "0.000006",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "gemini-2.5-pro-thinking",
+      "name": "gemini-2.5-pro-thinking",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "gemini-2.5-pro-thinking",
+      "description": "gemini-2.5-pro-thinking",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.00000075",
+        "completion": "0.000006",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "meituan-longcat/LongCat-Flash-Chat",
+      "name": "LongCat Flash Chat",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "meituan-longcat/LongCat-Flash-Chat",
+      "description": "LongCat Flash Chat",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.00000015",
+        "completion": "0.00000075",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "moonshotai/Kimi-K2-Instruct",
+      "name": "Kimi-K2-Instruct",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "moonshotai/Kimi-K2-Instruct",
+      "description": "Kimi-K2-Instruct",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.0000007",
+        "completion": "0.0000025",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "moonshotai/Kimi-K2-Instruct-0905",
+      "name": "Kimi-K2-Instruct-0905",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "moonshotai/Kimi-K2-Instruct-0905",
+      "description": "Kimi-K2-Instruct-0905",
+      "context_length": 65536,
+      "max_completion_tokens": 65536,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.0000006",
+        "completion": "0.0000025",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "openai/gpt-oss-120b",
+      "name": "gpt-oss-120b",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "openai/gpt-oss-120b",
+      "description": "gpt-oss-120b",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.0000001",
+        "completion": "0.0000005",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "openai/gpt-oss-20b",
+      "name": "gpt-oss-20b",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "openai/gpt-oss-20b",
+      "description": "gpt-oss-20b",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0",
+        "completion": "0",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "zai-org/GLM-4.5",
+      "name": "GLM 4.5",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "zai-org/GLM-4.5",
+      "description": "GLM 4.5",
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0.0000006",
+        "completion": "0.0000022",
+        "image": "0",
+        "request": "0"
+      }
+    },
+    {
+      "id": "zai-org/GLM-4.5-Air",
+      "name": "GLM 4.5 Air",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "root": "zai-org/GLM-4.5-Air",
+      "description": "GLM 4.5 Air",
+      "context_length": 32768,
+      "max_completion_tokens": 32768,
+      "quantization": "fp8",
+      "pricing": {
+        "prompt": "0",
+        "completion": "0",
+        "image": "0",
+        "request": "0"
+      }
+    }
+  ],
+  "success": true
+}

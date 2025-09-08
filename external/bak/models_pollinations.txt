@@ -1,0 +1,17 @@
+bidara
+deepseek-reasoning
+evil
+gemini
+midijourney
+mirexa
+mistral
+nova-fast
+openai
+openai-audio
+openai-fast
+openai-large
+openai-reasoning
+qwen-coder
+roblox-rp
+rtist
+unity

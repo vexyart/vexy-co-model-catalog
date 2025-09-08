@@ -1,0 +1,1076 @@
+[model_providers.redpill]
+base_url = "https://api.redpill.ai/v1"
+name = "redpill"
+wire_api = "chat"
+env_key = "REDPILL_API_KEY"
+
+[profiles.red_01_ai_yi_large]
+approval_policy = "never"
+model = "01-ai/yi-large"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_aetherwiing_mn_starc]
+approval_policy = "never"
+model = "aetherwiing/mn-starcannon-12b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 12000
+
+[profiles.red_ai21_jamba_1_5_large]
+approval_policy = "never"
+model = "ai21/jamba-1-5-large"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 256000
+
+[profiles.red_ai21_jamba_1_5_mini]
+approval_policy = "never"
+model = "ai21/jamba-1-5-mini"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 256000
+
+[profiles.red_ai21_jamba_instruct]
+approval_policy = "never"
+model = "ai21/jamba-instruct"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 256000
+
+[profiles.red_alpindale_goliath_12]
+approval_policy = "never"
+model = "alpindale/goliath-120b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 6144
+
+[profiles.red_alpindale_magnum_72b]
+approval_policy = "never"
+model = "alpindale/magnum-72b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 16384
+
+[profiles.red_amazon_nova_lite_v1]
+approval_policy = "never"
+model = "amazon/nova-lite-v1"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 300000
+
+[profiles.red_amazon_nova_micro_v1]
+approval_policy = "never"
+model = "amazon/nova-micro-v1"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_amazon_nova_pro_v1]
+approval_policy = "never"
+model = "amazon/nova-pro-v1"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 300000
+
+[profiles.red_anthracite_org_magnu]
+approval_policy = "never"
+model = "anthracite-org/magnum-v4-72b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 16384
+
+[profiles.red_anthropic_claude_1]
+approval_policy = "never"
+model = "anthropic/claude-1"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 100000
+
+[profiles.red_anthropic_claude_1_2]
+approval_policy = "never"
+model = "anthropic/claude-1.2"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 100000
+
+[profiles.red_anthropic_claude_2]
+approval_policy = "never"
+model = "anthropic/claude-2"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 200000
+
+[profiles.red_anthropic_claude_2_0]
+approval_policy = "never"
+model = "anthropic/claude-2.0:beta"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 100000
+
+[profiles.red_anthropic_claude_2_1]
+approval_policy = "never"
+model = "anthropic/claude-2.1:beta"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 200000
+
+[profiles.red_anthropic_claude_2be]
+approval_policy = "never"
+model = "anthropic/claude-2:beta"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 200000
+
+[profiles.red_anthropic_claude_3_5]
+approval_policy = "never"
+model = "anthropic/claude-3.5-sonnet:beta"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 200000
+
+[profiles.red_anthropic_claude_3_h]
+approval_policy = "never"
+model = "anthropic/claude-3-haiku:beta"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 200000
+
+[profiles.red_anthropic_claude_3_o]
+approval_policy = "never"
+model = "anthropic/claude-3-opus:beta"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 200000
+
+[profiles.red_anthropic_claude_3_s]
+approval_policy = "never"
+model = "anthropic/claude-3-sonnet:beta"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 200000
+
+[profiles.red_anthropic_claude_3_7]
+approval_policy = "never"
+model = "anthropic/claude-3.7-sonnet"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 200000
+
+[profiles.red_anthropic_claude_ins]
+approval_policy = "never"
+model = "anthropic/claude-instant-1:beta"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 100000
+
+[profiles.red_anthropic_claude_opu]
+approval_policy = "never"
+model = "anthropic/claude-opus-4"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 200000
+
+[profiles.red_anthropic_claude_son]
+approval_policy = "never"
+model = "anthropic/claude-sonnet-4"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 200000
+
+[profiles.red_cognitivecomputation]
+approval_policy = "never"
+model = "cognitivecomputations/dolphin-mixtral-8x7b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_cohere_command]
+approval_policy = "never"
+model = "cohere/command"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.red_cohere_command_r]
+approval_policy = "never"
+model = "cohere/command-r"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_cohere_command_r_03_]
+approval_policy = "never"
+model = "cohere/command-r-03-2024"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_cohere_command_r_08_]
+approval_policy = "never"
+model = "cohere/command-r-08-2024"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_cohere_command_r_plu]
+approval_policy = "never"
+model = "cohere/command-r-plus-08-2024"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_databricks_dbrx_inst]
+approval_policy = "never"
+model = "databricks/dbrx-instruct"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_deepseek_deepseek_ch]
+approval_policy = "never"
+model = "deepseek/deepseek-chat"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 64000
+
+[profiles.red_deepseek_deepseek_r1]
+approval_policy = "never"
+model = "deepseek/deepseek-r1"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 163840
+
+[profiles.red_eva_unit_01_eva_qwen]
+approval_policy = "never"
+model = "eva-unit-01/eva-qwen-2.5-72b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 16384
+
+[profiles.red_google_gemini_2_5_fl]
+approval_policy = "never"
+model = "google/gemini-2.5-flash-preview-05-20"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 1048576
+
+[profiles.red_google_gemini_2_5_pr]
+approval_policy = "never"
+model = "google/gemini-2.5-pro-preview"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 1048576
+
+[profiles.red_google_gemini_flash_]
+approval_policy = "never"
+model = "google/gemini-flash-1.5-exp"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 1000000
+
+[profiles.red_google_gemini_pro]
+approval_policy = "never"
+model = "google/gemini-pro"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32760
+
+[profiles.red_google_gemini_pro_1_]
+approval_policy = "never"
+model = "google/gemini-pro-1.5-exp"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 1000000
+
+[profiles.red_google_gemini_pro_vi]
+approval_policy = "never"
+model = "google/gemini-pro-vision"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 16384
+
+[profiles.red_google_gemma_2_27b_i]
+approval_policy = "never"
+model = "google/gemma-2-27b-it"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.red_google_gemma_2_9b_it]
+approval_policy = "never"
+model = "google/gemma-2-9b-it"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.red_google_gemma_2b_it_l]
+approval_policy = "never"
+model = "google/gemma-2b-it-lora"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.red_google_gemma_7b_it]
+approval_policy = "never"
+model = "google/gemma-7b-it"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.red_google_gemma_7b_it_l]
+approval_policy = "never"
+model = "google/gemma-7b-it-lora"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.red_google_palm_2_chat_b]
+approval_policy = "never"
+model = "google/palm-2-chat-bison-32k"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32760
+
+[profiles.red_google_palm_2_codech]
+approval_policy = "never"
+model = "google/palm-2-codechat-bison-32k"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32760
+
+[profiles.red_gryphe_mythomax_l2_1]
+approval_policy = "never"
+model = "gryphe/mythomax-l2-13b:nitro"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.red_gryphe_mythomist_7b]
+approval_policy = "never"
+model = "gryphe/mythomist-7b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_infermatic_mn_infero]
+approval_policy = "never"
+model = "infermatic/mn-inferor-12b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32000
+
+[profiles.red_inflection_inflectio]
+approval_policy = "never"
+model = "inflection/inflection-3-productivity"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8000
+
+[profiles.red_jondurbin_airoboros_]
+approval_policy = "never"
+model = "jondurbin/airoboros-l2-70b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.red_liquid_lfm_40b]
+approval_policy = "never"
+model = "liquid/lfm-40b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_lizpreciatior_lzlv_7]
+approval_policy = "never"
+model = "lizpreciatior/lzlv-70b-fp16-hf"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.red_mancer_weaver]
+approval_policy = "never"
+model = "mancer/weaver"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8000
+
+[profiles.red_meta_llama_llama_2_1]
+approval_policy = "never"
+model = "meta-llama/llama-2-13b-chat"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.red_meta_llama_llama_2_7]
+approval_policy = "never"
+model = "meta-llama/llama-2-7b-chat-fp16"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.red_meta_llama_llama_3_7]
+approval_policy = "never"
+model = "meta-llama/llama-3-70b-instruct:nitro"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.red_meta_llama_llama_3_8]
+approval_policy = "never"
+model = "meta-llama/llama-3-8b-instruct:nitro"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.red_meta_llama_llama_3_1]
+approval_policy = "never"
+model = "meta-llama/llama-3.1-8b-instruct"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.red_meta_llama_llama_3_2]
+approval_policy = "never"
+model = "meta-llama/llama-3.2-90b-vision-instruct"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.red_meta_llama_llama_3_3]
+approval_policy = "never"
+model = "meta-llama/llama-3.3-70b-instruct"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.red_meta_llama_llama_gua]
+approval_policy = "never"
+model = "meta-llama/llama-guard-2-8b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.red_microsoft_phi_3_medi]
+approval_policy = "never"
+model = "microsoft/phi-3-medium-128k-instruct"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_microsoft_phi_3_mini]
+approval_policy = "never"
+model = "microsoft/phi-3-mini-128k-instruct"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_microsoft_phi_3_5_mi]
+approval_policy = "never"
+model = "microsoft/phi-3.5-mini-128k-instruct"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_microsoft_wizardlm_2]
+approval_policy = "never"
+model = "microsoft/wizardlm-2-8x22b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 65536
+
+[profiles.red_mistralai_codestral_]
+approval_policy = "never"
+model = "mistralai/codestral-mamba"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 256000
+
+[profiles.red_mistralai_ministral_]
+approval_policy = "never"
+model = "mistralai/ministral-8b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_mistralai_mistral_7b]
+approval_policy = "never"
+model = "mistralai/mistral-7b-instruct:nitro"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_mistralai_mistral_la]
+approval_policy = "never"
+model = "mistralai/mistral-large-2411"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_mistralai_mistral_me]
+approval_policy = "never"
+model = "mistralai/mistral-medium"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32000
+
+[profiles.red_mistralai_mistral_ne]
+approval_policy = "never"
+model = "mistralai/mistral-nemo"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_mistralai_mistral_sm]
+approval_policy = "never"
+model = "mistralai/mistral-small"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32000
+
+[profiles.red_mistralai_mistral_ti]
+approval_policy = "never"
+model = "mistralai/mistral-tiny"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32000
+
+[profiles.red_mistralai_mixtral_8x]
+approval_policy = "never"
+model = "mistralai/mixtral-8x7b-instruct:nitro"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_mistralai_pixtral_12]
+approval_policy = "never"
+model = "mistralai/pixtral-12b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.red_mistralai_pixtral_la]
+approval_policy = "never"
+model = "mistralai/pixtral-large-2411"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_neversleep_llama_3_l]
+approval_policy = "never"
+model = "neversleep/llama-3-lumimaid-8b:extended"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 24576
+
+[profiles.red_neversleep_llama_3_1]
+approval_policy = "never"
+model = "neversleep/llama-3.1-lumimaid-8b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.red_neversleep_noromaid_]
+approval_policy = "never"
+model = "neversleep/noromaid-20b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.red_nothingiisreal_mn_ce]
+approval_policy = "never"
+model = "nothingiisreal/mn-celeste-12b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32000
+
+[profiles.red_nousresearch_hermes_]
+approval_policy = "never"
+model = "nousresearch/hermes-3-llama-3.1-70b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.red_nousresearch_nous_he]
+approval_policy = "never"
+model = "nousresearch/nous-hermes-llama2-13b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.red_nvidia_llama_3_1_nem]
+approval_policy = "never"
+model = "nvidia/llama-3.1-nemotron-70b-instruct"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.red_openai_chatgpt_4o_la]
+approval_policy = "never"
+model = "openai/chatgpt-4o-latest"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_openai_gpt_3_5_turbo]
+approval_policy = "never"
+model = "openai/gpt-3.5-turbo-instruct"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 4095
+
+[profiles.red_openai_gpt_4]
+approval_policy = "never"
+model = "openai/gpt-4"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8191
+
+[profiles.red_openai_gpt_4_0314]
+approval_policy = "never"
+model = "openai/gpt-4-0314"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8191
+
+[profiles.red_openai_gpt_4_1106_pr]
+approval_policy = "never"
+model = "openai/gpt-4-1106-preview"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_openai_gpt_4_32k]
+approval_policy = "never"
+model = "openai/gpt-4-32k"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32767
+
+[profiles.red_openai_gpt_4_32k_031]
+approval_policy = "never"
+model = "openai/gpt-4-32k-0314"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32767
+
+[profiles.red_openai_gpt_4_turbo]
+approval_policy = "never"
+model = "openai/gpt-4-turbo"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_openai_gpt_4_turbo_2]
+approval_policy = "never"
+model = "openai/gpt-4-turbo-2024-04-09"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_openai_gpt_4_turbo_p]
+approval_policy = "never"
+model = "openai/gpt-4-turbo-preview"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_openai_gpt_4_vision_]
+approval_policy = "never"
+model = "openai/gpt-4-vision-preview"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_openai_gpt_4_1]
+approval_policy = "never"
+model = "openai/gpt-4.1"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 1047576
+
+[profiles.red_openai_gpt_4_1_mini]
+approval_policy = "never"
+model = "openai/gpt-4.1-mini"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 1047576
+
+[profiles.red_openai_gpt_4_1_nano]
+approval_policy = "never"
+model = "openai/gpt-4.1-nano"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 1047576
+
+[profiles.red_openai_gpt_4o]
+approval_policy = "never"
+model = "openai/gpt-4o"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_openai_gpt_4o_2024_0]
+approval_policy = "never"
+model = "openai/gpt-4o-2024-08-06"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_openai_gpt_4o_2024_1]
+approval_policy = "never"
+model = "openai/gpt-4o-2024-11-20"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_openai_gpt_4o_mini]
+approval_policy = "never"
+model = "openai/gpt-4o-mini"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_openai_gpt_4o_mini_2]
+approval_policy = "never"
+model = "openai/gpt-4o-mini-2024-07-18"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_openai_gpt_4oextende]
+approval_policy = "never"
+model = "openai/gpt-4o:extended"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_openai_o1_mini]
+approval_policy = "never"
+model = "openai/o1-mini"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_openai_o1_mini_2024_]
+approval_policy = "never"
+model = "openai/o1-mini-2024-09-12"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_openai_o1_preview]
+approval_policy = "never"
+model = "openai/o1-preview"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_openai_o1_preview_20]
+approval_policy = "never"
+model = "openai/o1-preview-2024-09-12"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_openchat_openchat_7b]
+approval_policy = "never"
+model = "openchat/openchat-7b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.red_perplexity_llama_3_s]
+approval_policy = "never"
+model = "perplexity/llama-3-sonar-small-32k-chat"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_perplexity_llama_3_1]
+approval_policy = "never"
+model = "perplexity/llama-3.1-sonar-small-128k-online"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 127072
+
+[profiles.red_phala_deepseek_chat_]
+approval_policy = "never"
+model = "phala/deepseek-chat-v3-0324"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 163840
+
+[profiles.red_phala_gemma_3_27b_it]
+approval_policy = "never"
+model = "phala/gemma-3-27b-it"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 53920
+
+[profiles.red_phala_gpt_oss_120b]
+approval_policy = "never"
+model = "phala/gpt-oss-120b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.red_phala_gpt_oss_20b]
+approval_policy = "never"
+model = "phala/gpt-oss-20b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.red_phala_llama_3_3_70b_]
+approval_policy = "never"
+model = "phala/llama-3.3-70b-instruct"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.red_phala_qwen_2_5_7b_in]
+approval_policy = "never"
+model = "phala/qwen-2.5-7b-instruct"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_phala_qwen2_5_vl_72b]
+approval_policy = "never"
+model = "phala/qwen2.5-vl-72b-instruct"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.red_phala_qwen3_coder]
+approval_policy = "never"
+model = "phala/qwen3-coder"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 262144
+
+[profiles.red_pygmalionai_mythalio]
+approval_policy = "never"
+model = "pygmalionai/mythalion-13b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.red_qwen_qwen_110b_chat]
+approval_policy = "never"
+model = "qwen/qwen-110b-chat"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_qwen_qwen_2_72b_inst]
+approval_policy = "never"
+model = "qwen/qwen-2-72b-instruct"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_qwen_qwen_2_7b_instr]
+approval_policy = "never"
+model = "qwen/qwen-2-7b-instruct"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_qwen_qwen_2_vl_72b_i]
+approval_policy = "never"
+model = "qwen/qwen-2-vl-72b-instruct"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_qwen_qwen_2_vl_7b_in]
+approval_policy = "never"
+model = "qwen/qwen-2-vl-7b-instruct"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_qwen_qwen_2_5_72b_in]
+approval_policy = "never"
+model = "qwen/qwen-2.5-72b-instruct"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.red_qwen_qwen_2_5_7b_ins]
+approval_policy = "never"
+model = "qwen/qwen-2.5-7b-instruct"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.red_qwen_qwen_2_5_coder_]
+approval_policy = "never"
+model = "qwen/qwen-2.5-coder-32b-instruct"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_qwen_qwen_72b_chat]
+approval_policy = "never"
+model = "qwen/qwen-72b-chat"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_qwen_qwen1_5_0_5b_ch]
+approval_policy = "never"
+model = "qwen/qwen1.5-0.5b-chat"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_qwen_qwen1_5_1_8b_ch]
+approval_policy = "never"
+model = "qwen/qwen1.5-1.8b-chat"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_qwen_qwen1_5_14b_cha]
+approval_policy = "never"
+model = "qwen/qwen1.5-14b-chat-awq"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_qwen_qwen1_5_7b_chat]
+approval_policy = "never"
+model = "qwen/qwen1.5-7b-chat-awq"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_qwen_qwq_32b_preview]
+approval_policy = "never"
+model = "qwen/qwq-32b-preview"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_raifle_sorcererlm_8x]
+approval_policy = "never"
+model = "raifle/sorcererlm-8x22b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 16000
+
+[profiles.red_redpill_auto]
+approval_policy = "never"
+model = "redpill/auto"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 200000
+
+[profiles.red_sao10k_fimbulvetr_11]
+approval_policy = "never"
+model = "sao10k/fimbulvetr-11b-v2"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.red_sao10k_l3_euryale_70]
+approval_policy = "never"
+model = "sao10k/l3-euryale-70b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.red_sao10k_l3_lunaris_8b]
+approval_policy = "never"
+model = "sao10k/l3-lunaris-8b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.red_sao10k_l3_1_euryale_]
+approval_policy = "never"
+model = "sao10k/l3.1-euryale-70b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.red_sophosympatheia_midn]
+approval_policy = "never"
+model = "sophosympatheia/midnight-rose-70b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.red_teknium_openhermes_2]
+approval_policy = "never"
+model = "teknium/openhermes-2.5-mistral-7b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.red_thedrummer_rocinante]
+approval_policy = "never"
+model = "thedrummer/rocinante-12b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_thedrummer_unslopnem]
+approval_policy = "never"
+model = "thedrummer/unslopnemo-12b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32000
+
+[profiles.red_undi95_remm_slerp_l2]
+approval_policy = "never"
+model = "undi95/remm-slerp-l2-13b:extended"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 6144
+
+[profiles.red_undi95_toppy_m_7b]
+approval_policy = "never"
+model = "undi95/toppy-m-7b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.red_undi95_toppy_m_7bnit]
+approval_policy = "never"
+model = "undi95/toppy-m-7b:nitro"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.red_x_ai_grok_2]
+approval_policy = "never"
+model = "x-ai/grok-2"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.red_x_ai_grok_beta]
+approval_policy = "never"
+model = "x-ai/grok-beta"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.red_x_ai_grok_vision_bet]
+approval_policy = "never"
+model = "x-ai/grok-vision-beta"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.red_xwin_lm_xwin_lm_70b]
+approval_policy = "never"
+model = "xwin-lm/xwin-lm-70b"
+model_provider = "redpill"
+model_reasoning_effort = "high"
+model_context_window = 8192

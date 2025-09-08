@@ -1,0 +1,155 @@
+[model_providers.aihorde]
+base_url = "https://oai.aihorde.net/v1"
+name = "aihorde"
+wire_api = "chat"
+env_key = "AIHORDE_KEY"
+
+[profiles.aih_deepseek_ai_deepseek]
+approval_policy = "never"
+model = "deepseek-ai/DeepSeek-V3"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_behemoth_r]
+approval_policy = "never"
+model = "koboldcpp/Behemoth-ReduX-123B-v1a-Q5_K_M"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_broken_tut]
+approval_policy = "never"
+model = "koboldcpp/Broken-Tutu-24B-Unslop-v2.0.i1-Q6_K"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_cydonia_22]
+approval_policy = "never"
+model = "koboldcpp/Cydonia-22B-v2k-Q8_0"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_cydonia_24]
+approval_policy = "never"
+model = "koboldcpp/Cydonia-24B-v4.1"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_fimbulvetr]
+approval_policy = "never"
+model = "koboldcpp/Fimbulvetr-11B-v2"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_gaslit_tra]
+approval_policy = "never"
+model = "koboldcpp/Gaslit-Transgression-24B-v1.0.Q4_K_S"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_impish_mag]
+approval_policy = "never"
+model = "koboldcpp/Impish_Magic_24B"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_judas_the_]
+approval_policy = "never"
+model = "koboldcpp/judas-the-uncensored-3.2-1b-q8_0"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_kobbletiny]
+approval_policy = "never"
+model = "koboldcpp/KobbleTiny-1.1B"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_l3_8b_sthe]
+approval_policy = "never"
+model = "koboldcpp/L3-8B-Stheno-v3.2"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_l3_super_n]
+approval_policy = "never"
+model = "koboldcpp/L3-Super-Nova-RP-8B"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_llama2_13b]
+approval_policy = "never"
+model = "koboldcpp/LLaMA2-13B-Tiefighter.Q4_K_S"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_llama_3_lu]
+approval_policy = "never"
+model = "koboldcpp/Llama-3-Lumimaid-8B-v0.1"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_mn_12b_mag]
+approval_policy = "never"
+model = "koboldcpp/MN-12B-Mag-Mell-R1.Q6_K"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_mawdistica]
+approval_policy = "never"
+model = "koboldcpp/Mawdistical-Squelching-Fantasies-8B"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_mini_magnu]
+approval_policy = "never"
+model = "koboldcpp/mini-magnum-12b-v1.1"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_qwen3_0_6b]
+approval_policy = "never"
+model = "koboldcpp/Qwen3-0.6B"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_qwen_qwen3]
+approval_policy = "never"
+model = "koboldcpp/Qwen_Qwen3-1.7B-Q4_K_M"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_skyfall_31]
+approval_policy = "never"
+model = "koboldcpp/Skyfall-31B-v4"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_wizzgptv7]
+approval_policy = "never"
+model = "koboldcpp/WizzGPTv7"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_digo_prayu]
+approval_policy = "never"
+model = "koboldcpp/digo-prayudha/unsloth-llama-3.2-1b-gguf"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_gemma_3_27]
+approval_policy = "never"
+model = "koboldcpp/gemma-3-270m-it-Q8_0"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_mradermach]
+approval_policy = "never"
+model = "koboldcpp/mradermacher/pythia-70m-deduped.f16.gguf"
+model_provider = "aihorde"
+model_reasoning_effort = "high"
+
+[profiles.aih_koboldcpp_xwin_mlewd]
+approval_policy = "never"
+model = "koboldcpp/xwin-mlewd-13b-v0.2.Q5_K_M"
+model_provider = "aihorde"
+model_reasoning_effort = "high"

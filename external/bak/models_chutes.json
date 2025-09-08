@@ -1,0 +1,2270 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "ArliAI/QwQ-32B-ArliAI-RpR-v1",
+      "root": "ArliAI/QwQ-32B-ArliAI-RpR-v1",
+      "price": {
+        "input": {
+          "tao": 2.9452365658188216e-05,
+          "usd": 0.01
+        },
+        "output": {
+          "tao": 0.00011781888738976347,
+          "usd": 0.040003199999999996
+        }
+      },
+      "object": "model",
+      "created": 1757325288,
+      "pricing": {
+        "prompt": 0.01,
+        "completion": 0.040003199999999996
+      },
+      "owned_by": "sglang",
+      "max_model_len": 32768
+    },
+    {
+      "id": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+      "root": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+      "price": {
+        "input": {
+          "tao": 0.0003053079347912843,
+          "usd": 0.10366159999999999
+        },
+        "output": {
+          "tao": 0.0012218254988568063,
+          "usd": 0.41484799999999994
+        }
+      },
+      "object": "model",
+      "created": 1757325287,
+      "pricing": {
+        "prompt": 0.10366159999999999,
+        "completion": 0.41484799999999994
+      },
+      "owned_by": "sglang",
+      "max_model_len": 131072
+    },
+    {
+      "id": "NousResearch/DeepHermes-3-Llama-3-8B-Preview",
+      "root": "NousResearch/DeepHermes-3-Llama-3-8B-Preview",
+      "price": {
+        "input": {
+          "tao": 0.0,
+          "usd": 0.0
+        },
+        "output": {
+          "tao": 0.0,
+          "usd": 0.0
+        }
+      },
+      "object": "model",
+      "created": 1757325288,
+      "pricing": {
+        "prompt": 0.0,
+        "completion": 0.0
+      },
+      "owned_by": "sglang",
+      "max_model_len": 131072
+    },
+    {
+      "id": "NousResearch/DeepHermes-3-Mistral-24B-Preview",
+      "root": "NousResearch/DeepHermes-3-Mistral-24B-Preview",
+      "price": {
+        "input": {
+          "tao": 0.0002747771413121559,
+          "usd": 0.09329544
+        },
+        "output": {
+          "tao": 0.0010996429489711257,
+          "usd": 0.37336319999999995
+        }
+      },
+      "object": "model",
+      "created": 1757325285,
+      "pricing": {
+        "prompt": 0.09329544,
+        "completion": 0.37336319999999995
+      },
+      "owned_by": "sglang",
+      "max_model_len": 32768,
+      "chute_id": "07fc32f5-a63d-57e4-a86d-c167570b53e1",
+      "tagline": "DeepHermes 3 is a 24B parameter language model that uniquely combines traditional LLM responses with long chain-of-thought reasoning capabilities, making it particularly useful for complex problem-solving, detailed analysis, and general-purpose tasks like conversation and coding.",
+      "public": true,
+      "invocation_count": 297866,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.09329544,
+          "tao": 0.0002747771413121559
+        },
+        "output": {
+          "usd": 0.37336319999999995,
+          "tao": 0.0010996429489711257
+        }
+      },
+      "supported_gpus": [
+        "h100_nvl",
+        "h100_sxm",
+        "h200",
+        "h100",
+        "h800"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 16,
+      "active_instances": 5,
+      "total_instances": 5
+    },
+    {
+      "id": "NousResearch/Hermes-4-14B",
+      "root": "NousResearch/Hermes-4-14B",
+      "price": {
+        "input": {
+          "tao": 0.0,
+          "usd": 0.0
+        },
+        "output": {
+          "tao": 0.0,
+          "usd": 0.0
+        }
+      },
+      "object": "model",
+      "created": 1757325285,
+      "pricing": {
+        "prompt": 0.0,
+        "completion": 0.0
+      },
+      "owned_by": "sglang",
+      "max_model_len": 40960
+    },
+    {
+      "id": "NousResearch/Hermes-4-405B-FP8",
+      "root": "NousResearch/Hermes-4-405B-FP8",
+      "price": {
+        "input": {
+          "tao": 0.0005888081599546199,
+          "usd": 0.1999188
+        },
+        "output": {
+          "tao": 0.0023563777477952695,
+          "usd": 0.800064
+        }
+      },
+      "object": "model",
+      "created": 1757325285,
+      "pricing": {
+        "prompt": 0.1999188,
+        "completion": 0.800064
+      },
+      "owned_by": "sglang",
+      "max_model_len": 131072,
+      "chute_id": "02636d63-c996-5779-a0a2-25712469a7ca",
+      "tagline": "Hermes 4 is a 405B parameter open-source language model based on Llama 3.1 that excels at reasoning tasks while being highly steerable and capable of producing structured outputs for applications in coding, math, and creative writing.",
+      "public": true,
+      "invocation_count": 208149,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.1999188,
+          "tao": 0.0005888081599546199
+        },
+        "output": {
+          "usd": 0.800064,
+          "tao": 0.0023563777477952695
+        }
+      },
+      "supported_gpus": [
+        "h200"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 16,
+      "active_instances": 12,
+      "total_instances": 12
+    },
+    {
+      "id": "NousResearch/Hermes-4-70B",
+      "root": "NousResearch/Hermes-4-70B",
+      "price": {
+        "input": {
+          "tao": 0.0002747771413121559,
+          "usd": 0.09329544
+        },
+        "output": {
+          "tao": 0.0010996429489711257,
+          "usd": 0.37336319999999995
+        }
+      },
+      "object": "model",
+      "created": 1757325286,
+      "pricing": {
+        "prompt": 0.09329544,
+        "completion": 0.37336319999999995
+      },
+      "owned_by": "sglang",
+      "max_model_len": 131072
+    },
+    {
+      "id": "Qwen/Qwen2.5-72B-Instruct",
+      "root": "Qwen/Qwen2.5-72B-Instruct",
+      "price": {
+        "input": {
+          "tao": 0.00015265396739564215,
+          "usd": 0.051830799999999996
+        },
+        "output": {
+          "tao": 0.0006109127494284031,
+          "usd": 0.20742399999999997
+        }
+      },
+      "object": "model",
+      "created": 1757325287,
+      "pricing": {
+        "prompt": 0.051830799999999996,
+        "completion": 0.20742399999999997
+      },
+      "owned_by": "sglang",
+      "max_model_len": 32768
+    },
+    {
+      "id": "Qwen/Qwen2.5-Coder-32B-Instruct",
+      "root": "Qwen/Qwen2.5-Coder-32B-Instruct",
+      "price": {
+        "input": {
+          "tao": 0.00014720203998865497,
+          "usd": 0.0499797
+        },
+        "output": {
+          "tao": 0.0005890944369488174,
+          "usd": 0.200016
+        }
+      },
+      "object": "model",
+      "created": 1757325286,
+      "pricing": {
+        "prompt": 0.0499797,
+        "completion": 0.200016
+      },
+      "owned_by": "sglang",
+      "max_model_len": 32768
+    },
+    {
+      "id": "Qwen/Qwen2.5-VL-32B-Instruct",
+      "root": "Qwen/Qwen2.5-VL-32B-Instruct",
+      "price": {
+        "input": {
+          "tao": 5.888081599546198e-05,
+          "usd": 0.01999188
+        },
+        "output": {
+          "tao": 0.00023563777477952693,
+          "usd": 0.08000639999999999
+        }
+      },
+      "object": "model",
+      "created": 1757325286,
+      "pricing": {
+        "prompt": 0.01999188,
+        "completion": 0.08000639999999999
+      },
+      "owned_by": "sglang",
+      "max_model_len": 16384
+    },
+    {
+      "id": "Qwen/Qwen2.5-VL-72B-Instruct",
+      "root": "Qwen/Qwen2.5-VL-72B-Instruct",
+      "price": {
+        "input": {
+          "tao": 0.00029440407997730994,
+          "usd": 0.0999594
+        },
+        "output": {
+          "tao": 0.0011781888738976347,
+          "usd": 0.400032
+        }
+      },
+      "object": "model",
+      "created": 1757325287,
+      "pricing": {
+        "prompt": 0.0999594,
+        "completion": 0.400032
+      },
+      "owned_by": "sglang",
+      "max_model_len": 32768
+    },
+    {
+      "id": "Qwen/Qwen3-14B",
+      "root": "Qwen/Qwen3-14B",
+      "price": {
+        "input": {
+          "tao": 0.0,
+          "usd": 0.0
+        },
+        "output": {
+          "tao": 0.0,
+          "usd": 0.0
+        }
+      },
+      "object": "model",
+      "created": 1757325289,
+      "pricing": {
+        "prompt": 0.0,
+        "completion": 0.0
+      },
+      "owned_by": "sglang",
+      "max_model_len": 40960
+    },
+    {
+      "id": "Qwen/Qwen3-235B-A22B",
+      "root": "Qwen/Qwen3-235B-A22B",
+      "price": {
+        "input": {
+          "tao": 0.0005888081599546199,
+          "usd": 0.1999188
+        },
+        "output": {
+          "tao": 0.0023563777477952695,
+          "usd": 0.800064
+        }
+      },
+      "object": "model",
+      "created": 1757325286,
+      "pricing": {
+        "prompt": 0.1999188,
+        "completion": 0.800064
+      },
+      "owned_by": "sglang",
+      "max_model_len": 40960
+    },
+    {
+      "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "root": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "price": {
+        "input": {
+          "tao": 0.00022963518238230173,
+          "usd": 0.077968332
+        },
+        "output": {
+          "tao": 0.0009189873216401552,
+          "usd": 0.31202496
+        }
+      },
+      "object": "model",
+      "created": 1757325288,
+      "pricing": {
+        "prompt": 0.077968332,
+        "completion": 0.31202496
+      },
+      "owned_by": "sglang",
+      "max_model_len": 262144
+    },
+    {
+      "id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "root": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "price": {
+        "input": {
+          "tao": 0.00022963518238230173,
+          "usd": 0.077968332
+        },
+        "output": {
+          "tao": 0.0009189873216401552,
+          "usd": 0.31202496
+        }
+      },
+      "object": "model",
+      "created": 1757325288,
+      "pricing": {
+        "prompt": 0.077968332,
+        "completion": 0.31202496
+      },
+      "owned_by": "sglang",
+      "max_model_len": 262144,
+      "chute_id": "a805bf90-0237-5b55-8a55-6e8dde54324e",
+      "tagline": "Qwen3-235B-A22B-Thinking-2507 is a 235B parameter (with 22B activated) language model optimized for complex reasoning tasks like mathematics, science and coding, featuring enhanced thinking capabilities and support for context lengths up to 1M tokens.",
+      "public": true,
+      "invocation_count": 135048,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.077968332,
+          "tao": 0.00022963518238230173
+        },
+        "output": {
+          "usd": 0.31202496,
+          "tao": 0.0009189873216401552
+        }
+      },
+      "supported_gpus": [
+        "h200"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 16,
+      "active_instances": 6,
+      "total_instances": 6
+    },
+    {
+      "id": "Qwen/Qwen3-30B-A3B",
+      "root": "Qwen/Qwen3-30B-A3B",
+      "price": {
+        "input": {
+          "tao": 5.888081599546198e-05,
+          "usd": 0.01999188
+        },
+        "output": {
+          "tao": 0.00023563777477952693,
+          "usd": 0.08000639999999999
+        }
+      },
+      "object": "model",
+      "created": 1757325288,
+      "pricing": {
+        "prompt": 0.01999188,
+        "completion": 0.08000639999999999
+      },
+      "owned_by": "sglang",
+      "max_model_len": 40960
+    },
+    {
+      "id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+      "root": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+      "price": {
+        "input": {
+          "tao": 0.00015265396739564215,
+          "usd": 0.051830799999999996
+        },
+        "output": {
+          "tao": 0.0006109127494284031,
+          "usd": 0.20742399999999997
+        }
+      },
+      "object": "model",
+      "created": 1757325289,
+      "pricing": {
+        "prompt": 0.051830799999999996,
+        "completion": 0.20742399999999997
+      },
+      "owned_by": "sglang",
+      "max_model_len": 262144
+    },
+    {
+      "id": "Qwen/Qwen3-30B-A3B-Thinking-2507",
+      "root": "Qwen/Qwen3-30B-A3B-Thinking-2507",
+      "price": {
+        "input": {
+          "tao": 0.00020989920516900797,
+          "usd": 0.07126735
+        },
+        "output": {
+          "tao": 0.0008400050304640544,
+          "usd": 0.28520799999999996
+        }
+      },
+      "object": "model",
+      "created": 1757325287,
+      "pricing": {
+        "prompt": 0.07126735,
+        "completion": 0.28520799999999996
+      },
+      "owned_by": "sglang",
+      "max_model_len": 262144
+    },
+    {
+      "id": "Qwen/Qwen3-32B",
+      "root": "Qwen/Qwen3-32B",
+      "price": {
+        "input": {
+          "tao": 5.299273439591579e-05,
+          "usd": 0.017992692
+        },
+        "output": {
+          "tao": 0.00021207399730157424,
+          "usd": 0.07200575999999999
+        }
+      },
+      "object": "model",
+      "created": 1757325285,
+      "pricing": {
+        "prompt": 0.017992692,
+        "completion": 0.07200575999999999
+      },
+      "owned_by": "sglang",
+      "max_model_len": 40960
+    },
+    {
+      "id": "Qwen/Qwen3-8B",
+      "root": "Qwen/Qwen3-8B",
+      "price": {
+        "input": {
+          "tao": 0.0,
+          "usd": 0.0
+        },
+        "output": {
+          "tao": 0.0,
+          "usd": 0.0
+        }
+      },
+      "object": "model",
+      "created": 1757325288,
+      "pricing": {
+        "prompt": 0.0,
+        "completion": 0.0
+      },
+      "owned_by": "sglang",
+      "max_model_len": 40960,
+      "chute_id": "aa9579f7-ac87-53d3-b23c-4fa97a64574d",
+      "tagline": "Qwen3-8B is an 8.2 billion parameter open source language model that can switch between thinking and non-thinking modes for different tasks, with capabilities in reasoning, math, coding, creative writing, and support for over 100 languages.",
+      "public": true,
+      "invocation_count": 452684,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.0,
+          "tao": 0.0
+        },
+        "output": {
+          "usd": 0.0,
+          "tao": 0.0
+        }
+      },
+      "supported_gpus": [
+        "a6000_ada",
+        "h100_nvl",
+        "a100",
+        "l40",
+        "a100_40gb_sxm",
+        "a100_40gb",
+        "h20",
+        "a100_sxm",
+        "l40s",
+        "pro_6000",
+        "h100_sxm",
+        "h200",
+        "a40",
+        "a6000",
+        "h100",
+        "h800"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 40,
+      "active_instances": 5,
+      "total_instances": 5
+    },
+    {
+      "id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "root": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "price": {
+        "input": {
+          "tao": 0.00015265396739564215,
+          "usd": 0.051830799999999996
+        },
+        "output": {
+          "tao": 0.0006109127494284031,
+          "usd": 0.20742399999999997
+        }
+      },
+      "object": "model",
+      "created": 1757325288,
+      "pricing": {
+        "prompt": 0.051830799999999996,
+        "completion": 0.20742399999999997
+      },
+      "owned_by": "sglang",
+      "max_model_len": 262144
+    },
+    {
+      "id": "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",
+      "root": "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",
+      "price": {
+        "input": {
+          "tao": 0.0005888081599546199,
+          "usd": 0.1999188
+        },
+        "output": {
+          "tao": 0.0023563777477952695,
+          "usd": 0.800064
+        }
+      },
+      "object": "model",
+      "created": 1757325287,
+      "pricing": {
+        "prompt": 0.1999188,
+        "completion": 0.800064
+      },
+      "owned_by": "sglang",
+      "max_model_len": 262144
+    },
+    {
+      "id": "Tesslate/UIGEN-X-32B-0727",
+      "root": "Tesslate/UIGEN-X-32B-0727",
+      "price": {
+        "input": {
+          "tao": 5.888081599546198e-05,
+          "usd": 0.01999188
+        },
+        "output": {
+          "tao": 0.00023563777477952693,
+          "usd": 0.08000639999999999
+        }
+      },
+      "object": "model",
+      "created": 1757325289,
+      "pricing": {
+        "prompt": 0.01999188,
+        "completion": 0.08000639999999999
+      },
+      "owned_by": "sglang",
+      "max_model_len": 40960
+    },
+    {
+      "id": "TheDrummer/Gemmasutra-Pro-27B-v1.1",
+      "root": "TheDrummer/Gemmasutra-Pro-27B-v1.1",
+      "price": {
+        "input": {
+          "tao": 2.9452365658188216e-05,
+          "usd": 0.01
+        },
+        "output": {
+          "tao": 0.00010036423740609481,
+          "usd": 0.0340768
+        }
+      },
+      "object": "model",
+      "parent": null,
+      "created": 1757325287,
+      "pricing": {
+        "prompt": 0.01,
+        "completion": 0.0340768
+      },
+      "owned_by": "vllm",
+      "permission": [
+        {
+          "id": "modelperm-419fb81e35b141ea9f067508dfa32fa7",
+          "group": null,
+          "object": "model_permission",
+          "created": 1757325287,
+          "allow_view": true,
+          "is_blocking": false,
+          "organization": "*",
+          "allow_logprobs": true,
+          "allow_sampling": true,
+          "allow_fine_tuning": false,
+          "allow_create_engine": false,
+          "allow_search_indices": false
+        }
+      ],
+      "max_model_len": 8192
+    },
+    {
+      "id": "TheDrummer/Skyfall-36B-v2",
+      "root": "TheDrummer/Skyfall-36B-v2",
+      "price": {
+        "input": {
+          "tao": 0.00014175011258166773,
+          "usd": 0.0481286
+        },
+        "output": {
+          "tao": 0.0005672761244692316,
+          "usd": 0.192608
+        }
+      },
+      "object": "model",
+      "created": 1757325287,
+      "pricing": {
+        "prompt": 0.0481286,
+        "completion": 0.192608
+      },
+      "owned_by": "sglang",
+      "max_model_len": 32768,
+      "chute_id": "761fa230-d74a-55be-a1e7-5caec1381869",
+      "tagline": "Skyfall 36B v2 is a 36 billion parameter LLM based on Mistral that has been optimized for creative writing and roleplay through additional training.",
+      "public": true,
+      "invocation_count": 155731,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.0481286,
+          "tao": 0.00014175011258166773
+        },
+        "output": {
+          "usd": 0.192608,
+          "tao": 0.0005672761244692316
+        }
+      },
+      "supported_gpus": [
+        "a100",
+        "a100_sxm",
+        "l40s",
+        "h100_sxm",
+        "h100",
+        "h200",
+        "a6000_ada",
+        "h800"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 16,
+      "active_instances": 5,
+      "total_instances": 5
+    },
+    {
+      "id": "TheDrummer/Tunguska-39B-v1",
+      "root": "TheDrummer/Tunguska-39B-v1",
+      "price": {
+        "input": {
+          "tao": 0.00014175011258166773,
+          "usd": 0.0481286
+        },
+        "output": {
+          "tao": 0.0005672761244692316,
+          "usd": 0.192608
+        }
+      },
+      "object": "model",
+      "created": 1757325289,
+      "pricing": {
+        "prompt": 0.0481286,
+        "completion": 0.192608
+      },
+      "owned_by": "sglang",
+      "max_model_len": 131072
+    },
+    {
+      "id": "agentica-org/DeepCoder-14B-Preview",
+      "root": "agentica-org/DeepCoder-14B-Preview",
+      "price": {
+        "input": {
+          "tao": 0.0,
+          "usd": 0.0
+        },
+        "output": {
+          "tao": 0.0,
+          "usd": 0.0
+        }
+      },
+      "object": "model",
+      "created": 1757325289,
+      "pricing": {
+        "prompt": 0.0,
+        "completion": 0.0
+      },
+      "owned_by": "sglang",
+      "max_model_len": 96000
+    },
+    {
+      "id": "all-hands/openhands-lm-32b-v0.1-ep3",
+      "root": "all-hands/openhands-lm-32b-v0.1-ep3",
+      "price": {
+        "input": {
+          "tao": 2.9452365658188216e-05,
+          "usd": 0.01
+        },
+        "output": {
+          "tao": 0.00011781888738976347,
+          "usd": 0.040003199999999996
+        }
+      },
+      "object": "model",
+      "parent": null,
+      "created": 1757325289,
+      "pricing": {
+        "prompt": 0.01,
+        "completion": 0.040003199999999996
+      },
+      "owned_by": "vllm",
+      "permission": [
+        {
+          "id": "modelperm-9a6785a45f54470bbdf6232981132039",
+          "group": null,
+          "object": "model_permission",
+          "created": 1757325289,
+          "allow_view": true,
+          "is_blocking": false,
+          "organization": "*",
+          "allow_logprobs": true,
+          "allow_sampling": true,
+          "allow_fine_tuning": false,
+          "allow_create_engine": false,
+          "allow_search_indices": false
+        }
+      ],
+      "max_model_len": 16384
+    },
+    {
+      "id": "chutesai/Devstral-Small-2505",
+      "root": "chutesai/Devstral-Small-2505",
+      "price": {
+        "input": {
+          "tao": 5.888081599546198e-05,
+          "usd": 0.01999188
+        },
+        "output": {
+          "tao": 0.00023563777477952693,
+          "usd": 0.08000639999999999
+        }
+      },
+      "object": "model",
+      "created": 1757325287,
+      "pricing": {
+        "prompt": 0.01999188,
+        "completion": 0.08000639999999999
+      },
+      "owned_by": "sglang",
+      "max_model_len": 131072
+    },
+    {
+      "id": "chutesai/Mistral-Small-3.1-24B-Instruct-2503",
+      "root": "chutesai/Mistral-Small-3.1-24B-Instruct-2503",
+      "price": {
+        "input": {
+          "tao": 5.888081599546198e-05,
+          "usd": 0.01999188
+        },
+        "output": {
+          "tao": 0.00023563777477952693,
+          "usd": 0.08000639999999999
+        }
+      },
+      "object": "model",
+      "created": 1757325289,
+      "pricing": {
+        "prompt": 0.01999188,
+        "completion": 0.08000639999999999
+      },
+      "owned_by": "sglang",
+      "max_model_len": 131072,
+      "chute_id": "e3653034-9f58-5cf6-84f8-d5555e55fbd6",
+      "tagline": "Mistral Small 3.1 is a 24B parameter open-source LLM with vision capabilities and 128k context that excels at reasoning, programming, and multilingual tasks while being compact enough to run on consumer hardware.",
+      "public": true,
+      "invocation_count": 212063,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.01999188,
+          "tao": 5.888081599546198e-05
+        },
+        "output": {
+          "usd": 0.08000639999999999,
+          "tao": 0.00023563777477952693
+        }
+      },
+      "supported_gpus": [
+        "a6000_ada",
+        "h100_nvl",
+        "a100",
+        "h20",
+        "a100_sxm",
+        "l40s",
+        "pro_6000",
+        "h100_sxm",
+        "h200",
+        "a40",
+        "h100",
+        "h800"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 48,
+      "active_instances": 6,
+      "total_instances": 6
+    },
+    {
+      "id": "chutesai/Mistral-Small-3.2-24B-Instruct-2506",
+      "root": "chutesai/Mistral-Small-3.2-24B-Instruct-2506",
+      "price": {
+        "input": {
+          "tao": 0.0003053079347912843,
+          "usd": 0.10366159999999999
+        },
+        "output": {
+          "tao": 0.0012218254988568063,
+          "usd": 0.41484799999999994
+        }
+      },
+      "object": "model",
+      "created": 1757325288,
+      "pricing": {
+        "prompt": 0.10366159999999999,
+        "completion": 0.41484799999999994
+      },
+      "owned_by": "sglang",
+      "max_model_len": 131072
+    },
+    {
+      "id": "cognitivecomputations/Dolphin3.0-Mistral-24B",
+      "root": "cognitivecomputations/Dolphin3.0-Mistral-24B",
+      "price": {
+        "input": {
+          "tao": 0.0001090385481397444,
+          "usd": 0.037022
+        },
+        "output": {
+          "tao": 0.00043636624959171653,
+          "usd": 0.14816
+        }
+      },
+      "object": "model",
+      "created": 1757325288,
+      "pricing": {
+        "prompt": 0.037022,
+        "completion": 0.14816
+      },
+      "owned_by": "sglang",
+      "max_model_len": 32768
+    },
+    {
+      "id": "cognitivecomputations/Dolphin3.0-R1-Mistral-24B",
+      "root": "cognitivecomputations/Dolphin3.0-R1-Mistral-24B",
+      "price": {
+        "input": {
+          "tao": 2.9452365658188216e-05,
+          "usd": 0.01
+        },
+        "output": {
+          "tao": 0.00010036423740609481,
+          "usd": 0.0340768
+        }
+      },
+      "object": "model",
+      "created": 1757325288,
+      "pricing": {
+        "prompt": 0.01,
+        "completion": 0.0340768
+      },
+      "owned_by": "sglang",
+      "max_model_len": 32768
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1",
+      "root": "deepseek-ai/DeepSeek-R1",
+      "price": {
+        "input": {
+          "tao": 0.0005888081599546199,
+          "usd": 0.1999188
+        },
+        "output": {
+          "tao": 0.0023563777477952695,
+          "usd": 0.800064
+        }
+      },
+      "object": "model",
+      "created": 1757325289,
+      "pricing": {
+        "prompt": 0.1999188,
+        "completion": 0.800064
+      },
+      "owned_by": "sglang",
+      "max_model_len": 163840,
+      "chute_id": "de510462-c319-543b-9c67-00bcf807d2a7",
+      "tagline": "DeepSeek-R1 is a 671B parameter (37B activated) language model trained via reinforcement learning that excels at mathematical reasoning, coding, and complex problem-solving tasks, achieving performance comparable to OpenAI's models.",
+      "public": true,
+      "invocation_count": 4936140,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.1999188,
+          "tao": 0.0005888081599546199
+        },
+        "output": {
+          "usd": 0.800064,
+          "tao": 0.0023563777477952695
+        }
+      },
+      "supported_gpus": [
+        "h200"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 16,
+      "active_instances": 49,
+      "total_instances": 50
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-0528",
+      "root": "deepseek-ai/DeepSeek-R1-0528",
+      "price": {
+        "input": {
+          "tao": 0.0005888081599546199,
+          "usd": 0.1999188
+        },
+        "output": {
+          "tao": 0.0023563777477952695,
+          "usd": 0.800064
+        }
+      },
+      "object": "model",
+      "created": 1757325286,
+      "pricing": {
+        "prompt": 0.1999188,
+        "completion": 0.800064
+      },
+      "owned_by": "sglang",
+      "max_model_len": 163840,
+      "chute_id": "14a91d88-d6d6-5046-aaf4-eb3ad96b7247",
+      "tagline": "DeepSeek-R1-0528 is a large language model optimized for complex reasoning and mathematical problem-solving, demonstrating strong performance across benchmarks like AIME and programming tasks, though its exact parameter count is not specified in the model card.",
+      "public": true,
+      "invocation_count": 788706,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.1999188,
+          "tao": 0.0005888081599546199
+        },
+        "output": {
+          "usd": 0.800064,
+          "tao": 0.0023563777477952695
+        }
+      },
+      "supported_gpus": [
+        "h200"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 16,
+      "active_instances": 24,
+      "total_instances": 24
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+      "root": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+      "price": {
+        "input": {
+          "tao": 5.0157732144282423e-05,
+          "usd": 0.01703012
+        },
+        "output": {
+          "tao": 0.00020072847481218963,
+          "usd": 0.0681536
+        }
+      },
+      "object": "model",
+      "created": 1757325288,
+      "pricing": {
+        "prompt": 0.01703012,
+        "completion": 0.0681536
+      },
+      "owned_by": "sglang",
+      "max_model_len": 131072,
+      "chute_id": "aa5ff190-f995-5edf-9331-ea8fc5734f3e",
+      "tagline": "DeepSeek-R1-0528 is an MIT-licensed large language model optimized for complex reasoning and inference tasks like mathematics and coding, achieving strong performance on benchmarks like AIME and showing capabilities comparable to leading models like O3 and Gemini 2.5 Pro.",
+      "public": true,
+      "invocation_count": 495789,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.01703012,
+          "tao": 5.0157732144282423e-05
+        },
+        "output": {
+          "usd": 0.0681536,
+          "tao": 0.00020072847481218963
+        }
+      },
+      "supported_gpus": [
+        "5090",
+        "a10",
+        "a100_sxm",
+        "l40s",
+        "l4",
+        "h200",
+        "a40",
+        "h100_nvl",
+        "3090",
+        "l40",
+        "a100_40gb_sxm",
+        "a5000",
+        "a100_40gb",
+        "h100",
+        "h20",
+        "a6000",
+        "h800",
+        "a6000_ada",
+        "4090",
+        "a100",
+        "h100_sxm",
+        "pro_6000"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 24,
+      "active_instances": 14,
+      "total_instances": 16
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+      "root": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+      "price": {
+        "input": {
+          "tao": 7.632698369782108e-05,
+          "usd": 0.025915399999999998
+        },
+        "output": {
+          "tao": 0.0003054563747142016,
+          "usd": 0.10371199999999998
+        }
+      },
+      "object": "model",
+      "created": 1757325289,
+      "pricing": {
+        "prompt": 0.025915399999999998,
+        "completion": 0.10371199999999998
+      },
+      "owned_by": "sglang",
+      "max_model_len": 131072
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3",
+      "root": "deepseek-ai/DeepSeek-V3",
+      "price": {
+        "input": {
+          "tao": 0.0005888081599546199,
+          "usd": 0.1999188
+        },
+        "output": {
+          "tao": 0.0023563777477952695,
+          "usd": 0.800064
+        }
+      },
+      "object": "model",
+      "created": 1757325289,
+      "pricing": {
+        "prompt": 0.1999188,
+        "completion": 0.800064
+      },
+      "owned_by": "sglang",
+      "max_model_len": 163840,
+      "chute_id": "fa4181ad-0cf1-5531-afdb-bbffbf2ff945",
+      "tagline": "DeepSeek-V3 is a 671B parameter Mixture-of-Experts language model (with 37B active parameters per token) that excels at reasoning, math, and coding tasks while maintaining strong general capabilities across multiple languages.",
+      "public": true,
+      "invocation_count": 172159,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.1999188,
+          "tao": 0.0005888081599546199
+        },
+        "output": {
+          "usd": 0.800064,
+          "tao": 0.0023563777477952695
+        }
+      },
+      "supported_gpus": [
+        "h200"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 16,
+      "active_instances": 5,
+      "total_instances": 5
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3-0324",
+      "root": "deepseek-ai/DeepSeek-V3-0324",
+      "price": {
+        "input": {
+          "tao": 0.0005888081599546199,
+          "usd": 0.1999188
+        },
+        "output": {
+          "tao": 0.0023563777477952695,
+          "usd": 0.800064
+        }
+      },
+      "object": "model",
+      "created": 1757325285,
+      "pricing": {
+        "prompt": 0.1999188,
+        "completion": 0.800064
+      },
+      "owned_by": "sglang",
+      "max_model_len": 163840,
+      "chute_id": "154ad01c-a431-5744-83c8-651215124360",
+      "tagline": "DeepSeek-V3-0324 is a powerful open-source language model that shows significant improvements in reasoning, coding, and Chinese language capabilities compared to its predecessor, making it particularly useful for tasks like web development, technical writing, and complex problem-solving.",
+      "public": true,
+      "invocation_count": 2820579,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.1999188,
+          "tao": 0.0005888081599546199
+        },
+        "output": {
+          "usd": 0.800064,
+          "tao": 0.0023563777477952695
+        }
+      },
+      "supported_gpus": [
+        "h200"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 16,
+      "active_instances": 36,
+      "total_instances": 36
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3.1",
+      "root": "deepseek-ai/DeepSeek-V3.1",
+      "price": {
+        "input": {
+          "tao": 0.0005888081599546199,
+          "usd": 0.1999188
+        },
+        "output": {
+          "tao": 0.0023563777477952695,
+          "usd": 0.800064
+        }
+      },
+      "object": "model",
+      "created": 1757325285,
+      "pricing": {
+        "prompt": 0.1999188,
+        "completion": 0.800064
+      },
+      "owned_by": "sglang",
+      "max_model_len": 163840,
+      "chute_id": "07cb1b3a-ec4d-594a-96c2-b547fddcadb0",
+      "tagline": "DeepSeek-V3.1 is a 671B parameter hybrid language model (with 37B activated parameters) that supports both thinking and non-thinking modes, making it particularly effective for tasks requiring reasoning, tool usage, coding, and search capabilities within a 128K context window.",
+      "public": true,
+      "invocation_count": 602592,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.1999188,
+          "tao": 0.0005888081599546199
+        },
+        "output": {
+          "usd": 0.800064,
+          "tao": 0.0023563777477952695
+        }
+      },
+      "supported_gpus": [
+        "b200",
+        "h200"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 16,
+      "active_instances": 17,
+      "total_instances": 17
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3.1-Base",
+      "root": "deepseek-ai/DeepSeek-V3.1-Base",
+      "price": {
+        "input": {
+          "tao": 0.0005888081599546199,
+          "usd": 0.1999188
+        },
+        "output": {
+          "tao": 0.0023563777477952695,
+          "usd": 0.800064
+        }
+      },
+      "object": "model",
+      "created": 1757325289,
+      "pricing": {
+        "prompt": 0.1999188,
+        "completion": 0.800064
+      },
+      "owned_by": "sglang",
+      "max_model_len": 163840
+    },
+    {
+      "id": "meituan-longcat/LongCat-Flash-Chat-FP8",
+      "root": "meituan-longcat/LongCat-Flash-Chat-FP8",
+      "price": {
+        "input": {
+          "tao": 0.0005888081599546199,
+          "usd": 0.1999188
+        },
+        "output": {
+          "tao": 0.0023563777477952695,
+          "usd": 0.800064
+        }
+      },
+      "object": "model",
+      "created": 1757325286,
+      "pricing": {
+        "prompt": 0.1999188,
+        "completion": 0.800064
+      },
+      "owned_by": "sglang",
+      "max_model_len": 131072
+    },
+    {
+      "id": "microsoft/MAI-DS-R1-FP8",
+      "root": "microsoft/MAI-DS-R1-FP8",
+      "price": {
+        "input": {
+          "tao": 0.0005888081599546199,
+          "usd": 0.1999188
+        },
+        "output": {
+          "tao": 0.0023563777477952695,
+          "usd": 0.800064
+        }
+      },
+      "object": "model",
+      "created": 1757325286,
+      "pricing": {
+        "prompt": 0.1999188,
+        "completion": 0.800064
+      },
+      "owned_by": "sglang",
+      "max_model_len": 163840
+    },
+    {
+      "id": "moonshotai/Kimi-Dev-72B",
+      "root": "moonshotai/Kimi-Dev-72B",
+      "price": {
+        "input": {
+          "tao": 0.00019626938665153997,
+          "usd": 0.06663960000000001
+        },
+        "output": {
+          "tao": 0.0007854592492650899,
+          "usd": 0.266688
+        }
+      },
+      "object": "model",
+      "created": 1757325285,
+      "pricing": {
+        "prompt": 0.06663960000000001,
+        "completion": 0.266688
+      },
+      "owned_by": "sglang",
+      "max_model_len": 131072
+    },
+    {
+      "id": "moonshotai/Kimi-K2-Instruct-0905",
+      "root": "moonshotai/Kimi-K2-Instruct-0905",
+      "price": {
+        "input": {
+          "tao": 0.0008723083851179552,
+          "usd": 0.296176
+        },
+        "output": {
+          "tao": 0.0034909299967337323,
+          "usd": 1.18528
+        }
+      },
+      "object": "model",
+      "created": 1757325286,
+      "pricing": {
+        "prompt": 0.296176,
+        "completion": 1.18528
+      },
+      "owned_by": "sglang",
+      "max_model_len": 262144,
+      "chute_id": "1a0d9245-582a-5cde-8f5b-2da5b9542339",
+      "tagline": "Kimi K2 is a 1-trillion parameter MoE language model (using 32B active parameters) optimized for coding tasks and long-context applications with a 256k token context window.",
+      "public": true,
+      "invocation_count": 276231,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.296176,
+          "tao": 0.0008723083851179552
+        },
+        "output": {
+          "usd": 1.18528,
+          "tao": 0.0034909299967337323
+        }
+      },
+      "supported_gpus": [
+        "b200"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 16,
+      "active_instances": 12,
+      "total_instances": 12
+    },
+    {
+      "id": "moonshotai/Kimi-VL-A3B-Thinking",
+      "root": "moonshotai/Kimi-VL-A3B-Thinking",
+      "price": {
+        "input": {
+          "tao": 7.360101999432748e-05,
+          "usd": 0.02498985
+        },
+        "output": {
+          "tao": 0.0002945472184744087,
+          "usd": 0.100008
+        }
+      },
+      "object": "model",
+      "parent": null,
+      "created": 1757325286,
+      "pricing": {
+        "prompt": 0.02498985,
+        "completion": 0.100008
+      },
+      "owned_by": "vllm",
+      "permission": [
+        {
+          "id": "modelperm-6ab0b2d60a7b478c922f001ab0e94e94",
+          "group": null,
+          "object": "model_permission",
+          "created": 1757325286,
+          "allow_view": true,
+          "is_blocking": false,
+          "organization": "*",
+          "allow_logprobs": true,
+          "allow_sampling": true,
+          "allow_fine_tuning": false,
+          "allow_create_engine": false,
+          "allow_search_indices": false
+        }
+      ],
+      "max_model_len": 131072
+    },
+    {
+      "id": "nvidia/Llama-3_3-Nemotron-Super-49B-v1_5",
+      "root": "nvidia/Llama-3_3-Nemotron-Super-49B-v1_5",
+      "price": {
+        "input": {
+          "tao": 0.00019626938665153997,
+          "usd": 0.06663960000000001
+        },
+        "output": {
+          "tao": 0.0007854592492650899,
+          "usd": 0.266688
+        }
+      },
+      "object": "model",
+      "parent": null,
+      "created": 1757325289,
+      "pricing": {
+        "prompt": 0.06663960000000001,
+        "completion": 0.266688
+      },
+      "owned_by": "vllm",
+      "permission": [
+        {
+          "id": "modelperm-b6f8ee02bc794be29167d077426b2c5f",
+          "group": null,
+          "object": "model_permission",
+          "created": 1757325289,
+          "allow_view": true,
+          "is_blocking": false,
+          "organization": "*",
+          "allow_logprobs": true,
+          "allow_sampling": true,
+          "allow_fine_tuning": false,
+          "allow_create_engine": false,
+          "allow_search_indices": false
+        }
+      ],
+      "max_model_len": 131072
+    },
+    {
+      "id": "openai/gpt-oss-120b",
+      "root": "openai/gpt-oss-120b",
+      "price": {
+        "input": {
+          "tao": 0.00021371555435389903,
+          "usd": 0.07256312
+        },
+        "output": {
+          "tao": 0.0008552778491997644,
+          "usd": 0.2903936
+        }
+      },
+      "object": "model",
+      "created": 1757325287,
+      "pricing": {
+        "prompt": 0.07256312,
+        "completion": 0.2903936
+      },
+      "owned_by": "sglang",
+      "max_model_len": 131072,
+      "chute_id": "610528a4-f2db-55c8-a43f-b83f3f215d00",
+      "tagline": "gpt-oss-120b is a 117B parameter open-source language model (with 5.1B active parameters) designed for reasoning, agent-based tasks, and developer use cases that can run on a single 80GB GPU.",
+      "public": true,
+      "invocation_count": 522426,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.07256312,
+          "tao": 0.00021371555435389903
+        },
+        "output": {
+          "usd": 0.2903936,
+          "tao": 0.0008552778491997644
+        }
+      },
+      "supported_gpus": [
+        "h100_sxm",
+        "h200",
+        "h100"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 16,
+      "active_instances": 20,
+      "total_instances": 20
+    },
+    {
+      "id": "openai/gpt-oss-20b",
+      "root": "openai/gpt-oss-20b",
+      "price": {
+        "input": {
+          "tao": 0.0,
+          "usd": 0.0
+        },
+        "output": {
+          "tao": 0.0,
+          "usd": 0.0
+        }
+      },
+      "object": "model",
+      "created": 1757325288,
+      "pricing": {
+        "prompt": 0.0,
+        "completion": 0.0
+      },
+      "owned_by": "sglang",
+      "max_model_len": 131072
+    },
+    {
+      "id": "shisa-ai/shisa-v2-llama3.3-70b",
+      "root": "shisa-ai/shisa-v2-llama3.3-70b",
+      "price": {
+        "input": {
+          "tao": 5.888081599546198e-05,
+          "usd": 0.01999188
+        },
+        "output": {
+          "tao": 0.00023563777477952693,
+          "usd": 0.08000639999999999
+        }
+      },
+      "object": "model",
+      "created": 1757325287,
+      "pricing": {
+        "prompt": 0.01999188,
+        "completion": 0.08000639999999999
+      },
+      "owned_by": "sglang",
+      "max_model_len": 32768,
+      "chute_id": "5c47e581-a06c-5483-a597-5a1b6888b0b9",
+      "tagline": "Shisa V2 is a family of bilingual Japanese-English language models ranging from 7B to 70B parameters, optimized for high-quality Japanese language capabilities while maintaining strong English performance, making them particularly useful for Japanese language tasks and Japanese-English translation.",
+      "public": true,
+      "invocation_count": 286065,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.01999188,
+          "tao": 5.888081599546198e-05
+        },
+        "output": {
+          "usd": 0.08000639999999999,
+          "tao": 0.00023563777477952693
+        }
+      },
+      "supported_gpus": [
+        "a6000_ada",
+        "h100_nvl",
+        "a100",
+        "l40",
+        "h20",
+        "a100_sxm",
+        "l40s",
+        "pro_6000",
+        "h100_sxm",
+        "h200",
+        "a40",
+        "a6000",
+        "h100",
+        "h800"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 48,
+      "active_instances": 10,
+      "total_instances": 10
+    },
+    {
+      "id": "tencent/Hunyuan-A13B-Instruct",
+      "root": "tencent/Hunyuan-A13B-Instruct",
+      "price": {
+        "input": {
+          "tao": 0.0,
+          "usd": 0.0
+        },
+        "output": {
+          "tao": 0.0,
+          "usd": 0.0
+        }
+      },
+      "object": "model",
+      "created": 1757325287,
+      "pricing": {
+        "prompt": 0.0,
+        "completion": 0.0
+      },
+      "owned_by": "sglang",
+      "max_model_len": 32768,
+      "chute_id": "6bde588c-7b10-53ef-aadc-08c292f702fa",
+      "tagline": "Hunyuan-A13B is a 13B-parameter MoE model (with 80B total parameters) optimized for reasoning and general tasks, offering high performance with minimal computational overhead through selective parameter activation.",
+      "public": true,
+      "invocation_count": 298569,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.0,
+          "tao": 0.0
+        },
+        "output": {
+          "usd": 0.0,
+          "tao": 0.0
+        }
+      },
+      "supported_gpus": [
+        "a6000_ada",
+        "h100_nvl",
+        "a100",
+        "l40",
+        "h20",
+        "a100_sxm",
+        "l40s",
+        "pro_6000",
+        "h100_sxm",
+        "h200",
+        "a40",
+        "a6000",
+        "h100",
+        "h800"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 48,
+      "active_instances": 9,
+      "total_instances": 9
+    },
+    {
+      "id": "tngtech/DeepSeek-R1T-Chimera",
+      "root": "tngtech/DeepSeek-R1T-Chimera",
+      "price": {
+        "input": {
+          "tao": 0.0005888081599546199,
+          "usd": 0.1999188
+        },
+        "output": {
+          "tao": 0.0023563777477952695,
+          "usd": 0.800064
+        }
+      },
+      "object": "model",
+      "created": 1757325288,
+      "pricing": {
+        "prompt": 0.1999188,
+        "completion": 0.800064
+      },
+      "owned_by": "sglang",
+      "max_model_len": 163840,
+      "chute_id": "aef797d4-f375-5beb-9986-3ad245947469",
+      "tagline": "DeepSeek-R1T-Chimera is an open-source LLM that combines DeepSeek-R1 and DeepSeek-V3 models to create a more token-efficient and intelligent system for general-purpose tasks and applications.",
+      "public": true,
+      "invocation_count": 133287,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.1999188,
+          "tao": 0.0005888081599546199
+        },
+        "output": {
+          "usd": 0.800064,
+          "tao": 0.0023563777477952695
+        }
+      },
+      "supported_gpus": [
+        "h200"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 16,
+      "active_instances": 5,
+      "total_instances": 5
+    },
+    {
+      "id": "tngtech/DeepSeek-TNG-R1T2-Chimera",
+      "root": "tngtech/DeepSeek-TNG-R1T2-Chimera",
+      "price": {
+        "input": {
+          "tao": 0.0005888081599546199,
+          "usd": 0.1999188
+        },
+        "output": {
+          "tao": 0.0023563777477952695,
+          "usd": 0.800064
+        }
+      },
+      "object": "model",
+      "created": 1757325286,
+      "pricing": {
+        "prompt": 0.1999188,
+        "completion": 0.800064
+      },
+      "owned_by": "sglang",
+      "max_model_len": 163840,
+      "chute_id": "4fa0c7f5-82f7-59d1-8996-661bb778893d",
+      "tagline": "DeepSeek-TNG-R1T2-Chimera is a 671B parameter model that combines three DeepSeek parent models using Assembly of Experts methodology, offering improved intelligence over DeepSeek-R1 while being 20% faster, making it particularly suitable for reasoning tasks and general-purpose use cases.",
+      "public": true,
+      "invocation_count": 337077,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.1999188,
+          "tao": 0.0005888081599546199
+        },
+        "output": {
+          "usd": 0.800064,
+          "tao": 0.0023563777477952695
+        }
+      },
+      "supported_gpus": [
+        "h200"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 16,
+      "active_instances": 12,
+      "total_instances": 12
+    },
+    {
+      "id": "unsloth/Llama-3.2-1B-Instruct",
+      "root": "unsloth/Llama-3.2-1B-Instruct",
+      "price": {
+        "input": {
+          "tao": 2.9452365658188216e-05,
+          "usd": 0.01
+        },
+        "output": {
+          "tao": 2.9452365658188216e-05,
+          "usd": 0.01
+        }
+      },
+      "object": "model",
+      "parent": null,
+      "created": 1757325289,
+      "pricing": {
+        "prompt": 0.01,
+        "completion": 0.01
+      },
+      "owned_by": "vllm",
+      "permission": [
+        {
+          "id": "modelperm-81e6fcb59c85442d8aa559a92b669d4f",
+          "group": null,
+          "object": "model_permission",
+          "created": 1757325289,
+          "allow_view": true,
+          "is_blocking": false,
+          "organization": "*",
+          "allow_logprobs": true,
+          "allow_sampling": true,
+          "allow_fine_tuning": false,
+          "allow_create_engine": false,
+          "allow_search_indices": false
+        }
+      ],
+      "max_model_len": 16384
+    },
+    {
+      "id": "unsloth/Llama-3.2-3B-Instruct",
+      "root": "unsloth/Llama-3.2-3B-Instruct",
+      "price": {
+        "input": {
+          "tao": 2.9452365658188216e-05,
+          "usd": 0.01
+        },
+        "output": {
+          "tao": 2.9452365658188216e-05,
+          "usd": 0.01
+        }
+      },
+      "object": "model",
+      "created": 1757325286,
+      "pricing": {
+        "prompt": 0.01,
+        "completion": 0.01
+      },
+      "owned_by": "sglang",
+      "max_model_len": 16384,
+      "chute_id": "20acffc0-0c5f-58e3-97af-21fc0b261ec4",
+      "tagline": "Llama 3.2 3B is a 3 billion parameter open-source language model from Meta that excels at multilingual dialogue, retrieval, and summarization tasks in 8 officially supported languages.",
+      "public": true,
+      "invocation_count": 985462,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.01,
+          "tao": 2.9452365658188216e-05
+        },
+        "output": {
+          "usd": 0.01,
+          "tao": 2.9452365658188216e-05
+        }
+      },
+      "supported_gpus": [
+        "5090",
+        "a10",
+        "a100_sxm",
+        "l40s",
+        "l4",
+        "a40",
+        "h100_nvl",
+        "3090",
+        "l40",
+        "a100_40gb_sxm",
+        "a5000",
+        "a100_40gb",
+        "pro_6000",
+        "h20",
+        "a6000",
+        "h800",
+        "4090",
+        "a100",
+        "a6000_ada"
+      ],
+      "gpu_count": 1,
+      "min_vram_gb_per_gpu": 24,
+      "active_instances": 5,
+      "total_instances": 5
+    },
+    {
+      "id": "unsloth/Mistral-Nemo-Instruct-2407",
+      "root": "unsloth/Mistral-Nemo-Instruct-2407",
+      "price": {
+        "input": {
+          "tao": 2.9452365658188216e-05,
+          "usd": 0.01
+        },
+        "output": {
+          "tao": 0.00011781888738976347,
+          "usd": 0.040003199999999996
+        }
+      },
+      "object": "model",
+      "created": 1757325289,
+      "pricing": {
+        "prompt": 0.01,
+        "completion": 0.040003199999999996
+      },
+      "owned_by": "sglang",
+      "max_model_len": 131072
+    },
+    {
+      "id": "unsloth/Mistral-Small-24B-Instruct-2501",
+      "root": "unsloth/Mistral-Small-24B-Instruct-2501",
+      "price": {
+        "input": {
+          "tao": 5.888081599546198e-05,
+          "usd": 0.01999188
+        },
+        "output": {
+          "tao": 0.00023563777477952693,
+          "usd": 0.08000639999999999
+        }
+      },
+      "object": "model",
+      "created": 1757325288,
+      "pricing": {
+        "prompt": 0.01999188,
+        "completion": 0.08000639999999999
+      },
+      "owned_by": "sglang",
+      "max_model_len": 32768,
+      "chute_id": "986b874c-bf41-549f-b28f-4322f86fa4ba",
+      "tagline": "Mistral Small 3 is a 24B parameter open source model that achieves near GPT-4 level performance on many tasks while being small enough to run on a single RTX 4090 or 32GB MacBook, making it ideal for local deployment of conversational agents and specialized fine-tuning.",
+      "public": true,
+      "invocation_count": 622419,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.01999188,
+          "tao": 5.888081599546198e-05
+        },
+        "output": {
+          "usd": 0.08000639999999999,
+          "tao": 0.00023563777477952693
+        }
+      },
+      "supported_gpus": [
+        "a6000_ada",
+        "h100_nvl",
+        "a100",
+        "h20",
+        "a100_sxm",
+        "l40s",
+        "pro_6000",
+        "h100_sxm",
+        "h200",
+        "a40",
+        "h100",
+        "h800"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 48,
+      "active_instances": 5,
+      "total_instances": 5
+    },
+    {
+      "id": "unsloth/gemma-2-9b-it",
+      "root": "unsloth/gemma-2-9b-it",
+      "price": {
+        "input": {
+          "tao": 2.9452365658188216e-05,
+          "usd": 0.01
+        },
+        "output": {
+          "tao": 2.9454721847440867e-05,
+          "usd": 0.010000799999999999
+        }
+      },
+      "object": "model",
+      "created": 1757325286,
+      "pricing": {
+        "prompt": 0.01,
+        "completion": 0.010000799999999999
+      },
+      "owned_by": "sglang",
+      "max_model_len": 8192
+    },
+    {
+      "id": "unsloth/gemma-3-12b-it",
+      "root": "unsloth/gemma-3-12b-it",
+      "price": {
+        "input": {
+          "tao": 0.00014175011258166776,
+          "usd": 0.04812860000000001
+        },
+        "output": {
+          "tao": 0.0005672761244692316,
+          "usd": 0.192608
+        }
+      },
+      "object": "model",
+      "created": 1757325288,
+      "pricing": {
+        "prompt": 0.04812860000000001,
+        "completion": 0.192608
+      },
+      "owned_by": "sglang",
+      "max_model_len": 96000,
+      "chute_id": "83594561-0940-5839-ac92-1d94dd280567",
+      "tagline": "Gemma 3 is an open-source multimodal language model from Google DeepMind available in sizes from 1B to 27B parameters that can process both text and images to generate high-quality text responses, making it suitable for tasks like question answering, summarization, and image analysis while being efficient enough to run on consumer hardware.",
+      "public": true,
+      "invocation_count": 5520060,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.04812860000000001,
+          "tao": 0.00014175011258166776
+        },
+        "output": {
+          "usd": 0.192608,
+          "tao": 0.0005672761244692316
+        }
+      },
+      "supported_gpus": [
+        "5090",
+        "a4000_ada",
+        "a10",
+        "a100_sxm",
+        "l40s",
+        "l4",
+        "a40",
+        "h100_nvl",
+        "3090",
+        "l40",
+        "a100_40gb_sxm",
+        "a5000",
+        "a100_40gb",
+        "h100",
+        "a4000",
+        "h20",
+        "a6000",
+        "h800",
+        "a6000_ada",
+        "4090",
+        "a100",
+        "h100_sxm",
+        "pro_6000"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 16,
+      "active_instances": 15,
+      "total_instances": 15
+    },
+    {
+      "id": "unsloth/gemma-3-27b-it",
+      "root": "unsloth/gemma-3-27b-it",
+      "price": {
+        "input": {
+          "tao": 0.00019626938665153997,
+          "usd": 0.06663960000000001
+        },
+        "output": {
+          "tao": 0.0007854592492650899,
+          "usd": 0.266688
+        }
+      },
+      "object": "model",
+      "created": 1757325286,
+      "pricing": {
+        "prompt": 0.06663960000000001,
+        "completion": 0.266688
+      },
+      "owned_by": "sglang",
+      "max_model_len": 96000
+    },
+    {
+      "id": "unsloth/gemma-3-4b-it",
+      "root": "unsloth/gemma-3-4b-it",
+      "price": {
+        "input": {
+          "tao": 0.0,
+          "usd": 0.0
+        },
+        "output": {
+          "tao": 0.0,
+          "usd": 0.0
+        }
+      },
+      "object": "model",
+      "created": 1757325287,
+      "pricing": {
+        "prompt": 0.0,
+        "completion": 0.0
+      },
+      "owned_by": "sglang",
+      "max_model_len": 96000
+    },
+    {
+      "id": "zai-org/GLM-4-32B-0414",
+      "root": "zai-org/GLM-4-32B-0414",
+      "price": {
+        "input": {
+          "tao": 5.888081599546198e-05,
+          "usd": 0.01999188
+        },
+        "output": {
+          "tao": 0.00023563777477952693,
+          "usd": 0.08000639999999999
+        }
+      },
+      "object": "model",
+      "created": 1757325288,
+      "pricing": {
+        "prompt": 0.01999188,
+        "completion": 0.08000639999999999
+      },
+      "owned_by": "sglang",
+      "max_model_len": 32768,
+      "chute_id": "84bd3eb5-e262-5eb6-92c0-1b74a7f86ad7",
+      "tagline": "GLM-4-32B-0414 is a 32 billion parameter open-source language model that excels at code generation, web design, and reasoning tasks, with performance comparable to GPT-4 and DeepSeek models across various benchmarks.",
+      "public": true,
+      "invocation_count": 293418,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.01999188,
+          "tao": 5.888081599546198e-05
+        },
+        "output": {
+          "usd": 0.08000639999999999,
+          "tao": 0.00023563777477952693
+        }
+      },
+      "supported_gpus": [
+        "a6000_ada",
+        "h100_nvl",
+        "a100",
+        "l40",
+        "a100_40gb_sxm",
+        "a100_40gb",
+        "h20",
+        "a100_sxm",
+        "l40s",
+        "pro_6000",
+        "h100_sxm",
+        "h200",
+        "a40",
+        "a6000",
+        "h100",
+        "h800"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 40,
+      "active_instances": 5,
+      "total_instances": 5
+    },
+    {
+      "id": "zai-org/GLM-4.5-Air",
+      "root": "zai-org/GLM-4.5-Air",
+      "price": {
+        "input": {
+          "tao": 0.0,
+          "usd": 0.0
+        },
+        "output": {
+          "tao": 0.0,
+          "usd": 0.0
+        }
+      },
+      "object": "model",
+      "created": 1757325287,
+      "pricing": {
+        "prompt": 0.0,
+        "completion": 0.0
+      },
+      "owned_by": "sglang",
+      "max_model_len": 131072,
+      "chute_id": "7fa03c12-823f-529a-8245-36432f03e9a1",
+      "tagline": "GLM-4.5-Air is a 106B parameter language model (12B active) optimized for reasoning and agent tasks, offering both fast response and careful thinking modes for applications requiring complex reasoning or tool use.",
+      "public": true,
+      "invocation_count": 229623,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.0,
+          "tao": 0.0
+        },
+        "output": {
+          "usd": 0.0,
+          "tao": 0.0
+        }
+      },
+      "supported_gpus": [
+        "a100",
+        "a100_40gb_sxm",
+        "a100_40gb",
+        "a100_sxm",
+        "h20",
+        "l40s",
+        "h100_sxm",
+        "h100",
+        "a6000_ada",
+        "h800"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 16,
+      "active_instances": 12,
+      "total_instances": 12
+    },
+    {
+      "id": "zai-org/GLM-4.5-FP8",
+      "root": "zai-org/GLM-4.5-FP8",
+      "price": {
+        "input": {
+          "tao": 0.0009715334639251226,
+          "usd": 0.32986602
+        },
+        "output": {
+          "tao": 0.003888023283862195,
+          "usd": 1.3201056
+        }
+      },
+      "object": "model",
+      "created": 1757325289,
+      "pricing": {
+        "prompt": 0.32986602,
+        "completion": 1.3201056
+      },
+      "owned_by": "sglang",
+      "max_model_len": 131072,
+      "chute_id": "b5326e54-8d9e-590e-bed4-f3db35d9d4cd",
+      "tagline": "GLM-4.5 is a 355B-parameter Mixture-of-Experts model (with 32B active parameters) designed for reasoning, coding, and agent tasks that features both \"thinking\" and \"direct response\" modes for handling different types of queries.",
+      "public": true,
+      "invocation_count": 817154,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.32986602,
+          "tao": 0.0009715334639251226
+        },
+        "output": {
+          "usd": 1.3201056,
+          "tao": 0.003888023283862195
+        }
+      },
+      "supported_gpus": [
+        "b200",
+        "h200"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 16,
+      "active_instances": 43,
+      "total_instances": 48
+    },
+    {
+      "id": "zai-org/GLM-4.5V-FP8",
+      "root": "zai-org/GLM-4.5V-FP8",
+      "price": {
+        "input": {
+          "tao": 0.00015265396739564215,
+          "usd": 0.051830799999999996
+        },
+        "output": {
+          "tao": 0.0006109127494284031,
+          "usd": 0.20742399999999997
+        }
+      },
+      "object": "model",
+      "created": 1757325287,
+      "pricing": {
+        "prompt": 0.051830799999999996,
+        "completion": 0.20742399999999997
+      },
+      "owned_by": "sglang",
+      "max_model_len": 65536
+    },
+    {
+      "id": "zai-org/GLM-Z1-32B-0414",
+      "root": "zai-org/GLM-Z1-32B-0414",
+      "price": {
+        "input": {
+          "tao": 5.888081599546198e-05,
+          "usd": 0.01999188
+        },
+        "output": {
+          "tao": 0.00023563777477952693,
+          "usd": 0.08000639999999999
+        }
+      },
+      "object": "model",
+      "created": 1757325285,
+      "pricing": {
+        "prompt": 0.01999188,
+        "completion": 0.08000639999999999
+      },
+      "owned_by": "sglang",
+      "max_model_len": 32768,
+      "chute_id": "118a60a5-6bd8-554c-8fda-9d394e5c0ab8",
+      "tagline": "GLM-4-Z1-32B-0414 is a 32 billion parameter open-source language model optimized for deep reasoning and complex problem-solving tasks like mathematics, code generation, and analytical writing.",
+      "public": true,
+      "invocation_count": 214175,
+      "hot": true,
+      "chutes_pricing": {
+        "input": {
+          "usd": 0.01999188,
+          "tao": 5.888081599546198e-05
+        },
+        "output": {
+          "usd": 0.08000639999999999,
+          "tao": 0.00023563777477952693
+        }
+      },
+      "supported_gpus": [
+        "a6000_ada",
+        "h100_nvl",
+        "a100",
+        "l40",
+        "a100_40gb_sxm",
+        "a100_40gb",
+        "h20",
+        "a100_sxm",
+        "l40s",
+        "pro_6000",
+        "h100_sxm",
+        "h200",
+        "a40",
+        "a6000",
+        "h100",
+        "h800"
+      ],
+      "gpu_count": 8,
+      "min_vram_gb_per_gpu": 40,
+      "active_instances": 9,
+      "total_instances": 11
+    }
+  ]
+}

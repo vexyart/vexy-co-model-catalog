@@ -1,0 +1,61 @@
+[model_providers.baseten]
+base_url = "https://inference.baseten.co/v1"
+name = "baseten"
+wire_api = "chat"
+env_key = "BASETEN_API_KEY"
+
+[profiles.bas_qwen_qwen3_235b_a22b]
+approval_policy = "never"
+model = "Qwen/Qwen3-235B-A22B-Instruct-2507"
+model_provider = "baseten"
+model_reasoning_effort = "high"
+model_context_window = 262144
+model_max_output_tokens = 262144
+
+[profiles.bas_qwen_qwen3_coder_480]
+approval_policy = "never"
+model = "Qwen/Qwen3-Coder-480B-A35B-Instruct"
+model_provider = "baseten"
+model_reasoning_effort = "high"
+model_context_window = 262144
+model_max_output_tokens = 262144
+
+[profiles.bas_deepseek_ai_deepseek]
+approval_policy = "never"
+model = "deepseek-ai/DeepSeek-V3.1"
+model_provider = "baseten"
+model_reasoning_effort = "high"
+model_context_window = 163840
+model_max_output_tokens = 131072
+
+[profiles.bas_meta_llama_llama_4_m]
+approval_policy = "never"
+model = "meta-llama/Llama-4-Maverick-17B-128E-Instruct"
+model_provider = "baseten"
+model_reasoning_effort = "high"
+model_context_window = 1000000
+model_max_output_tokens = 131072
+
+[profiles.bas_meta_llama_llama_4_s]
+approval_policy = "never"
+model = "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+model_provider = "baseten"
+model_reasoning_effort = "high"
+model_context_window = 1000000
+model_max_output_tokens = 131072
+
+[profiles.bas_moonshotai_kimi_k2_i]
+approval_policy = "never"
+model = "moonshotai/Kimi-K2-Instruct-0905"
+model_provider = "baseten"
+model_reasoning_effort = "high"
+model_context_window = 262000
+model_max_output_tokens = 168000
+
+[profiles.bas_openai_gpt_oss_120b]
+approval_policy = "never"
+model = "openai/gpt-oss-120b"
+model_provider = "baseten"
+model_reasoning_effort = "high"
+model_context_window = 128072
+model_max_output_tokens = 128072

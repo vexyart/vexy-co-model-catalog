@@ -1,0 +1,7031 @@
+[model_providers.litellm]
+base_url = "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+name = "litellm"
+wire_api = "chat"
+
+[profiles.lit_1024_x_1024_50_steps]
+approval_policy = "never"
+model = "1024-x-1024/50-steps/stability.stable-diffusion-xl-v1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 77
+
+[profiles.lit_1024_x_1024_dall_e_2]
+approval_policy = "never"
+model = "1024-x-1024/dall-e-2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_1024_x_1024_max_step]
+approval_policy = "never"
+model = "1024-x-1024/max-steps/stability.stable-diffusion-xl-v1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 77
+
+[profiles.lit_256_x_256_dall_e_2]
+approval_policy = "never"
+model = "256-x-256/dall-e-2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_512_x_512_50_steps_s]
+approval_policy = "never"
+model = "512-x-512/50-steps/stability.stable-diffusion-xl-v0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 77
+
+[profiles.lit_512_x_512_dall_e_2]
+approval_policy = "never"
+model = "512-x-512/dall-e-2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_512_x_512_max_steps_]
+approval_policy = "never"
+model = "512-x-512/max-steps/stability.stable-diffusion-xl-v0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 77
+
+[profiles.lit_ai21_j2_mid_v1]
+approval_policy = "never"
+model = "ai21.j2-mid-v1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_ai21_j2_ultra_v1]
+approval_policy = "never"
+model = "ai21.j2-ultra-v1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_ai21_jamba_1_5_large]
+approval_policy = "never"
+model = "ai21.jamba-1-5-large-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_ai21_jamba_1_5_mini_]
+approval_policy = "never"
+model = "ai21.jamba-1-5-mini-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_ai21_jamba_instruct_]
+approval_policy = "never"
+model = "ai21.jamba-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_aiml_dall_e_2]
+approval_policy = "never"
+model = "aiml/dall-e-2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_aiml_dall_e_3]
+approval_policy = "never"
+model = "aiml/dall-e-3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_aiml_flux_pro]
+approval_policy = "never"
+model = "aiml/flux-pro"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_aiml_flux_pro_v1_1]
+approval_policy = "never"
+model = "aiml/flux-pro/v1.1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_aiml_flux_pro_v1_1_u]
+approval_policy = "never"
+model = "aiml/flux-pro/v1.1-ultra"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_aiml_flux_realism]
+approval_policy = "never"
+model = "aiml/flux-realism"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_aiml_flux_dev]
+approval_policy = "never"
+model = "aiml/flux/dev"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_aiml_flux_kontext_ma]
+approval_policy = "never"
+model = "aiml/flux/kontext-max/text-to-image"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_aiml_flux_kontext_pr]
+approval_policy = "never"
+model = "aiml/flux/kontext-pro/text-to-image"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_aiml_flux_schnell]
+approval_policy = "never"
+model = "aiml/flux/schnell"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_amazon_nova_lite_v10]
+approval_policy = "never"
+model = "amazon.nova-lite-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 10000
+model_max_output_tokens = 10000
+
+[profiles.lit_amazon_nova_micro_v1]
+approval_policy = "never"
+model = "amazon.nova-micro-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 10000
+model_max_output_tokens = 10000
+
+[profiles.lit_amazon_nova_pro_v10]
+approval_policy = "never"
+model = "amazon.nova-pro-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 10000
+model_max_output_tokens = 10000
+
+[profiles.lit_amazon_rerank_v10]
+approval_policy = "never"
+model = "amazon.rerank-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+model_max_output_tokens = 32000
+
+[profiles.lit_amazon_titan_embed_i]
+approval_policy = "never"
+model = "amazon.titan-embed-image-v1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128
+
+[profiles.lit_amazon_titan_embed_t]
+approval_policy = "never"
+model = "amazon.titan-embed-text-v2:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.lit_amazon_titan_text_ex]
+approval_policy = "never"
+model = "amazon.titan-text-express-v1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8000
+model_max_output_tokens = 8000
+
+[profiles.lit_amazon_titan_text_li]
+approval_policy = "never"
+model = "amazon.titan-text-lite-v1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4000
+model_max_output_tokens = 4000
+
+[profiles.lit_amazon_titan_text_pr]
+approval_policy = "never"
+model = "amazon.titan-text-premier-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+model_max_output_tokens = 32000
+
+[profiles.lit_anthropic_claude_3_5]
+approval_policy = "never"
+model = "anthropic.claude-3-5-sonnet-20241022-v2:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_anthropic_claude_3_7]
+approval_policy = "never"
+model = "anthropic.claude-3-7-sonnet-20250219-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_anthropic_claude_3_h]
+approval_policy = "never"
+model = "anthropic.claude-3-haiku-20240307-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_anthropic_claude_3_o]
+approval_policy = "never"
+model = "anthropic.claude-3-opus-20240229-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_anthropic_claude_3_s]
+approval_policy = "never"
+model = "anthropic.claude-3-sonnet-20240229-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_anthropic_claude_ins]
+approval_policy = "never"
+model = "anthropic.claude-instant-v1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_anthropic_claude_opu]
+approval_policy = "never"
+model = "anthropic.claude-opus-4-20250514-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+model_max_output_tokens = 32000
+
+[profiles.lit_anthropic_claude_son]
+approval_policy = "never"
+model = "anthropic.claude-sonnet-4-20250514-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 64000
+model_max_output_tokens = 64000
+
+[profiles.lit_anthropic_claude_v1]
+approval_policy = "never"
+model = "anthropic.claude-v1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_anthropic_claude_v2]
+approval_policy = "never"
+model = "anthropic.claude-v2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_anthropic_claude_v21]
+approval_policy = "never"
+model = "anthropic.claude-v2:1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_anyscale_huggingface]
+approval_policy = "never"
+model = "anyscale/HuggingFaceH4/zephyr-7b-beta"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_anyscale_codellama_c]
+approval_policy = "never"
+model = "anyscale/codellama/CodeLlama-70b-Instruct-hf"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_anyscale_google_gemm]
+approval_policy = "never"
+model = "anyscale/google/gemma-7b-it"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_anyscale_meta_llama_]
+approval_policy = "never"
+model = "anyscale/meta-llama/Meta-Llama-3-8B-Instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_anyscale_mistralai_m]
+approval_policy = "never"
+model = "anyscale/mistralai/Mixtral-8x7B-Instruct-v0.1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_apac_amazon_nova_lit]
+approval_policy = "never"
+model = "apac.amazon.nova-lite-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 10000
+model_max_output_tokens = 10000
+
+[profiles.lit_apac_amazon_nova_mic]
+approval_policy = "never"
+model = "apac.amazon.nova-micro-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 10000
+model_max_output_tokens = 10000
+
+[profiles.lit_apac_amazon_nova_pro]
+approval_policy = "never"
+model = "apac.amazon.nova-pro-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 10000
+model_max_output_tokens = 10000
+
+[profiles.lit_apac_anthropic_claud]
+approval_policy = "never"
+model = "apac.anthropic.claude-sonnet-4-20250514-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 64000
+model_max_output_tokens = 64000
+
+[profiles.lit_assemblyai_best]
+approval_policy = "never"
+model = "assemblyai/best"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_assemblyai_nano]
+approval_policy = "never"
+model = "assemblyai/nano"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_azure_ada]
+approval_policy = "never"
+model = "azure/ada"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+
+[profiles.lit_azure_codex_mini]
+approval_policy = "never"
+model = "azure/codex-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_azure_command_r_plus]
+approval_policy = "never"
+model = "azure/command-r-plus"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_computer_use_p]
+approval_policy = "never"
+model = "azure/computer-use-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_azure_eu_gpt_4o_2024]
+approval_policy = "never"
+model = "azure/eu/gpt-4o-2024-11-20"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_azure_eu_gpt_4o_mini]
+approval_policy = "never"
+model = "azure/eu/gpt-4o-mini-realtime-preview-2024-12-17"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_eu_gpt_4o_real]
+approval_policy = "never"
+model = "azure/eu/gpt-4o-realtime-preview-2024-12-17"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_eu_o1_2024_12_]
+approval_policy = "never"
+model = "azure/eu/o1-2024-12-17"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_azure_eu_o1_mini_202]
+approval_policy = "never"
+model = "azure/eu/o1-mini-2024-09-12"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65536
+model_max_output_tokens = 65536
+
+[profiles.lit_azure_eu_o1_preview_]
+approval_policy = "never"
+model = "azure/eu/o1-preview-2024-09-12"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_azure_eu_o3_mini_202]
+approval_policy = "never"
+model = "azure/eu/o3-mini-2025-01-31"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_azure_global_standar]
+approval_policy = "never"
+model = "azure/global-standard/gpt-4o-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_azure_global_gpt_4o_]
+approval_policy = "never"
+model = "azure/global/gpt-4o-2024-11-20"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_azure_gpt_3_5_turbo]
+approval_policy = "never"
+model = "azure/gpt-3.5-turbo"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_gpt_3_5_turbo_]
+approval_policy = "never"
+model = "azure/gpt-3.5-turbo-instruct-0914"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4097
+
+[profiles.lit_azure_gpt_35_turbo]
+approval_policy = "never"
+model = "azure/gpt-35-turbo"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_gpt_35_turbo_0]
+approval_policy = "never"
+model = "azure/gpt-35-turbo-0613"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4097
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_gpt_35_turbo_1]
+approval_policy = "never"
+model = "azure/gpt-35-turbo-16k-0613"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_gpt_35_turbo_i]
+approval_policy = "never"
+model = "azure/gpt-35-turbo-instruct-0914"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4097
+
+[profiles.lit_azure_gpt_4]
+approval_policy = "never"
+model = "azure/gpt-4"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_gpt_4_0125_pre]
+approval_policy = "never"
+model = "azure/gpt-4-0125-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_gpt_4_0613]
+approval_policy = "never"
+model = "azure/gpt-4-0613"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_gpt_4_1106_pre]
+approval_policy = "never"
+model = "azure/gpt-4-1106-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_gpt_4_32k]
+approval_policy = "never"
+model = "azure/gpt-4-32k"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_gpt_4_32k_0613]
+approval_policy = "never"
+model = "azure/gpt-4-32k-0613"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_gpt_4_turbo]
+approval_policy = "never"
+model = "azure/gpt-4-turbo"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_gpt_4_turbo_20]
+approval_policy = "never"
+model = "azure/gpt-4-turbo-2024-04-09"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_gpt_4_turbo_vi]
+approval_policy = "never"
+model = "azure/gpt-4-turbo-vision-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_gpt_4_1]
+approval_policy = "never"
+model = "azure/gpt-4.1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_azure_gpt_4_1_2025_0]
+approval_policy = "never"
+model = "azure/gpt-4.1-2025-04-14"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_azure_gpt_4_1_mini]
+approval_policy = "never"
+model = "azure/gpt-4.1-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_azure_gpt_4_1_mini_2]
+approval_policy = "never"
+model = "azure/gpt-4.1-mini-2025-04-14"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_azure_gpt_4_1_nano]
+approval_policy = "never"
+model = "azure/gpt-4.1-nano"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_azure_gpt_4_1_nano_2]
+approval_policy = "never"
+model = "azure/gpt-4.1-nano-2025-04-14"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_azure_gpt_4_5_previe]
+approval_policy = "never"
+model = "azure/gpt-4.5-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_azure_gpt_4o]
+approval_policy = "never"
+model = "azure/gpt-4o"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_azure_gpt_4o_2024_05]
+approval_policy = "never"
+model = "azure/gpt-4o-2024-05-13"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_gpt_4o_2024_08]
+approval_policy = "never"
+model = "azure/gpt-4o-2024-08-06"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_azure_gpt_4o_2024_11]
+approval_policy = "never"
+model = "azure/gpt-4o-2024-11-20"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_azure_gpt_4o_audio_p]
+approval_policy = "never"
+model = "azure/gpt-4o-audio-preview-2024-12-17"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_azure_gpt_4o_mini]
+approval_policy = "never"
+model = "azure/gpt-4o-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_azure_gpt_4o_mini_20]
+approval_policy = "never"
+model = "azure/gpt-4o-mini-2024-07-18"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_azure_gpt_4o_mini_au]
+approval_policy = "never"
+model = "azure/gpt-4o-mini-audio-preview-2024-12-17"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_azure_gpt_4o_mini_re]
+approval_policy = "never"
+model = "azure/gpt-4o-mini-realtime-preview-2024-12-17"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_gpt_4o_mini_tr]
+approval_policy = "never"
+model = "azure/gpt-4o-mini-transcribe"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_max_output_tokens = 2000
+
+[profiles.lit_azure_gpt_4o_mini_tt]
+approval_policy = "never"
+model = "azure/gpt-4o-mini-tts"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_azure_gpt_4o_realtim]
+approval_policy = "never"
+model = "azure/gpt-4o-realtime-preview-2024-12-17"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_gpt_4o_transcr]
+approval_policy = "never"
+model = "azure/gpt-4o-transcribe"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_max_output_tokens = 2000
+
+[profiles.lit_azure_gpt_5]
+approval_policy = "never"
+model = "azure/gpt-5"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_azure_gpt_5_2025_08_]
+approval_policy = "never"
+model = "azure/gpt-5-2025-08-07"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_azure_gpt_5_chat]
+approval_policy = "never"
+model = "azure/gpt-5-chat"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_azure_gpt_5_chat_lat]
+approval_policy = "never"
+model = "azure/gpt-5-chat-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_azure_gpt_5_mini]
+approval_policy = "never"
+model = "azure/gpt-5-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_azure_gpt_5_mini_202]
+approval_policy = "never"
+model = "azure/gpt-5-mini-2025-08-07"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_azure_gpt_5_nano]
+approval_policy = "never"
+model = "azure/gpt-5-nano"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_azure_gpt_5_nano_202]
+approval_policy = "never"
+model = "azure/gpt-5-nano-2025-08-07"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_azure_gpt_image_1]
+approval_policy = "never"
+model = "azure/gpt-image-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_azure_hd_1024_x_1024]
+approval_policy = "never"
+model = "azure/hd/1024-x-1024/dall-e-3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_azure_hd_1024_x_1792]
+approval_policy = "never"
+model = "azure/hd/1024-x-1792/dall-e-3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_azure_hd_1792_x_1024]
+approval_policy = "never"
+model = "azure/hd/1792-x-1024/dall-e-3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_azure_high_1024_x_10]
+approval_policy = "never"
+model = "azure/high/1024-x-1024/gpt-image-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_azure_high_1024_x_15]
+approval_policy = "never"
+model = "azure/high/1024-x-1536/gpt-image-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_azure_high_1536_x_10]
+approval_policy = "never"
+model = "azure/high/1536-x-1024/gpt-image-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_azure_low_1024_x_102]
+approval_policy = "never"
+model = "azure/low/1024-x-1024/gpt-image-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_azure_low_1024_x_153]
+approval_policy = "never"
+model = "azure/low/1024-x-1536/gpt-image-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_azure_low_1536_x_102]
+approval_policy = "never"
+model = "azure/low/1536-x-1024/gpt-image-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_azure_medium_1024_x_]
+approval_policy = "never"
+model = "azure/medium/1024-x-1536/gpt-image-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_azure_medium_1536_x_]
+approval_policy = "never"
+model = "azure/medium/1536-x-1024/gpt-image-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_azure_mistral_large_]
+approval_policy = "never"
+model = "azure/mistral-large-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+
+[profiles.lit_azure_o1]
+approval_policy = "never"
+model = "azure/o1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_azure_o1_2024_12_17]
+approval_policy = "never"
+model = "azure/o1-2024-12-17"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_azure_o1_mini]
+approval_policy = "never"
+model = "azure/o1-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65536
+model_max_output_tokens = 65536
+
+[profiles.lit_azure_o1_mini_2024_0]
+approval_policy = "never"
+model = "azure/o1-mini-2024-09-12"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65536
+model_max_output_tokens = 65536
+
+[profiles.lit_azure_o1_preview]
+approval_policy = "never"
+model = "azure/o1-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_azure_o1_preview_202]
+approval_policy = "never"
+model = "azure/o1-preview-2024-09-12"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_azure_o3]
+approval_policy = "never"
+model = "azure/o3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_azure_o3_2025_04_16]
+approval_policy = "never"
+model = "azure/o3-2025-04-16"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_azure_o3_deep_resear]
+approval_policy = "never"
+model = "azure/o3-deep-research"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_azure_o3_mini]
+approval_policy = "never"
+model = "azure/o3-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_azure_o3_mini_2025_0]
+approval_policy = "never"
+model = "azure/o3-mini-2025-01-31"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_azure_o3_pro]
+approval_policy = "never"
+model = "azure/o3-pro"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_azure_o3_pro_2025_06]
+approval_policy = "never"
+model = "azure/o3-pro-2025-06-10"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_azure_o4_mini]
+approval_policy = "never"
+model = "azure/o4-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_azure_o4_mini_2025_0]
+approval_policy = "never"
+model = "azure/o4-mini-2025-04-16"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_azure_standard_1024_]
+approval_policy = "never"
+model = "azure/standard/1024-x-1792/dall-e-3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_azure_standard_1792_]
+approval_policy = "never"
+model = "azure/standard/1792-x-1024/dall-e-3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_azure_text_embedding]
+approval_policy = "never"
+model = "azure/text-embedding-ada-002"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+
+[profiles.lit_azure_tts_1]
+approval_policy = "never"
+model = "azure/tts-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_azure_tts_1_hd]
+approval_policy = "never"
+model = "azure/tts-1-hd"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_azure_us_gpt_4o_2024]
+approval_policy = "never"
+model = "azure/us/gpt-4o-2024-11-20"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_azure_us_gpt_4o_mini]
+approval_policy = "never"
+model = "azure/us/gpt-4o-mini-realtime-preview-2024-12-17"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_us_gpt_4o_real]
+approval_policy = "never"
+model = "azure/us/gpt-4o-realtime-preview-2024-12-17"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_us_o1_2024_12_]
+approval_policy = "never"
+model = "azure/us/o1-2024-12-17"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_azure_us_o1_mini_202]
+approval_policy = "never"
+model = "azure/us/o1-mini-2024-09-12"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65536
+model_max_output_tokens = 65536
+
+[profiles.lit_azure_us_o1_preview_]
+approval_policy = "never"
+model = "azure/us/o1-preview-2024-09-12"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_azure_us_o3_mini_202]
+approval_policy = "never"
+model = "azure/us/o3-mini-2025-01-31"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_azure_whisper_1]
+approval_policy = "never"
+model = "azure/whisper-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_azure_ai_cohere_embe]
+approval_policy = "never"
+model = "azure_ai/Cohere-embed-v3-multilingual"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 512
+
+[profiles.lit_azure_ai_flux_1_1_pr]
+approval_policy = "never"
+model = "azure_ai/FLUX-1.1-pro"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_azure_ai_flux_1_kont]
+approval_policy = "never"
+model = "azure_ai/FLUX.1-Kontext-pro"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_azure_ai_llama_3_2_1]
+approval_policy = "never"
+model = "azure_ai/Llama-3.2-11B-Vision-Instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+model_max_output_tokens = 2048
+
+[profiles.lit_azure_ai_llama_3_2_9]
+approval_policy = "never"
+model = "azure_ai/Llama-3.2-90B-Vision-Instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+model_max_output_tokens = 2048
+
+[profiles.lit_azure_ai_llama_3_3_7]
+approval_policy = "never"
+model = "azure_ai/Llama-3.3-70B-Instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+model_max_output_tokens = 2048
+
+[profiles.lit_azure_ai_llama_4_mav]
+approval_policy = "never"
+model = "azure_ai/Llama-4-Maverick-17B-128E-Instruct-FP8"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_azure_ai_llama_4_sco]
+approval_policy = "never"
+model = "azure_ai/Llama-4-Scout-17B-16E-Instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_azure_ai_meta_llama_]
+approval_policy = "never"
+model = "azure_ai/Meta-Llama-3.1-8B-Instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+model_max_output_tokens = 2048
+
+[profiles.lit_azure_ai_phi_3_mediu]
+approval_policy = "never"
+model = "azure_ai/Phi-3-medium-4k-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_ai_phi_3_mini_]
+approval_policy = "never"
+model = "azure_ai/Phi-3-mini-4k-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_ai_phi_3_small]
+approval_policy = "never"
+model = "azure_ai/Phi-3-small-8k-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_ai_phi_3_5_moe]
+approval_policy = "never"
+model = "azure_ai/Phi-3.5-MoE-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_ai_phi_3_5_min]
+approval_policy = "never"
+model = "azure_ai/Phi-3.5-mini-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_ai_phi_3_5_vis]
+approval_policy = "never"
+model = "azure_ai/Phi-3.5-vision-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_ai_phi_4]
+approval_policy = "never"
+model = "azure_ai/Phi-4"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_azure_ai_phi_4_mini_]
+approval_policy = "never"
+model = "azure_ai/Phi-4-mini-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_ai_phi_4_multi]
+approval_policy = "never"
+model = "azure_ai/Phi-4-multimodal-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_ai_cohere_rera]
+approval_policy = "never"
+model = "azure_ai/cohere-rerank-v3.5"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_ai_deepseek_r1]
+approval_policy = "never"
+model = "azure_ai/deepseek-r1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_azure_ai_deepseek_v3]
+approval_policy = "never"
+model = "azure_ai/deepseek-v3-0324"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_azure_ai_embed_v_4_0]
+approval_policy = "never"
+model = "azure_ai/embed-v-4-0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.lit_azure_ai_global_grok]
+approval_policy = "never"
+model = "azure_ai/global/grok-3-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_azure_ai_grok_3]
+approval_policy = "never"
+model = "azure_ai/grok-3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_azure_ai_grok_3_mini]
+approval_policy = "never"
+model = "azure_ai/grok-3-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_azure_ai_jais_30b_ch]
+approval_policy = "never"
+model = "azure_ai/jais-30b-chat"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_azure_ai_jamba_instr]
+approval_policy = "never"
+model = "azure_ai/jamba-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_ai_ministral_3]
+approval_policy = "never"
+model = "azure_ai/ministral-3b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_ai_mistral_lar]
+approval_policy = "never"
+model = "azure_ai/mistral-large-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_ai_mistral_med]
+approval_policy = "never"
+model = "azure_ai/mistral-medium-2505"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_azure_ai_mistral_nem]
+approval_policy = "never"
+model = "azure_ai/mistral-nemo"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_azure_ai_mistral_sma]
+approval_policy = "never"
+model = "azure_ai/mistral-small-2503"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_babbage_002]
+approval_policy = "never"
+model = "babbage-002"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 4096
+
+[profiles.lit_bedrock__1_month_com]
+approval_policy = "never"
+model = "bedrock/*/1-month-commitment/cohere.command-text-v14"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_bedrock__6_month_com]
+approval_policy = "never"
+model = "bedrock/*/6-month-commitment/cohere.command-text-v14"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_bedrock_ap_northeast]
+approval_policy = "never"
+model = "bedrock/ap-northeast-1/anthropic.claude-v2:1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_bedrock_ap_south_1_m]
+approval_policy = "never"
+model = "bedrock/ap-south-1/meta.llama3-8b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_bedrock_ca_central_1]
+approval_policy = "never"
+model = "bedrock/ca-central-1/meta.llama3-8b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_bedrock_eu_central_1]
+approval_policy = "never"
+model = "bedrock/eu-central-1/anthropic.claude-v2:1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_bedrock_eu_west_1_me]
+approval_policy = "never"
+model = "bedrock/eu-west-1/meta.llama3-8b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_bedrock_eu_west_2_me]
+approval_policy = "never"
+model = "bedrock/eu-west-2/meta.llama3-8b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_bedrock_eu_west_3_mi]
+approval_policy = "never"
+model = "bedrock/eu-west-3/mistral.mixtral-8x7b-instruct-v0:1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_bedrock_invoke_anthr]
+approval_policy = "never"
+model = "bedrock/invoke/anthropic.claude-3-5-sonnet-20240620-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_bedrock_sa_east_1_me]
+approval_policy = "never"
+model = "bedrock/sa-east-1/meta.llama3-8b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_bedrock_us_east_1_1_]
+approval_policy = "never"
+model = "bedrock/us-east-1/1-month-commitment/anthropic.claude-v2:1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_bedrock_us_east_1_6_]
+approval_policy = "never"
+model = "bedrock/us-east-1/6-month-commitment/anthropic.claude-v2:1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_bedrock_us_east_1_an]
+approval_policy = "never"
+model = "bedrock/us-east-1/anthropic.claude-v2:1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_bedrock_us_east_1_me]
+approval_policy = "never"
+model = "bedrock/us-east-1/meta.llama3-8b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_bedrock_us_east_1_mi]
+approval_policy = "never"
+model = "bedrock/us-east-1/mistral.mixtral-8x7b-instruct-v0:1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_bedrock_us_gov_east_]
+approval_policy = "never"
+model = "bedrock/us-gov-east-1/meta.llama3-8b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+model_max_output_tokens = 2048
+
+[profiles.lit_bedrock_us_gov_west_]
+approval_policy = "never"
+model = "bedrock/us-gov-west-1/meta.llama3-8b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+model_max_output_tokens = 2048
+
+[profiles.lit_bedrock_us_west_1_me]
+approval_policy = "never"
+model = "bedrock/us-west-1/meta.llama3-8b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_bedrock_us_west_2_1_]
+approval_policy = "never"
+model = "bedrock/us-west-2/1-month-commitment/anthropic.claude-v2:1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_bedrock_us_west_2_6_]
+approval_policy = "never"
+model = "bedrock/us-west-2/6-month-commitment/anthropic.claude-v2:1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_bedrock_us_west_2_an]
+approval_policy = "never"
+model = "bedrock/us-west-2/anthropic.claude-v2:1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_bedrock_us_west_2_mi]
+approval_policy = "never"
+model = "bedrock/us-west-2/mistral.mixtral-8x7b-instruct-v0:1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_cerebras_llama_3_3_7]
+approval_policy = "never"
+model = "cerebras/llama-3.3-70b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_cerebras_llama3_1_70]
+approval_policy = "never"
+model = "cerebras/llama3.1-70b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_cerebras_llama3_1_8b]
+approval_policy = "never"
+model = "cerebras/llama3.1-8b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_cerebras_openai_gpt_]
+approval_policy = "never"
+model = "cerebras/openai/gpt-oss-120b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_cerebras_qwen_3_32b]
+approval_policy = "never"
+model = "cerebras/qwen-3-32b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_chat_bison]
+approval_policy = "never"
+model = "chat-bison"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_chat_bison_32k]
+approval_policy = "never"
+model = "chat-bison-32k"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_chat_bison_32k002]
+approval_policy = "never"
+model = "chat-bison-32k@002"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_chat_bison001]
+approval_policy = "never"
+model = "chat-bison@001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_chat_bison002]
+approval_policy = "never"
+model = "chat-bison@002"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_chatdolphin]
+approval_policy = "never"
+model = "chatdolphin"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_chatgpt_4o_latest]
+approval_policy = "never"
+model = "chatgpt-4o-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_claude_3_5_haiku_202]
+approval_policy = "never"
+model = "claude-3-5-haiku-20241022"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_claude_3_5_haiku_lat]
+approval_policy = "never"
+model = "claude-3-5-haiku-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_claude_3_5_sonnet_20]
+approval_policy = "never"
+model = "claude-3-5-sonnet-20241022"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_claude_3_5_sonnet_la]
+approval_policy = "never"
+model = "claude-3-5-sonnet-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_claude_3_7_sonnet_20]
+approval_policy = "never"
+model = "claude-3-7-sonnet-20250219"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_claude_3_7_sonnet_la]
+approval_policy = "never"
+model = "claude-3-7-sonnet-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_claude_3_haiku_20240]
+approval_policy = "never"
+model = "claude-3-haiku-20240307"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_claude_3_opus_202402]
+approval_policy = "never"
+model = "claude-3-opus-20240229"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_claude_3_opus_latest]
+approval_policy = "never"
+model = "claude-3-opus-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_claude_4_opus_202505]
+approval_policy = "never"
+model = "claude-4-opus-20250514"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+model_max_output_tokens = 32000
+
+[profiles.lit_claude_4_sonnet_2025]
+approval_policy = "never"
+model = "claude-4-sonnet-20250514"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1000000
+model_max_output_tokens = 1000000
+
+[profiles.lit_claude_opus_4_1]
+approval_policy = "never"
+model = "claude-opus-4-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+model_max_output_tokens = 32000
+
+[profiles.lit_claude_opus_4_1_2025]
+approval_policy = "never"
+model = "claude-opus-4-1-20250805"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+model_max_output_tokens = 32000
+
+[profiles.lit_claude_opus_4_202505]
+approval_policy = "never"
+model = "claude-opus-4-20250514"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+model_max_output_tokens = 32000
+
+[profiles.lit_claude_sonnet_4_2025]
+approval_policy = "never"
+model = "claude-sonnet-4-20250514"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 64000
+model_max_output_tokens = 64000
+
+[profiles.lit_cloudflare_cf_meta_l]
+approval_policy = "never"
+model = "cloudflare/@cf/meta/llama-2-7b-chat-int8"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+model_max_output_tokens = 2048
+
+[profiles.lit_cloudflare_cf_mistra]
+approval_policy = "never"
+model = "cloudflare/@cf/mistral/mistral-7b-instruct-v0.1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_cloudflare_hf_theblo]
+approval_policy = "never"
+model = "cloudflare/@hf/thebloke/codellama-7b-instruct-awq"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_code_bison]
+approval_policy = "never"
+model = "code-bison"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_code_bison_32k002]
+approval_policy = "never"
+model = "code-bison-32k@002"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_code_bison32k]
+approval_policy = "never"
+model = "code-bison32k"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_code_bison001]
+approval_policy = "never"
+model = "code-bison@001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_code_bison002]
+approval_policy = "never"
+model = "code-bison@002"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_code_gecko]
+approval_policy = "never"
+model = "code-gecko"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 64
+model_max_output_tokens = 64
+
+[profiles.lit_code_gecko_latest]
+approval_policy = "never"
+model = "code-gecko-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 64
+model_max_output_tokens = 64
+
+[profiles.lit_code_gecko001]
+approval_policy = "never"
+model = "code-gecko@001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 64
+model_max_output_tokens = 64
+
+[profiles.lit_code_gecko002]
+approval_policy = "never"
+model = "code-gecko@002"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 64
+model_max_output_tokens = 64
+
+[profiles.lit_codechat_bison]
+approval_policy = "never"
+model = "codechat-bison"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_codechat_bison_32k]
+approval_policy = "never"
+model = "codechat-bison-32k"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_codechat_bison_32k00]
+approval_policy = "never"
+model = "codechat-bison-32k@002"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_codechat_bison001]
+approval_policy = "never"
+model = "codechat-bison@001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_codechat_bison002]
+approval_policy = "never"
+model = "codechat-bison@002"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_codechat_bisonlatest]
+approval_policy = "never"
+model = "codechat-bison@latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_codestral_codestral_]
+approval_policy = "never"
+model = "codestral/codestral-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_codex_mini_latest]
+approval_policy = "never"
+model = "codex-mini-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_cohere_command_light]
+approval_policy = "never"
+model = "cohere.command-light-text-v14"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_cohere_command_r_plu]
+approval_policy = "never"
+model = "cohere.command-r-plus-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_cohere_command_r_v10]
+approval_policy = "never"
+model = "cohere.command-r-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_cohere_command_text_]
+approval_policy = "never"
+model = "cohere.command-text-v14"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_cohere_embed_english]
+approval_policy = "never"
+model = "cohere.embed-english-v3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 512
+
+[profiles.lit_cohere_embed_multili]
+approval_policy = "never"
+model = "cohere.embed-multilingual-v3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 512
+
+[profiles.lit_cohere_rerank_v3_50]
+approval_policy = "never"
+model = "cohere.rerank-v3-5:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+model_max_output_tokens = 32000
+
+[profiles.lit_command]
+approval_policy = "never"
+model = "command"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_command_a_03_2025]
+approval_policy = "never"
+model = "command-a-03-2025"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8000
+model_max_output_tokens = 8000
+
+[profiles.lit_command_light]
+approval_policy = "never"
+model = "command-light"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_command_nightly]
+approval_policy = "never"
+model = "command-nightly"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_command_r]
+approval_policy = "never"
+model = "command-r"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_command_r_08_2024]
+approval_policy = "never"
+model = "command-r-08-2024"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_command_r_plus]
+approval_policy = "never"
+model = "command-r-plus"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_command_r_plus_08_20]
+approval_policy = "never"
+model = "command-r-plus-08-2024"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_command_r7b_12_2024]
+approval_policy = "never"
+model = "command-r7b-12-2024"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_computer_use_preview]
+approval_policy = "never"
+model = "computer-use-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_dashscope_qwen_max]
+approval_policy = "never"
+model = "dashscope/qwen-max"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 8192
+
+[profiles.lit_dashscope_qwen_plus_]
+approval_policy = "never"
+model = "dashscope/qwen-plus-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 16384
+
+[profiles.lit_dashscope_qwen_turbo]
+approval_policy = "never"
+model = "dashscope/qwen-turbo-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 16384
+
+[profiles.lit_dashscope_qwen3_30b_]
+approval_policy = "never"
+model = "dashscope/qwen3-30b-a3b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 16384
+
+[profiles.lit_databricks_databrick]
+approval_policy = "never"
+model = "databricks/databricks-mpt-7b-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_davinci_002]
+approval_policy = "never"
+model = "davinci-002"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 4096
+
+[profiles.lit_deepgram_base]
+approval_policy = "never"
+model = "deepgram/base"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_base_conver]
+approval_policy = "never"
+model = "deepgram/base-conversationalai"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_base_financ]
+approval_policy = "never"
+model = "deepgram/base-finance"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_base_genera]
+approval_policy = "never"
+model = "deepgram/base-general"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_base_meetin]
+approval_policy = "never"
+model = "deepgram/base-meeting"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_base_phonec]
+approval_policy = "never"
+model = "deepgram/base-phonecall"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_base_video]
+approval_policy = "never"
+model = "deepgram/base-video"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_base_voicem]
+approval_policy = "never"
+model = "deepgram/base-voicemail"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_enhanced]
+approval_policy = "never"
+model = "deepgram/enhanced"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_enhanced_fi]
+approval_policy = "never"
+model = "deepgram/enhanced-finance"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_enhanced_ge]
+approval_policy = "never"
+model = "deepgram/enhanced-general"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_enhanced_me]
+approval_policy = "never"
+model = "deepgram/enhanced-meeting"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_enhanced_ph]
+approval_policy = "never"
+model = "deepgram/enhanced-phonecall"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_nova]
+approval_policy = "never"
+model = "deepgram/nova"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_nova_2]
+approval_policy = "never"
+model = "deepgram/nova-2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_nova_2_atc]
+approval_policy = "never"
+model = "deepgram/nova-2-atc"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_nova_2_auto]
+approval_policy = "never"
+model = "deepgram/nova-2-automotive"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_nova_2_conv]
+approval_policy = "never"
+model = "deepgram/nova-2-conversationalai"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_nova_2_driv]
+approval_policy = "never"
+model = "deepgram/nova-2-drivethru"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_nova_2_fina]
+approval_policy = "never"
+model = "deepgram/nova-2-finance"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_nova_2_gene]
+approval_policy = "never"
+model = "deepgram/nova-2-general"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_nova_2_meet]
+approval_policy = "never"
+model = "deepgram/nova-2-meeting"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_nova_2_phon]
+approval_policy = "never"
+model = "deepgram/nova-2-phonecall"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_nova_2_vide]
+approval_policy = "never"
+model = "deepgram/nova-2-video"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_nova_2_voic]
+approval_policy = "never"
+model = "deepgram/nova-2-voicemail"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_nova_3]
+approval_policy = "never"
+model = "deepgram/nova-3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_nova_3_gene]
+approval_policy = "never"
+model = "deepgram/nova-3-general"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_nova_3_medi]
+approval_policy = "never"
+model = "deepgram/nova-3-medical"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_nova_genera]
+approval_policy = "never"
+model = "deepgram/nova-general"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_nova_phonec]
+approval_policy = "never"
+model = "deepgram/nova-phonecall"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_whisper]
+approval_policy = "never"
+model = "deepgram/whisper"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_whisper_bas]
+approval_policy = "never"
+model = "deepgram/whisper-base"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_whisper_lar]
+approval_policy = "never"
+model = "deepgram/whisper-large"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_whisper_med]
+approval_policy = "never"
+model = "deepgram/whisper-medium"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_whisper_sma]
+approval_policy = "never"
+model = "deepgram/whisper-small"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepgram_whisper_tin]
+approval_policy = "never"
+model = "deepgram/whisper-tiny"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_deepinfra_austism_ch]
+approval_policy = "never"
+model = "deepinfra/Austism/chronos-hermes-13b-v2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_deepinfra_gryphe_myt]
+approval_policy = "never"
+model = "deepinfra/Gryphe/MythoMax-L2-13b-turbo"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_deepinfra_koboldai_l]
+approval_policy = "never"
+model = "deepinfra/KoboldAI/LLaMA2-13B-Tiefighter"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_deepinfra_nousresear]
+approval_policy = "never"
+model = "deepinfra/NousResearch/Hermes-3-Llama-3.1-70B"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_deepinfra_novasky_ai]
+approval_policy = "never"
+model = "deepinfra/NovaSky-AI/Sky-T1-32B-Preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_deepinfra_phind_phin]
+approval_policy = "never"
+model = "deepinfra/Phind/Phind-CodeLlama-34B-v2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_deepinfra_qwen_qvq_7]
+approval_policy = "never"
+model = "deepinfra/Qwen/QVQ-72B-Preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+model_max_output_tokens = 32000
+
+[profiles.lit_deepinfra_qwen_qwq_3]
+approval_policy = "never"
+model = "deepinfra/Qwen/QwQ-32B-Preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_deepinfra_qwen_qwen2]
+approval_policy = "never"
+model = "deepinfra/Qwen/Qwen2.5-VL-32B-Instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_deepinfra_qwen_qwen3]
+approval_policy = "never"
+model = "deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 262144
+model_max_output_tokens = 262144
+
+[profiles.lit_deepinfra_sao10k_l3_]
+approval_policy = "never"
+model = "deepinfra/Sao10K/L3.3-70B-Euryale-v2.3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_deepinfra_allenai_ol]
+approval_policy = "never"
+model = "deepinfra/allenai/olmOCR-7B-0725-FP8"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_deepinfra_anthropic_]
+approval_policy = "never"
+model = "deepinfra/anthropic/claude-4-sonnet"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 200000
+model_max_output_tokens = 200000
+
+[profiles.lit_deepinfra_bigcode_st]
+approval_policy = "never"
+model = "deepinfra/bigcode/starcoder2-15b-instruct-v0.1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_deepinfra_cognitivec]
+approval_policy = "never"
+model = "deepinfra/cognitivecomputations/dolphin-2.9.1-llama-3-70b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_deepinfra_deepinfra_]
+approval_policy = "never"
+model = "deepinfra/deepinfra/airoboros-70b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_deepinfra_deepseek_a]
+approval_policy = "never"
+model = "deepinfra/deepseek-ai/DeepSeek-V3.1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 163840
+model_max_output_tokens = 163840
+
+[profiles.lit_deepinfra_google_cod]
+approval_policy = "never"
+model = "deepinfra/google/codegemma-7b-it"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_deepinfra_google_gem]
+approval_policy = "never"
+model = "deepinfra/google/gemma-3-4b-it"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_deepinfra_lizpreciat]
+approval_policy = "never"
+model = "deepinfra/lizpreciatior/lzlv_70b_fp16_hf"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_deepinfra_mattshumer]
+approval_policy = "never"
+model = "deepinfra/mattshumer/Reflection-Llama-3.1-70B"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_deepinfra_meta_llama]
+approval_policy = "never"
+model = "deepinfra/meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_deepinfra_microsoft_]
+approval_policy = "never"
+model = "deepinfra/microsoft/phi-4-reasoning-plus"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_deepinfra_mistralai_]
+approval_policy = "never"
+model = "deepinfra/mistralai/Mixtral-8x7B-Instruct-v0.1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_deepinfra_moonshotai]
+approval_policy = "never"
+model = "deepinfra/moonshotai/Kimi-K2-Instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_deepinfra_nvidia_lla]
+approval_policy = "never"
+model = "deepinfra/nvidia/Llama-3.1-Nemotron-70B-Instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_deepinfra_nvidia_nem]
+approval_policy = "never"
+model = "deepinfra/nvidia/Nemotron-4-340B-Instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_deepinfra_openai_gpt]
+approval_policy = "never"
+model = "deepinfra/openai/gpt-oss-20b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_deepinfra_openbmb_mi]
+approval_policy = "never"
+model = "deepinfra/openbmb/MiniCPM-Llama3-V-2_5"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_deepinfra_openchat_o]
+approval_policy = "never"
+model = "deepinfra/openchat/openchat_3.5"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_deepinfra_zai_org_gl]
+approval_policy = "never"
+model = "deepinfra/zai-org/GLM-4.5-Air"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_deepseek_deepseek_ch]
+approval_policy = "never"
+model = "deepseek/deepseek-chat"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_deepseek_deepseek_co]
+approval_policy = "never"
+model = "deepseek/deepseek-coder"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_deepseek_deepseek_r1]
+approval_policy = "never"
+model = "deepseek/deepseek-r1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_deepseek_deepseek_re]
+approval_policy = "never"
+model = "deepseek/deepseek-reasoner"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_deepseek_deepseek_v3]
+approval_policy = "never"
+model = "deepseek/deepseek-v3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_dolphin]
+approval_policy = "never"
+model = "dolphin"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_doubao_embedding]
+approval_policy = "never"
+model = "doubao-embedding"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.lit_doubao_embedding_lar]
+approval_policy = "never"
+model = "doubao-embedding-large-text-250515"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.lit_doubao_embedding_tex]
+approval_policy = "never"
+model = "doubao-embedding-text-240715"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.lit_elevenlabs_scribe_v1]
+approval_policy = "never"
+model = "elevenlabs/scribe_v1_experimental"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_embed_english_light_]
+approval_policy = "never"
+model = "embed-english-light-v3.0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+
+[profiles.lit_embed_english_v2_0]
+approval_policy = "never"
+model = "embed-english-v2.0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.lit_embed_english_v3_0]
+approval_policy = "never"
+model = "embed-english-v3.0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+
+[profiles.lit_embed_multilingual_v]
+approval_policy = "never"
+model = "embed-multilingual-v3.0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+
+[profiles.lit_eu_amazon_nova_lite_]
+approval_policy = "never"
+model = "eu.amazon.nova-lite-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 10000
+model_max_output_tokens = 10000
+
+[profiles.lit_eu_amazon_nova_micro]
+approval_policy = "never"
+model = "eu.amazon.nova-micro-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 10000
+model_max_output_tokens = 10000
+
+[profiles.lit_eu_amazon_nova_pro_v]
+approval_policy = "never"
+model = "eu.amazon.nova-pro-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 10000
+model_max_output_tokens = 10000
+
+[profiles.lit_eu_anthropic_claude_]
+approval_policy = "never"
+model = "eu.anthropic.claude-sonnet-4-20250514-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 64000
+model_max_output_tokens = 64000
+
+[profiles.lit_eu_meta_llama3_2_1b_]
+approval_policy = "never"
+model = "eu.meta.llama3-2-1b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4096
+
+[profiles.lit_eu_meta_llama3_2_3b_]
+approval_policy = "never"
+model = "eu.meta.llama3-2-3b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4096
+
+[profiles.lit_eu_mistral_pixtral_l]
+approval_policy = "never"
+model = "eu.mistral.pixtral-large-2502-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4096
+
+[profiles.lit_featherless_ai_feath]
+approval_policy = "never"
+model = "featherless_ai/featherless-ai/Qwerky-QwQ-32B"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 4096
+
+[profiles.lit_fireworks_ai_4_1b_to]
+approval_policy = "never"
+model = "fireworks-ai-4.1b-to-16b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_fireworks_ai_56b_to_]
+approval_policy = "never"
+model = "fireworks-ai-56b-to-176b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_fireworks_ai_above_1]
+approval_policy = "never"
+model = "fireworks-ai-above-16b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_fireworks_ai_default]
+approval_policy = "never"
+model = "fireworks-ai-default"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_fireworks_ai_embeddi]
+approval_policy = "never"
+model = "fireworks-ai-embedding-up-to-150m"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_fireworks_ai_moe_up_]
+approval_policy = "never"
+model = "fireworks-ai-moe-up-to-56b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_fireworks_ai_up_to_4]
+approval_policy = "never"
+model = "fireworks-ai-up-to-4b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_fireworks_ai_whereis]
+approval_policy = "never"
+model = "fireworks_ai/WhereIsAI/UAE-Large-V1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 512
+
+[profiles.lit_fireworks_ai_account]
+approval_policy = "never"
+model = "fireworks_ai/accounts/fireworks/models/yi-large"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_fireworks_ai_nomic_a]
+approval_policy = "never"
+model = "fireworks_ai/nomic-ai/nomic-embed-text-v1.5"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.lit_fireworks_ai_thenlpe]
+approval_policy = "never"
+model = "fireworks_ai/thenlper/gte-large"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 512
+
+[profiles.lit_friendliai_meta_llam]
+approval_policy = "never"
+model = "friendliai/meta-llama-3.1-8b-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_ftbabbage_002]
+approval_policy = "never"
+model = "ft:babbage-002"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 4096
+
+[profiles.lit_ftdavinci_002]
+approval_policy = "never"
+model = "ft:davinci-002"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 4096
+
+[profiles.lit_ftgpt_3_5_turbo]
+approval_policy = "never"
+model = "ft:gpt-3.5-turbo"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_ftgpt_3_5_turbo_0125]
+approval_policy = "never"
+model = "ft:gpt-3.5-turbo-0125"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_ftgpt_3_5_turbo_0613]
+approval_policy = "never"
+model = "ft:gpt-3.5-turbo-0613"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_ftgpt_3_5_turbo_1106]
+approval_policy = "never"
+model = "ft:gpt-3.5-turbo-1106"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_ftgpt_4_0613]
+approval_policy = "never"
+model = "ft:gpt-4-0613"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_ftgpt_4o_2024_08_06]
+approval_policy = "never"
+model = "ft:gpt-4o-2024-08-06"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_ftgpt_4o_2024_11_20]
+approval_policy = "never"
+model = "ft:gpt-4o-2024-11-20"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_ftgpt_4o_mini_2024_0]
+approval_policy = "never"
+model = "ft:gpt-4o-mini-2024-07-18"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_gemini_1_0_pro]
+approval_policy = "never"
+model = "gemini-1.0-pro"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_1_0_pro_001]
+approval_policy = "never"
+model = "gemini-1.0-pro-001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_1_0_pro_002]
+approval_policy = "never"
+model = "gemini-1.0-pro-002"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_1_0_pro_visio]
+approval_policy = "never"
+model = "gemini-1.0-pro-vision-001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+model_max_output_tokens = 2048
+
+[profiles.lit_gemini_1_0_ultra]
+approval_policy = "never"
+model = "gemini-1.0-ultra"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 2048
+
+[profiles.lit_gemini_1_0_ultra_001]
+approval_policy = "never"
+model = "gemini-1.0-ultra-001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 2048
+
+[profiles.lit_gemini_1_5_flash]
+approval_policy = "never"
+model = "gemini-1.5-flash"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_1_5_flash_001]
+approval_policy = "never"
+model = "gemini-1.5-flash-001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_1_5_flash_002]
+approval_policy = "never"
+model = "gemini-1.5-flash-002"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_1_5_flash_exp]
+approval_policy = "never"
+model = "gemini-1.5-flash-exp-0827"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_1_5_flash_pre]
+approval_policy = "never"
+model = "gemini-1.5-flash-preview-0514"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_1_5_pro]
+approval_policy = "never"
+model = "gemini-1.5-pro"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_1_5_pro_001]
+approval_policy = "never"
+model = "gemini-1.5-pro-001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_1_5_pro_002]
+approval_policy = "never"
+model = "gemini-1.5-pro-002"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_1_5_pro_previ]
+approval_policy = "never"
+model = "gemini-1.5-pro-preview-0514"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_2_0_flash]
+approval_policy = "never"
+model = "gemini-2.0-flash"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_2_0_flash_001]
+approval_policy = "never"
+model = "gemini-2.0-flash-001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_2_0_flash_exp]
+approval_policy = "never"
+model = "gemini-2.0-flash-exp"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_2_0_flash_lit]
+approval_policy = "never"
+model = "gemini-2.0-flash-lite-001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_2_0_flash_liv]
+approval_policy = "never"
+model = "gemini-2.0-flash-live-preview-04-09"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65535
+model_max_output_tokens = 65535
+
+[profiles.lit_gemini_2_0_flash_pre]
+approval_policy = "never"
+model = "gemini-2.0-flash-preview-image-generation"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_2_0_flash_thi]
+approval_policy = "never"
+model = "gemini-2.0-flash-thinking-exp-01-21"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65536
+model_max_output_tokens = 65536
+
+[profiles.lit_gemini_2_0_pro_exp_0]
+approval_policy = "never"
+model = "gemini-2.0-pro-exp-02-05"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_2_5_flash]
+approval_policy = "never"
+model = "gemini-2.5-flash"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65535
+model_max_output_tokens = 65535
+
+[profiles.lit_gemini_2_5_flash_ima]
+approval_policy = "never"
+model = "gemini-2.5-flash-image-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65535
+model_max_output_tokens = 65535
+
+[profiles.lit_gemini_2_5_flash_lit]
+approval_policy = "never"
+model = "gemini-2.5-flash-lite-preview-06-17"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65535
+model_max_output_tokens = 65535
+
+[profiles.lit_gemini_2_5_flash_pre]
+approval_policy = "never"
+model = "gemini-2.5-flash-preview-05-20"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65535
+model_max_output_tokens = 65535
+
+[profiles.lit_gemini_2_5_pro]
+approval_policy = "never"
+model = "gemini-2.5-pro"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65535
+model_max_output_tokens = 65535
+
+[profiles.lit_gemini_2_5_pro_exp_0]
+approval_policy = "never"
+model = "gemini-2.5-pro-exp-03-25"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65535
+model_max_output_tokens = 65535
+
+[profiles.lit_gemini_2_5_pro_previ]
+approval_policy = "never"
+model = "gemini-2.5-pro-preview-tts"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65535
+model_max_output_tokens = 65535
+
+[profiles.lit_gemini_embedding_001]
+approval_policy = "never"
+model = "gemini-embedding-001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+
+[profiles.lit_gemini_flash_experim]
+approval_policy = "never"
+model = "gemini-flash-experimental"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_pro]
+approval_policy = "never"
+model = "gemini-pro"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_pro_experimen]
+approval_policy = "never"
+model = "gemini-pro-experimental"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_pro_vision]
+approval_policy = "never"
+model = "gemini-pro-vision"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+model_max_output_tokens = 2048
+
+[profiles.lit_gemini_gemini_1_5_fl]
+approval_policy = "never"
+model = "gemini/gemini-1.5-flash-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_gemini_1_5_pr]
+approval_policy = "never"
+model = "gemini/gemini-1.5-pro-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_gemini_2_0_fl]
+approval_policy = "never"
+model = "gemini/gemini-2.0-flash-thinking-exp-01-21"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 65536
+
+[profiles.lit_gemini_gemini_2_0_pr]
+approval_policy = "never"
+model = "gemini/gemini-2.0-pro-exp-02-05"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_gemini_2_5_fl]
+approval_policy = "never"
+model = "gemini/gemini-2.5-flash-preview-tts"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65535
+model_max_output_tokens = 65535
+
+[profiles.lit_gemini_gemini_2_5_pr]
+approval_policy = "never"
+model = "gemini/gemini-2.5-pro-preview-tts"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65535
+model_max_output_tokens = 65535
+
+[profiles.lit_gemini_gemini_exp_11]
+approval_policy = "never"
+model = "gemini/gemini-exp-1114"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_gemini_exp_12]
+approval_policy = "never"
+model = "gemini/gemini-exp-1206"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_gemini_gemma_]
+approval_policy = "never"
+model = "gemini/gemini-gemma-2-9b-it"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_gemini_pro]
+approval_policy = "never"
+model = "gemini/gemini-pro"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_gemini_pro_vi]
+approval_policy = "never"
+model = "gemini/gemini-pro-vision"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+model_max_output_tokens = 2048
+
+[profiles.lit_gemini_gemma_3_27b_i]
+approval_policy = "never"
+model = "gemini/gemma-3-27b-it"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_imagen_3_0_fa]
+approval_policy = "never"
+model = "gemini/imagen-3.0-fast-generate-001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_gemini_imagen_3_0_ge]
+approval_policy = "never"
+model = "gemini/imagen-3.0-generate-002"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_gemini_imagen_4_0_fa]
+approval_policy = "never"
+model = "gemini/imagen-4.0-fast-generate-001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_gemini_imagen_4_0_ge]
+approval_policy = "never"
+model = "gemini/imagen-4.0-generate-001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_gemini_imagen_4_0_ul]
+approval_policy = "never"
+model = "gemini/imagen-4.0-ultra-generate-001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_gemini_learnlm_1_5_p]
+approval_policy = "never"
+model = "gemini/learnlm-1.5-pro-experimental"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_gemini_veo_2_0_gener]
+approval_policy = "never"
+model = "gemini/veo-2.0-generate-001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+
+[profiles.lit_gemini_veo_3_0_fast_]
+approval_policy = "never"
+model = "gemini/veo-3.0-fast-generate-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+
+[profiles.lit_gemini_veo_3_0_gener]
+approval_policy = "never"
+model = "gemini/veo-3.0-generate-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+
+[profiles.lit_gpt_3_5_turbo]
+approval_policy = "never"
+model = "gpt-3.5-turbo"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4097
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_3_5_turbo_0125]
+approval_policy = "never"
+model = "gpt-3.5-turbo-0125"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16385
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_3_5_turbo_0301]
+approval_policy = "never"
+model = "gpt-3.5-turbo-0301"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4097
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_3_5_turbo_0613]
+approval_policy = "never"
+model = "gpt-3.5-turbo-0613"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4097
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_3_5_turbo_1106]
+approval_policy = "never"
+model = "gpt-3.5-turbo-1106"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16385
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_3_5_turbo_16k]
+approval_policy = "never"
+model = "gpt-3.5-turbo-16k"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16385
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_3_5_turbo_16k_06]
+approval_policy = "never"
+model = "gpt-3.5-turbo-16k-0613"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16385
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_3_5_turbo_instru]
+approval_policy = "never"
+model = "gpt-3.5-turbo-instruct-0914"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4097
+model_max_output_tokens = 4097
+
+[profiles.lit_gpt_4]
+approval_policy = "never"
+model = "gpt-4"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_4_0125_preview]
+approval_policy = "never"
+model = "gpt-4-0125-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_4_0314]
+approval_policy = "never"
+model = "gpt-4-0314"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_4_0613]
+approval_policy = "never"
+model = "gpt-4-0613"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_4_1106_preview]
+approval_policy = "never"
+model = "gpt-4-1106-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_4_1106_vision_pr]
+approval_policy = "never"
+model = "gpt-4-1106-vision-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_4_32k]
+approval_policy = "never"
+model = "gpt-4-32k"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_4_32k_0314]
+approval_policy = "never"
+model = "gpt-4-32k-0314"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_4_32k_0613]
+approval_policy = "never"
+model = "gpt-4-32k-0613"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_4_turbo]
+approval_policy = "never"
+model = "gpt-4-turbo"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_4_turbo_2024_04_]
+approval_policy = "never"
+model = "gpt-4-turbo-2024-04-09"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_4_turbo_preview]
+approval_policy = "never"
+model = "gpt-4-turbo-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_4_vision_preview]
+approval_policy = "never"
+model = "gpt-4-vision-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_4_1]
+approval_policy = "never"
+model = "gpt-4.1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_gpt_4_1_2025_04_14]
+approval_policy = "never"
+model = "gpt-4.1-2025-04-14"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_gpt_4_1_mini]
+approval_policy = "never"
+model = "gpt-4.1-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_gpt_4_1_mini_2025_04]
+approval_policy = "never"
+model = "gpt-4.1-mini-2025-04-14"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_gpt_4_1_nano]
+approval_policy = "never"
+model = "gpt-4.1-nano"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_gpt_4_1_nano_2025_04]
+approval_policy = "never"
+model = "gpt-4.1-nano-2025-04-14"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_gpt_4_5_preview]
+approval_policy = "never"
+model = "gpt-4.5-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_gpt_4_5_preview_2025]
+approval_policy = "never"
+model = "gpt-4.5-preview-2025-02-27"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_gpt_4o]
+approval_policy = "never"
+model = "gpt-4o"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_gpt_4o_2024_05_13]
+approval_policy = "never"
+model = "gpt-4o-2024-05-13"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_4o_2024_08_06]
+approval_policy = "never"
+model = "gpt-4o-2024-08-06"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_gpt_4o_2024_11_20]
+approval_policy = "never"
+model = "gpt-4o-2024-11-20"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_gpt_4o_audio_preview]
+approval_policy = "never"
+model = "gpt-4o-audio-preview-2025-06-03"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_gpt_4o_mini]
+approval_policy = "never"
+model = "gpt-4o-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_gpt_4o_mini_2024_07_]
+approval_policy = "never"
+model = "gpt-4o-mini-2024-07-18"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_gpt_4o_mini_audio_pr]
+approval_policy = "never"
+model = "gpt-4o-mini-audio-preview-2024-12-17"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_gpt_4o_mini_realtime]
+approval_policy = "never"
+model = "gpt-4o-mini-realtime-preview-2024-12-17"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_4o_mini_search_p]
+approval_policy = "never"
+model = "gpt-4o-mini-search-preview-2025-03-11"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_gpt_4o_mini_transcri]
+approval_policy = "never"
+model = "gpt-4o-mini-transcribe"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_max_output_tokens = 2000
+
+[profiles.lit_gpt_4o_mini_tts]
+approval_policy = "never"
+model = "gpt-4o-mini-tts"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_gpt_4o_realtime_prev]
+approval_policy = "never"
+model = "gpt-4o-realtime-preview-2025-06-03"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_4o_search_previe]
+approval_policy = "never"
+model = "gpt-4o-search-preview-2025-03-11"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_gpt_4o_transcribe]
+approval_policy = "never"
+model = "gpt-4o-transcribe"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_max_output_tokens = 2000
+
+[profiles.lit_gpt_5]
+approval_policy = "never"
+model = "gpt-5"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_gpt_5_2025_08_07]
+approval_policy = "never"
+model = "gpt-5-2025-08-07"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_gpt_5_chat]
+approval_policy = "never"
+model = "gpt-5-chat"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_gpt_5_chat_latest]
+approval_policy = "never"
+model = "gpt-5-chat-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_gpt_5_mini]
+approval_policy = "never"
+model = "gpt-5-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_gpt_5_mini_2025_08_0]
+approval_policy = "never"
+model = "gpt-5-mini-2025-08-07"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_gpt_5_nano]
+approval_policy = "never"
+model = "gpt-5-nano"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_gpt_5_nano_2025_08_0]
+approval_policy = "never"
+model = "gpt-5-nano-2025-08-07"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_gpt_image_1]
+approval_policy = "never"
+model = "gpt-image-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_gpt_realtime]
+approval_policy = "never"
+model = "gpt-realtime"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_gpt_realtime_2025_08]
+approval_policy = "never"
+model = "gpt-realtime-2025-08-28"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_gradient_ai_alibaba_]
+approval_policy = "never"
+model = "gradient_ai/alibaba-qwen3-32b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+
+[profiles.lit_gradient_ai_anthropi]
+approval_policy = "never"
+model = "gradient_ai/anthropic-claude-3.7-sonnet"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+
+[profiles.lit_gradient_ai_deepseek]
+approval_policy = "never"
+model = "gradient_ai/deepseek-r1-distill-llama-70b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8000
+
+[profiles.lit_gradient_ai_llama3_8]
+approval_policy = "never"
+model = "gradient_ai/llama3-8b-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 512
+
+[profiles.lit_gradient_ai_llama3_3]
+approval_policy = "never"
+model = "gradient_ai/llama3.3-70b-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+
+[profiles.lit_gradient_ai_mistral_]
+approval_policy = "never"
+model = "gradient_ai/mistral-nemo-instruct-2407"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 512
+
+[profiles.lit_gradient_ai_openai_g]
+approval_policy = "never"
+model = "gradient_ai/openai-gpt-4o-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+
+[profiles.lit_gradient_ai_openai_o]
+approval_policy = "never"
+model = "gradient_ai/openai-o3-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+
+[profiles.lit_groq_deepseek_r1_dis]
+approval_policy = "never"
+model = "groq/deepseek-r1-distill-llama-70b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_groq_distil_whisper_]
+approval_policy = "never"
+model = "groq/distil-whisper-large-v3-en"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_groq_gemma_7b_it]
+approval_policy = "never"
+model = "groq/gemma-7b-it"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_groq_gemma2_9b_it]
+approval_policy = "never"
+model = "groq/gemma2-9b-it"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_groq_llama_3_1_405b_]
+approval_policy = "never"
+model = "groq/llama-3.1-405b-reasoning"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_groq_llama_3_1_70b_v]
+approval_policy = "never"
+model = "groq/llama-3.1-70b-versatile"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_groq_llama_3_1_8b_in]
+approval_policy = "never"
+model = "groq/llama-3.1-8b-instant"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_groq_llama_3_2_11b_t]
+approval_policy = "never"
+model = "groq/llama-3.2-11b-text-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_groq_llama_3_2_11b_v]
+approval_policy = "never"
+model = "groq/llama-3.2-11b-vision-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_groq_llama_3_2_1b_pr]
+approval_policy = "never"
+model = "groq/llama-3.2-1b-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_groq_llama_3_2_3b_pr]
+approval_policy = "never"
+model = "groq/llama-3.2-3b-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_groq_llama_3_2_90b_t]
+approval_policy = "never"
+model = "groq/llama-3.2-90b-text-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_groq_llama_3_2_90b_v]
+approval_policy = "never"
+model = "groq/llama-3.2-90b-vision-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_groq_llama_3_3_70b_s]
+approval_policy = "never"
+model = "groq/llama-3.3-70b-specdec"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_groq_llama_3_3_70b_v]
+approval_policy = "never"
+model = "groq/llama-3.3-70b-versatile"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_groq_llama_guard_3_8]
+approval_policy = "never"
+model = "groq/llama-guard-3-8b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_groq_llama2_70b_4096]
+approval_policy = "never"
+model = "groq/llama2-70b-4096"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_groq_llama3_groq_70b]
+approval_policy = "never"
+model = "groq/llama3-groq-70b-8192-tool-use-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_groq_llama3_groq_8b_]
+approval_policy = "never"
+model = "groq/llama3-groq-8b-8192-tool-use-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_groq_meta_llama_llam]
+approval_policy = "never"
+model = "groq/meta-llama/llama-4-scout-17b-16e-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_groq_mistral_saba_24]
+approval_policy = "never"
+model = "groq/mistral-saba-24b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+model_max_output_tokens = 32000
+
+[profiles.lit_groq_mixtral_8x7b_32]
+approval_policy = "never"
+model = "groq/mixtral-8x7b-32768"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_groq_moonshotai_kimi]
+approval_policy = "never"
+model = "groq/moonshotai/kimi-k2-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 16384
+
+[profiles.lit_groq_openai_gpt_oss_]
+approval_policy = "never"
+model = "groq/openai/gpt-oss-20b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_groq_playai_tts]
+approval_policy = "never"
+model = "groq/playai-tts"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 10000
+model_max_output_tokens = 10000
+
+[profiles.lit_groq_qwen_qwen3_32b]
+approval_policy = "never"
+model = "groq/qwen/qwen3-32b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131000
+model_max_output_tokens = 131000
+
+[profiles.lit_groq_whisper_large_v]
+approval_policy = "never"
+model = "groq/whisper-large-v3-turbo"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_hd_1024_x_1024_dall_]
+approval_policy = "never"
+model = "hd/1024-x-1024/dall-e-3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_hd_1024_x_1792_dall_]
+approval_policy = "never"
+model = "hd/1024-x-1792/dall-e-3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_hd_1792_x_1024_dall_]
+approval_policy = "never"
+model = "hd/1792-x-1024/dall-e-3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_heroku_claude_3_5_ha]
+approval_policy = "never"
+model = "heroku/claude-3-5-haiku"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.lit_heroku_claude_3_5_so]
+approval_policy = "never"
+model = "heroku/claude-3-5-sonnet-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.lit_heroku_claude_3_7_so]
+approval_policy = "never"
+model = "heroku/claude-3-7-sonnet"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.lit_heroku_claude_4_sonn]
+approval_policy = "never"
+model = "heroku/claude-4-sonnet"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.lit_high_1024_x_1024_gpt]
+approval_policy = "never"
+model = "high/1024-x-1024/gpt-image-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_high_1024_x_1536_gpt]
+approval_policy = "never"
+model = "high/1024-x-1536/gpt-image-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_high_1536_x_1024_gpt]
+approval_policy = "never"
+model = "high/1536-x-1024/gpt-image-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_hyperbolic_nousresea]
+approval_policy = "never"
+model = "hyperbolic/NousResearch/Hermes-3-Llama-3.1-70B"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_hyperbolic_qwen_qwq_]
+approval_policy = "never"
+model = "hyperbolic/Qwen/QwQ-32B"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_hyperbolic_qwen_qwen]
+approval_policy = "never"
+model = "hyperbolic/Qwen/Qwen3-235B-A22B"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_hyperbolic_deepseek_]
+approval_policy = "never"
+model = "hyperbolic/deepseek-ai/DeepSeek-V3-0324"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_hyperbolic_meta_llam]
+approval_policy = "never"
+model = "hyperbolic/meta-llama/Meta-Llama-3.1-8B-Instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_hyperbolic_moonshota]
+approval_policy = "never"
+model = "hyperbolic/moonshotai/Kimi-K2-Instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_j2_light]
+approval_policy = "never"
+model = "j2-light"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_j2_mid]
+approval_policy = "never"
+model = "j2-mid"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_j2_ultra]
+approval_policy = "never"
+model = "j2-ultra"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_jamba_1_5]
+approval_policy = "never"
+model = "jamba-1.5"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_jamba_1_5_large]
+approval_policy = "never"
+model = "jamba-1.5-large"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_jamba_1_5_large001]
+approval_policy = "never"
+model = "jamba-1.5-large@001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_jamba_1_5_mini]
+approval_policy = "never"
+model = "jamba-1.5-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_jamba_1_5_mini001]
+approval_policy = "never"
+model = "jamba-1.5-mini@001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_jamba_large_1_6]
+approval_policy = "never"
+model = "jamba-large-1.6"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_jamba_large_1_7]
+approval_policy = "never"
+model = "jamba-large-1.7"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_jamba_mini_1_6]
+approval_policy = "never"
+model = "jamba-mini-1.6"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_jamba_mini_1_7]
+approval_policy = "never"
+model = "jamba-mini-1.7"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_jina_reranker_v2_bas]
+approval_policy = "never"
+model = "jina-reranker-v2-base-multilingual"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_lambda_ai_deepseek_l]
+approval_policy = "never"
+model = "lambda_ai/deepseek-llama3.3-70b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_lambda_ai_deepseek_r]
+approval_policy = "never"
+model = "lambda_ai/deepseek-r1-671b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_lambda_ai_deepseek_v]
+approval_policy = "never"
+model = "lambda_ai/deepseek-v3-0324"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_lambda_ai_hermes3_40]
+approval_policy = "never"
+model = "lambda_ai/hermes3-405b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_lambda_ai_hermes3_70]
+approval_policy = "never"
+model = "lambda_ai/hermes3-70b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_lambda_ai_hermes3_8b]
+approval_policy = "never"
+model = "lambda_ai/hermes3-8b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_lambda_ai_lfm_40b]
+approval_policy = "never"
+model = "lambda_ai/lfm-40b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_lambda_ai_lfm_7b]
+approval_policy = "never"
+model = "lambda_ai/lfm-7b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_lambda_ai_llama_4_ma]
+approval_policy = "never"
+model = "lambda_ai/llama-4-maverick-17b-128e-instruct-fp8"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 8192
+
+[profiles.lit_lambda_ai_llama_4_sc]
+approval_policy = "never"
+model = "lambda_ai/llama-4-scout-17b-16e-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 8192
+
+[profiles.lit_lambda_ai_llama3_1_4]
+approval_policy = "never"
+model = "lambda_ai/llama3.1-405b-instruct-fp8"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_lambda_ai_llama3_1_7]
+approval_policy = "never"
+model = "lambda_ai/llama3.1-70b-instruct-fp8"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_lambda_ai_llama3_1_8]
+approval_policy = "never"
+model = "lambda_ai/llama3.1-8b-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_lambda_ai_llama3_1_n]
+approval_policy = "never"
+model = "lambda_ai/llama3.1-nemotron-70b-instruct-fp8"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_lambda_ai_llama3_2_1]
+approval_policy = "never"
+model = "lambda_ai/llama3.2-11b-vision-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_lambda_ai_llama3_2_3]
+approval_policy = "never"
+model = "lambda_ai/llama3.2-3b-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_lambda_ai_llama3_3_7]
+approval_policy = "never"
+model = "lambda_ai/llama3.3-70b-instruct-fp8"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_lambda_ai_qwen25_cod]
+approval_policy = "never"
+model = "lambda_ai/qwen25-coder-32b-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_lambda_ai_qwen3_32b_]
+approval_policy = "never"
+model = "lambda_ai/qwen3-32b-fp8"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_low_1024_x_1024_gpt_]
+approval_policy = "never"
+model = "low/1024-x-1024/gpt-image-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_low_1024_x_1536_gpt_]
+approval_policy = "never"
+model = "low/1024-x-1536/gpt-image-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_low_1536_x_1024_gpt_]
+approval_policy = "never"
+model = "low/1536-x-1024/gpt-image-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_luminous_base]
+approval_policy = "never"
+model = "luminous-base"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+
+[profiles.lit_luminous_base_contro]
+approval_policy = "never"
+model = "luminous-base-control"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+
+[profiles.lit_luminous_extended]
+approval_policy = "never"
+model = "luminous-extended"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+
+[profiles.lit_luminous_extended_co]
+approval_policy = "never"
+model = "luminous-extended-control"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+
+[profiles.lit_luminous_supreme]
+approval_policy = "never"
+model = "luminous-supreme"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+
+[profiles.lit_luminous_supreme_con]
+approval_policy = "never"
+model = "luminous-supreme-control"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+
+[profiles.lit_max_x_max_50_steps_s]
+approval_policy = "never"
+model = "max-x-max/50-steps/stability.stable-diffusion-xl-v0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 77
+
+[profiles.lit_max_x_max_max_steps_]
+approval_policy = "never"
+model = "max-x-max/max-steps/stability.stable-diffusion-xl-v0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 77
+
+[profiles.lit_medium_1024_x_1024_g]
+approval_policy = "never"
+model = "medium/1024-x-1024/gpt-image-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_medium_1024_x_1536_g]
+approval_policy = "never"
+model = "medium/1024-x-1536/gpt-image-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_medium_1536_x_1024_g]
+approval_policy = "never"
+model = "medium/1536-x-1024/gpt-image-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_medlm_large]
+approval_policy = "never"
+model = "medlm-large"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_medlm_medium]
+approval_policy = "never"
+model = "medlm-medium"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_meta_llama2_13b_chat]
+approval_policy = "never"
+model = "meta.llama2-13b-chat-v1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_meta_llama2_70b_chat]
+approval_policy = "never"
+model = "meta.llama2-70b-chat-v1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_meta_llama3_1_405b_i]
+approval_policy = "never"
+model = "meta.llama3-1-405b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4096
+
+[profiles.lit_meta_llama3_1_70b_in]
+approval_policy = "never"
+model = "meta.llama3-1-70b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 2048
+
+[profiles.lit_meta_llama3_1_8b_ins]
+approval_policy = "never"
+model = "meta.llama3-1-8b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 2048
+
+[profiles.lit_meta_llama3_2_11b_in]
+approval_policy = "never"
+model = "meta.llama3-2-11b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4096
+
+[profiles.lit_meta_llama3_2_1b_ins]
+approval_policy = "never"
+model = "meta.llama3-2-1b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4096
+
+[profiles.lit_meta_llama3_2_3b_ins]
+approval_policy = "never"
+model = "meta.llama3-2-3b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4096
+
+[profiles.lit_meta_llama3_2_90b_in]
+approval_policy = "never"
+model = "meta.llama3-2-90b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4096
+
+[profiles.lit_meta_llama3_3_70b_in]
+approval_policy = "never"
+model = "meta.llama3-3-70b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_meta_llama3_70b_inst]
+approval_policy = "never"
+model = "meta.llama3-70b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_meta_llama3_8b_instr]
+approval_policy = "never"
+model = "meta.llama3-8b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_meta_llama4_maverick]
+approval_policy = "never"
+model = "meta.llama4-maverick-17b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_meta_llama4_scout_17]
+approval_policy = "never"
+model = "meta.llama4-scout-17b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_meta_llama_llama_3_3]
+approval_policy = "never"
+model = "meta_llama/Llama-3.3-8B-Instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4028
+
+[profiles.lit_meta_llama_llama_4_m]
+approval_policy = "never"
+model = "meta_llama/Llama-4-Maverick-17B-128E-Instruct-FP8"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4028
+
+[profiles.lit_meta_llama_llama_4_s]
+approval_policy = "never"
+model = "meta_llama/Llama-4-Scout-17B-16E-Instruct-FP8"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4028
+
+[profiles.lit_mistral_mistral_7b_i]
+approval_policy = "never"
+model = "mistral.mistral-7b-instruct-v0:2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_mistral_mistral_larg]
+approval_policy = "never"
+model = "mistral/mistral-large-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_mistral_mistral_smal]
+approval_policy = "never"
+model = "mistral/mistral-small-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_mistral_mixtral_8x7b]
+approval_policy = "never"
+model = "mistral.mixtral-8x7b-instruct-v0:1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_mistral_codestral_24]
+approval_policy = "never"
+model = "mistral/codestral-2405"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_mistral_codestral_la]
+approval_policy = "never"
+model = "mistral/codestral-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_mistral_codestral_ma]
+approval_policy = "never"
+model = "mistral/codestral-mamba-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_mistral_devstral_med]
+approval_policy = "never"
+model = "mistral/devstral-medium-2507"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_mistral_devstral_sma]
+approval_policy = "never"
+model = "mistral/devstral-small-2507"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_mistral_magistral_me]
+approval_policy = "never"
+model = "mistral/magistral-medium-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 40000
+model_max_output_tokens = 40000
+
+[profiles.lit_mistral_magistral_sm]
+approval_policy = "never"
+model = "mistral/magistral-small-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 40000
+model_max_output_tokens = 40000
+
+[profiles.lit_mistral_mistral_embe]
+approval_policy = "never"
+model = "mistral/mistral-embed"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.lit_mistral_mistral_medi]
+approval_policy = "never"
+model = "mistral/mistral-medium-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_mistral_mistral_tiny]
+approval_policy = "never"
+model = "mistral/mistral-tiny"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_mistral_open_codestr]
+approval_policy = "never"
+model = "mistral/open-codestral-mamba"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_mistral_open_mistral]
+approval_policy = "never"
+model = "mistral/open-mistral-nemo-2407"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_mistral_open_mixtral]
+approval_policy = "never"
+model = "mistral/open-mixtral-8x7b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_mistral_pixtral_12b_]
+approval_policy = "never"
+model = "mistral/pixtral-12b-2409"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_mistral_pixtral_larg]
+approval_policy = "never"
+model = "mistral/pixtral-large-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_moonshot_kimi_k2_071]
+approval_policy = "never"
+model = "moonshot/kimi-k2-0711-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_moonshot_kimi_latest]
+approval_policy = "never"
+model = "moonshot/kimi-latest-8k"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_moonshot_kimi_thinki]
+approval_policy = "never"
+model = "moonshot/kimi-thinking-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_moonshot_moonshot_v1]
+approval_policy = "never"
+model = "moonshot/moonshot-v1-auto"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_morph_morph_v3_fast]
+approval_policy = "never"
+model = "morph/morph-v3-fast"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16000
+model_max_output_tokens = 16000
+
+[profiles.lit_morph_morph_v3_large]
+approval_policy = "never"
+model = "morph/morph-v3-large"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16000
+model_max_output_tokens = 16000
+
+[profiles.lit_multimodalembedding]
+approval_policy = "never"
+model = "multimodalembedding"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+
+[profiles.lit_multimodalembedding0]
+approval_policy = "never"
+model = "multimodalembedding@001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+
+[profiles.lit_nscale_qwen_qwq_32b]
+approval_policy = "never"
+model = "nscale/Qwen/QwQ-32B"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_nscale_qwen_qwen2_5_]
+approval_policy = "never"
+model = "nscale/Qwen/Qwen2.5-Coder-7B-Instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_nscale_black_forest_]
+approval_policy = "never"
+model = "nscale/black-forest-labs/FLUX.1-schnell"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_nscale_deepseek_ai_d]
+approval_policy = "never"
+model = "nscale/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_nscale_meta_llama_ll]
+approval_policy = "never"
+model = "nscale/meta-llama/Llama-4-Scout-17B-16E-Instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_nscale_mistralai_mix]
+approval_policy = "never"
+model = "nscale/mistralai/mixtral-8x22b-instruct-v0.1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_nscale_stabilityai_s]
+approval_policy = "never"
+model = "nscale/stabilityai/stable-diffusion-xl-base-1.0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_o1]
+approval_policy = "never"
+model = "o1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_o1_2024_12_17]
+approval_policy = "never"
+model = "o1-2024-12-17"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_o1_mini]
+approval_policy = "never"
+model = "o1-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65536
+model_max_output_tokens = 65536
+
+[profiles.lit_o1_mini_2024_09_12]
+approval_policy = "never"
+model = "o1-mini-2024-09-12"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65536
+model_max_output_tokens = 65536
+
+[profiles.lit_o1_preview]
+approval_policy = "never"
+model = "o1-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_o1_preview_2024_09_1]
+approval_policy = "never"
+model = "o1-preview-2024-09-12"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_o1_pro]
+approval_policy = "never"
+model = "o1-pro"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_o1_pro_2025_03_19]
+approval_policy = "never"
+model = "o1-pro-2025-03-19"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_o3]
+approval_policy = "never"
+model = "o3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_o3_2025_04_16]
+approval_policy = "never"
+model = "o3-2025-04-16"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_o3_deep_research]
+approval_policy = "never"
+model = "o3-deep-research"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_o3_deep_research_202]
+approval_policy = "never"
+model = "o3-deep-research-2025-06-26"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_o3_mini]
+approval_policy = "never"
+model = "o3-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_o3_mini_2025_01_31]
+approval_policy = "never"
+model = "o3-mini-2025-01-31"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_o3_pro]
+approval_policy = "never"
+model = "o3-pro"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_o3_pro_2025_06_10]
+approval_policy = "never"
+model = "o3-pro-2025-06-10"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_o4_mini]
+approval_policy = "never"
+model = "o4-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_o4_mini_2025_04_16]
+approval_policy = "never"
+model = "o4-mini-2025-04-16"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_o4_mini_deep_researc]
+approval_policy = "never"
+model = "o4-mini-deep-research-2025-06-26"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 100000
+
+[profiles.lit_oci_meta_llama_3_1_4]
+approval_policy = "never"
+model = "oci/meta.llama-3.1-405b-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4000
+
+[profiles.lit_oci_meta_llama_3_2_9]
+approval_policy = "never"
+model = "oci/meta.llama-3.2-90b-vision-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4000
+
+[profiles.lit_oci_meta_llama_3_3_7]
+approval_policy = "never"
+model = "oci/meta.llama-3.3-70b-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4000
+
+[profiles.lit_oci_meta_llama_4_mav]
+approval_policy = "never"
+model = "oci/meta.llama-4-maverick-17b-128e-instruct-fp8"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 512000
+model_max_output_tokens = 4000
+
+[profiles.lit_oci_meta_llama_4_sco]
+approval_policy = "never"
+model = "oci/meta.llama-4-scout-17b-16e-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 192000
+model_max_output_tokens = 4000
+
+[profiles.lit_oci_xai_grok_3]
+approval_policy = "never"
+model = "oci/xai.grok-3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_oci_xai_grok_3_fast]
+approval_policy = "never"
+model = "oci/xai.grok-3-fast"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_oci_xai_grok_3_mini]
+approval_policy = "never"
+model = "oci/xai.grok-3-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_oci_xai_grok_3_mini_]
+approval_policy = "never"
+model = "oci/xai.grok-3-mini-fast"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_oci_xai_grok_4]
+approval_policy = "never"
+model = "oci/xai.grok-4"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_ollama_codegeex4]
+approval_policy = "never"
+model = "ollama/codegeex4"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 8192
+
+[profiles.lit_ollama_codegemma]
+approval_policy = "never"
+model = "ollama/codegemma"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_ollama_codellama]
+approval_policy = "never"
+model = "ollama/codellama"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_ollama_deepseek_code]
+approval_policy = "never"
+model = "ollama/deepseek-coder-v2-lite-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 8192
+
+[profiles.lit_ollama_internlm2_5_2]
+approval_policy = "never"
+model = "ollama/internlm2_5-20b-chat"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 8192
+
+[profiles.lit_ollama_llama2]
+approval_policy = "never"
+model = "ollama/llama2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_ollama_llama2_uncens]
+approval_policy = "never"
+model = "ollama/llama2-uncensored"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_ollama_llama213b]
+approval_policy = "never"
+model = "ollama/llama2:13b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_ollama_llama270b]
+approval_policy = "never"
+model = "ollama/llama2:70b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_ollama_llama27b]
+approval_policy = "never"
+model = "ollama/llama2:7b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_ollama_llama3]
+approval_policy = "never"
+model = "ollama/llama3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_ollama_llama3_1]
+approval_policy = "never"
+model = "ollama/llama3.1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 8192
+
+[profiles.lit_ollama_llama370b]
+approval_policy = "never"
+model = "ollama/llama3:70b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_ollama_llama38b]
+approval_policy = "never"
+model = "ollama/llama3:8b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_ollama_mistral]
+approval_policy = "never"
+model = "ollama/mistral"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_ollama_mistral_7b_in]
+approval_policy = "never"
+model = "ollama/mistral-7B-Instruct-v0.2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_ollama_mistral_large]
+approval_policy = "never"
+model = "ollama/mistral-large-instruct-2407"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65536
+model_max_output_tokens = 8192
+
+[profiles.lit_ollama_mixtral_8x22b]
+approval_policy = "never"
+model = "ollama/mixtral-8x22B-Instruct-v0.1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65536
+model_max_output_tokens = 65536
+
+[profiles.lit_ollama_mixtral_8x7b_]
+approval_policy = "never"
+model = "ollama/mixtral-8x7B-Instruct-v0.1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_ollama_orca_mini]
+approval_policy = "never"
+model = "ollama/orca-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_ollama_vicuna]
+approval_policy = "never"
+model = "ollama/vicuna"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+model_max_output_tokens = 2048
+
+[profiles.lit_omni_moderation_2024]
+approval_policy = "never"
+model = "omni-moderation-2024-09-26"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.lit_omni_moderation_late]
+approval_policy = "never"
+model = "omni-moderation-latest-intents"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.lit_openai_gpt_oss_120b_]
+approval_policy = "never"
+model = "openai.gpt-oss-120b-1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_openai_gpt_oss_20b_1]
+approval_policy = "never"
+model = "openai.gpt-oss-20b-1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_openrouter_anthropic]
+approval_policy = "never"
+model = "openrouter/anthropic/claude-sonnet-4"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 64000
+model_max_output_tokens = 64000
+
+[profiles.lit_openrouter_bytedance]
+approval_policy = "never"
+model = "openrouter/bytedance/ui-tars-1.5-7b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+model_max_output_tokens = 2048
+
+[profiles.lit_openrouter_cognitive]
+approval_policy = "never"
+model = "openrouter/cognitivecomputations/dolphin-mixtral-8x7b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32769
+
+[profiles.lit_openrouter_cohere_co]
+approval_policy = "never"
+model = "openrouter/cohere/command-r-plus"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.lit_openrouter_databrick]
+approval_policy = "never"
+model = "openrouter/databricks/dbrx-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.lit_openrouter_deepseek_]
+approval_policy = "never"
+model = "openrouter/deepseek/deepseek-r1-0528"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_openrouter_fireworks]
+approval_policy = "never"
+model = "openrouter/fireworks/firellava-13b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.lit_openrouter_google_ge]
+approval_policy = "never"
+model = "openrouter/google/gemini-pro-vision"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 45875
+
+[profiles.lit_openrouter_google_pa]
+approval_policy = "never"
+model = "openrouter/google/palm-2-codechat-bison"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 20070
+
+[profiles.lit_openrouter_gryphe_my]
+approval_policy = "never"
+model = "openrouter/gryphe/mythomax-l2-13b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.lit_openrouter_jondurbin]
+approval_policy = "never"
+model = "openrouter/jondurbin/airoboros-l2-70b-2.1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.lit_openrouter_mancer_we]
+approval_policy = "never"
+model = "openrouter/mancer/weaver"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8000
+
+[profiles.lit_openrouter_meta_llam]
+approval_policy = "never"
+model = "openrouter/meta-llama/llama-3-8b-instruct:free"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.lit_openrouter_microsoft]
+approval_policy = "never"
+model = "openrouter/microsoft/wizardlm-2-8x22b:nitro"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65536
+
+[profiles.lit_openrouter_mistralai]
+approval_policy = "never"
+model = "openrouter/mistralai/mixtral-8x22b-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65536
+
+[profiles.lit_openrouter_nousresea]
+approval_policy = "never"
+model = "openrouter/nousresearch/nous-hermes-llama2-13b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.lit_openrouter_openai_gp]
+approval_policy = "never"
+model = "openrouter/openai/gpt-oss-20b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_openrouter_openai_o1]
+approval_policy = "never"
+model = "openrouter/openai/o1-preview-2024-09-12"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_openrouter_openai_o3]
+approval_policy = "never"
+model = "openrouter/openai/o3-mini-high"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 65536
+model_max_output_tokens = 65536
+
+[profiles.lit_openrouter_pygmalion]
+approval_policy = "never"
+model = "openrouter/pygmalionai/mythalion-13b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.lit_openrouter_qwen_qwen]
+approval_policy = "never"
+model = "openrouter/qwen/qwen3-coder"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1000000
+model_max_output_tokens = 1000000
+
+[profiles.lit_openrouter_switchpoi]
+approval_policy = "never"
+model = "openrouter/switchpoint/router"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_openrouter_undi95_re]
+approval_policy = "never"
+model = "openrouter/undi95/remm-slerp-l2-13b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 6144
+
+[profiles.lit_openrouter_x_ai_grok]
+approval_policy = "never"
+model = "openrouter/x-ai/grok-4"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_palm_chat_bison]
+approval_policy = "never"
+model = "palm/chat-bison"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_palm_chat_bison_001]
+approval_policy = "never"
+model = "palm/chat-bison-001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_palm_text_bison]
+approval_policy = "never"
+model = "palm/text-bison"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_palm_text_bison_001]
+approval_policy = "never"
+model = "palm/text-bison-001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_palm_text_bison_safe]
+approval_policy = "never"
+model = "palm/text-bison-safety-recitation-off"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_perplexity_codellama]
+approval_policy = "never"
+model = "perplexity/codellama-70b-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_perplexity_llama_2_7]
+approval_policy = "never"
+model = "perplexity/llama-2-70b-chat"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_perplexity_llama_3_1]
+approval_policy = "never"
+model = "perplexity/llama-3.1-sonar-small-128k-online"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 127072
+model_max_output_tokens = 127072
+
+[profiles.lit_perplexity_mistral_7]
+approval_policy = "never"
+model = "perplexity/mistral-7b-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_perplexity_mixtral_8]
+approval_policy = "never"
+model = "perplexity/mixtral-8x7b-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_perplexity_pplx_70b_]
+approval_policy = "never"
+model = "perplexity/pplx-70b-online"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_perplexity_pplx_7b_c]
+approval_policy = "never"
+model = "perplexity/pplx-7b-chat"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_perplexity_pplx_7b_o]
+approval_policy = "never"
+model = "perplexity/pplx-7b-online"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_perplexity_sonar]
+approval_policy = "never"
+model = "perplexity/sonar"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.lit_perplexity_sonar_dee]
+approval_policy = "never"
+model = "perplexity/sonar-deep-research"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.lit_perplexity_sonar_med]
+approval_policy = "never"
+model = "perplexity/sonar-medium-online"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 12000
+model_max_output_tokens = 12000
+
+[profiles.lit_perplexity_sonar_pro]
+approval_policy = "never"
+model = "perplexity/sonar-pro"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8000
+model_max_output_tokens = 8000
+
+[profiles.lit_perplexity_sonar_rea]
+approval_policy = "never"
+model = "perplexity/sonar-reasoning-pro"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.lit_perplexity_sonar_sma]
+approval_policy = "never"
+model = "perplexity/sonar-small-online"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 12000
+model_max_output_tokens = 12000
+
+[profiles.lit_recraft_recraftv2]
+approval_policy = "never"
+model = "recraft/recraftv2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_recraft_recraftv3]
+approval_policy = "never"
+model = "recraft/recraftv3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_replicate_meta_llama]
+approval_policy = "never"
+model = "replicate/meta/llama-3-8b-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8086
+model_max_output_tokens = 8086
+
+[profiles.lit_replicate_mistralai_]
+approval_policy = "never"
+model = "replicate/mistralai/mixtral-8x7b-instruct-v0.1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_rerank_english_v2_0]
+approval_policy = "never"
+model = "rerank-english-v2.0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_rerank_english_v3_0]
+approval_policy = "never"
+model = "rerank-english-v3.0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_rerank_multilingual_]
+approval_policy = "never"
+model = "rerank-multilingual-v3.0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_rerank_v3_5]
+approval_policy = "never"
+model = "rerank-v3.5"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_sagemaker_meta_textg]
+approval_policy = "never"
+model = "sagemaker/meta-textgeneration-llama-2-7b-f"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_sambanova_deepseek_r]
+approval_policy = "never"
+model = "sambanova/DeepSeek-R1-Distill-Llama-70B"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_sambanova_deepseek_v]
+approval_policy = "never"
+model = "sambanova/DeepSeek-V3-0324"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_sambanova_llama_4_ma]
+approval_policy = "never"
+model = "sambanova/Llama-4-Maverick-17B-128E-Instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_sambanova_llama_4_sc]
+approval_policy = "never"
+model = "sambanova/Llama-4-Scout-17B-16E-Instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_sambanova_meta_llama]
+approval_policy = "never"
+model = "sambanova/Meta-Llama-Guard-3-8B"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_sambanova_qwq_32b]
+approval_policy = "never"
+model = "sambanova/QwQ-32B"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 16384
+
+[profiles.lit_sambanova_qwen2_audi]
+approval_policy = "never"
+model = "sambanova/Qwen2-Audio-7B-Instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_sambanova_qwen3_32b]
+approval_policy = "never"
+model = "sambanova/Qwen3-32B"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_snowflake_claude_3_5]
+approval_policy = "never"
+model = "snowflake/claude-3-5-sonnet"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 18000
+model_max_output_tokens = 8192
+
+[profiles.lit_snowflake_deepseek_r]
+approval_policy = "never"
+model = "snowflake/deepseek-r1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 8192
+
+[profiles.lit_snowflake_gemma_7b]
+approval_policy = "never"
+model = "snowflake/gemma-7b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8000
+model_max_output_tokens = 8192
+
+[profiles.lit_snowflake_jamba_1_5_]
+approval_policy = "never"
+model = "snowflake/jamba-1.5-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 8192
+
+[profiles.lit_snowflake_jamba_inst]
+approval_policy = "never"
+model = "snowflake/jamba-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 8192
+
+[profiles.lit_snowflake_llama2_70b]
+approval_policy = "never"
+model = "snowflake/llama2-70b-chat"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 8192
+
+[profiles.lit_snowflake_llama3_70b]
+approval_policy = "never"
+model = "snowflake/llama3-70b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8000
+model_max_output_tokens = 8192
+
+[profiles.lit_snowflake_llama3_8b]
+approval_policy = "never"
+model = "snowflake/llama3-8b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8000
+model_max_output_tokens = 8192
+
+[profiles.lit_snowflake_llama3_1_4]
+approval_policy = "never"
+model = "snowflake/llama3.1-405b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 8192
+
+[profiles.lit_snowflake_llama3_1_7]
+approval_policy = "never"
+model = "snowflake/llama3.1-70b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 8192
+
+[profiles.lit_snowflake_llama3_1_8]
+approval_policy = "never"
+model = "snowflake/llama3.1-8b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 8192
+
+[profiles.lit_snowflake_llama3_2_1]
+approval_policy = "never"
+model = "snowflake/llama3.2-1b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 8192
+
+[profiles.lit_snowflake_llama3_2_3]
+approval_policy = "never"
+model = "snowflake/llama3.2-3b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 8192
+
+[profiles.lit_snowflake_llama3_3_7]
+approval_policy = "never"
+model = "snowflake/llama3.3-70b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 8192
+
+[profiles.lit_snowflake_mistral_7b]
+approval_policy = "never"
+model = "snowflake/mistral-7b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+model_max_output_tokens = 8192
+
+[profiles.lit_snowflake_mistral_la]
+approval_policy = "never"
+model = "snowflake/mistral-large2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 8192
+
+[profiles.lit_snowflake_mixtral_8x]
+approval_policy = "never"
+model = "snowflake/mixtral-8x7b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+model_max_output_tokens = 8192
+
+[profiles.lit_snowflake_reka_core]
+approval_policy = "never"
+model = "snowflake/reka-core"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+model_max_output_tokens = 8192
+
+[profiles.lit_snowflake_reka_flash]
+approval_policy = "never"
+model = "snowflake/reka-flash"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 100000
+model_max_output_tokens = 8192
+
+[profiles.lit_snowflake_snowflake_]
+approval_policy = "never"
+model = "snowflake/snowflake-llama-3.3-70b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8000
+model_max_output_tokens = 8192
+
+[profiles.lit_stability_sd3_5_larg]
+approval_policy = "never"
+model = "stability.sd3-5-large-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 77
+
+[profiles.lit_stability_sd3_large_]
+approval_policy = "never"
+model = "stability.sd3-large-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 77
+
+[profiles.lit_stability_stable_ima]
+approval_policy = "never"
+model = "stability.stable-image-ultra-v1:1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 77
+
+[profiles.lit_standard_1024_x_1024]
+approval_policy = "never"
+model = "standard/1024-x-1024/dall-e-3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_standard_1024_x_1792]
+approval_policy = "never"
+model = "standard/1024-x-1792/dall-e-3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_standard_1792_x_1024]
+approval_policy = "never"
+model = "standard/1792-x-1024/dall-e-3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_text_bison]
+approval_policy = "never"
+model = "text-bison"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+model_max_output_tokens = 2048
+
+[profiles.lit_text_bison32k]
+approval_policy = "never"
+model = "text-bison32k"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_text_bison32k002]
+approval_policy = "never"
+model = "text-bison32k@002"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_text_bison001]
+approval_policy = "never"
+model = "text-bison@001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_text_bison002]
+approval_policy = "never"
+model = "text-bison@002"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_text_completion_code]
+approval_policy = "never"
+model = "text-completion-codestral/codestral-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_text_embedding_004]
+approval_policy = "never"
+model = "text-embedding-004"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+
+[profiles.lit_text_embedding_005]
+approval_policy = "never"
+model = "text-embedding-005"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 2048
+
+[profiles.lit_text_embedding_3_lar]
+approval_policy = "never"
+model = "text-embedding-3-large"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+
+[profiles.lit_text_embedding_3_sma]
+approval_policy = "never"
+model = "text-embedding-3-small"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+
+[profiles.lit_text_embedding_ada_0]
+approval_policy = "never"
+model = "text-embedding-ada-002-v2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+
+[profiles.lit_text_embedding_large]
+approval_policy = "never"
+model = "text-embedding-large-exp-03-07"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.lit_text_embedding_previ]
+approval_policy = "never"
+model = "text-embedding-preview-0409"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 3072
+
+[profiles.lit_text_moderation_007]
+approval_policy = "never"
+model = "text-moderation-007"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.lit_text_moderation_late]
+approval_policy = "never"
+model = "text-moderation-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.lit_text_moderation_stab]
+approval_policy = "never"
+model = "text-moderation-stable"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.lit_text_multilingual_em]
+approval_policy = "never"
+model = "text-multilingual-embedding-preview-0409"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 3072
+
+[profiles.lit_text_unicorn]
+approval_policy = "never"
+model = "text-unicorn"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_text_unicorn001]
+approval_policy = "never"
+model = "text-unicorn@001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+model_max_output_tokens = 1024
+
+[profiles.lit_textembedding_gecko]
+approval_policy = "never"
+model = "textembedding-gecko"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 3072
+
+[profiles.lit_textembedding_gecko_]
+approval_policy = "never"
+model = "textembedding-gecko-multilingual@001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 3072
+
+[profiles.lit_textembedding_gecko0]
+approval_policy = "never"
+model = "textembedding-gecko@003"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 3072
+
+[profiles.lit_together_ai_21_1b_41]
+approval_policy = "never"
+model = "together-ai-21.1b-41b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_together_ai_4_1b_8b]
+approval_policy = "never"
+model = "together-ai-4.1b-8b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_together_ai_41_1b_80]
+approval_policy = "never"
+model = "together-ai-41.1b-80b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_together_ai_8_1b_21b]
+approval_policy = "never"
+model = "together-ai-8.1b-21b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1000
+
+[profiles.lit_together_ai_81_1b_11]
+approval_policy = "never"
+model = "together-ai-81.1b-110b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_together_ai_embeddin]
+approval_policy = "never"
+model = "together-ai-embedding-up-to-150m"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_together_ai_up_to_4b]
+approval_policy = "never"
+model = "together-ai-up-to-4b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_together_ai_openai_g]
+approval_policy = "never"
+model = "together_ai/openai/gpt-oss-120b"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_together_ai_qwen_qwe]
+approval_policy = "never"
+model = "together_ai/Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_together_ai_deepseek]
+approval_policy = "never"
+model = "together_ai/deepseek-ai/DeepSeek-V3.1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.lit_together_ai_meta_lla]
+approval_policy = "never"
+model = "together_ai/meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_together_ai_mistrala]
+approval_policy = "never"
+model = "together_ai/mistralai/Mixtral-8x7B-Instruct-v0.1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_together_ai_moonshot]
+approval_policy = "never"
+model = "together_ai/moonshotai/Kimi-K2-Instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_together_ai_together]
+approval_policy = "never"
+model = "together_ai/togethercomputer/CodeLlama-34b-Instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_together_ai_zai_org_]
+approval_policy = "never"
+model = "together_ai/zai-org/GLM-4.5-Air-FP8"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_tts_1]
+approval_policy = "never"
+model = "tts-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_tts_1_hd]
+approval_policy = "never"
+model = "tts-1-hd"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_us_amazon_nova_lite_]
+approval_policy = "never"
+model = "us.amazon.nova-lite-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 10000
+model_max_output_tokens = 10000
+
+[profiles.lit_us_amazon_nova_micro]
+approval_policy = "never"
+model = "us.amazon.nova-micro-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 10000
+model_max_output_tokens = 10000
+
+[profiles.lit_us_amazon_nova_premi]
+approval_policy = "never"
+model = "us.amazon.nova-premier-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 10000
+model_max_output_tokens = 10000
+
+[profiles.lit_us_amazon_nova_pro_v]
+approval_policy = "never"
+model = "us.amazon.nova-pro-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 10000
+model_max_output_tokens = 10000
+
+[profiles.lit_us_anthropic_claude_]
+approval_policy = "never"
+model = "us.anthropic.claude-sonnet-4-20250514-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 64000
+model_max_output_tokens = 64000
+
+[profiles.lit_us_deepseek_r1_v10]
+approval_policy = "never"
+model = "us.deepseek.r1-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_us_meta_llama3_1_405]
+approval_policy = "never"
+model = "us.meta.llama3-1-405b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4096
+
+[profiles.lit_us_meta_llama3_1_70b]
+approval_policy = "never"
+model = "us.meta.llama3-1-70b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 2048
+
+[profiles.lit_us_meta_llama3_1_8b_]
+approval_policy = "never"
+model = "us.meta.llama3-1-8b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 2048
+
+[profiles.lit_us_meta_llama3_2_11b]
+approval_policy = "never"
+model = "us.meta.llama3-2-11b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4096
+
+[profiles.lit_us_meta_llama3_2_1b_]
+approval_policy = "never"
+model = "us.meta.llama3-2-1b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4096
+
+[profiles.lit_us_meta_llama3_2_3b_]
+approval_policy = "never"
+model = "us.meta.llama3-2-3b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4096
+
+[profiles.lit_us_meta_llama3_2_90b]
+approval_policy = "never"
+model = "us.meta.llama3-2-90b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4096
+
+[profiles.lit_us_meta_llama3_3_70b]
+approval_policy = "never"
+model = "us.meta.llama3-3-70b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_us_meta_llama4_maver]
+approval_policy = "never"
+model = "us.meta.llama4-maverick-17b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_us_meta_llama4_scout]
+approval_policy = "never"
+model = "us.meta.llama4-scout-17b-instruct-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_us_mistral_pixtral_l]
+approval_policy = "never"
+model = "us.mistral.pixtral-large-2502-v1:0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4096
+
+[profiles.lit_v0_v0_1_0_md]
+approval_policy = "never"
+model = "v0/v0-1.0-md"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_v0_v0_1_5_lg]
+approval_policy = "never"
+model = "v0/v0-1.5-lg"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 512000
+model_max_output_tokens = 512000
+
+[profiles.lit_v0_v0_1_5_md]
+approval_policy = "never"
+model = "v0/v0-1.5-md"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_vercel_ai_gateway_al]
+approval_policy = "never"
+model = "vercel_ai_gateway/alibaba/qwen3-coder"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 262144
+model_max_output_tokens = 66536
+
+[profiles.lit_vercel_ai_gateway_am]
+approval_policy = "never"
+model = "vercel_ai_gateway/amazon/titan-embed-text-v2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_vercel_ai_gateway_an]
+approval_policy = "never"
+model = "vercel_ai_gateway/anthropic/claude-4-sonnet"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 200000
+model_max_output_tokens = 64000
+
+[profiles.lit_vercel_ai_gateway_co]
+approval_policy = "never"
+model = "vercel_ai_gateway/cohere/embed-v4.0"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_vercel_ai_gateway_de]
+approval_policy = "never"
+model = "vercel_ai_gateway/deepseek/deepseek-v3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 8192
+
+[profiles.lit_vercel_ai_gateway_go]
+approval_policy = "never"
+model = "vercel_ai_gateway/google/text-multilingual-embedding-002"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_vercel_ai_gateway_in]
+approval_policy = "never"
+model = "vercel_ai_gateway/inception/mercury-coder-small"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+model_max_output_tokens = 16384
+
+[profiles.lit_vercel_ai_gateway_me]
+approval_policy = "never"
+model = "vercel_ai_gateway/meta/llama-4-scout"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 8192
+
+[profiles.lit_vercel_ai_gateway_mi]
+approval_policy = "never"
+model = "vercel_ai_gateway/mistral/pixtral-large"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4000
+
+[profiles.lit_vercel_ai_gateway_mo]
+approval_policy = "never"
+model = "vercel_ai_gateway/morph/morph-v3-large"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 16384
+
+[profiles.lit_vercel_ai_gateway_op]
+approval_policy = "never"
+model = "vercel_ai_gateway/openai/text-embedding-ada-002"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_vercel_ai_gateway_pe]
+approval_policy = "never"
+model = "vercel_ai_gateway/perplexity/sonar-reasoning-pro"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 127000
+model_max_output_tokens = 8000
+
+[profiles.lit_vercel_ai_gateway_ve]
+approval_policy = "never"
+model = "vercel_ai_gateway/vercel/v0-1.5-md"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 32768
+
+[profiles.lit_vercel_ai_gateway_xa]
+approval_policy = "never"
+model = "vercel_ai_gateway/xai/grok-4"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_vercel_ai_gateway_za]
+approval_policy = "never"
+model = "vercel_ai_gateway/zai/glm-4.5-air"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 96000
+
+[profiles.lit_vertex_ai_claude_3_5]
+approval_policy = "never"
+model = "vertex_ai/claude-3-5-sonnet@20240620"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_vertex_ai_claude_3_7]
+approval_policy = "never"
+model = "vertex_ai/claude-3-7-sonnet@20250219"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_vertex_ai_claude_3_h]
+approval_policy = "never"
+model = "vertex_ai/claude-3-haiku@20240307"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_vertex_ai_claude_3_o]
+approval_policy = "never"
+model = "vertex_ai/claude-3-opus@20240229"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_vertex_ai_claude_3_s]
+approval_policy = "never"
+model = "vertex_ai/claude-3-sonnet@20240229"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.lit_vertex_ai_claude_opu]
+approval_policy = "never"
+model = "vertex_ai/claude-opus-4@20250514"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+model_max_output_tokens = 32000
+
+[profiles.lit_vertex_ai_claude_son]
+approval_policy = "never"
+model = "vertex_ai/claude-sonnet-4@20250514"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 64000
+model_max_output_tokens = 64000
+
+[profiles.lit_vertex_ai_codestral_]
+approval_policy = "never"
+model = "vertex_ai/codestral-2501"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_vertex_ai_codestral2]
+approval_policy = "never"
+model = "vertex_ai/codestral@2405"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_vertex_ai_codestrall]
+approval_policy = "never"
+model = "vertex_ai/codestral@latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_vertex_ai_deepseek_a]
+approval_policy = "never"
+model = "vertex_ai/deepseek-ai/deepseek-r1-0528-maas"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.lit_vertex_ai_imagegener]
+approval_policy = "never"
+model = "vertex_ai/imagegeneration@006"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_vertex_ai_imagen_3_0]
+approval_policy = "never"
+model = "vertex_ai/imagen-3.0-generate-002"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_vertex_ai_imagen_4_0]
+approval_policy = "never"
+model = "vertex_ai/imagen-4.0-ultra-generate-001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_vertex_ai_jamba_1_5]
+approval_policy = "never"
+model = "vertex_ai/jamba-1.5"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_vertex_ai_jamba_1_5_]
+approval_policy = "never"
+model = "vertex_ai/jamba-1.5-mini@001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_vertex_ai_meta_llama]
+approval_policy = "never"
+model = "vertex_ai/meta/llama3-8b-instruct-maas"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+model_max_output_tokens = 32000
+
+[profiles.lit_vertex_ai_mistral_la]
+approval_policy = "never"
+model = "vertex_ai/mistral-large@latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_vertex_ai_mistral_ne]
+approval_policy = "never"
+model = "vertex_ai/mistral-nemo@latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 128000
+
+[profiles.lit_vertex_ai_mistral_sm]
+approval_policy = "never"
+model = "vertex_ai/mistral-small-2503@001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 8191
+
+[profiles.lit_vertex_ai_openai_gpt]
+approval_policy = "never"
+model = "vertex_ai/openai/gpt-oss-20b-maas"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_vertex_ai_qwen_qwen3]
+approval_policy = "never"
+model = "vertex_ai/qwen/qwen3-coder-480b-a35b-instruct-maas"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_vertex_ai_veo_2_0_ge]
+approval_policy = "never"
+model = "vertex_ai/veo-2.0-generate-001"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+
+[profiles.lit_vertex_ai_veo_3_0_fa]
+approval_policy = "never"
+model = "vertex_ai/veo-3.0-fast-generate-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+
+[profiles.lit_vertex_ai_veo_3_0_ge]
+approval_policy = "never"
+model = "vertex_ai/veo-3.0-generate-preview"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 1024
+
+[profiles.lit_voyage_rerank_2]
+approval_policy = "never"
+model = "voyage/rerank-2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16000
+model_max_output_tokens = 16000
+
+[profiles.lit_voyage_rerank_2_lite]
+approval_policy = "never"
+model = "voyage/rerank-2-lite"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8000
+model_max_output_tokens = 8000
+
+[profiles.lit_voyage_voyage_2]
+approval_policy = "never"
+model = "voyage/voyage-2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4000
+
+[profiles.lit_voyage_voyage_3]
+approval_policy = "never"
+model = "voyage/voyage-3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+
+[profiles.lit_voyage_voyage_3_larg]
+approval_policy = "never"
+model = "voyage/voyage-3-large"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+
+[profiles.lit_voyage_voyage_3_lite]
+approval_policy = "never"
+model = "voyage/voyage-3-lite"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+
+[profiles.lit_voyage_voyage_code_2]
+approval_policy = "never"
+model = "voyage/voyage-code-2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16000
+
+[profiles.lit_voyage_voyage_code_3]
+approval_policy = "never"
+model = "voyage/voyage-code-3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+
+[profiles.lit_voyage_voyage_contex]
+approval_policy = "never"
+model = "voyage/voyage-context-3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 120000
+
+[profiles.lit_voyage_voyage_financ]
+approval_policy = "never"
+model = "voyage/voyage-finance-2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+
+[profiles.lit_voyage_voyage_large_]
+approval_policy = "never"
+model = "voyage/voyage-large-2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16000
+
+[profiles.lit_voyage_voyage_law_2]
+approval_policy = "never"
+model = "voyage/voyage-law-2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 16000
+
+[profiles.lit_voyage_voyage_lite_0]
+approval_policy = "never"
+model = "voyage/voyage-lite-02-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 4000
+
+[profiles.lit_voyage_voyage_multim]
+approval_policy = "never"
+model = "voyage/voyage-multimodal-3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32000
+
+[profiles.lit_watsonx_ibm_granite_]
+approval_policy = "never"
+model = "watsonx/ibm/granite-3-8b-instruct"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 1024
+
+[profiles.lit_watsonx_mistralai_mi]
+approval_policy = "never"
+model = "watsonx/mistralai/mistral-large"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 16384
+
+[profiles.lit_whisper_1]
+approval_policy = "never"
+model = "whisper-1"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+
+[profiles.lit_xai_grok_2]
+approval_policy = "never"
+model = "xai/grok-2"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_xai_grok_2_1212]
+approval_policy = "never"
+model = "xai/grok-2-1212"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_xai_grok_2_latest]
+approval_policy = "never"
+model = "xai/grok-2-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_xai_grok_2_vision]
+approval_policy = "never"
+model = "xai/grok-2-vision"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_xai_grok_2_vision_12]
+approval_policy = "never"
+model = "xai/grok-2-vision-1212"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_xai_grok_2_vision_la]
+approval_policy = "never"
+model = "xai/grok-2-vision-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.lit_xai_grok_3]
+approval_policy = "never"
+model = "xai/grok-3"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_xai_grok_3_beta]
+approval_policy = "never"
+model = "xai/grok-3-beta"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_xai_grok_3_fast_beta]
+approval_policy = "never"
+model = "xai/grok-3-fast-beta"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_xai_grok_3_fast_late]
+approval_policy = "never"
+model = "xai/grok-3-fast-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_xai_grok_3_latest]
+approval_policy = "never"
+model = "xai/grok-3-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_xai_grok_3_mini]
+approval_policy = "never"
+model = "xai/grok-3-mini"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_xai_grok_3_mini_beta]
+approval_policy = "never"
+model = "xai/grok-3-mini-beta"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_xai_grok_3_mini_fast]
+approval_policy = "never"
+model = "xai/grok-3-mini-fast-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_xai_grok_3_mini_late]
+approval_policy = "never"
+model = "xai/grok-3-mini-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_xai_grok_4]
+approval_policy = "never"
+model = "xai/grok-4"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_xai_grok_4_0709]
+approval_policy = "never"
+model = "xai/grok-4-0709"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_xai_grok_4_latest]
+approval_policy = "never"
+model = "xai/grok-4-latest"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_xai_grok_beta]
+approval_policy = "never"
+model = "xai/grok-beta"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.lit_xai_grok_code_fast]
+approval_policy = "never"
+model = "xai/grok-code-fast"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_xai_grok_code_fast_1]
+approval_policy = "never"
+model = "xai/grok-code-fast-1-0825"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 256000
+
+[profiles.lit_xai_grok_vision_beta]
+approval_policy = "never"
+model = "xai/grok-vision-beta"
+model_provider = "litellm"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192

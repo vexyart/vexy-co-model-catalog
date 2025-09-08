@@ -1,0 +1,10 @@
+LGAI-EXAONE/EXAONE-4.0.1-32B
+Qwen/Qwen3-235B-A22B-Instruct-2507
+Qwen/Qwen3-235B-A22B-Thinking-2507
+Qwen/Qwen3-30B-A3B
+Qwen/Qwen3-32B
+deepseek-ai/DeepSeek-R1-0528
+meta-llama-3.1-8b-instruct
+meta-llama-3.3-70b-instruct
+meta-llama/Llama-4-Maverick-17B-128E-Instruct
+meta-llama/Llama-4-Scout-17B-16E-Instruct

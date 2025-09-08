@@ -1,0 +1,4 @@
+mistralai/mistral-nemo
+mistralai/mistral-small-3.2-24b-instruct-2506
+thedrummer/rocinante-12b-v1-1
+thedrummer/unslopnemo-12b-v4-1

@@ -1,0 +1,17 @@
+[model_providers.zai]
+base_url = "https://api.z.ai/api/paas/v4"
+name = "zai"
+wire_api = "chat"
+env_key = "ZAI_API_KEY"
+
+[profiles.zai_glm_4_5]
+approval_policy = "never"
+model = "glm-4.5"
+model_provider = "zai"
+model_reasoning_effort = "high"
+
+[profiles.zai_glm_4_5_air]
+approval_policy = "never"
+model = "glm-4.5-air"
+model_provider = "zai"
+model_reasoning_effort = "high"

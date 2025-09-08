@@ -1,0 +1,17 @@
+[model_providers.deepseek]
+base_url = "https://api.deepseek.com/v1"
+name = "deepseek"
+wire_api = "chat"
+env_key = "DEEPSEEK_API_KEY"
+
+[profiles.dee_deepseek_chat]
+approval_policy = "never"
+model = "deepseek-chat"
+model_provider = "deepseek"
+model_reasoning_effort = "high"
+
+[profiles.dee_deepseek_reasoner]
+approval_policy = "never"
+model = "deepseek-reasoner"
+model_provider = "deepseek"
+model_reasoning_effort = "high"

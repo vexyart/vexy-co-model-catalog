@@ -1,0 +1,341 @@
+[model_providers.novita]
+base_url = "https://api.novita.ai/v3/openai"
+name = "novita"
+wire_api = "chat"
+env_key = "NOVITA_API_KEY"
+
+[profiles.nov_sao10k_l3_8b_stheno_]
+approval_policy = "never"
+model = "Sao10K/L3-8B-Stheno-v3.2"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 32000
+
+[profiles.nov_baichuan_baichuan_m2]
+approval_policy = "never"
+model = "baichuan/baichuan-m2-32b"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 131072
+
+[profiles.nov_baidu_ernie_4_5_0_3b]
+approval_policy = "never"
+model = "baidu/ernie-4.5-0.3b"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 8000
+
+[profiles.nov_baidu_ernie_4_5_21b_]
+approval_policy = "never"
+model = "baidu/ernie-4.5-21B-a3b"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 8000
+
+[profiles.nov_baidu_ernie_4_5_300b]
+approval_policy = "never"
+model = "baidu/ernie-4.5-300b-a47b-paddle"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 12000
+
+[profiles.nov_baidu_ernie_4_5_vl_2]
+approval_policy = "never"
+model = "baidu/ernie-4.5-vl-28b-a3b"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 8000
+
+[profiles.nov_baidu_ernie_4_5_vl_4]
+approval_policy = "never"
+model = "baidu/ernie-4.5-vl-424b-a47b"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 16000
+
+[profiles.nov_cognitivecomputation]
+approval_policy = "never"
+model = "cognitivecomputations/dolphin-mixtral-8x22b"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 8192
+
+[profiles.nov_deepseek_deepseek_pr]
+approval_policy = "never"
+model = "deepseek/deepseek-prover-v2-671b"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 160000
+
+[profiles.nov_deepseek_deepseek_r1]
+approval_policy = "never"
+model = "deepseek/deepseek-r1-turbo"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 16000
+
+[profiles.nov_deepseek_deepseek_v3]
+approval_policy = "never"
+model = "deepseek/deepseek-v3.1"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 163840
+
+[profiles.nov_google_gemma_3_12b_i]
+approval_policy = "never"
+model = "google/gemma-3-12b-it"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 8192
+
+[profiles.nov_google_gemma_3_1b_it]
+approval_policy = "never"
+model = "google/gemma-3-1b-it"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 32768
+
+[profiles.nov_google_gemma_3_27b_i]
+approval_policy = "never"
+model = "google/gemma-3-27b-it"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 32768
+
+[profiles.nov_gryphe_mythomax_l2_1]
+approval_policy = "never"
+model = "gryphe/mythomax-l2-13b"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 32000
+
+[profiles.nov_meta_llama_llama_3_7]
+approval_policy = "never"
+model = "meta-llama/llama-3-70b-instruct"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 8000
+
+[profiles.nov_meta_llama_llama_3_8]
+approval_policy = "never"
+model = "meta-llama/llama-3-8b-instruct"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 8192
+
+[profiles.nov_meta_llama_llama_3_1]
+approval_policy = "never"
+model = "meta-llama/llama-3.1-8b-instruct"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 16384
+
+[profiles.nov_meta_llama_llama_3_2]
+approval_policy = "never"
+model = "meta-llama/llama-3.2-3b-instruct"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 32000
+
+[profiles.nov_meta_llama_llama_3_3]
+approval_policy = "never"
+model = "meta-llama/llama-3.3-70b-instruct"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 120000
+
+[profiles.nov_meta_llama_llama_4_m]
+approval_policy = "never"
+model = "meta-llama/llama-4-maverick-17b-128e-instruct-fp8"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 1048576
+
+[profiles.nov_meta_llama_llama_4_s]
+approval_policy = "never"
+model = "meta-llama/llama-4-scout-17b-16e-instruct"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 131072
+
+[profiles.nov_microsoft_wizardlm_2]
+approval_policy = "never"
+model = "microsoft/wizardlm-2-8x22b"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 8000
+
+[profiles.nov_minimaxai_minimax_m1]
+approval_policy = "never"
+model = "minimaxai/minimax-m1-80k"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 40000
+
+[profiles.nov_mistralai_mistral_7b]
+approval_policy = "never"
+model = "mistralai/mistral-7b-instruct"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 8192
+
+[profiles.nov_mistralai_mistral_ne]
+approval_policy = "never"
+model = "mistralai/mistral-nemo"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 32000
+
+[profiles.nov_moonshotai_kimi_k2_0]
+approval_policy = "never"
+model = "moonshotai/kimi-k2-0905"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 262144
+
+[profiles.nov_moonshotai_kimi_k2_i]
+approval_policy = "never"
+model = "moonshotai/kimi-k2-instruct"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 131072
+
+[profiles.nov_nousresearch_hermes_]
+approval_policy = "never"
+model = "nousresearch/hermes-2-pro-llama-3-8b"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 8192
+
+[profiles.nov_openai_gpt_oss_120b]
+approval_policy = "never"
+model = "openai/gpt-oss-120b"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 131072
+
+[profiles.nov_openai_gpt_oss_20b]
+approval_policy = "never"
+model = "openai/gpt-oss-20b"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 32768
+
+[profiles.nov_qwen_qwen_2_5_72b_in]
+approval_policy = "never"
+model = "qwen/qwen-2.5-72b-instruct"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 32000
+
+[profiles.nov_qwen_qwen2_5_7b_inst]
+approval_policy = "never"
+model = "qwen/qwen2.5-7b-instruct"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 32000
+
+[profiles.nov_qwen_qwen2_5_vl_72b_]
+approval_policy = "never"
+model = "qwen/qwen2.5-vl-72b-instruct"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 32768
+
+[profiles.nov_qwen_qwen3_235b_a22b]
+approval_policy = "never"
+model = "qwen/qwen3-235b-a22b-thinking-2507"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 131072
+
+[profiles.nov_qwen_qwen3_30b_a3b_f]
+approval_policy = "never"
+model = "qwen/qwen3-30b-a3b-fp8"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 20000
+
+[profiles.nov_qwen_qwen3_32b_fp8]
+approval_policy = "never"
+model = "qwen/qwen3-32b-fp8"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 20000
+
+[profiles.nov_qwen_qwen3_4b_fp8]
+approval_policy = "never"
+model = "qwen/qwen3-4b-fp8"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 20000
+
+[profiles.nov_qwen_qwen3_8b_fp8]
+approval_policy = "never"
+model = "qwen/qwen3-8b-fp8"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 20000
+
+[profiles.nov_qwen_qwen3_coder_480]
+approval_policy = "never"
+model = "qwen/qwen3-coder-480b-a35b-instruct"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 262144
+
+[profiles.nov_sao10k_l3_70b_euryal]
+approval_policy = "never"
+model = "sao10k/l3-70b-euryale-v2.1"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 8192
+
+[profiles.nov_sao10k_l3_8b_lunaris]
+approval_policy = "never"
+model = "sao10k/l3-8b-lunaris"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 8192
+
+[profiles.nov_sao10k_l31_70b_eurya]
+approval_policy = "never"
+model = "sao10k/l31-70b-euryale-v2.2"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 8192
+
+[profiles.nov_sophosympatheia_midn]
+approval_policy = "never"
+model = "sophosympatheia/midnight-rose-70b"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 2048
+
+[profiles.nov_thudm_glm_4_32b_0414]
+approval_policy = "never"
+model = "thudm/glm-4-32b-0414"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 32000
+
+[profiles.nov_thudm_glm_4_1v_9b_th]
+approval_policy = "never"
+model = "thudm/glm-4.1v-9b-thinking"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 8000
+
+[profiles.nov_zai_org_glm_4_5]
+approval_policy = "never"
+model = "zai-org/glm-4.5"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 131072
+
+[profiles.nov_zai_org_glm_4_5v]
+approval_policy = "never"
+model = "zai-org/glm-4.5v"
+model_provider = "novita"
+model_reasoning_effort = "high"
+model_max_output_tokens = 65536

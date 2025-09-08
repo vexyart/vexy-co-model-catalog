@@ -1,0 +1,53 @@
+[model_providers.anthropic]
+base_url = "https://api.anthropic.com/v1"
+name = "anthropic"
+wire_api = "chat"
+env_key = "ANTHROPIC_API_KEY"
+
+[profiles.ant_claude_3_5_haiku_202]
+approval_policy = "never"
+model = "claude-3-5-haiku-20241022"
+model_provider = "anthropic"
+model_reasoning_effort = "high"
+
+[profiles.ant_claude_3_5_sonnet_20]
+approval_policy = "never"
+model = "claude-3-5-sonnet-20241022"
+model_provider = "anthropic"
+model_reasoning_effort = "high"
+
+[profiles.ant_claude_3_7_sonnet_20]
+approval_policy = "never"
+model = "claude-3-7-sonnet-20250219"
+model_provider = "anthropic"
+model_reasoning_effort = "high"
+
+[profiles.ant_claude_3_haiku_20240]
+approval_policy = "never"
+model = "claude-3-haiku-20240307"
+model_provider = "anthropic"
+model_reasoning_effort = "high"
+
+[profiles.ant_claude_3_opus_202402]
+approval_policy = "never"
+model = "claude-3-opus-20240229"
+model_provider = "anthropic"
+model_reasoning_effort = "high"
+
+[profiles.ant_claude_opus_4_1_2025]
+approval_policy = "never"
+model = "claude-opus-4-1-20250805"
+model_provider = "anthropic"
+model_reasoning_effort = "high"
+
+[profiles.ant_claude_opus_4_202505]
+approval_policy = "never"
+model = "claude-opus-4-20250514"
+model_provider = "anthropic"
+model_reasoning_effort = "high"
+
+[profiles.ant_claude_sonnet_4_2025]
+approval_policy = "never"
+model = "claude-sonnet-4-20250514"
+model_provider = "anthropic"
+model_reasoning_effort = "high"

@@ -1,0 +1,77 @@
+[model_providers.moonshot]
+base_url = "https://api.moonshot.ai/v1"
+name = "moonshot"
+wire_api = "chat"
+env_key = "MOONSHOT_API_KEY"
+
+[profiles.moo_kimi_k2_0711_preview]
+approval_policy = "never"
+model = "kimi-k2-0711-preview"
+model_provider = "moonshot"
+model_reasoning_effort = "high"
+
+[profiles.moo_kimi_k2_0905_preview]
+approval_policy = "never"
+model = "kimi-k2-0905-preview"
+model_provider = "moonshot"
+model_reasoning_effort = "high"
+
+[profiles.moo_kimi_k2_turbo_previe]
+approval_policy = "never"
+model = "kimi-k2-turbo-preview"
+model_provider = "moonshot"
+model_reasoning_effort = "high"
+
+[profiles.moo_kimi_latest]
+approval_policy = "never"
+model = "kimi-latest"
+model_provider = "moonshot"
+model_reasoning_effort = "high"
+
+[profiles.moo_kimi_thinking_previe]
+approval_policy = "never"
+model = "kimi-thinking-preview"
+model_provider = "moonshot"
+model_reasoning_effort = "high"
+
+[profiles.moo_moonshot_v1_128k]
+approval_policy = "never"
+model = "moonshot-v1-128k"
+model_provider = "moonshot"
+model_reasoning_effort = "high"
+
+[profiles.moo_moonshot_v1_128k_vis]
+approval_policy = "never"
+model = "moonshot-v1-128k-vision-preview"
+model_provider = "moonshot"
+model_reasoning_effort = "high"
+
+[profiles.moo_moonshot_v1_32k]
+approval_policy = "never"
+model = "moonshot-v1-32k"
+model_provider = "moonshot"
+model_reasoning_effort = "high"
+
+[profiles.moo_moonshot_v1_32k_visi]
+approval_policy = "never"
+model = "moonshot-v1-32k-vision-preview"
+model_provider = "moonshot"
+model_reasoning_effort = "high"
+
+[profiles.moo_moonshot_v1_8k]
+approval_policy = "never"
+model = "moonshot-v1-8k"
+model_provider = "moonshot"
+model_reasoning_effort = "high"
+
+[profiles.moo_moonshot_v1_8k_visio]
+approval_policy = "never"
+model = "moonshot-v1-8k-vision-preview"
+model_provider = "moonshot"
+model_reasoning_effort = "high"
+
+[profiles.moo_moonshot_v1_auto]
+approval_policy = "never"
+model = "moonshot-v1-auto"
+model_provider = "moonshot"
+model_reasoning_effort = "high"

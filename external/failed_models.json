@@ -1,0 +1,151 @@
+{
+  "aihorde": {
+    "failed": false,
+    "error": "404 Client Error: Not Found for url: https://oai.aihorde.net/models",
+    "last_attempt": "2025-08-07T21:28:19.043446",
+    "last_success": "Mon, 08 Sep 2025 10:29:31 GMT"
+  },
+  "baseten": {
+    "failed": false,
+    "error": "405 Client Error: Method Not Allowed for url: https://inference.baseten.co/models",
+    "last_attempt": "2025-08-07T21:28:19.401270",
+    "last_success": "Mon, 08 Sep 2025 10:29:32 GMT"
+  },
+  "cerebras": {
+    "failed": false,
+    "error": "404 Client Error: Not Found for url: https://api.cerebras.ai/models",
+    "last_attempt": "2025-08-07T21:28:19.814822",
+    "last_success": "Mon, 08 Sep 2025 10:29:32 GMT"
+  },
+  "enfer": {
+    "failed": false,
+    "error": "404 Client Error: Not Found for url: https://api.enfer.ai/models",
+    "last_attempt": "2025-08-07T21:28:22.395409",
+    "last_success": "Mon, 08 Sep 2025 10:29:32 GMT"
+  },
+  "featherless": {
+    "failed": false,
+    "error": "",
+    "last_attempt": "2025-08-11T01:27:58.313948",
+    "last_success": "Mon, 08 Sep 2025 10:29:33 GMT"
+  },
+  "fireworks": {
+    "failed": false,
+    "error": "Unexpected error: Client error '412 Precondition Failed' for url 'https://api.fireworks.ai/inference/v1/models'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/412",
+    "last_attempt": "2025-08-22T01:00:19.523115",
+    "last_success": "Mon, 08 Sep 2025 10:29:32 GMT"
+  },
+  "friendli": {
+    "failed": false,
+    "error": "404 Client Error: Not Found for url: https://api.friendli.ai/serverless/models",
+    "last_attempt": "2025-08-07T21:28:25.018615",
+    "last_success": "Mon, 08 Sep 2025 10:29:32 GMT"
+  },
+  "groq": {
+    "failed": false,
+    "error": "404 Client Error: Not Found for url: https://api.groq.com/openai/models",
+    "last_attempt": "2025-08-07T21:28:25.368508",
+    "last_success": "Mon, 08 Sep 2025 10:29:32 GMT"
+  },
+  "hyperbolic": {
+    "failed": false,
+    "error": "404 Client Error: Not Found for url: https://api.hyperbolic.xyz/models",
+    "last_attempt": "2025-08-07T21:28:25.933186",
+    "last_success": "Mon, 08 Sep 2025 10:29:32 GMT"
+  },
+  "llm7": {
+    "failed": false,
+    "error": "404 Client Error: Not Found for url: https://api.llm7.io/models",
+    "last_attempt": "2025-08-07T21:28:26.881141",
+    "last_success": "Mon, 08 Sep 2025 10:29:32 GMT"
+  },
+  "mancer": {
+    "failed": false,
+    "error": "Expecting value: line 1 column 1 (char 0)",
+    "last_attempt": "2025-08-07T21:28:27.676087",
+    "last_success": "Mon, 08 Sep 2025 10:29:32 GMT"
+  },
+  "mistral": {
+    "failed": false,
+    "error": "404 Client Error: Not Found for url: https://api.mistral.ai/models",
+    "last_attempt": "2025-08-07T21:28:27.898291",
+    "last_success": "Mon, 08 Sep 2025 10:29:32 GMT"
+  },
+  "nebius": {
+    "failed": false,
+    "error": "404 Client Error: Not Found for url: https://api.studio.nebius.com/models",
+    "last_attempt": "2025-08-07T21:28:28.299863",
+    "last_success": "Mon, 08 Sep 2025 10:29:32 GMT"
+  },
+  "openai": {
+    "failed": false,
+    "error": "404 Client Error: Not Found for url: https://api.openai.com/models",
+    "last_attempt": "2025-08-07T21:28:28.704883",
+    "last_success": "Mon, 08 Sep 2025 10:29:32 GMT"
+  },
+  "openrouter": {
+    "failed": false,
+    "error": "Expecting value: line 1 column 1 (char 0)",
+    "last_attempt": "2025-08-07T21:28:29.293383",
+    "last_success": "Mon, 08 Sep 2025 10:29:32 GMT"
+  },
+  "poe": {
+    "failed": false,
+    "error": "403 Client Error: Forbidden for url: https://api.poe.com/models",
+    "last_attempt": "2025-08-07T21:28:29.635054",
+    "last_success": "Mon, 08 Sep 2025 10:29:33 GMT"
+  },
+  "parasail": {
+    "failed": false,
+    "error": "Unexpected error: Redirect response '301 Moved Permanently' for url 'https://api.saas.parasail.io/v1/models'\nRedirect location: 'https://api.parasail.io/v1/models'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301",
+    "last_attempt": "2025-08-07T23:24:27.499566",
+    "last_success": "Mon, 08 Sep 2025 10:29:32 GMT"
+  },
+  "perplexity": {
+    "failed": true,
+    "error": "Unexpected error: Client error '404 Not Found' for url 'https://api.perplexity.ai/models'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "last_attempt": "2025-08-07T23:28:21.033128"
+  },
+  "targon": {
+    "failed": false,
+    "error": "Unexpected error: Client error '401 Unauthorized' for url 'https://api.targon.com/v1/models'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401",
+    "last_attempt": "2025-08-07T23:24:28.931047",
+    "last_success": "Mon, 08 Sep 2025 10:29:32 GMT"
+  },
+  "xai": {
+    "failed": true,
+    "error": "Unexpected error: Client error '403 Forbidden' for url 'https://api.x.ai/v1/models'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403",
+    "last_attempt": "2025-09-08T12:29:32.400806"
+  },
+  "atlascloud": {
+    "failed": false,
+    "error": "Unexpected error: Client error '401 Unauthorized' for url 'https://api.atlascloud.ai/v1/models'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401",
+    "last_attempt": "2025-09-04T16:47:08.084114",
+    "last_success": "Mon, 08 Sep 2025 10:29:32 GMT"
+  },
+  "morphllm": {
+    "failed": true,
+    "error": "Unexpected error: Server error '500 Internal Server Error' for url 'https://api.morphllm.com/v1/models'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500",
+    "last_attempt": "2025-09-08T12:29:33.260497"
+  },
+  "nineteenai": {
+    "failed": true,
+    "error": "Unexpected error: Server error '503 Service Unavailable' for url 'https://api.nineteen.ai/v1/models'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "last_attempt": "2025-09-08T12:29:32.846854"
+  },
+  "avian": {
+    "failed": true,
+    "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)",
+    "last_attempt": "2025-09-08T12:29:32.136488"
+  },
+  "infermatic": {
+    "failed": true,
+    "error": "Unexpected error: Client error '401 Unauthorized' for url 'https://api.totalgpt.ai/v1/models'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401",
+    "last_attempt": "2025-09-08T12:29:32.642184"
+  },
+  "lmstudio": {
+    "failed": true,
+    "error": "",
+    "last_attempt": "2025-09-08T12:30:01.564821"
+  }
+}

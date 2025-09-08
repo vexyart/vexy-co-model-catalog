@@ -1,0 +1,203 @@
+[model_providers.parasail]
+base_url = "https://api.parasail.io/v1"
+name = "parasail"
+wire_api = "chat"
+env_key = "PARASAIL_API_KEY"
+
+[profiles.par_deepseek_chat]
+approval_policy = "never"
+model = "deepseek-chat"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_deepseek_reasoner]
+approval_policy = "never"
+model = "deepseek-reasoner"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_anubis_pro]
+approval_policy = "never"
+model = "parasail-anubis-pro"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_deepseek_31]
+approval_policy = "never"
+model = "parasail-deepseek-31"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_deepseek_r1]
+approval_policy = "never"
+model = "parasail-deepseek-r1-0528-qwen3-8b"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_deepseek_v3]
+approval_policy = "never"
+model = "parasail-deepseek-v3-0324"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_drummer_anu]
+approval_policy = "never"
+model = "parasail-drummer-anubis-70b-1-1"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_gemma3_27b_]
+approval_policy = "never"
+model = "parasail-gemma3-27b-it"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_glm_45]
+approval_policy = "never"
+model = "parasail-glm-45"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_glm_45v]
+approval_policy = "never"
+model = "parasail-glm-45v"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_gpt_oss_120]
+approval_policy = "never"
+model = "parasail-gpt-oss-120b"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_gpt_oss_20b]
+approval_policy = "never"
+model = "parasail-gpt-oss-20b-fast-mem0"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_kimi_k2_ins]
+approval_policy = "never"
+model = "parasail-kimi-k2-instruct"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_llama_33_70]
+approval_policy = "never"
+model = "parasail-llama-33-70b-fp8"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_llama_4_mav]
+approval_policy = "never"
+model = "parasail-llama-4-maverick-instruct-fp8"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_mistral_nem]
+approval_policy = "never"
+model = "parasail-mistral-nemo"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_mistral_sma]
+approval_policy = "never"
+model = "parasail-mistral-small-32-24b"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_mythomax_13]
+approval_policy = "never"
+model = "parasail-mythomax-13b"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_olmo_2_1124]
+approval_policy = "never"
+model = "parasail-olmo-2-1124-7b-instruct"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_qwen_3_14b]
+approval_policy = "never"
+model = "parasail-qwen-3-14b"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_qwen25_vl_7]
+approval_policy = "never"
+model = "parasail-qwen25-vl-72b-instruct"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_qwen3_235b_]
+approval_policy = "never"
+model = "parasail-qwen3-235b-a22b-instruct-2507"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_qwen3_30b_a]
+approval_policy = "never"
+model = "parasail-qwen3-30b-a3b"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_qwen3_coder]
+approval_policy = "never"
+model = "parasail-qwen3-coder-480b-a35b-instruct"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_skyfall_36b]
+approval_policy = "never"
+model = "parasail-skyfall-36b-v2-fp8"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_ui_tars_1p5]
+approval_policy = "never"
+model = "parasail-ui-tars-1p5-7b"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_whisperv3_l]
+approval_policy = "never"
+model = "parasail-whisperv3-large-turbo"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_parasail_wizardlm_2_]
+approval_policy = "never"
+model = "parasail-wizardlm-2-8x22b"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_positron_internal_co]
+approval_policy = "never"
+model = "positron-internal-codellama7b"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_positron_internal_lu]
+approval_policy = "never"
+model = "positron-internal-lumimaid-v02-8b"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_positron_internal_my]
+approval_policy = "never"
+model = "positron-internal-mythalion13b"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_positron_internal_ne]
+approval_policy = "never"
+model = "positron-internal-nemo-inferor12b"
+model_provider = "parasail"
+model_reasoning_effort = "high"
+
+[profiles.par_positron_internal_ro]
+approval_policy = "never"
+model = "positron-internal-rocinante12b"
+model_provider = "parasail"
+model_reasoning_effort = "high"

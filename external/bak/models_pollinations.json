@@ -1,0 +1,107 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "bidara",
+      "object": "model",
+      "created": 1757327372646,
+      "owned_by": "azure"
+    },
+    {
+      "id": "deepseek-reasoning",
+      "object": "model",
+      "created": 1757327372646,
+      "owned_by": "bedrock"
+    },
+    {
+      "id": "evil",
+      "object": "model",
+      "created": 1757327372646,
+      "owned_by": "scaleway"
+    },
+    {
+      "id": "gemini",
+      "object": "model",
+      "created": 1757327372646,
+      "owned_by": "api.navy"
+    },
+    {
+      "id": "midijourney",
+      "object": "model",
+      "created": 1757327372646,
+      "owned_by": "azure"
+    },
+    {
+      "id": "mirexa",
+      "object": "model",
+      "created": 1757327372646,
+      "owned_by": "azure"
+    },
+    {
+      "id": "mistral",
+      "object": "model",
+      "created": 1757327372646,
+      "owned_by": "scaleway"
+    },
+    {
+      "id": "nova-fast",
+      "object": "model",
+      "created": 1757327372646,
+      "owned_by": "bedrock"
+    },
+    {
+      "id": "openai",
+      "object": "model",
+      "created": 1757327372646,
+      "owned_by": "azure"
+    },
+    {
+      "id": "openai-audio",
+      "object": "model",
+      "created": 1757327372646,
+      "owned_by": "azure"
+    },
+    {
+      "id": "openai-fast",
+      "object": "model",
+      "created": 1757327372646,
+      "owned_by": "azure"
+    },
+    {
+      "id": "openai-large",
+      "object": "model",
+      "created": 1757327372646,
+      "owned_by": "azure"
+    },
+    {
+      "id": "openai-reasoning",
+      "object": "model",
+      "created": 1757327372646,
+      "owned_by": "api.navy"
+    },
+    {
+      "id": "qwen-coder",
+      "object": "model",
+      "created": 1757327372646,
+      "owned_by": "scaleway"
+    },
+    {
+      "id": "roblox-rp",
+      "object": "model",
+      "created": 1757327372646,
+      "owned_by": "bedrock"
+    },
+    {
+      "id": "rtist",
+      "object": "model",
+      "created": 1757327372646,
+      "owned_by": "azure"
+    },
+    {
+      "id": "unity",
+      "object": "model",
+      "created": 1757327372646,
+      "owned_by": "scaleway"
+    }
+  ]
+}

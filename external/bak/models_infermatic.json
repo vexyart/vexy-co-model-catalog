@@ -1,0 +1,155 @@
+{
+  "data": [
+    {
+      "id": "Doctor-Shotgun-L3.3-70B-Magnum-v4-SE",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "L3.1-70B-Euryale-v2.2-FP8-Dynamic",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "Llama-3.2-11B-Vision-Instruct-Turbo",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "Meta-Llama-Guard-2-8B",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "Midnight-Miqu-70B-v1.5",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "Mixtral-8x7B-Instruct-v0.1",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "NousResearch-DeepHermes-3-Mistral-24B-Preview",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "Qwen-Qwen3-235B-A22B-Thinking-2507",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "Qwen-Qwen3-30B-A3B",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "Qwen2-72B-Instruct",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "Sao10K-70B-L3.3-Cirrus-x1",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "Sao10K-72B-Qwen2.5-Kunou-v1-FP8-Dynamic",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "Sao10K-L3.1-70B-Hanami-x1",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "Sao10K-L3.3-70B-Euryale-v2.3-FP8-Dynamic",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "TTS-hexgrad-Kokoro-82M",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "TheDrummer-Anubis-70B-v1-FP8-Dynamic",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "TheDrummer-Fallen-Llama-3.3-R1-70B-v1",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "TheDrummer-Rocinante-12B-v1.1",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "TheDrummer-UnslopNemo-12B-v4.1",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "TheDrummer-Valkyrie-49B-v1",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "anthracite-org-magnum-v4-72b-FP8-Dynamic",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "deepseek-ai-DeepSeek-R1-Distill-Llama-70B",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "intfloat-multilingual-e5-base",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "nvidia-Llama-3.1-Nemotron-70B-Instruct-HF",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    },
+    {
+      "id": "rAIfle-SorcererLM-8x22b-bf16",
+      "object": "model",
+      "created": 1677610602,
+      "owned_by": "openai"
+    }
+  ],
+  "object": "list"
+}

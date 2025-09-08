@@ -1,0 +1,189 @@
+[model_providers.atlascloud]
+base_url = "https://api.atlascloud.ai/v1"
+name = "atlascloud"
+wire_api = "chat"
+env_key = "ATLASCLOUD_API_KEY"
+
+[profiles.atl_qwen_qwen3_235b_a22b]
+approval_policy = "never"
+model = "Qwen/Qwen3-235B-A22B-Instruct-2507"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 262144
+model_max_output_tokens = 262144
+
+[profiles.atl_qwen_qwen3_32b]
+approval_policy = "never"
+model = "Qwen/Qwen3-32B"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.atl_qwen_qwen3_coder]
+approval_policy = "never"
+model = "Qwen/Qwen3-Coder"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 262144
+model_max_output_tokens = 262144
+
+[profiles.atl_claude_3_5_haiku_202]
+approval_policy = "never"
+model = "claude-3-5-haiku-20241022"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.atl_claude_3_5_sonnet_20]
+approval_policy = "never"
+model = "claude-3-5-sonnet-20241022"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.atl_claude_3_7_sonnet_20]
+approval_policy = "never"
+model = "claude-3-7-sonnet-20250219-thinking"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.atl_claude_opus_4_1_2025]
+approval_policy = "never"
+model = "claude-opus-4-1-20250805-thinking"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.atl_claude_sonnet_4_2025]
+approval_policy = "never"
+model = "claude-sonnet-4-20250514-thinking"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.atl_deepseek_ai_deepseek]
+approval_policy = "never"
+model = "deepseek-ai/DeepSeek-V3.1"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 65535
+model_max_output_tokens = 32768
+
+[profiles.atl_gemini_2_5_flash]
+approval_policy = "never"
+model = "gemini-2.5-flash"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.atl_gemini_2_5_flash_ima]
+approval_policy = "never"
+model = "gemini-2.5-flash-image-preview"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.atl_gemini_2_5_flash_lit]
+approval_policy = "never"
+model = "gemini-2.5-flash-lite-preview-06-17"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.atl_gemini_2_5_flash_pre]
+approval_policy = "never"
+model = "gemini-2.5-flash-preview-05-20"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.atl_gemini_2_5_flash_thi]
+approval_policy = "never"
+model = "gemini-2.5-flash-thinking"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.atl_gemini_2_5_pro]
+approval_policy = "never"
+model = "gemini-2.5-pro"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.atl_gemini_2_5_pro_previ]
+approval_policy = "never"
+model = "gemini-2.5-pro-preview-06-05"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.atl_gemini_2_5_pro_think]
+approval_policy = "never"
+model = "gemini-2.5-pro-thinking"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.atl_meituan_longcat_long]
+approval_policy = "never"
+model = "meituan-longcat/LongCat-Flash-Chat"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.atl_moonshotai_kimi_k2_i]
+approval_policy = "never"
+model = "moonshotai/Kimi-K2-Instruct-0905"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 65536
+model_max_output_tokens = 65536
+
+[profiles.atl_openai_gpt_oss_120b]
+approval_policy = "never"
+model = "openai/gpt-oss-120b"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.atl_openai_gpt_oss_20b]
+approval_policy = "never"
+model = "openai/gpt-oss-20b"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.atl_zai_org_glm_4_5]
+approval_policy = "never"
+model = "zai-org/GLM-4.5"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.atl_zai_org_glm_4_5_air]
+approval_policy = "never"
+model = "zai-org/GLM-4.5-Air"
+model_provider = "atlascloud"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768

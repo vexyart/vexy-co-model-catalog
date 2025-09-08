@@ -1,0 +1,71 @@
+[model_providers.mancer]
+base_url = "https://neuro.mancer.tech/oai/v1"
+name = "mancer"
+wire_api = "chat"
+env_key = "MANCER_API_KEY"
+
+[profiles.man_dans_pe_1_3_12b]
+approval_policy = "never"
+model = "dans-pe-1.3-12b"
+model_provider = "mancer"
+model_reasoning_effort = "high"
+
+[profiles.man_dans_pe_1_3_24b]
+approval_policy = "never"
+model = "dans-pe-1.3-24b"
+model_provider = "mancer"
+model_reasoning_effort = "high"
+
+[profiles.man_glm_4_5]
+approval_policy = "never"
+model = "glm-4.5"
+model_provider = "mancer"
+model_reasoning_effort = "high"
+
+[profiles.man_goliath_120b]
+approval_policy = "never"
+model = "goliath-120b"
+model_provider = "mancer"
+model_reasoning_effort = "high"
+
+[profiles.man_lumi_8b_v2]
+approval_policy = "never"
+model = "lumi-8b-v2"
+model_provider = "mancer"
+model_reasoning_effort = "high"
+
+[profiles.man_magnum_72b_v4]
+approval_policy = "never"
+model = "magnum-72b-v4"
+model_provider = "mancer"
+model_reasoning_effort = "high"
+
+[profiles.man_mytholite]
+approval_policy = "never"
+model = "mytholite"
+model_provider = "mancer"
+model_reasoning_effort = "high"
+
+[profiles.man_mythomax]
+approval_policy = "never"
+model = "mythomax"
+model_provider = "mancer"
+model_reasoning_effort = "high"
+
+[profiles.man_noromaid]
+approval_policy = "never"
+model = "noromaid"
+model_provider = "mancer"
+model_reasoning_effort = "high"
+
+[profiles.man_remm_slerp]
+approval_policy = "never"
+model = "remm-slerp"
+model_provider = "mancer"
+model_reasoning_effort = "high"
+
+[profiles.man_weaver_alpha]
+approval_policy = "never"
+model = "weaver-alpha"
+model_provider = "mancer"
+model_reasoning_effort = "high"

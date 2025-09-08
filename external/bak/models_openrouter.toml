@@ -1,0 +1,1676 @@
+[model_providers.openrouter]
+base_url = "https://openrouter.ai/api/v1"
+name = "openrouter"
+wire_api = "chat"
+env_key = "OPENROUTER_API_KEY"
+
+[profiles.ope_agentica_org_deepcod]
+approval_policy = "never"
+model = "agentica-org/deepcoder-14b-preview:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 96000
+
+[profiles.ope_ai21_jamba_large_1_7]
+approval_policy = "never"
+model = "ai21/jamba-large-1.7"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 4096
+
+[profiles.ope_ai21_jamba_mini_1_7]
+approval_policy = "never"
+model = "ai21/jamba-mini-1.7"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 4096
+
+[profiles.ope_aion_labs_aion_1_0]
+approval_policy = "never"
+model = "aion-labs/aion-1.0"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 32768
+
+[profiles.ope_aion_labs_aion_1_0_m]
+approval_policy = "never"
+model = "aion-labs/aion-1.0-mini"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 32768
+
+[profiles.ope_aion_labs_aion_rp_ll]
+approval_policy = "never"
+model = "aion-labs/aion-rp-llama-3.1-8b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 32768
+
+[profiles.ope_alfredpros_codellama]
+approval_policy = "never"
+model = "alfredpros/codellama-7b-instruct-solidity"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.ope_alpindale_goliath_12]
+approval_policy = "never"
+model = "alpindale/goliath-120b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 6144
+model_max_output_tokens = 512
+
+[profiles.ope_amazon_nova_lite_v1]
+approval_policy = "never"
+model = "amazon/nova-lite-v1"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 300000
+model_max_output_tokens = 5120
+
+[profiles.ope_amazon_nova_micro_v1]
+approval_policy = "never"
+model = "amazon/nova-micro-v1"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 5120
+
+[profiles.ope_amazon_nova_pro_v1]
+approval_policy = "never"
+model = "amazon/nova-pro-v1"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 300000
+model_max_output_tokens = 5120
+
+[profiles.ope_anthracite_org_magnu]
+approval_policy = "never"
+model = "anthracite-org/magnum-v4-72b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 2048
+
+[profiles.ope_anthropic_claude_3_h]
+approval_policy = "never"
+model = "anthropic/claude-3-haiku"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 200000
+model_max_output_tokens = 4096
+
+[profiles.ope_anthropic_claude_3_o]
+approval_policy = "never"
+model = "anthropic/claude-3-opus"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 200000
+model_max_output_tokens = 4096
+
+[profiles.ope_anthropic_claude_3_5]
+approval_policy = "never"
+model = "anthropic/claude-3.5-sonnet-20240620"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 200000
+model_max_output_tokens = 8192
+
+[profiles.ope_anthropic_claude_3_7]
+approval_policy = "never"
+model = "anthropic/claude-3.7-sonnet:thinking"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 200000
+model_max_output_tokens = 64000
+
+[profiles.ope_anthropic_claude_opu]
+approval_policy = "never"
+model = "anthropic/claude-opus-4.1"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 200000
+model_max_output_tokens = 32000
+
+[profiles.ope_anthropic_claude_son]
+approval_policy = "never"
+model = "anthropic/claude-sonnet-4"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 1000000
+model_max_output_tokens = 64000
+
+[profiles.ope_arcee_ai_coder_large]
+approval_policy = "never"
+model = "arcee-ai/coder-large"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_arcee_ai_maestro_rea]
+approval_policy = "never"
+model = "arcee-ai/maestro-reasoning"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 32000
+
+[profiles.ope_arcee_ai_spotlight]
+approval_policy = "never"
+model = "arcee-ai/spotlight"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 65537
+
+[profiles.ope_arcee_ai_virtuoso_la]
+approval_policy = "never"
+model = "arcee-ai/virtuoso-large"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 64000
+
+[profiles.ope_arliai_qwq_32b_arlia]
+approval_policy = "never"
+model = "arliai/qwq-32b-arliai-rpr-v1:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_baidu_ernie_4_5_21b_]
+approval_policy = "never"
+model = "baidu/ernie-4.5-21b-a3b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 120000
+model_max_output_tokens = 8000
+
+[profiles.ope_baidu_ernie_4_5_300b]
+approval_policy = "never"
+model = "baidu/ernie-4.5-300b-a47b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 123000
+model_max_output_tokens = 12000
+
+[profiles.ope_baidu_ernie_4_5_vl_2]
+approval_policy = "never"
+model = "baidu/ernie-4.5-vl-28b-a3b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 30000
+model_max_output_tokens = 8000
+
+[profiles.ope_baidu_ernie_4_5_vl_4]
+approval_policy = "never"
+model = "baidu/ernie-4.5-vl-424b-a47b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 123000
+model_max_output_tokens = 16000
+
+[profiles.ope_bytedance_seed_oss_3]
+approval_policy = "never"
+model = "bytedance/seed-oss-36b-instruct"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.ope_bytedance_ui_tars_1_]
+approval_policy = "never"
+model = "bytedance/ui-tars-1.5-7b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 2048
+
+[profiles.ope_cognitivecomputation]
+approval_policy = "never"
+model = "cognitivecomputations/dolphin3.0-r1-mistral-24b:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_cohere_command]
+approval_policy = "never"
+model = "cohere/command"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4000
+
+[profiles.ope_cohere_command_a]
+approval_policy = "never"
+model = "cohere/command-a"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_cohere_command_r]
+approval_policy = "never"
+model = "cohere/command-r"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4000
+
+[profiles.ope_cohere_command_r_03_]
+approval_policy = "never"
+model = "cohere/command-r-03-2024"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4000
+
+[profiles.ope_cohere_command_r_08_]
+approval_policy = "never"
+model = "cohere/command-r-08-2024"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4000
+
+[profiles.ope_cohere_command_r_plu]
+approval_policy = "never"
+model = "cohere/command-r-plus-08-2024"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4000
+
+[profiles.ope_cohere_command_r7b_1]
+approval_policy = "never"
+model = "cohere/command-r7b-12-2024"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4000
+
+[profiles.ope_deepcogito_cogito_v2]
+approval_policy = "never"
+model = "deepcogito/cogito-v2-preview-llama-109b-moe"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32767
+
+[profiles.ope_deepseek_deepseek_ch]
+approval_policy = "never"
+model = "deepseek/deepseek-chat-v3.1:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 64000
+
+[profiles.ope_deepseek_deepseek_pr]
+approval_policy = "never"
+model = "deepseek/deepseek-prover-v2"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 163840
+
+[profiles.ope_deepseek_deepseek_r1]
+approval_policy = "never"
+model = "deepseek/deepseek-r1:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 163840
+
+[profiles.ope_deepseek_deepseek_v3]
+approval_policy = "never"
+model = "deepseek/deepseek-v3.1-base"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 163840
+
+[profiles.ope_eleutherai_llemma_7b]
+approval_policy = "never"
+model = "eleutherai/llemma_7b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.ope_google_gemini_2_0_fl]
+approval_policy = "never"
+model = "google/gemini-2.0-flash-lite-001"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 1048576
+model_max_output_tokens = 8192
+
+[profiles.ope_google_gemini_2_5_fl]
+approval_policy = "never"
+model = "google/gemini-2.5-flash-lite-preview-06-17"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 1048576
+model_max_output_tokens = 65535
+
+[profiles.ope_google_gemini_2_5_pr]
+approval_policy = "never"
+model = "google/gemini-2.5-pro-preview-05-06"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 1048576
+model_max_output_tokens = 65535
+
+[profiles.ope_google_gemini_flash_]
+approval_policy = "never"
+model = "google/gemini-flash-1.5-8b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 1000000
+model_max_output_tokens = 8192
+
+[profiles.ope_google_gemini_pro_1_]
+approval_policy = "never"
+model = "google/gemini-pro-1.5"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 2000000
+model_max_output_tokens = 8192
+
+[profiles.ope_google_gemma_2_27b_i]
+approval_policy = "never"
+model = "google/gemma-2-27b-it"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.ope_google_gemma_2_9b_it]
+approval_policy = "never"
+model = "google/gemma-2-9b-it:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.ope_google_gemma_3_12b_i]
+approval_policy = "never"
+model = "google/gemma-3-12b-it:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 8192
+
+[profiles.ope_google_gemma_3_27b_i]
+approval_policy = "never"
+model = "google/gemma-3-27b-it:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 96000
+model_max_output_tokens = 8192
+
+[profiles.ope_google_gemma_3_4b_it]
+approval_policy = "never"
+model = "google/gemma-3-4b-it:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 8192
+
+[profiles.ope_google_gemma_3n_e2b_]
+approval_policy = "never"
+model = "google/gemma-3n-e2b-it:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 2048
+
+[profiles.ope_google_gemma_3n_e4b_]
+approval_policy = "never"
+model = "google/gemma-3n-e4b-it:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 2048
+
+[profiles.ope_gryphe_mythomax_l2_1]
+approval_policy = "never"
+model = "gryphe/mythomax-l2-13b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.ope_inception_mercury]
+approval_policy = "never"
+model = "inception/mercury"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 16384
+
+[profiles.ope_inception_mercury_co]
+approval_policy = "never"
+model = "inception/mercury-coder"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 16384
+
+[profiles.ope_infermatic_mn_infero]
+approval_policy = "never"
+model = "infermatic/mn-inferor-12b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.ope_inflection_inflectio]
+approval_policy = "never"
+model = "inflection/inflection-3-productivity"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 8000
+model_max_output_tokens = 1024
+
+[profiles.ope_liquid_lfm_3b]
+approval_policy = "never"
+model = "liquid/lfm-3b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_liquid_lfm_7b]
+approval_policy = "never"
+model = "liquid/lfm-7b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_mancer_weaver]
+approval_policy = "never"
+model = "mancer/weaver"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 8000
+model_max_output_tokens = 2000
+
+[profiles.ope_meta_llama_llama_3_7]
+approval_policy = "never"
+model = "meta-llama/llama-3-70b-instruct"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 16384
+
+[profiles.ope_meta_llama_llama_3_8]
+approval_policy = "never"
+model = "meta-llama/llama-3-8b-instruct"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 16384
+
+[profiles.ope_meta_llama_llama_3_1]
+approval_policy = "never"
+model = "meta-llama/llama-3.1-8b-instruct"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 16384
+
+[profiles.ope_meta_llama_llama_3_2]
+approval_policy = "never"
+model = "meta-llama/llama-3.2-90b-vision-instruct"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 16384
+
+[profiles.ope_meta_llama_llama_3_3]
+approval_policy = "never"
+model = "meta-llama/llama-3.3-8b-instruct:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4028
+
+[profiles.ope_meta_llama_llama_4_m]
+approval_policy = "never"
+model = "meta-llama/llama-4-maverick:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4028
+
+[profiles.ope_meta_llama_llama_4_s]
+approval_policy = "never"
+model = "meta-llama/llama-4-scout:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4028
+
+[profiles.ope_meta_llama_llama_gua]
+approval_policy = "never"
+model = "meta-llama/llama-guard-4-12b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 163840
+
+[profiles.ope_microsoft_mai_ds_r1]
+approval_policy = "never"
+model = "microsoft/mai-ds-r1"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 163840
+
+[profiles.ope_microsoft_mai_ds_r1f]
+approval_policy = "never"
+model = "microsoft/mai-ds-r1:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 163840
+
+[profiles.ope_microsoft_phi_3_medi]
+approval_policy = "never"
+model = "microsoft/phi-3-medium-128k-instruct"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.ope_microsoft_phi_3_mini]
+approval_policy = "never"
+model = "microsoft/phi-3-mini-128k-instruct"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.ope_microsoft_phi_3_5_mi]
+approval_policy = "never"
+model = "microsoft/phi-3.5-mini-128k-instruct"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.ope_microsoft_phi_4]
+approval_policy = "never"
+model = "microsoft/phi-4"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 16384
+
+[profiles.ope_microsoft_phi_4_mult]
+approval_policy = "never"
+model = "microsoft/phi-4-multimodal-instruct"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.ope_microsoft_phi_4_reas]
+approval_policy = "never"
+model = "microsoft/phi-4-reasoning-plus"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_microsoft_wizardlm_2]
+approval_policy = "never"
+model = "microsoft/wizardlm-2-8x22b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 65536
+model_max_output_tokens = 65536
+
+[profiles.ope_minimax_minimax_01]
+approval_policy = "never"
+model = "minimax/minimax-01"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 1000192
+model_max_output_tokens = 1000192
+
+[profiles.ope_minimax_minimax_m1]
+approval_policy = "never"
+model = "minimax/minimax-m1"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 1000000
+model_max_output_tokens = 40000
+
+[profiles.ope_mistralai_codestral_]
+approval_policy = "never"
+model = "mistralai/codestral-2508"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 256000
+
+[profiles.ope_mistralai_devstral_m]
+approval_policy = "never"
+model = "mistralai/devstral-medium"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.ope_mistralai_devstral_s]
+approval_policy = "never"
+model = "mistralai/devstral-small-2505:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_mistralai_magistral_]
+approval_policy = "never"
+model = "mistralai/magistral-small-2506"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 40000
+model_max_output_tokens = 40000
+
+[profiles.ope_mistralai_ministral_]
+approval_policy = "never"
+model = "mistralai/ministral-8b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.ope_mistralai_mistral_7b]
+approval_policy = "never"
+model = "mistralai/mistral-7b-instruct:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 16384
+
+[profiles.ope_mistralai_mistral_la]
+approval_policy = "never"
+model = "mistralai/mistral-large-2411"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.ope_mistralai_mistral_me]
+approval_policy = "never"
+model = "mistralai/mistral-medium-3.1"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.ope_mistralai_mistral_ne]
+approval_policy = "never"
+model = "mistralai/mistral-nemo:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 128000
+
+[profiles.ope_mistralai_mistral_sa]
+approval_policy = "never"
+model = "mistralai/mistral-saba"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_mistralai_mistral_sm]
+approval_policy = "never"
+model = "mistralai/mistral-small-3.2-24b-instruct:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.ope_mistralai_mistral_ti]
+approval_policy = "never"
+model = "mistralai/mistral-tiny"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_mistralai_mixtral_8x]
+approval_policy = "never"
+model = "mistralai/mixtral-8x7b-instruct"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 16384
+
+[profiles.ope_mistralai_pixtral_12]
+approval_policy = "never"
+model = "mistralai/pixtral-12b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_mistralai_pixtral_la]
+approval_policy = "never"
+model = "mistralai/pixtral-large-2411"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.ope_moonshotai_kimi_dev_]
+approval_policy = "never"
+model = "moonshotai/kimi-dev-72b:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.ope_moonshotai_kimi_k2]
+approval_policy = "never"
+model = "moonshotai/kimi-k2"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 63000
+model_max_output_tokens = 63000
+
+[profiles.ope_moonshotai_kimi_k2_0]
+approval_policy = "never"
+model = "moonshotai/kimi-k2-0905"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 262144
+
+[profiles.ope_moonshotai_kimi_k2fr]
+approval_policy = "never"
+model = "moonshotai/kimi-k2:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_moonshotai_kimi_vl_a]
+approval_policy = "never"
+model = "moonshotai/kimi-vl-a3b-thinking:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.ope_morph_morph_v3_fast]
+approval_policy = "never"
+model = "morph/morph-v3-fast"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 81920
+model_max_output_tokens = 38000
+
+[profiles.ope_morph_morph_v3_large]
+approval_policy = "never"
+model = "morph/morph-v3-large"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 81920
+model_max_output_tokens = 38000
+
+[profiles.ope_neversleep_llama_3_l]
+approval_policy = "never"
+model = "neversleep/llama-3-lumimaid-70b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 4096
+
+[profiles.ope_neversleep_llama_3_1]
+approval_policy = "never"
+model = "neversleep/llama-3.1-lumimaid-8b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_neversleep_noromaid_]
+approval_policy = "never"
+model = "neversleep/noromaid-20b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 4096
+
+[profiles.ope_nousresearch_deepher]
+approval_policy = "never"
+model = "nousresearch/deephermes-3-mistral-24b-preview"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_nousresearch_hermes_]
+approval_policy = "never"
+model = "nousresearch/hermes-4-70b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.ope_nvidia_llama_3_1_nem]
+approval_policy = "never"
+model = "nvidia/llama-3.1-nemotron-ultra-253b-v1:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.ope_nvidia_llama_3_3_nem]
+approval_policy = "never"
+model = "nvidia/llama-3.3-nemotron-super-49b-v1"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.ope_openai_chatgpt_4o_la]
+approval_policy = "never"
+model = "openai/chatgpt-4o-latest"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 16384
+
+[profiles.ope_openai_codex_mini]
+approval_policy = "never"
+model = "openai/codex-mini"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 200000
+model_max_output_tokens = 100000
+
+[profiles.ope_openai_gpt_3_5_turbo]
+approval_policy = "never"
+model = "openai/gpt-3.5-turbo-instruct"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 4095
+model_max_output_tokens = 4096
+
+[profiles.ope_openai_gpt_4]
+approval_policy = "never"
+model = "openai/gpt-4"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 4096
+
+[profiles.ope_openai_gpt_4_0314]
+approval_policy = "never"
+model = "openai/gpt-4-0314"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 8191
+model_max_output_tokens = 4096
+
+[profiles.ope_openai_gpt_4_1106_pr]
+approval_policy = "never"
+model = "openai/gpt-4-1106-preview"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4096
+
+[profiles.ope_openai_gpt_4_turbo]
+approval_policy = "never"
+model = "openai/gpt-4-turbo"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4096
+
+[profiles.ope_openai_gpt_4_turbo_p]
+approval_policy = "never"
+model = "openai/gpt-4-turbo-preview"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 4096
+
+[profiles.ope_openai_gpt_4_1]
+approval_policy = "never"
+model = "openai/gpt-4.1"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 1047576
+model_max_output_tokens = 32768
+
+[profiles.ope_openai_gpt_4_1_mini]
+approval_policy = "never"
+model = "openai/gpt-4.1-mini"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 1047576
+model_max_output_tokens = 32768
+
+[profiles.ope_openai_gpt_4_1_nano]
+approval_policy = "never"
+model = "openai/gpt-4.1-nano"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 1047576
+model_max_output_tokens = 32768
+
+[profiles.ope_openai_gpt_4o]
+approval_policy = "never"
+model = "openai/gpt-4o"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 16384
+
+[profiles.ope_openai_gpt_4o_2024_0]
+approval_policy = "never"
+model = "openai/gpt-4o-2024-08-06"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 16384
+
+[profiles.ope_openai_gpt_4o_2024_1]
+approval_policy = "never"
+model = "openai/gpt-4o-2024-11-20"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 16384
+
+[profiles.ope_openai_gpt_4o_audio_]
+approval_policy = "never"
+model = "openai/gpt-4o-audio-preview"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 16384
+
+[profiles.ope_openai_gpt_4o_mini]
+approval_policy = "never"
+model = "openai/gpt-4o-mini"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 16384
+
+[profiles.ope_openai_gpt_4o_mini_2]
+approval_policy = "never"
+model = "openai/gpt-4o-mini-2024-07-18"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 16384
+
+[profiles.ope_openai_gpt_4o_mini_s]
+approval_policy = "never"
+model = "openai/gpt-4o-mini-search-preview"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 16384
+
+[profiles.ope_openai_gpt_4o_search]
+approval_policy = "never"
+model = "openai/gpt-4o-search-preview"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 16384
+
+[profiles.ope_openai_gpt_4oextende]
+approval_policy = "never"
+model = "openai/gpt-4o:extended"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 64000
+
+[profiles.ope_openai_gpt_5]
+approval_policy = "never"
+model = "openai/gpt-5"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 400000
+model_max_output_tokens = 128000
+
+[profiles.ope_openai_gpt_5_chat]
+approval_policy = "never"
+model = "openai/gpt-5-chat"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 16384
+
+[profiles.ope_openai_gpt_5_mini]
+approval_policy = "never"
+model = "openai/gpt-5-mini"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 400000
+model_max_output_tokens = 128000
+
+[profiles.ope_openai_gpt_5_nano]
+approval_policy = "never"
+model = "openai/gpt-5-nano"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 400000
+model_max_output_tokens = 128000
+
+[profiles.ope_openai_gpt_oss_120b]
+approval_policy = "never"
+model = "openai/gpt-oss-120b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131000
+model_max_output_tokens = 131000
+
+[profiles.ope_openai_gpt_oss_120bf]
+approval_policy = "never"
+model = "openai/gpt-oss-120b:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_openai_gpt_oss_20b]
+approval_policy = "never"
+model = "openai/gpt-oss-20b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131000
+model_max_output_tokens = 131000
+
+[profiles.ope_openai_gpt_oss_20bfr]
+approval_policy = "never"
+model = "openai/gpt-oss-20b:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.ope_openai_o1]
+approval_policy = "never"
+model = "openai/o1"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 200000
+model_max_output_tokens = 100000
+
+[profiles.ope_openai_o1_mini]
+approval_policy = "never"
+model = "openai/o1-mini"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 65536
+
+[profiles.ope_openai_o1_mini_2024_]
+approval_policy = "never"
+model = "openai/o1-mini-2024-09-12"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 65536
+
+[profiles.ope_openai_o1_pro]
+approval_policy = "never"
+model = "openai/o1-pro"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 200000
+model_max_output_tokens = 100000
+
+[profiles.ope_openai_o3]
+approval_policy = "never"
+model = "openai/o3"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 200000
+model_max_output_tokens = 100000
+
+[profiles.ope_openai_o3_mini]
+approval_policy = "never"
+model = "openai/o3-mini"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 200000
+model_max_output_tokens = 100000
+
+[profiles.ope_openai_o3_mini_high]
+approval_policy = "never"
+model = "openai/o3-mini-high"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 200000
+model_max_output_tokens = 100000
+
+[profiles.ope_openai_o3_pro]
+approval_policy = "never"
+model = "openai/o3-pro"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 200000
+model_max_output_tokens = 100000
+
+[profiles.ope_openai_o4_mini]
+approval_policy = "never"
+model = "openai/o4-mini"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 200000
+model_max_output_tokens = 100000
+
+[profiles.ope_openai_o4_mini_high]
+approval_policy = "never"
+model = "openai/o4-mini-high"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 200000
+model_max_output_tokens = 100000
+
+[profiles.ope_openrouter_auto]
+approval_policy = "never"
+model = "openrouter/auto"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+
+[profiles.ope_openrouter_sonoma_du]
+approval_policy = "never"
+model = "openrouter/sonoma-dusk-alpha"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 2000000
+
+[profiles.ope_openrouter_sonoma_sk]
+approval_policy = "never"
+model = "openrouter/sonoma-sky-alpha"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 2000000
+
+[profiles.ope_perplexity_r1_1776]
+approval_policy = "never"
+model = "perplexity/r1-1776"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.ope_perplexity_sonar]
+approval_policy = "never"
+model = "perplexity/sonar"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 127072
+
+[profiles.ope_perplexity_sonar_dee]
+approval_policy = "never"
+model = "perplexity/sonar-deep-research"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.ope_perplexity_sonar_pro]
+approval_policy = "never"
+model = "perplexity/sonar-pro"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 200000
+model_max_output_tokens = 8000
+
+[profiles.ope_perplexity_sonar_rea]
+approval_policy = "never"
+model = "perplexity/sonar-reasoning-pro"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.ope_pygmalionai_mythalio]
+approval_policy = "never"
+model = "pygmalionai/mythalion-13b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.ope_qwen_qwen_2_5_72b_in]
+approval_policy = "never"
+model = "qwen/qwen-2.5-72b-instruct:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_qwen_qwen_2_5_7b_ins]
+approval_policy = "never"
+model = "qwen/qwen-2.5-7b-instruct"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 65536
+
+[profiles.ope_qwen_qwen_2_5_coder_]
+approval_policy = "never"
+model = "qwen/qwen-2.5-coder-32b-instruct:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_qwen_qwen_2_5_vl_7b_]
+approval_policy = "never"
+model = "qwen/qwen-2.5-vl-7b-instruct"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_qwen_qwen_max]
+approval_policy = "never"
+model = "qwen/qwen-max"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 8192
+
+[profiles.ope_qwen_qwen_plus]
+approval_policy = "never"
+model = "qwen/qwen-plus"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 8192
+
+[profiles.ope_qwen_qwen_turbo]
+approval_policy = "never"
+model = "qwen/qwen-turbo"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 1000000
+model_max_output_tokens = 8192
+
+[profiles.ope_qwen_qwen_vl_max]
+approval_policy = "never"
+model = "qwen/qwen-vl-max"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 7500
+model_max_output_tokens = 1500
+
+[profiles.ope_qwen_qwen_vl_plus]
+approval_policy = "never"
+model = "qwen/qwen-vl-plus"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 7500
+model_max_output_tokens = 1500
+
+[profiles.ope_qwen_qwen2_5_vl_32b_]
+approval_policy = "never"
+model = "qwen/qwen2.5-vl-32b-instruct:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.ope_qwen_qwen2_5_vl_72b_]
+approval_policy = "never"
+model = "qwen/qwen2.5-vl-72b-instruct:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_qwen_qwen3_14b]
+approval_policy = "never"
+model = "qwen/qwen3-14b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 40960
+model_max_output_tokens = 40960
+
+[profiles.ope_qwen_qwen3_14bfree]
+approval_policy = "never"
+model = "qwen/qwen3-14b:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 40960
+
+[profiles.ope_qwen_qwen3_235b_a22b]
+approval_policy = "never"
+model = "qwen/qwen3-235b-a22b:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.ope_qwen_qwen3_30b_a3b]
+approval_policy = "never"
+model = "qwen/qwen3-30b-a3b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 40960
+
+[profiles.ope_qwen_qwen3_30b_a3b_i]
+approval_policy = "never"
+model = "qwen/qwen3-30b-a3b-instruct-2507"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 262144
+
+[profiles.ope_qwen_qwen3_30b_a3b_t]
+approval_policy = "never"
+model = "qwen/qwen3-30b-a3b-thinking-2507"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 262144
+model_max_output_tokens = 262144
+
+[profiles.ope_qwen_qwen3_30b_a3bfr]
+approval_policy = "never"
+model = "qwen/qwen3-30b-a3b:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 40960
+
+[profiles.ope_qwen_qwen3_32b]
+approval_policy = "never"
+model = "qwen/qwen3-32b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 40960
+
+[profiles.ope_qwen_qwen3_4bfree]
+approval_policy = "never"
+model = "qwen/qwen3-4b:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 40960
+
+[profiles.ope_qwen_qwen3_8b]
+approval_policy = "never"
+model = "qwen/qwen3-8b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+model_max_output_tokens = 20000
+
+[profiles.ope_qwen_qwen3_8bfree]
+approval_policy = "never"
+model = "qwen/qwen3-8b:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 40960
+model_max_output_tokens = 40960
+
+[profiles.ope_qwen_qwen3_coder]
+approval_policy = "never"
+model = "qwen/qwen3-coder"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 262144
+
+[profiles.ope_qwen_qwen3_coder_30b]
+approval_policy = "never"
+model = "qwen/qwen3-coder-30b-a3b-instruct"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 262144
+
+[profiles.ope_qwen_qwen3_coderfree]
+approval_policy = "never"
+model = "qwen/qwen3-coder:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 262144
+
+[profiles.ope_qwen_qwen3_max]
+approval_policy = "never"
+model = "qwen/qwen3-max"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 32768
+
+[profiles.ope_qwen_qwq_32b]
+approval_policy = "never"
+model = "qwen/qwq-32b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_qwen_qwq_32b_preview]
+approval_policy = "never"
+model = "qwen/qwq-32b-preview"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_qwen_qwq_32bfree]
+approval_policy = "never"
+model = "qwen/qwq-32b:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_raifle_sorcererlm_8x]
+approval_policy = "never"
+model = "raifle/sorcererlm-8x22b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 16000
+
+[profiles.ope_rekaai_reka_flash_3f]
+approval_policy = "never"
+model = "rekaai/reka-flash-3:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_sao10k_l3_euryale_70]
+approval_policy = "never"
+model = "sao10k/l3-euryale-70b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 8192
+model_max_output_tokens = 8192
+
+[profiles.ope_sao10k_l3_lunaris_8b]
+approval_policy = "never"
+model = "sao10k/l3-lunaris-8b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.ope_sao10k_l3_1_euryale_]
+approval_policy = "never"
+model = "sao10k/l3.1-euryale-70b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_sao10k_l3_3_euryale_]
+approval_policy = "never"
+model = "sao10k/l3.3-euryale-70b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 16384
+
+[profiles.ope_shisa_ai_shisa_v2_ll]
+approval_policy = "never"
+model = "shisa-ai/shisa-v2-llama3.3-70b:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_sophosympatheia_midn]
+approval_policy = "never"
+model = "sophosympatheia/midnight-rose-70b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 2048
+
+[profiles.ope_stepfun_ai_step3]
+approval_policy = "never"
+model = "stepfun-ai/step3"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 65536
+model_max_output_tokens = 65536
+
+[profiles.ope_switchpoint_router]
+approval_policy = "never"
+model = "switchpoint/router"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.ope_tencent_hunyuan_a13b]
+approval_policy = "never"
+model = "tencent/hunyuan-a13b-instruct:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_thedrummer_anubis_70]
+approval_policy = "never"
+model = "thedrummer/anubis-70b-v1.1"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 16384
+
+[profiles.ope_thedrummer_anubis_pr]
+approval_policy = "never"
+model = "thedrummer/anubis-pro-105b-v1"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.ope_thedrummer_rocinante]
+approval_policy = "never"
+model = "thedrummer/rocinante-12b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_thedrummer_skyfall_3]
+approval_policy = "never"
+model = "thedrummer/skyfall-36b-v2"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_thedrummer_unslopnem]
+approval_policy = "never"
+model = "thedrummer/unslopnemo-12b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_thudm_glm_4_32b]
+approval_policy = "never"
+model = "thudm/glm-4-32b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32000
+model_max_output_tokens = 32000
+
+[profiles.ope_thudm_glm_4_1v_9b_th]
+approval_policy = "never"
+model = "thudm/glm-4.1v-9b-thinking"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 65536
+model_max_output_tokens = 8000
+
+[profiles.ope_thudm_glm_z1_32b]
+approval_policy = "never"
+model = "thudm/glm-z1-32b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_tngtech_deepseek_r1t]
+approval_policy = "never"
+model = "tngtech/deepseek-r1t2-chimera:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 163840
+
+[profiles.ope_undi95_remm_slerp_l2]
+approval_policy = "never"
+model = "undi95/remm-slerp-l2-13b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 6144
+
+[profiles.ope_x_ai_grok_2_1212]
+approval_policy = "never"
+model = "x-ai/grok-2-1212"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.ope_x_ai_grok_2_vision_1]
+approval_policy = "never"
+model = "x-ai/grok-2-vision-1212"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.ope_x_ai_grok_3]
+approval_policy = "never"
+model = "x-ai/grok-3"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.ope_x_ai_grok_3_beta]
+approval_policy = "never"
+model = "x-ai/grok-3-beta"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.ope_x_ai_grok_3_mini]
+approval_policy = "never"
+model = "x-ai/grok-3-mini"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.ope_x_ai_grok_3_mini_bet]
+approval_policy = "never"
+model = "x-ai/grok-3-mini-beta"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.ope_x_ai_grok_4]
+approval_policy = "never"
+model = "x-ai/grok-4"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 256000
+
+[profiles.ope_x_ai_grok_code_fast_]
+approval_policy = "never"
+model = "x-ai/grok-code-fast-1"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 256000
+model_max_output_tokens = 10000
+
+[profiles.ope_z_ai_glm_4_32b]
+approval_policy = "never"
+model = "z-ai/glm-4-32b"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 128000
+
+[profiles.ope_z_ai_glm_4_5]
+approval_policy = "never"
+model = "z-ai/glm-4.5"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.ope_z_ai_glm_4_5_air]
+approval_policy = "never"
+model = "z-ai/glm-4.5-air"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 131072
+
+[profiles.ope_z_ai_glm_4_5_airfree]
+approval_policy = "never"
+model = "z-ai/glm-4.5-air:free"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.ope_z_ai_glm_4_5v]
+approval_policy = "never"
+model = "z-ai/glm-4.5v"
+model_provider = "openrouter"
+model_reasoning_effort = "high"
+model_context_window = 65536
+model_max_output_tokens = 65536

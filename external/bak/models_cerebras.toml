@@ -1,0 +1,59 @@
+[model_providers.cerebras]
+base_url = "https://api.cerebras.ai/v1"
+name = "cerebras"
+wire_api = "chat"
+env_key = "CEREBRAS_API_KEY"
+
+[profiles.cer_gpt_oss_120b]
+approval_policy = "never"
+model = "gpt-oss-120b"
+model_provider = "cerebras"
+model_reasoning_effort = "high"
+
+[profiles.cer_llama_3_3_70b]
+approval_policy = "never"
+model = "llama-3.3-70b"
+model_provider = "cerebras"
+model_reasoning_effort = "high"
+
+[profiles.cer_llama_4_maverick_17b]
+approval_policy = "never"
+model = "llama-4-maverick-17b-128e-instruct"
+model_provider = "cerebras"
+model_reasoning_effort = "high"
+
+[profiles.cer_llama_4_scout_17b_16]
+approval_policy = "never"
+model = "llama-4-scout-17b-16e-instruct"
+model_provider = "cerebras"
+model_reasoning_effort = "high"
+
+[profiles.cer_llama3_1_8b]
+approval_policy = "never"
+model = "llama3.1-8b"
+model_provider = "cerebras"
+model_reasoning_effort = "high"
+
+[profiles.cer_qwen_3_235b_a22b_ins]
+approval_policy = "never"
+model = "qwen-3-235b-a22b-instruct-2507"
+model_provider = "cerebras"
+model_reasoning_effort = "high"
+
+[profiles.cer_qwen_3_235b_a22b_thi]
+approval_policy = "never"
+model = "qwen-3-235b-a22b-thinking-2507"
+model_provider = "cerebras"
+model_reasoning_effort = "high"
+
+[profiles.cer_qwen_3_32b]
+approval_policy = "never"
+model = "qwen-3-32b"
+model_provider = "cerebras"
+model_reasoning_effort = "high"
+
+[profiles.cer_qwen_3_coder_480b]
+approval_policy = "never"
+model = "qwen-3-coder-480b"
+model_provider = "cerebras"
+model_reasoning_effort = "high"

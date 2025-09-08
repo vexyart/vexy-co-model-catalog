@@ -1,0 +1,233 @@
+[model_providers.llm7]
+base_url = "https://api.llm7.io/v1"
+name = "llm7"
+wire_api = "chat"
+env_key = "LLM7_API_KEY"
+
+[profiles.llm_bidara]
+approval_policy = "never"
+model = "bidara"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_codestral_2405]
+approval_policy = "never"
+model = "codestral-2405"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_codestral_2501]
+approval_policy = "never"
+model = "codestral-2501"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_deepseek_r1]
+approval_policy = "never"
+model = "deepseek-r1"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_deepseek_r1_0528]
+approval_policy = "never"
+model = "deepseek-r1-0528"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_deepseek_v3_0324]
+approval_policy = "never"
+model = "deepseek-v3-0324"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_gemini]
+approval_policy = "never"
+model = "gemini"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_gpt_4_1_nano_2025_04]
+approval_policy = "never"
+model = "gpt-4.1-nano-2025-04-14"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_gpt_4o_mini_2024_07_]
+approval_policy = "never"
+model = "gpt-4o-mini-2024-07-18"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_gpt_o4_mini_2025_04_]
+approval_policy = "never"
+model = "gpt-o4-mini-2025-04-16"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_l3_70b_euryale_v2_1]
+approval_policy = "never"
+model = "l3-70b-euryale-v2.1"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_l3_8b_stheno_v3_2]
+approval_policy = "never"
+model = "l3-8b-stheno-v3.2"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_l3_3_ms_nevoria_70b]
+approval_policy = "never"
+model = "l3.3-ms-nevoria-70b"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_midnight_rose_70b_v2]
+approval_policy = "never"
+model = "midnight-rose-70b-v2.0.3"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_ministral_3b_2410]
+approval_policy = "never"
+model = "ministral-3b-2410"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_ministral_8b_2410]
+approval_policy = "never"
+model = "ministral-8b-2410"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mirexa]
+approval_policy = "never"
+model = "mirexa"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mistral_large_2402]
+approval_policy = "never"
+model = "mistral-large-2402"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mistral_large_2407]
+approval_policy = "never"
+model = "mistral-large-2407"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mistral_large_2411]
+approval_policy = "never"
+model = "mistral-large-2411"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mistral_medium]
+approval_policy = "never"
+model = "mistral-medium"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mistral_saba_2502]
+approval_policy = "never"
+model = "mistral-saba-2502"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mistral_small_2402]
+approval_policy = "never"
+model = "mistral-small-2402"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mistral_small_2409]
+approval_policy = "never"
+model = "mistral-small-2409"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mistral_small_2501]
+approval_policy = "never"
+model = "mistral-small-2501"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mistral_small_2503]
+approval_policy = "never"
+model = "mistral-small-2503"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_mistral_small_3_1_24]
+approval_policy = "never"
+model = "mistral-small-3.1-24b-instruct-2503"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_nova_fast]
+approval_policy = "never"
+model = "nova-fast"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_open_mistral_7b]
+approval_policy = "never"
+model = "open-mistral-7b"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_open_mistral_nemo]
+approval_policy = "never"
+model = "open-mistral-nemo"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_open_mixtral_8x22b]
+approval_policy = "never"
+model = "open-mixtral-8x22b"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_open_mixtral_8x7b]
+approval_policy = "never"
+model = "open-mixtral-8x7b"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_pixtral_12b_2409]
+approval_policy = "never"
+model = "pixtral-12b-2409"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_pixtral_large_2411]
+approval_policy = "never"
+model = "pixtral-large-2411"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_qwen2_5_coder_32b_in]
+approval_policy = "never"
+model = "qwen2.5-coder-32b-instruct"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_qwen2_5_coder_7b]
+approval_policy = "never"
+model = "qwen2.5-coder-7b"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_roblox_rp]
+approval_policy = "never"
+model = "roblox-rp"
+model_provider = "llm7"
+model_reasoning_effort = "high"
+
+[profiles.llm_rtist]
+approval_policy = "never"
+model = "rtist"
+model_provider = "llm7"
+model_reasoning_effort = "high"

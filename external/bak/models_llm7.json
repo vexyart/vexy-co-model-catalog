@@ -1,0 +1,426 @@
+[
+  {
+    "id": "bidara",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "azure",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": "codestral-2405",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "mistral",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "codestral-2501",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "mistral",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "deepseek-r1",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "nebulablock",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "deepseek-r1-0528",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "bedrock",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "deepseek-v3-0324",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "nebulablock",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "gemini",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "api.navy",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "gpt-4.1-nano-2025-04-14",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "azure",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": "gpt-4o-mini-2024-07-18",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "azure",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": "gpt-o4-mini-2025-04-16",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "api.navy",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "l3-70b-euryale-v2.1",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "nebulablock",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "l3-8b-stheno-v3.2",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "nebulablock",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "l3.3-ms-nevoria-70b",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "nebulablock",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "midnight-rose-70b-v2.0.3",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "nebulablock",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "ministral-3b-2410",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "mistral",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "ministral-8b-2410",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "mistral",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "mirexa",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "azure",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": "mistral-large-2402",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "mistral",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "mistral-large-2407",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "mistral",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "mistral-large-2411",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "mistral",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "mistral-medium",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "mistral",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "mistral-saba-2502",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "mistral",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "mistral-small-2402",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "mistral",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "mistral-small-2409",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "mistral",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "mistral-small-2501",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "mistral",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "mistral-small-2503",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "mistral",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "mistral-small-3.1-24b-instruct-2503",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "scaleway",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "nova-fast",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "bedrock",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "open-mistral-7b",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "mistral",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "open-mistral-nemo",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "mistral",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "open-mixtral-8x22b",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "mistral",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "open-mixtral-8x7b",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "mistral",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "pixtral-12b-2409",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "mistral",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": "pixtral-large-2411",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "mistral",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": "qwen2.5-coder-32b-instruct",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "scaleway",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "qwen2.5-coder-7b",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "nebius",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "roblox-rp",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "bedrock",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "rtist",
+    "object": "model",
+    "created": 1757195944,
+    "owned_by": "azure",
+    "modalities": {
+      "input": [
+        "text"
+      ]
+    }
+  }
+]

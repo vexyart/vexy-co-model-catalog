@@ -1,0 +1,453 @@
+[model_providers.mistral]
+base_url = "https://api.mistral.ai/v1"
+name = "mistral"
+wire_api = "chat"
+env_key = "MISTRAL_API_KEY"
+
+[profiles.mis_codestral_2411_rc5]
+approval_policy = "never"
+model = "codestral-2411-rc5"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 262144
+
+[profiles.mis_codestral_2412]
+approval_policy = "never"
+model = "codestral-2412"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 262144
+
+[profiles.mis_codestral_2501]
+approval_policy = "never"
+model = "codestral-2501"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 262144
+
+[profiles.mis_codestral_2508]
+approval_policy = "never"
+model = "codestral-2508"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 256000
+
+[profiles.mis_codestral_embed]
+approval_policy = "never"
+model = "codestral-embed"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.mis_codestral_embed_2505]
+approval_policy = "never"
+model = "codestral-embed-2505"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.mis_codestral_latest]
+approval_policy = "never"
+model = "codestral-latest"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 256000
+
+[profiles.mis_devstral_medium_2507]
+approval_policy = "never"
+model = "devstral-medium-2507"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_devstral_medium_late]
+approval_policy = "never"
+model = "devstral-medium-latest"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_devstral_small_2505]
+approval_policy = "never"
+model = "devstral-small-2505"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_devstral_small_2507]
+approval_policy = "never"
+model = "devstral-small-2507"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_devstral_small_lates]
+approval_policy = "never"
+model = "devstral-small-latest"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_magistral_medium_250]
+approval_policy = "never"
+model = "magistral-medium-2507"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 40960
+
+[profiles.mis_magistral_medium_lat]
+approval_policy = "never"
+model = "magistral-medium-latest"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 40960
+
+[profiles.mis_magistral_small_2506]
+approval_policy = "never"
+model = "magistral-small-2506"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 40000
+
+[profiles.mis_magistral_small_2507]
+approval_policy = "never"
+model = "magistral-small-2507"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 40960
+
+[profiles.mis_magistral_small_late]
+approval_policy = "never"
+model = "magistral-small-latest"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 40960
+
+[profiles.mis_ministral_3b_2410]
+approval_policy = "never"
+model = "ministral-3b-2410"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.mis_ministral_3b_latest]
+approval_policy = "never"
+model = "ministral-3b-latest"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.mis_ministral_8b_2410]
+approval_policy = "never"
+model = "ministral-8b-2410"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_ministral_8b_latest]
+approval_policy = "never"
+model = "ministral-8b-latest"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_mistral_embed]
+approval_policy = "never"
+model = "mistral-embed"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.mis_mistral_large_2407]
+approval_policy = "never"
+model = "mistral-large-2407"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_mistral_large_2411]
+approval_policy = "never"
+model = "mistral-large-2411"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_mistral_large_latest]
+approval_policy = "never"
+model = "mistral-large-latest"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_mistral_large_pixtra]
+approval_policy = "never"
+model = "mistral-large-pixtral-2411"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_mistral_medium]
+approval_policy = "never"
+model = "mistral-medium"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_mistral_medium_2505]
+approval_policy = "never"
+model = "mistral-medium-2505"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_mistral_medium_2508]
+approval_policy = "never"
+model = "mistral-medium-2508"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_mistral_medium_lates]
+approval_policy = "never"
+model = "mistral-medium-latest"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_mistral_moderation_2]
+approval_policy = "never"
+model = "mistral-moderation-2411"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.mis_mistral_moderation_l]
+approval_policy = "never"
+model = "mistral-moderation-latest"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 8192
+
+[profiles.mis_mistral_ocr_2503]
+approval_policy = "never"
+model = "mistral-ocr-2503"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 16384
+
+[profiles.mis_mistral_ocr_2505]
+approval_policy = "never"
+model = "mistral-ocr-2505"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 16384
+
+[profiles.mis_mistral_ocr_latest]
+approval_policy = "never"
+model = "mistral-ocr-latest"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 16384
+
+[profiles.mis_mistral_saba_2502]
+approval_policy = "never"
+model = "mistral-saba-2502"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.mis_mistral_saba_latest]
+approval_policy = "never"
+model = "mistral-saba-latest"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.mis_mistral_small]
+approval_policy = "never"
+model = "mistral-small"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.mis_mistral_small_2312]
+approval_policy = "never"
+model = "mistral-small-2312"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.mis_mistral_small_2409]
+approval_policy = "never"
+model = "mistral-small-2409"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.mis_mistral_small_2501]
+approval_policy = "never"
+model = "mistral-small-2501"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.mis_mistral_small_2503]
+approval_policy = "never"
+model = "mistral-small-2503"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_mistral_small_2506]
+approval_policy = "never"
+model = "mistral-small-2506"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_mistral_small_latest]
+approval_policy = "never"
+model = "mistral-small-latest"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_mistral_tiny]
+approval_policy = "never"
+model = "mistral-tiny"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.mis_mistral_tiny_2312]
+approval_policy = "never"
+model = "mistral-tiny-2312"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.mis_mistral_tiny_2407]
+approval_policy = "never"
+model = "mistral-tiny-2407"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_mistral_tiny_latest]
+approval_policy = "never"
+model = "mistral-tiny-latest"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_open_mistral_7b]
+approval_policy = "never"
+model = "open-mistral-7b"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.mis_open_mistral_nemo]
+approval_policy = "never"
+model = "open-mistral-nemo"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_open_mistral_nemo_24]
+approval_policy = "never"
+model = "open-mistral-nemo-2407"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_open_mixtral_8x22b]
+approval_policy = "never"
+model = "open-mixtral-8x22b"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 65536
+
+[profiles.mis_open_mixtral_8x22b_2]
+approval_policy = "never"
+model = "open-mixtral-8x22b-2404"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 65536
+
+[profiles.mis_open_mixtral_8x7b]
+approval_policy = "never"
+model = "open-mixtral-8x7b"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.mis_pixtral_12b]
+approval_policy = "never"
+model = "pixtral-12b"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_pixtral_12b_2409]
+approval_policy = "never"
+model = "pixtral-12b-2409"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_pixtral_12b_latest]
+approval_policy = "never"
+model = "pixtral-12b-latest"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_pixtral_large_2411]
+approval_policy = "never"
+model = "pixtral-large-2411"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_pixtral_large_latest]
+approval_policy = "never"
+model = "pixtral-large-latest"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 131072
+
+[profiles.mis_voxtral_mini_2507]
+approval_policy = "never"
+model = "voxtral-mini-2507"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.mis_voxtral_mini_latest]
+approval_policy = "never"
+model = "voxtral-mini-latest"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.mis_voxtral_mini_transcr]
+approval_policy = "never"
+model = "voxtral-mini-transcribe-2507"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 16384
+
+[profiles.mis_voxtral_small_2507]
+approval_policy = "never"
+model = "voxtral-small-2507"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.mis_voxtral_small_latest]
+approval_policy = "never"
+model = "voxtral-small-latest"
+model_provider = "mistral"
+model_reasoning_effort = "high"
+model_context_window = 32768

@@ -1,0 +1,33 @@
+[model_providers.fireworks]
+base_url = "https://api.fireworks.ai/inference/v1"
+name = "fireworks"
+wire_api = "chat"
+env_key = "FIREWORKS_API_KEY"
+
+[profiles.fir_accounts_fireworks_m]
+approval_policy = "never"
+model = "accounts/fireworks/models/qwen3-embedding-8b"
+model_provider = "fireworks"
+model_reasoning_effort = "high"
+model_context_window = 40960
+
+[profiles.fir_accounts_perplexity_]
+approval_policy = "never"
+model = "accounts/perplexity/models/r1-1776"
+model_provider = "fireworks"
+model_reasoning_effort = "high"
+model_context_window = 163840
+
+[profiles.fir_accounts_scale_ai_mo]
+approval_policy = "never"
+model = "accounts/scale-ai/models/arctic-text2sql-r1-7b-public"
+model_provider = "fireworks"
+model_reasoning_effort = "high"
+model_context_window = 32768
+
+[profiles.fir_accounts_sentientfou]
+approval_policy = "never"
+model = "accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new"
+model_provider = "fireworks"
+model_reasoning_effort = "high"
+model_context_window = 131072

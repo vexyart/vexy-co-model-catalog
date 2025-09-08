@@ -1,0 +1,29 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "mistralai/mistral-nemo",
+      "object": "model",
+      "created": 1739956027,
+      "owned_by": "system"
+    },
+    {
+      "id": "mistralai/mistral-small-3.2-24b-instruct-2506",
+      "object": "model",
+      "created": 1752181170,
+      "owned_by": "system"
+    },
+    {
+      "id": "thedrummer/rocinante-12b-v1-1",
+      "object": "model",
+      "created": 1746134507,
+      "owned_by": "system"
+    },
+    {
+      "id": "thedrummer/unslopnemo-12b-v4-1",
+      "object": "model",
+      "created": 1745607876,
+      "owned_by": "system"
+    }
+  ]
+}

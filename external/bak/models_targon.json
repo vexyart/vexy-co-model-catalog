@@ -1,0 +1,327 @@
+{
+  "data": [
+    {
+      "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "name": "Qwen: Qwen3 235B A22B Instruct 2507",
+      "created": 1753203338,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "quantization": "bf16",
+      "context_length": 262144,
+      "max_output_length": 262144,
+      "pricing": {
+        "prompt": "0.00000012",
+        "completion": "0.00000059",
+        "image": "0",
+        "cancelled_request": "0.01200000",
+        "request": "0",
+        "input_cache_reads": "0",
+        "input_cache_writes": "0"
+      },
+      "supported_sampling_parameters": [
+        "temperature",
+        "top_p",
+        "top_k",
+        "repetition_penalty",
+        "frequency_penalty",
+        "presence_penalty",
+        "stop",
+        "seed"
+      ],
+      "supported_features": [
+        "tools",
+        "structured_outputs"
+      ]
+    },
+    {
+      "id": "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",
+      "name": "Qwen: Qwen3 Coder 480B A35B Instruct FP8",
+      "created": 1753221316,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "quantization": "fp8",
+      "context_length": 262144,
+      "max_output_length": 262144,
+      "pricing": {
+        "prompt": "0.00000100",
+        "completion": "0.00000200",
+        "image": "0",
+        "cancelled_request": "0.05000000",
+        "request": "0",
+        "input_cache_reads": "0",
+        "input_cache_writes": "0"
+      },
+      "supported_sampling_parameters": [
+        "temperature",
+        "top_p",
+        "top_k",
+        "repetition_penalty",
+        "frequency_penalty",
+        "presence_penalty",
+        "stop",
+        "seed"
+      ],
+      "supported_features": [
+        "tools",
+        "structured_outputs"
+      ]
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1",
+      "name": "DeepSeek: DeepSeek R1",
+      "created": 1749931422,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "quantization": "fp8",
+      "context_length": 163840,
+      "max_output_length": 163840,
+      "pricing": {
+        "prompt": "0.00000040",
+        "completion": "0.00000200",
+        "image": "0",
+        "cancelled_request": "0.04000000",
+        "request": "0",
+        "input_cache_reads": "0",
+        "input_cache_writes": "0"
+      },
+      "supported_sampling_parameters": [
+        "temperature",
+        "top_p",
+        "top_k",
+        "repetition_penalty",
+        "frequency_penalty",
+        "presence_penalty",
+        "stop",
+        "seed"
+      ],
+      "supported_features": [
+        "reasoning"
+      ]
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-0528",
+      "name": "DeepSeek: DeepSeek R1-0528",
+      "created": 1748547362,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "quantization": "fp8",
+      "context_length": 163840,
+      "max_output_length": 163840,
+      "pricing": {
+        "prompt": "0.00000050",
+        "completion": "0.00000200",
+        "image": "0",
+        "cancelled_request": "0.05000000",
+        "request": "0",
+        "input_cache_reads": "0",
+        "input_cache_writes": "0"
+      },
+      "supported_sampling_parameters": [
+        "temperature",
+        "top_p",
+        "top_k",
+        "repetition_penalty",
+        "frequency_penalty",
+        "presence_penalty",
+        "stop",
+        "seed"
+      ],
+      "supported_features": [
+        "reasoning"
+      ]
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3",
+      "name": "DeepSeek: DeepSeek V3",
+      "created": 1750966925,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "quantization": "fp8",
+      "context_length": 163840,
+      "max_output_length": 163840,
+      "pricing": {
+        "prompt": "0.00000030",
+        "completion": "0.00000085",
+        "image": "0",
+        "cancelled_request": "0.03000000",
+        "request": "0",
+        "input_cache_reads": "0",
+        "input_cache_writes": "0"
+      },
+      "supported_sampling_parameters": [
+        "temperature",
+        "top_p",
+        "top_k",
+        "repetition_penalty",
+        "frequency_penalty",
+        "presence_penalty",
+        "stop",
+        "seed"
+      ],
+      "supported_features": []
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3-0324",
+      "name": "DeepSeek: DeepSeek V3-0324",
+      "created": 1750966925,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "quantization": "fp8",
+      "context_length": 163840,
+      "max_output_length": 163840,
+      "pricing": {
+        "prompt": "0.00000025",
+        "completion": "0.00000085",
+        "image": "0",
+        "cancelled_request": "0.02500000",
+        "request": "0",
+        "input_cache_reads": "0",
+        "input_cache_writes": "0"
+      },
+      "supported_sampling_parameters": [
+        "temperature",
+        "top_p",
+        "top_k",
+        "repetition_penalty",
+        "frequency_penalty",
+        "presence_penalty",
+        "stop",
+        "seed"
+      ],
+      "supported_features": []
+    },
+    {
+      "id": "moonshotai/Kimi-K2-Instruct",
+      "name": "Moonshot AI: Kimi K2 Instruct",
+      "created": 1752364345,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "quantization": "fp8",
+      "context_length": 63000,
+      "max_output_length": 63000,
+      "pricing": {
+        "prompt": "0.00000014",
+        "completion": "0.00000249",
+        "image": "0",
+        "cancelled_request": "0.01400000",
+        "request": "0",
+        "input_cache_reads": "0",
+        "input_cache_writes": "0"
+      },
+      "supported_sampling_parameters": [
+        "temperature",
+        "top_p",
+        "top_k",
+        "repetition_penalty",
+        "frequency_penalty",
+        "presence_penalty",
+        "stop",
+        "seed"
+      ],
+      "supported_features": [
+        "tools"
+      ]
+    },
+    {
+      "id": "openai/gpt-oss-120b",
+      "name": "OpenAI: GPT-OSS-120b",
+      "created": 1754416272,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "quantization": "mxfp4",
+      "context_length": 131072,
+      "max_output_length": 33000,
+      "pricing": {
+        "prompt": "0.00000015",
+        "completion": "0.00000055",
+        "image": "0",
+        "cancelled_request": "0.01500000",
+        "request": "0",
+        "input_cache_reads": "0",
+        "input_cache_writes": "0"
+      },
+      "supported_sampling_parameters": [
+        "temperature",
+        "top_p",
+        "top_k",
+        "repetition_penalty",
+        "frequency_penalty",
+        "presence_penalty",
+        "stop",
+        "seed"
+      ],
+      "supported_features": [
+        "tools"
+      ]
+    },
+    {
+      "id": "zai-org/GLM-4.5",
+      "name": "ZAI: GLM 4.5",
+      "created": 1753902533,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "quantization": "bf16",
+      "context_length": 131072,
+      "max_output_length": 131072,
+      "pricing": {
+        "prompt": "0.00000050",
+        "completion": "0.00000180",
+        "image": "0",
+        "cancelled_request": "0.05000000",
+        "request": "0",
+        "input_cache_reads": "0",
+        "input_cache_writes": "0"
+      },
+      "supported_sampling_parameters": [
+        "temperature",
+        "top_p",
+        "top_k",
+        "repetition_penalty",
+        "frequency_penalty",
+        "presence_penalty",
+        "stop",
+        "seed"
+      ],
+      "supported_features": [
+        "tools",
+        "reasoning"
+      ]
+    }
+  ]
+}

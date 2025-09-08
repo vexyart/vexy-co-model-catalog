@@ -1,0 +1,224 @@
+{
+  "data": [
+    {
+      "id": "LGAI-EXAONE/EXAONE-4.0.1-32B",
+      "name": "LGAI-EXAONE/EXAONE-4.0.1-32B",
+      "max_completion_tokens": 131072,
+      "context_length": 131072,
+      "functionality": {
+        "tool_call": true,
+        "parallel_tool_call": true,
+        "structured_output": true
+      },
+      "pricing": {
+        "input": 0.6,
+        "output": 1.0,
+        "response_time": 0.0,
+        "unit_type": "TOKEN"
+      },
+      "hugging_face_url": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0.1-32B",
+      "description": " ",
+      "license": "https://friendli.ai/assets/exaone-eula.pdf",
+      "policy": null,
+      "created": 1753923600
+    },
+    {
+      "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "name": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "max_completion_tokens": 131072,
+      "context_length": 131072,
+      "functionality": {
+        "tool_call": true,
+        "parallel_tool_call": true,
+        "structured_output": true
+      },
+      "pricing": {
+        "input": 0.2,
+        "output": 0.8,
+        "response_time": 0.004,
+        "unit_type": "SECOND"
+      },
+      "hugging_face_url": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "description": " ",
+      "license": "https://www.apache.org/licenses/LICENSE-2.0",
+      "policy": null,
+      "created": 1753747200
+    },
+    {
+      "id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "name": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "max_completion_tokens": 131072,
+      "context_length": 131072,
+      "functionality": {
+        "tool_call": true,
+        "parallel_tool_call": true,
+        "structured_output": true
+      },
+      "pricing": {
+        "input": 0.6,
+        "output": 2.4,
+        "response_time": 0.004,
+        "unit_type": "SECOND"
+      },
+      "hugging_face_url": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "description": " ",
+      "license": "https://www.apache.org/licenses/LICENSE-2.0",
+      "policy": null,
+      "created": 1753747200
+    },
+    {
+      "id": "Qwen/Qwen3-30B-A3B",
+      "name": "Qwen/Qwen3-30B-A3B",
+      "max_completion_tokens": 8000,
+      "context_length": 131072,
+      "functionality": {
+        "tool_call": true,
+        "parallel_tool_call": true,
+        "structured_output": true
+      },
+      "pricing": {
+        "input": 0.15,
+        "output": 0.6,
+        "response_time": 0.002,
+        "unit_type": "SECOND"
+      },
+      "hugging_face_url": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
+      "description": " ",
+      "license": "https://www.apache.org/licenses/LICENSE-2.0",
+      "policy": null,
+      "created": 1750032000
+    },
+    {
+      "id": "Qwen/Qwen3-32B",
+      "name": "Qwen/Qwen3-32B",
+      "max_completion_tokens": 8000,
+      "context_length": 131072,
+      "functionality": {
+        "tool_call": true,
+        "parallel_tool_call": true,
+        "structured_output": true
+      },
+      "pricing": {
+        "input": 0.15,
+        "output": 0.5,
+        "response_time": 0.002,
+        "unit_type": "SECOND"
+      },
+      "hugging_face_url": "https://huggingface.co/Qwen/Qwen3-32B",
+      "description": " ",
+      "license": "https://www.apache.org/licenses/LICENSE-2.0",
+      "policy": null,
+      "created": 1750032000
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-0528",
+      "name": "deepseek-ai/DeepSeek-R1-0528",
+      "max_completion_tokens": 163840,
+      "context_length": 163840,
+      "functionality": {
+        "tool_call": false,
+        "parallel_tool_call": false,
+        "structured_output": true
+      },
+      "pricing": {
+        "input": 3.0,
+        "output": 7.0,
+        "response_time": 0.004,
+        "unit_type": "SECOND"
+      },
+      "hugging_face_url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528",
+      "description": " ",
+      "license": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528#5-license",
+      "policy": null,
+      "created": 1752192000
+    },
+    {
+      "id": "meta-llama-3.1-8b-instruct",
+      "name": "meta-llama/Llama-3.1-8B-Instruct",
+      "max_completion_tokens": 8000,
+      "context_length": 131072,
+      "functionality": {
+        "tool_call": true,
+        "parallel_tool_call": true,
+        "structured_output": true
+      },
+      "pricing": {
+        "input": 0.1,
+        "output": 0.1,
+        "response_time": 0.0001,
+        "unit_type": "TOKEN"
+      },
+      "hugging_face_url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+      "description": "The Meta Llama 3.1 multilingual large language model (LLM) is an instruction tuned generative model in 8B (text in/text out).",
+      "license": "https://www.llama.com/llama3_1/license/",
+      "policy": "https://www.llama.com/llama3_1/use-policy/",
+      "created": 1722470400
+    },
+    {
+      "id": "meta-llama-3.3-70b-instruct",
+      "name": "meta-llama/Llama-3.3-70B-Instruct",
+      "max_completion_tokens": 131072,
+      "context_length": 131072,
+      "functionality": {
+        "tool_call": true,
+        "parallel_tool_call": true,
+        "structured_output": true
+      },
+      "pricing": {
+        "input": 0.6,
+        "output": 0.6,
+        "response_time": 0.0002,
+        "unit_type": "TOKEN"
+      },
+      "hugging_face_url": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+      "description": "The Meta Llama 3.3 multilingual large language model (LLM) is an instruction tuned generative model in 70B (text in/text out).",
+      "license": "https://www.llama.com/llama3_3/license/",
+      "policy": "https://www.llama.com/llama3_3/use-policy/",
+      "created": 1722470400
+    },
+    {
+      "id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "name": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "max_completion_tokens": 8000,
+      "context_length": 131072,
+      "functionality": {
+        "tool_call": false,
+        "parallel_tool_call": false,
+        "structured_output": true
+      },
+      "pricing": {
+        "input": 0.2,
+        "output": 0.6,
+        "response_time": 0.004,
+        "unit_type": "SECOND"
+      },
+      "hugging_face_url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "description": " ",
+      "license": "https://www.llama.com/llama4/license/",
+      "policy": "https://www.llama.com/llama4/use-policy/",
+      "created": 1750032000
+    },
+    {
+      "id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "name": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "max_completion_tokens": 8000,
+      "context_length": 131072,
+      "functionality": {
+        "tool_call": false,
+        "parallel_tool_call": false,
+        "structured_output": true
+      },
+      "pricing": {
+        "input": 0.1,
+        "output": 0.6,
+        "response_time": 0.002,
+        "unit_type": "SECOND"
+      },
+      "hugging_face_url": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "description": " ",
+      "license": "https://www.llama.com/llama4/license/",
+      "policy": "https://www.llama.com/llama4/use-policy/",
+      "created": 1750032000
+    }
+  ]
+}

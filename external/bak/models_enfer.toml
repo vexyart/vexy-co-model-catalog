@@ -1,0 +1,29 @@
+[model_providers.enfer]
+base_url = "https://api.enfer.ai/v1"
+name = "enfer"
+wire_api = "chat"
+env_key = "ENFER_API_KEY"
+
+[profiles.enf_mistralai_mistral_ne]
+approval_policy = "never"
+model = "mistralai/mistral-nemo"
+model_provider = "enfer"
+model_reasoning_effort = "high"
+
+[profiles.enf_mistralai_mistral_sm]
+approval_policy = "never"
+model = "mistralai/mistral-small-3.2-24b-instruct-2506"
+model_provider = "enfer"
+model_reasoning_effort = "high"
+
+[profiles.enf_thedrummer_rocinante]
+approval_policy = "never"
+model = "thedrummer/rocinante-12b-v1-1"
+model_provider = "enfer"
+model_reasoning_effort = "high"
+
+[profiles.enf_thedrummer_unslopnem]
+approval_policy = "never"
+model = "thedrummer/unslopnemo-12b-v4-1"
+model_provider = "enfer"
+model_reasoning_effort = "high"

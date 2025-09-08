@@ -1,0 +1,359 @@
+[model_providers.lmstudio]
+base_url = "http://othello.local:1234/v1"
+name = "lmstudio"
+wire_api = "chat"
+env_key = "LMSTUDIO_API_KEY"
+
+[profiles.lms_darkidol_longwriter_]
+approval_policy = "never"
+model = "darkidol-longwriter-v13-8b-uncensored-1048k"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_deepseek_r1_distill_]
+approval_policy = "never"
+model = "deepseek-r1-distill-qwen-14b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_florence_2_base_ft]
+approval_policy = "never"
+model = "florence-2-base-ft"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_florence_2_large_ft]
+approval_policy = "never"
+model = "florence-2-large-ft"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_google_gemma_3_1b]
+approval_policy = "never"
+model = "google/gemma-3-1b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_google_gemma_3_4b]
+approval_policy = "never"
+model = "google/gemma-3-4b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_granite_4_0_tiny_pre]
+approval_policy = "never"
+model = "granite-4.0-tiny-preview"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_huihui_qwen3_14b_abl]
+approval_policy = "never"
+model = "huihui-qwen3-14b-abliterated-v2"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_llama3_2_entity]
+approval_policy = "never"
+model = "llama3.2-entity"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_llama3_2_entity_1b]
+approval_policy = "never"
+model = "llama3.2-entity-1b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_meta_llama_3_1_8b_in]
+approval_policy = "never"
+model = "meta-llama-3.1-8b-instruct-summarizer"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_minicpm4_0_5b]
+approval_policy = "never"
+model = "minicpm4-0.5b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_minicpm4_8b]
+approval_policy = "never"
+model = "minicpm4-8b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_mistral_7b_pii_entit]
+approval_policy = "never"
+model = "mistral-7b-pii-entity-extractor"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_mistral_small_24b_in]
+approval_policy = "never"
+model = "mistral-small-24b-instruct-2501-writer-i1"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_mistralai_voxtral_mi]
+approval_policy = "never"
+model = "mistralai_voxtral-mini-3b-2507"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_mungert_text_embeddi]
+approval_policy = "never"
+model = "mungert/text-embedding-qwen3-embedding-0.6b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_numarkdown_8b_thinki]
+approval_policy = "never"
+model = "numarkdown-8b-thinking-i1"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_ocr_vlm_qwen2_5vl_3b]
+approval_policy = "never"
+model = "ocr_vlm-qwen2.5vl-3b-final"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_ocrflux_3b]
+approval_policy = "never"
+model = "ocrflux-3b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_olmocr_7b_0725]
+approval_policy = "never"
+model = "olmocr-7b-0725"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_openai_gpt_oss_20b]
+approval_policy = "never"
+model = "openai/gpt-oss-20b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_osmosis_structure_0_]
+approval_policy = "never"
+model = "osmosis-structure-0.6b@q8_0"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_pixtral_12b_i1]
+approval_policy = "never"
+model = "pixtral-12b-i1"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen_qwen2_5_vl_7b]
+approval_policy = "never"
+model = "qwen/qwen2.5-vl-7b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen_qwen3_4b_2507]
+approval_policy = "never"
+model = "qwen/qwen3-4b-2507"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen_qwen3_4b_thinki]
+approval_policy = "never"
+model = "qwen/qwen3-4b-thinking-2507"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen_text_embedding_]
+approval_policy = "never"
+model = "qwen/text-embedding-qwen3-embedding-0.6b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen2_audio_7b_instr]
+approval_policy = "never"
+model = "qwen2-audio-7b-instruct-i1"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen2_5_omni_3b]
+approval_policy = "never"
+model = "qwen2.5-omni-3b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen2_5_omni_7b]
+approval_policy = "never"
+model = "qwen2.5-omni-7b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen3_30b_a3b_instru]
+approval_policy = "never"
+model = "qwen3-30b-a3b-instruct-2507"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen3_30b_a3b_thinki]
+approval_policy = "never"
+model = "qwen3-30b-a3b-thinking-2507"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen3_8b_320k_contex]
+approval_policy = "never"
+model = "qwen3-8b-320k-context-10x-massive"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_qwen3_coder_30b_a3b_]
+approval_policy = "never"
+model = "qwen3-coder-30b-a3b-instruct-1m"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_r3_qwen3_14b_skywork]
+approval_policy = "never"
+model = "r3-qwen3-14b-skywork-i1"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_skycaptioner_v1]
+approval_policy = "never"
+model = "skycaptioner-v1"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_category_tool]
+approval_policy = "never"
+model = "slim-category-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_emotions_tool]
+approval_policy = "never"
+model = "slim-emotions-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_extract_tiny_to]
+approval_policy = "never"
+model = "slim-extract-tiny-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_extract_tool]
+approval_policy = "never"
+model = "slim-extract-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_intent_tool]
+approval_policy = "never"
+model = "slim-intent-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_ner]
+approval_policy = "never"
+model = "slim-ner"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_ner_tool]
+approval_policy = "never"
+model = "slim-ner-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_nli_tool]
+approval_policy = "never"
+model = "slim-nli-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_q_gen_tiny_tool]
+approval_policy = "never"
+model = "slim-q-gen-tiny-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_qa_gen_tiny_too]
+approval_policy = "never"
+model = "slim-qa-gen-tiny-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_sa_ner_tool]
+approval_policy = "never"
+model = "slim-sa-ner-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_sentiment_tool]
+approval_policy = "never"
+model = "slim-sentiment-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_sql_tool]
+approval_policy = "never"
+model = "slim-sql-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_summary_tool]
+approval_policy = "never"
+model = "slim-summary-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_tags_tool]
+approval_policy = "never"
+model = "slim-tags-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_topics_tool]
+approval_policy = "never"
+model = "slim-topics-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_slim_xsum_tool]
+approval_policy = "never"
+model = "slim-xsum-tool"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_text_embedding_bge_m]
+approval_policy = "never"
+model = "text-embedding-bge-m3"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_text_embedding_jina_]
+approval_policy = "never"
+model = "text-embedding-jina-embeddings-v4-text-retrieval@q8_0"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_text_embedding_mxbai]
+approval_policy = "never"
+model = "text-embedding-mxbai-embed-xsmall-v1-i1"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_text_embedding_nomic]
+approval_policy = "never"
+model = "text-embedding-nomic-embed-text-v2"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"
+
+[profiles.lms_text_embedding_qwen3]
+approval_policy = "never"
+model = "text-embedding-qwen3-embedding-8b"
+model_provider = "lmstudio"
+model_reasoning_effort = "high"

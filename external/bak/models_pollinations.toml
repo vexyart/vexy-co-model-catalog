@@ -1,0 +1,107 @@
+[model_providers.pollinations]
+base_url = "https://text.pollinations.ai/openai"
+name = "pollinations"
+wire_api = "chat"
+env_key = "POLLINATIONS_API_KEY"
+
+[profiles.pol_bidara]
+approval_policy = "never"
+model = "bidara"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_deepseek_reasoning]
+approval_policy = "never"
+model = "deepseek-reasoning"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_evil]
+approval_policy = "never"
+model = "evil"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_gemini]
+approval_policy = "never"
+model = "gemini"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_midijourney]
+approval_policy = "never"
+model = "midijourney"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_mirexa]
+approval_policy = "never"
+model = "mirexa"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_mistral]
+approval_policy = "never"
+model = "mistral"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_nova_fast]
+approval_policy = "never"
+model = "nova-fast"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_openai]
+approval_policy = "never"
+model = "openai"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_openai_audio]
+approval_policy = "never"
+model = "openai-audio"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_openai_fast]
+approval_policy = "never"
+model = "openai-fast"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_openai_large]
+approval_policy = "never"
+model = "openai-large"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_openai_reasoning]
+approval_policy = "never"
+model = "openai-reasoning"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_qwen_coder]
+approval_policy = "never"
+model = "qwen-coder"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_roblox_rp]
+approval_policy = "never"
+model = "roblox-rp"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_rtist]
+approval_policy = "never"
+model = "rtist"
+model_provider = "pollinations"
+model_reasoning_effort = "high"
+
+[profiles.pol_unity]
+approval_policy = "never"
+model = "unity"
+model_provider = "pollinations"
+model_reasoning_effort = "high"

@@ -1,0 +1,11 @@
+dans-pe-1.3-12b
+dans-pe-1.3-24b
+glm-4.5
+goliath-120b
+lumi-8b-v2
+magnum-72b-v4
+mytholite
+mythomax
+noromaid
+remm-slerp
+weaver-alpha

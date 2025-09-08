@@ -1,0 +1,93 @@
+[model_providers.sambanova]
+base_url = "https://api.sambanova.ai/v1"
+name = "sambanova"
+wire_api = "chat"
+env_key = "SAMBANOVA_API_KEY"
+
+[profiles.sam_deepseek_r1_0528]
+approval_policy = "never"
+model = "DeepSeek-R1-0528"
+model_provider = "sambanova"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 7168
+
+[profiles.sam_deepseek_r1_distill_]
+approval_policy = "never"
+model = "DeepSeek-R1-Distill-Llama-70B"
+model_provider = "sambanova"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 4096
+
+[profiles.sam_deepseek_v3_0324]
+approval_policy = "never"
+model = "DeepSeek-V3-0324"
+model_provider = "sambanova"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 7168
+
+[profiles.sam_deepseek_v3_1]
+approval_policy = "never"
+model = "DeepSeek-V3.1"
+model_provider = "sambanova"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 7168
+
+[profiles.sam_e5_mistral_7b_instru]
+approval_policy = "never"
+model = "E5-Mistral-7B-Instruct"
+model_provider = "sambanova"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096
+
+[profiles.sam_llama_3_3_swallow_70]
+approval_policy = "never"
+model = "Llama-3.3-Swallow-70B-Instruct-v0.4"
+model_provider = "sambanova"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 3072
+
+[profiles.sam_llama_4_maverick_17b]
+approval_policy = "never"
+model = "Llama-4-Maverick-17B-128E-Instruct"
+model_provider = "sambanova"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 4096
+
+[profiles.sam_meta_llama_3_1_8b_in]
+approval_policy = "never"
+model = "Meta-Llama-3.1-8B-Instruct"
+model_provider = "sambanova"
+model_reasoning_effort = "high"
+model_context_window = 16384
+model_max_output_tokens = 4096
+
+[profiles.sam_meta_llama_3_3_70b_i]
+approval_policy = "never"
+model = "Meta-Llama-3.3-70B-Instruct"
+model_provider = "sambanova"
+model_reasoning_effort = "high"
+model_context_window = 131072
+model_max_output_tokens = 3072
+
+[profiles.sam_qwen3_32b]
+approval_policy = "never"
+model = "Qwen3-32B"
+model_provider = "sambanova"
+model_reasoning_effort = "high"
+model_context_window = 32768
+model_max_output_tokens = 4096
+
+[profiles.sam_whisper_large_v3]
+approval_policy = "never"
+model = "Whisper-Large-v3"
+model_provider = "sambanova"
+model_reasoning_effort = "high"
+model_context_window = 4096
+model_max_output_tokens = 4096

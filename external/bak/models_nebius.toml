@@ -1,0 +1,275 @@
+[model_providers.nebius]
+base_url = "https://api.studio.nebius.com/v1"
+name = "nebius"
+wire_api = "chat"
+env_key = "NEBIUS_API_KEY"
+
+[profiles.neb_baai_bge_en_icl]
+approval_policy = "never"
+model = "BAAI/bge-en-icl"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_baai_bge_multilingua]
+approval_policy = "never"
+model = "BAAI/bge-multilingual-gemma2"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_nousresearch_hermes_]
+approval_policy = "never"
+model = "NousResearch/Hermes-4-70B"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_qwen_qwq_32b]
+approval_policy = "never"
+model = "Qwen/QwQ-32B"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_qwen_qwq_32b_fast]
+approval_policy = "never"
+model = "Qwen/QwQ-32B-fast"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_qwen_qwen2_vl_72b_in]
+approval_policy = "never"
+model = "Qwen/Qwen2-VL-72B-Instruct"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_qwen_qwen2_5_32b_ins]
+approval_policy = "never"
+model = "Qwen/Qwen2.5-32B-Instruct-fast"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_qwen_qwen2_5_72b_ins]
+approval_policy = "never"
+model = "Qwen/Qwen2.5-72B-Instruct-fast"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_qwen_qwen2_5_coder_3]
+approval_policy = "never"
+model = "Qwen/Qwen2.5-Coder-32B-Instruct-fast"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_qwen_qwen2_5_coder_7]
+approval_policy = "never"
+model = "Qwen/Qwen2.5-Coder-7B-fast"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_qwen_qwen2_5_vl_72b_]
+approval_policy = "never"
+model = "Qwen/Qwen2.5-VL-72B-Instruct"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_qwen_qwen3_14b]
+approval_policy = "never"
+model = "Qwen/Qwen3-14B"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_qwen_qwen3_235b_a22b]
+approval_policy = "never"
+model = "Qwen/Qwen3-235B-A22B-Instruct-2507"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_qwen_qwen3_30b_a3b]
+approval_policy = "never"
+model = "Qwen/Qwen3-30B-A3B"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_qwen_qwen3_30b_a3b_i]
+approval_policy = "never"
+model = "Qwen/Qwen3-30B-A3B-Instruct-2507"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_qwen_qwen3_30b_a3b_t]
+approval_policy = "never"
+model = "Qwen/Qwen3-30B-A3B-Thinking-2507"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_qwen_qwen3_30b_a3b_f]
+approval_policy = "never"
+model = "Qwen/Qwen3-30B-A3B-fast"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_qwen_qwen3_32b]
+approval_policy = "never"
+model = "Qwen/Qwen3-32B"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_qwen_qwen3_32b_fast]
+approval_policy = "never"
+model = "Qwen/Qwen3-32B-fast"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_qwen_qwen3_4b_fast]
+approval_policy = "never"
+model = "Qwen/Qwen3-4B-fast"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_qwen_qwen3_coder_30b]
+approval_policy = "never"
+model = "Qwen/Qwen3-Coder-30B-A3B-Instruct"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_qwen_qwen3_coder_480]
+approval_policy = "never"
+model = "Qwen/Qwen3-Coder-480B-A35B-Instruct"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_qwen_qwen3_embedding]
+approval_policy = "never"
+model = "Qwen/Qwen3-Embedding-8B"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_aaditya_llama3_openb]
+approval_policy = "never"
+model = "aaditya/Llama3-OpenBioLLM-70B"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_black_forest_labs_fl]
+approval_policy = "never"
+model = "black-forest-labs/flux-schnell"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_deepseek_ai_deepseek]
+approval_policy = "never"
+model = "deepseek-ai/DeepSeek-V3-0324-fast"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_google_gemma_2_2b_it]
+approval_policy = "never"
+model = "google/gemma-2-2b-it"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_google_gemma_2_9b_it]
+approval_policy = "never"
+model = "google/gemma-2-9b-it-fast"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_google_gemma_3_27b_i]
+approval_policy = "never"
+model = "google/gemma-3-27b-it-fast"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_intfloat_e5_mistral_]
+approval_policy = "never"
+model = "intfloat/e5-mistral-7b-instruct"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_meta_llama_llama_3_3]
+approval_policy = "never"
+model = "meta-llama/Llama-3.3-70B-Instruct-fast"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_meta_llama_llama_gua]
+approval_policy = "never"
+model = "meta-llama/Llama-Guard-3-8B"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_meta_llama_meta_llam]
+approval_policy = "never"
+model = "meta-llama/Meta-Llama-3.1-8B-Instruct-fast"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_microsoft_phi_4]
+approval_policy = "never"
+model = "microsoft/phi-4"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_mistralai_devstral_s]
+approval_policy = "never"
+model = "mistralai/Devstral-Small-2505"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_mistralai_mistral_ne]
+approval_policy = "never"
+model = "mistralai/Mistral-Nemo-Instruct-2407"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_mistralai_mistral_sm]
+approval_policy = "never"
+model = "mistralai/Mistral-Small-3.1-24B-Instruct-2503"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_moonshotai_kimi_k2_i]
+approval_policy = "never"
+model = "moonshotai/Kimi-K2-Instruct"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_nvidia_llama_3_1_nem]
+approval_policy = "never"
+model = "nvidia/Llama-3_1-Nemotron-Ultra-253B-v1"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_nvidia_llama_3_3_nem]
+approval_policy = "never"
+model = "nvidia/Llama-3_3-Nemotron-Super-49B-v1"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_openai_gpt_oss_120b]
+approval_policy = "never"
+model = "openai/gpt-oss-120b"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_openai_gpt_oss_20b]
+approval_policy = "never"
+model = "openai/gpt-oss-20b"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_stability_ai_sdxl]
+approval_policy = "never"
+model = "stability-ai/sdxl"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_zai_org_glm_4_5]
+approval_policy = "never"
+model = "zai-org/GLM-4.5"
+model_provider = "nebius"
+model_reasoning_effort = "high"
+
+[profiles.neb_zai_org_glm_4_5_air]
+approval_policy = "never"
+model = "zai-org/GLM-4.5-Air"
+model_provider = "nebius"
+model_reasoning_effort = "high"

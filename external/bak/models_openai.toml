@@ -1,0 +1,437 @@
+[model_providers.openai]
+base_url = "https://api.openai.com/v1"
+name = "openai"
+wire_api = "chat"
+env_key = "OPENAI_API_KEY"
+
+[profiles.ope_babbage_002]
+approval_policy = "never"
+model = "babbage-002"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_chatgpt_4o_latest]
+approval_policy = "never"
+model = "chatgpt-4o-latest"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_dall_e_2]
+approval_policy = "never"
+model = "dall-e-2"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_dall_e_3]
+approval_policy = "never"
+model = "dall-e-3"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_davinci_002]
+approval_policy = "never"
+model = "davinci-002"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_3_5_turbo]
+approval_policy = "never"
+model = "gpt-3.5-turbo"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_3_5_turbo_0125]
+approval_policy = "never"
+model = "gpt-3.5-turbo-0125"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_3_5_turbo_1106]
+approval_policy = "never"
+model = "gpt-3.5-turbo-1106"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_3_5_turbo_16k]
+approval_policy = "never"
+model = "gpt-3.5-turbo-16k"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_3_5_turbo_instru]
+approval_policy = "never"
+model = "gpt-3.5-turbo-instruct-0914"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4]
+approval_policy = "never"
+model = "gpt-4"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4_0125_preview]
+approval_policy = "never"
+model = "gpt-4-0125-preview"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4_0613]
+approval_policy = "never"
+model = "gpt-4-0613"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4_1106_preview]
+approval_policy = "never"
+model = "gpt-4-1106-preview"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4_turbo]
+approval_policy = "never"
+model = "gpt-4-turbo"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4_turbo_2024_04_]
+approval_policy = "never"
+model = "gpt-4-turbo-2024-04-09"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4_turbo_preview]
+approval_policy = "never"
+model = "gpt-4-turbo-preview"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4_1]
+approval_policy = "never"
+model = "gpt-4.1"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4_1_2025_04_14]
+approval_policy = "never"
+model = "gpt-4.1-2025-04-14"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4_1_mini]
+approval_policy = "never"
+model = "gpt-4.1-mini"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4_1_mini_2025_04]
+approval_policy = "never"
+model = "gpt-4.1-mini-2025-04-14"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4_1_nano]
+approval_policy = "never"
+model = "gpt-4.1-nano"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4_1_nano_2025_04]
+approval_policy = "never"
+model = "gpt-4.1-nano-2025-04-14"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4o]
+approval_policy = "never"
+model = "gpt-4o"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4o_2024_05_13]
+approval_policy = "never"
+model = "gpt-4o-2024-05-13"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4o_2024_08_06]
+approval_policy = "never"
+model = "gpt-4o-2024-08-06"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4o_2024_11_20]
+approval_policy = "never"
+model = "gpt-4o-2024-11-20"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4o_audio_preview]
+approval_policy = "never"
+model = "gpt-4o-audio-preview-2025-06-03"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4o_mini]
+approval_policy = "never"
+model = "gpt-4o-mini"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4o_mini_2024_07_]
+approval_policy = "never"
+model = "gpt-4o-mini-2024-07-18"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4o_mini_audio_pr]
+approval_policy = "never"
+model = "gpt-4o-mini-audio-preview-2024-12-17"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4o_mini_realtime]
+approval_policy = "never"
+model = "gpt-4o-mini-realtime-preview-2024-12-17"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4o_mini_search_p]
+approval_policy = "never"
+model = "gpt-4o-mini-search-preview-2025-03-11"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4o_mini_transcri]
+approval_policy = "never"
+model = "gpt-4o-mini-transcribe"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4o_mini_tts]
+approval_policy = "never"
+model = "gpt-4o-mini-tts"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4o_realtime_prev]
+approval_policy = "never"
+model = "gpt-4o-realtime-preview-2025-06-03"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4o_search_previe]
+approval_policy = "never"
+model = "gpt-4o-search-preview-2025-03-11"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_4o_transcribe]
+approval_policy = "never"
+model = "gpt-4o-transcribe"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_5]
+approval_policy = "never"
+model = "gpt-5"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_5_2025_08_07]
+approval_policy = "never"
+model = "gpt-5-2025-08-07"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_5_chat_latest]
+approval_policy = "never"
+model = "gpt-5-chat-latest"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_5_mini]
+approval_policy = "never"
+model = "gpt-5-mini"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_5_mini_2025_08_0]
+approval_policy = "never"
+model = "gpt-5-mini-2025-08-07"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_5_nano]
+approval_policy = "never"
+model = "gpt-5-nano"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_5_nano_2025_08_0]
+approval_policy = "never"
+model = "gpt-5-nano-2025-08-07"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_audio]
+approval_policy = "never"
+model = "gpt-audio"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_audio_2025_08_28]
+approval_policy = "never"
+model = "gpt-audio-2025-08-28"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_image_1]
+approval_policy = "never"
+model = "gpt-image-1"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_realtime]
+approval_policy = "never"
+model = "gpt-realtime"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_gpt_realtime_2025_08]
+approval_policy = "never"
+model = "gpt-realtime-2025-08-28"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_o1]
+approval_policy = "never"
+model = "o1"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_o1_2024_12_17]
+approval_policy = "never"
+model = "o1-2024-12-17"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_o1_mini]
+approval_policy = "never"
+model = "o1-mini"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_o1_mini_2024_09_12]
+approval_policy = "never"
+model = "o1-mini-2024-09-12"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_o1_pro]
+approval_policy = "never"
+model = "o1-pro"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_o1_pro_2025_03_19]
+approval_policy = "never"
+model = "o1-pro-2025-03-19"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_o3]
+approval_policy = "never"
+model = "o3"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_o3_2025_04_16]
+approval_policy = "never"
+model = "o3-2025-04-16"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_o3_mini]
+approval_policy = "never"
+model = "o3-mini"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_o3_mini_2025_01_31]
+approval_policy = "never"
+model = "o3-mini-2025-01-31"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_o4_mini]
+approval_policy = "never"
+model = "o4-mini"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_o4_mini_2025_04_16]
+approval_policy = "never"
+model = "o4-mini-2025-04-16"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_omni_moderation_2024]
+approval_policy = "never"
+model = "omni-moderation-2024-09-26"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_omni_moderation_late]
+approval_policy = "never"
+model = "omni-moderation-latest"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_text_embedding_3_lar]
+approval_policy = "never"
+model = "text-embedding-3-large"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_text_embedding_3_sma]
+approval_policy = "never"
+model = "text-embedding-3-small"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_text_embedding_ada_0]
+approval_policy = "never"
+model = "text-embedding-ada-002"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_tts_1]
+approval_policy = "never"
+model = "tts-1"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_tts_1_1106]
+approval_policy = "never"
+model = "tts-1-1106"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_tts_1_hd]
+approval_policy = "never"
+model = "tts-1-hd"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_tts_1_hd_1106]
+approval_policy = "never"
+model = "tts-1-hd-1106"
+model_provider = "openai"
+model_reasoning_effort = "high"
+
+[profiles.ope_whisper_1]
+approval_policy = "never"
+model = "whisper-1"
+model_provider = "openai"
+model_reasoning_effort = "high"
