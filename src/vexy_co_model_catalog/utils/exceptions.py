@@ -41,4 +41,3 @@ class ValidationError(ModelCatalogError):
 
 class StorageError(ModelCatalogError):
     """Storage-layer failure."""
-

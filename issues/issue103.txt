@@ -1,0 +1,351 @@
+```
+[11:03:40] $ python -m vexy_co_model_catalog |cat
+NAME
+    __main__.py - AI Model Catalog Manager - fetch, normalize, and manage model catalogs from 40+ providers.
+
+SYNOPSIS
+    __main__.py - GROUP | COMMAND
+
+DESCRIPTION
+    AI Model Catalog Manager - fetch, normalize, and manage model catalogs from 40+ providers.
+
+GROUPS
+    GROUP is one of the following:
+
+     analytics
+       Collects and manages CLI usage analytics and performance metrics.
+
+     command_aliases
+
+     config_guidance
+       Enhanced configuration guidance system.
+
+     config_manager
+       High-level manager for all tool configurations.
+
+     error_handler
+       Enhanced error messaging system with actionable guidance.
+
+     failure_tracker
+       Tracks failed provider requests and maintains reliability statistics.
+
+     help_system
+       Enhanced help system with detailed examples and guidance.
+
+     performance_monitor
+       Advanced performance monitor with memory profiling and resource tracking.
+
+     storage
+       Manages file storage with atomic writes and a simple layout.
+
+COMMANDS
+    COMMAND is one of the following:
+
+     aliases
+       Show all available command aliases for improved user experience.
+
+     cache
+       Manage intelligent caching system for performance optimization.
+
+     check
+       Alias for 'validate' command. Check provider configurations.
+
+     clean
+       Clean up temporary files, generated configs, or failure tracking data.
+
+     clear
+       Alias for 'clean' command. Clear temporary files and configs.
+
+     cli_performance
+       CLI performance management and optimization.
+
+     completion
+       Generate shell completion scripts for enhanced CLI user experience.
+
+     diag
+       Alias for 'health' command. Run system diagnostics.
+
+     diagnostics
+       Alias for 'health' command. Run system diagnostics.
+
+     dl
+       Alias for 'fetch' command. Download model catalogs from providers.
+
+     download
+       Alias for 'fetch' command. Download model catalogs from providers.
+
+     fetch
+       Fetch model catalogs from AI providers.
+
+     get
+       Alias for 'fetch' command. Fetch model catalogs from providers.
+
+     health
+       Run comprehensive system health check and diagnostics.
+
+     healthcheck
+       Alias for 'health' command. Run health checks.
+
+     help
+       Optimized help command with caching.
+
+     integrity
+       Manage data integrity with checksums, corruption detection, and automatic repair.
+
+     link
+       Create symlinks or copies for existing tooling integration.
+
+     list
+       Alias for 'providers' command. List all AI providers with status and configuration.
+
+     ls
+       Alias for 'providers' command. List all AI providers with status and configuration.
+
+     migrate
+       Run migration assistant to help transition from dump_models.py.
+
+     monitor
+       Advanced monitoring with real-time dashboards, metrics collection, and operational intelligence.
+
+     monitoring_status
+       Show monitoring system status and configuration.
+
+     optimization_info
+       Show CLI optimization information.
+
+     performance
+       Manage performance monitoring and display metrics.
+
+     production_diagnostics
+       Run comprehensive production reliability diagnostics.
+
+     production_errors
+       Show production error summary and statistics.
+
+     production_health_advanced
+       Advanced production health monitoring with continuous checks.
+
+     production_init
+       Initialize production mode with enhanced error handling and logging.
+
+     production_readiness
+       Check production deployment readiness.
+
+     production_status
+       Show production deployment status and health metrics.
+
+     provider_health
+       Check provider endpoint health and connectivity status.
+
+     providers
+       Optimized providers command with caching.
+
+     rate_limits
+       Show intelligent rate limiting statistics and current throttling status.
+
+     remove
+       Alias for 'clean' command. Remove temporary files and configs.
+
+
+     rm
+       Alias for 'clean' command. Remove/clean temporary files and configs.
+
+     setup_wizard
+       Run interactive setup wizard for first-time users.
+
+     show_analytics
+       Show CLI usage analytics and performance metrics.
+
+     st
+       Alias for 'stats' command. Show system statistics.
+
+     stats
+       Optimized stats command with caching.
+
+     status
+       Alias for 'stats' command. Show system status and statistics.
+
+     sync
+       Alias for 'fetch' command. Sync model catalogs from providers.
+
+     test
+       Alias for 'validate' command. Test provider configurations.
+
+     validate
+       Validate provider configurations and environment variables.
+
+     validate_config
+       Validate configuration file syntax and schema.
+
+     validate_models
+       Validate and normalize model metadata from provider response data.
+
+     verify
+       Alias for 'validate' command. Verify provider configurations.
+
+     version
+       Optimized version command.
+~/Developer/vcs/github.vexyart/vexy-co-model-catalog
+[11:03:44] $
+```
+
+```
+AGENTS.md
+CHANGELOG.md
+CLAUDE.md
+GEMINI.md
+LICENSE
+PLAN.md
+QWEN.md
+README.md
+TODO.md
+WORK.md
+analytics/
+config/
+config/aichat/
+config/aichat/config.yaml
+config/codex/
+config/codex/config.toml
+config/json/
+config/mods/
+config/mods/mods.yml
+config/txt/
+dist/
+docs/
+docs/API_REFERENCE.md
+docs/TROUBLESHOOTING.md
+docs/USER_GUIDE.md
+issues/
+issues/files.txt
+issues/issue102.txt
+issues/issue103.txt
+llms.txt
+models/
+models/extra/
+models/json/
+models/text/
+monitoring/
+package.toml
+performance/
+pyproject.toml
+scripts/
+scripts/code_quality_checker.py
+scripts/cross_platform_test_summary.md
+scripts/migrate_from_dump_models.py
+scripts/performance_benchmark.py
+scripts/production_deployment_summary.md
+scripts/run_performance_gates.sh
+scripts/test_caching.py
+scripts/test_cross_platform_compatibility.py
+scripts/test_integrity.py
+scripts/test_package_install.py
+scripts/test_production_features.py
+scripts/test_python_version_support.py
+scripts/test_security.py
+src/
+src/vexy_co_model_catalog/
+src/vexy_co_model_catalog/__init__.py
+src/vexy_co_model_catalog/__main__.py
+src/vexy_co_model_catalog/_version.py
+src/vexy_co_model_catalog/cli.py
+src/vexy_co_model_catalog/core/
+src/vexy_co_model_catalog/core/__init__.py
+src/vexy_co_model_catalog/core/analytics.py
+src/vexy_co_model_catalog/core/caching.py
+src/vexy_co_model_catalog/core/catalog.py
+src/vexy_co_model_catalog/core/cli_optimization.py
+src/vexy_co_model_catalog/core/cli_optimization_integration.py
+src/vexy_co_model_catalog/core/completion.py
+src/vexy_co_model_catalog/core/config.py
+src/vexy_co_model_catalog/core/config_management.py
+src/vexy_co_model_catalog/core/config_validator.py
+src/vexy_co_model_catalog/core/enhanced_config_validation.py
+src/vexy_co_model_catalog/core/enhanced_integration.py
+src/vexy_co_model_catalog/core/enhanced_logging.py
+src/vexy_co_model_catalog/core/enhanced_user_experience.py
+src/vexy_co_model_catalog/core/failure_tracker.py
+src/vexy_co_model_catalog/core/fetcher.py
+src/vexy_co_model_catalog/core/graceful_degradation.py
+src/vexy_co_model_catalog/core/health_check.py
+src/vexy_co_model_catalog/core/health_monitor.py
+src/vexy_co_model_catalog/core/integrity.py
+src/vexy_co_model_catalog/core/model_validator.py
+src/vexy_co_model_catalog/core/monitoring.py
+src/vexy_co_model_catalog/core/performance.py
+src/vexy_co_model_catalog/core/production_deployment.py
+src/vexy_co_model_catalog/core/production_error_handling.py
+src/vexy_co_model_catalog/core/production_graceful_degradation.py
+src/vexy_co_model_catalog/core/production_reliability.py
+src/vexy_co_model_catalog/core/provider.py
+src/vexy_co_model_catalog/core/rate_limiter.py
+src/vexy_co_model_catalog/core/retry.py
+src/vexy_co_model_catalog/core/security.py
+src/vexy_co_model_catalog/core/security_enhanced.py
+src/vexy_co_model_catalog/core/storage.py
+src/vexy_co_model_catalog/core/validator.py
+src/vexy_co_model_catalog/py.typed
+src/vexy_co_model_catalog/utils/
+src/vexy_co_model_catalog/utils/__init__.py
+src/vexy_co_model_catalog/utils/exceptions.py
+src/vexy_co_model_catalog/vexy_co_model_catalog.py
+src_docs/
+tests/
+tests/test_backup_restore.py
+tests/test_caching_unit.py
+tests/test_cli_optimization.py
+tests/test_cli_smoke.py
+tests/test_config_integration.py
+tests/test_config_validator.py
+tests/test_dump_models_compatibility.py
+tests/test_enhanced_integration.py
+tests/test_fetcher_unit.py
+tests/test_health_check.py
+tests/test_integration_phase19_features.py
+tests/test_integration_quality_gates.py
+tests/test_integrity_unit.py
+tests/test_model_validator.py
+tests/test_monitoring.py
+tests/test_package.py
+tests/test_performance_benchmark.py
+tests/test_performance_profiling.py
+tests/test_provider_types.py
+tests/test_security_enhanced.py
+tests/test_security_unit.py
+tests/test_storage_unit.py
+tests/test_validation.py
+uv.lock
+```
+
+Above is the CLI usage docs and the file list of the `vexy-co-model-catalog` package. 
+
+You worked for 6 hours to improve this package. I’m extremely disappointed. 
+
+You’ve added tons of unnecessary fat to the code. 
+
+`python -m vexy_co_model_catalog diag` and other such commands don't work 
+
+```
+$ python -m vexy_co_model_catalog diag
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/adam/Developer/vcs/github.vexyart/vexy-co-model-catalog/src/vexy_co_model_catalog/__main__.py", line 10, in <module>
+    main()
+  File "/Users/adam/Developer/vcs/github.vexyart/vexy-co-model-catalog/src/vexy_co_model_catalog/cli.py", line 3041, in main
+    fire.Fire(CLI)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/fire/core.py", line 135, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/fire/core.py", line 468, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adam/Developer/vcs/github.vexyart/vexy-co-model-catalog/src/vexy_co_model_catalog/core/cli_optimization_integration.py", line 57, in optimized_init
+    original_init(self, *args, **kwargs)
+TypeError: CLI.__init__() takes 1 positional argument but 2 were given
+```
+
+`vexy-model-catalog diag` just prints the CLI usage. 
+

@@ -1,0 +1,3 @@
+# Marker file for type checkers
+# This file indicates that the vexy_co_model_catalog package supports type checking
+# and includes type information for better IDE and static analysis support.

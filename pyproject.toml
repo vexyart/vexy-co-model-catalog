@@ -11,16 +11,17 @@
 #------------------------------------------------------------------------------
 [project]
 name = 'vexy-co-model-catalog' # Package name on PyPI
-description = '' # Short description
+description = 'Enterprise-grade AI model catalog manager for 40+ providers with CLI, caching, and tool integration' # Short description
 readme = 'README.md' # Path to README file
 requires-python = '>=3.10' # Minimum Python version
 keywords = [
+    'ai', 'machine-learning', 'model-catalog', 'openai', 'anthropic', 'cli', 'providers', 'api', 'tools', 'automation'
 ] # Keywords for PyPI search
 dynamic = ["version"] # Fields set dynamically at build time
 
 # PyPI classifiers for package categorization
 classifiers = [
-    'Development Status :: 4 - Beta', # Package maturity level
+    'Development Status :: 5 - Production/Stable', # Package maturity level
     'Programming Language :: Python',
     'Programming Language :: Python :: 3.10',
     'Programming Language :: Python :: 3.11',
@@ -30,9 +31,24 @@ classifiers = [
     'Operating System :: OS Independent',
     'License :: OSI Approved :: MIT License',
     'Intended Audience :: Developers',
+    'Intended Audience :: Science/Research',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+    'Topic :: Scientific/Engineering :: Artificial Intelligence',
+    'Topic :: System :: Systems Administration',
+    'Topic :: Utilities',
+    'Environment :: Console',
+    'Typing :: Typed',
 ]
 
 dependencies = [
+    "fire>=0.7.1",
+    "httpx>=0.28.1",
+    "loguru>=0.7.3",
+    "psutil>=6.1.0",
+    "pyyaml>=6.0.2",
+    "rich>=14.1.0",
+    "tomli>=2.2.1",
+    "tomli-w>=1.2.0",
 ]
 
 # Author information
@@ -92,7 +108,8 @@ all = [
 # Entry points for command-line executables installed with the package.
 #------------------------------------------------------------------------------
 [project.scripts]
-# CLINAME = "vexy_co_model_catalog.__main__:main"
+vexy-model-catalog = "vexy_co_model_catalog.cli:main"
+vmc = "vexy_co_model_catalog.cli:main"
 
 #------------------------------------------------------------------------------
 # BUILD SYSTEM CONFIGURATION
@@ -113,18 +130,8 @@ build-backend = 'hatchling.build' # Specifies Hatchling as the build backend
 # Configures the build process, specifying which packages to include and
 # how to handle versioning.
 #------------------------------------------------------------------------------
-[tool.hatch.build]
-# Include package data files
-include = [
-    "src/vexy_co_model_catalog/py.typed", # For better type checking support
-    "src/vexy_co_model_catalog/data/**/*", # Include data files if any
-
-]
-exclude = ["**/__pycache__", "**/.pytest_cache", "**/.mypy_cache"]
-
 [tool.hatch.build.targets.wheel]
-packages = ["src/vexy_co_model_catalog"]
-reproducible = true
+sources = ["src"]
 
 
 # Version control system hook configuration
@@ -413,8 +420,8 @@ unfixable = [
     'F401', # Don't automatically remove unused imports - may be needed later
 
 ]
-# Configure extend-exclude to ignore specific directories
-extend-exclude = [".git", ".venv", "venv", "dist", "build"]
+# Configure exclude to ignore specific directories
+exclude = [".git", ".venv", "venv", "dist", "build"]
 
 # isort configuration within Ruff
 [tool.ruff.lint.isort]

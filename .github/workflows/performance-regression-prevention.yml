@@ -1,0 +1,182 @@
+# this_file: .github/workflows/performance-regression-prevention.yml
+
+name: Performance Regression Prevention
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Run daily at 2 AM UTC to track performance trends
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      performance_mode:
+        description: 'Performance benchmark mode'
+        required: false
+        default: 'standard'
+        type: choice
+        options:
+        - standard
+        - intensive  
+        - quick
+
+jobs:
+  performance-benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12']
+      fail-fast: false
+      
+    steps:
+    - name: 🔄 Checkout Code
+      uses: actions/checkout@v4
+      
+    - name: 🐍 Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+        
+    - name: ⚡ Install uv (Ultra-fast Python package installer)
+      run: |
+        curl -LsSf https://astral.sh/uv/install.sh | sh
+        echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+        
+    - name: 📦 Install Dependencies  
+      run: |
+        uv venv
+        uv pip install -e .
+        uv pip install pytest rich loguru httpx psutil
+        
+    - name: 🧪 Run Performance Regression Tests
+      env:
+        # Performance quality gate thresholds
+        CACHE_ACCESS_MAX_MS: 100
+        CLI_STARTUP_MAX_MS: 2000  
+        MEMORY_GROWTH_MAX_MB: 50
+        MIN_CACHE_HIT_RATE: 75
+        # Adjust thresholds for CI environment if needed
+        PERFORMANCE_MODE: ${{ github.event.inputs.performance_mode || 'standard' }}
+      run: |
+        # Set CI-specific performance thresholds (CI can be slower)
+        if [[ "$PERFORMANCE_MODE" == "intensive" ]]; then
+          export CACHE_ACCESS_MAX_MS=50
+          export CLI_STARTUP_MAX_MS=1000
+          export MEMORY_GROWTH_MAX_MB=25
+          export MIN_CACHE_HIT_RATE=85
+        elif [[ "$PERFORMANCE_MODE" == "quick" ]]; then
+          export CACHE_ACCESS_MAX_MS=200
+          export CLI_STARTUP_MAX_MS=3000  
+          export MEMORY_GROWTH_MAX_MB=75
+          export MIN_CACHE_HIT_RATE=65
+        fi
+        
+        # Run performance benchmark suite
+        ./scripts/run_performance_gates.sh
+        
+    - name: 📊 Upload Performance Results
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: performance-results-${{ matrix.python-version }}
+        path: performance_results/
+        retention-days: 30
+        
+    - name: 📈 Performance Trend Analysis
+      if: github.event_name == 'schedule'  # Only on scheduled runs
+      run: |
+        echo "## Performance Trend Analysis" >> $GITHUB_STEP_SUMMARY
+        echo "Python Version: ${{ matrix.python-version }}" >> $GITHUB_STEP_SUMMARY
+        
+        # Add performance summary to GitHub step summary
+        if [ -f performance_results/performance_summary.md ]; then
+          cat performance_results/performance_summary.md >> $GITHUB_STEP_SUMMARY
+        fi
+        
+    - name: 🚨 Performance Regression Alert
+      if: failure()
+      run: |
+        echo "## ❌ Performance Regression Detected" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "**Python Version:** ${{ matrix.python-version }}" >> $GITHUB_STEP_SUMMARY  
+        echo "**Trigger:** ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+        echo "**Branch:** ${{ github.ref }}" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### 🔍 Investigation Steps:" >> $GITHUB_STEP_SUMMARY
+        echo "1. Review performance benchmark results in artifacts" >> $GITHUB_STEP_SUMMARY
+        echo "2. Compare with baseline performance metrics" >> $GITHUB_STEP_SUMMARY
+        echo "3. Check recent code changes for performance impact" >> $GITHUB_STEP_SUMMARY
+        echo "4. Profile specific components showing regression" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### 📋 Performance Thresholds:" >> $GITHUB_STEP_SUMMARY
+        echo "- Cache Access: < ${CACHE_ACCESS_MAX_MS:-100}ms" >> $GITHUB_STEP_SUMMARY  
+        echo "- CLI Startup: < ${CLI_STARTUP_MAX_MS:-2000}ms" >> $GITHUB_STEP_SUMMARY
+        echo "- Memory Growth: < ${MEMORY_GROWTH_MAX_MB:-50}MB" >> $GITHUB_STEP_SUMMARY
+        echo "- Cache Hit Rate: > ${MIN_CACHE_HIT_RATE:-75}%" >> $GITHUB_STEP_SUMMARY
+
+  performance-summary:
+    runs-on: ubuntu-latest
+    needs: performance-benchmark
+    if: always()
+    
+    steps:
+    - name: 📊 Download All Performance Results
+      uses: actions/download-artifact@v3
+      with:
+        path: all-performance-results
+        
+    - name: 🎯 Generate Performance Summary Report
+      run: |
+        echo "# 🚀 Performance Regression Prevention Report" > performance-summary.md
+        echo "" >> performance-summary.md
+        echo "**Workflow:** ${{ github.workflow }}" >> performance-summary.md
+        echo "**Trigger:** ${{ github.event_name }}" >> performance-summary.md
+        echo "**Commit:** ${{ github.sha }}" >> performance-summary.md
+        echo "**Date:** $(date)" >> performance-summary.md
+        echo "" >> performance-summary.md
+        
+        # Check if any performance benchmarks failed
+        overall_status="✅ PASSED"
+        if [[ "${{ needs.performance-benchmark.result }}" != "success" ]]; then
+          overall_status="❌ FAILED - Performance regression detected"
+        fi
+        
+        echo "## Overall Status: $overall_status" >> performance-summary.md
+        echo "" >> performance-summary.md
+        
+        # List tested Python versions
+        echo "## 🐍 Python Versions Tested:" >> performance-summary.md
+        find all-performance-results -name "performance-results-*" -type d | sed 's/.*performance-results-/- Python /' >> performance-summary.md
+        echo "" >> performance-summary.md
+        
+        # Performance quality gates status
+        echo "## 🎯 Performance Quality Gates:" >> performance-summary.md
+        echo "- Sub-100ms Cache Access Times" >> performance-summary.md
+        echo "- CLI Startup Under 2 seconds" >> performance-summary.md  
+        echo "- Memory Growth Limited to 50MB" >> performance-summary.md
+        echo "- Cache Hit Rate Above 75%" >> performance-summary.md
+        echo "" >> performance-summary.md
+        
+        if [[ "$overall_status" == *"FAILED"* ]]; then
+          echo "## 🚨 Action Required:" >> performance-summary.md
+          echo "Performance regression detected. Review benchmark results and optimize affected components." >> performance-summary.md
+          echo "" >> performance-summary.md
+        else
+          echo "## ✅ All Systems Optimal:" >> performance-summary.md  
+          echo "Performance quality gates passed. System maintaining optimal performance levels." >> performance-summary.md
+          echo "" >> performance-summary.md
+        fi
+        
+        # Add to GitHub step summary  
+        cat performance-summary.md >> $GITHUB_STEP_SUMMARY
+        
+    - name: 📤 Upload Combined Performance Summary
+      uses: actions/upload-artifact@v3
+      with:
+        name: performance-summary-report
+        path: performance-summary.md
+        retention-days: 90

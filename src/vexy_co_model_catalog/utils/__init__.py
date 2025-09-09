@@ -6,24 +6,24 @@ Utility subpackage exports.
 
 from __future__ import annotations
 
-from .exceptions import (
+from vexy_co_model_catalog.utils.exceptions import (
+    AuthenticationError,
+    ConfigurationError,
+    FetchError,
+    GeneratorError,
     ModelCatalogError,
     ProviderError,
-    FetchError,
-    AuthenticationError,
     RateLimitError,
-    ConfigurationError,
-    GeneratorError,
     ValidationError,
 )
 
 __all__ = [
+    "AuthenticationError",
+    "ConfigurationError",
+    "FetchError",
+    "GeneratorError",
     "ModelCatalogError",
     "ProviderError",
-    "FetchError",
-    "AuthenticationError",
     "RateLimitError",
-    "ConfigurationError",
-    "GeneratorError",
     "ValidationError",
 ]

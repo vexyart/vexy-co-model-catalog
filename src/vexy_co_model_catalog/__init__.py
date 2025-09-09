@@ -10,13 +10,18 @@ robust even if optional submodules are incomplete. Tests only require the
 
 from __future__ import annotations
 
-from ._version import __version__  # re-export version
+from vexy_co_model_catalog._version import __version__  # re-export version
+
+# Import main classes for user convenience
+from vexy_co_model_catalog.core.catalog import ModelCatalog, ProviderRegistry
 
 __author__ = "Vexy Software"
 __email__ = "opensource@vexy.art"
 
 __all__ = [
-    "__version__",
+    "ModelCatalog",
+    "ProviderRegistry",
     "__author__",
     "__email__",
+    "__version__",
 ]
