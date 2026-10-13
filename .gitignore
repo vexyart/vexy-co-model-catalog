@@ -317,3 +317,23 @@ _private
 VERSION.txt
 
 .mypy_cache
+# Added for docs + packaging hygiene
+.DS_Store
+.omc/
+dist/
+build/
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+site/
+node_modules/
+target/
+src/vexy_co_model_catalog/_version.py
+src/vexy_co_model_catalog/__version__.py
+# runtime output the CLI writes into the working directory
+.cache/
+performance/
+analytics/
+.integrity/

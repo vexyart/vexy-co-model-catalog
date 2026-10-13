@@ -1,0 +1,1319 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Fetch, normalize and store AI model catalogs from 40 providers">
+      
+      
+      
+        <link rel="canonical" href="https://vexy.dev/vexy-co-model-catalog/providers/">
+      
+      
+        <link rel="prev" href="../cli/">
+      
+      
+        <link rel="next" href="../output-files/">
+      
+      
+        
+      
+      
+      
+      
+        
+        
+        
+          <link rel="icon" href="../assets/images/favicon.png">
+        
+      
+      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-materialx-10.1.8">
+    
+    
+      
+        <title>Providers - vexy-co-model-catalog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.314bbef5.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a45159b5.min.css">
+      
+    
+    
+
+    
+
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" data-mx-topbar="glass">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="toc" type="checkbox" id="__toc" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <label class="md-overlay" for="__toc"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#providers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="vexy-co-model-catalog" class="md-header__button md-logo" aria-label="vexy-co-model-catalog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            vexy-co-model-catalog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Providers
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.25 2a8.25 8.25 0 0 1 6.34 13.53l5.69 5.69a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215l-5.69-5.69A8.25 8.25 0 1 1 10.25 2M3.5 10.25a6.75 6.75 0 1 0 13.5 0 6.75 6.75 0 0 0-13.5 0"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.25 2a8.25 8.25 0 0 1 6.34 13.53l5.69 5.69a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215l-5.69-5.69A8.25 8.25 0 1 1 10.25 2M3.5 10.25a6.75 6.75 0 1 0 13.5 0 6.75 6.75 0 0 0-13.5 0"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/vexyart/vexy-co-model-catalog" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    vexyart/vexy-co-model-catalog
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="vexy-co-model-catalog" class="md-nav__button md-logo" aria-label="vexy-co-model-catalog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    vexy-co-model-catalog
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/vexyart/vexy-co-model-catalog" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    vexyart/vexy-co-model-catalog
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CLI reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Providers
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Providers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc">
+      
+        <li class="md-nav__item">
+  <a href="#provider-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Provider types
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-the-base-url-is-chosen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How the base URL is chosen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#provider-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Provider table
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#providers-with-special-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Providers with special handling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#url-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        URL check
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Response formats
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-a-provider" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Check a provider
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../output-files/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Output files
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../migration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migrating from dump_models.py
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc">
+      
+        <li class="md-nav__item">
+  <a href="#provider-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Provider types
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-the-base-url-is-chosen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How the base URL is chosen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#provider-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Provider table
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#providers-with-special-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Providers with special handling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#url-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        URL check
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Response formats
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-a-provider" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Check a provider
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+  
+
+
+<h1 id="providers">Providers<a class="headerlink" href="#providers" title="Permanent link">&para;</a></h1>
+<p>The provider list is fixed in code, in <code>src/vexy_co_model_catalog/core/provider.py</code>. It holds 40 providers. You cannot add or remove providers from the command line; <code>vmc providers add</code> and <code>vmc providers remove</code> only print a notice.</p>
+<h2 id="provider-types">Provider types<a class="headerlink" href="#provider-types" title="Permanent link">&para;</a></h2>
+<p>Each provider has one of three types. The type decides which URL is requested and how the API key is sent.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Request URL</th>
+<th>Authentication header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>openai</code></td>
+<td><code>&lt;base URL&gt;/models</code></td>
+<td><code>Authorization: Bearer &lt;key&gt;</code></td>
+</tr>
+<tr>
+<td><code>anthropic</code></td>
+<td><code>&lt;base URL&gt;/models</code></td>
+<td><code>x-api-key: &lt;key&gt;</code> and <code>anthropic-version: 2023-06-01</code></td>
+</tr>
+<tr>
+<td><code>url</code></td>
+<td><code>&lt;base URL&gt;</code> itself</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<p>Every request also carries <code>User-Agent: ModelDumper/1.0</code>.</p>
+<h2 id="how-the-base-url-is-chosen">How the base URL is chosen<a class="headerlink" href="#how-the-base-url-is-chosen" title="Permanent link">&para;</a></h2>
+<p>Each provider names two environment variables: one for the API key and one for the base URL.</p>
+<ol>
+<li>When the package loads the provider table, it sets each base-URL variable to its default value, unless that variable is already set in your environment.</li>
+<li>When a request is built, the tool reads the base-URL variable.</li>
+</ol>
+<p>So you can point any provider at another endpoint by exporting its base-URL variable before you run <code>vmc</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">LMSTUDIO_API_OPENAI</span><span class="o">=</span><span class="s2">"http://localhost:1234/v1"</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>vmc<span class="w"> </span>fetch<span class="w"> </span>lmstudio
+</code></pre></div>
+<p>The tool then requests <code>http://localhost:1234/v1/models</code>.</p>
+<h2 id="provider-table">Provider table<a class="headerlink" href="#provider-table" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>API key variable</th>
+<th>Base-URL variable</th>
+<th>Default base URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>aihorde</code></td>
+<td>openai</td>
+<td><code>AIHORDE_KEY</code></td>
+<td><code>AIHORDE_API_OPENAI</code></td>
+<td><code>https://oai.aihorde.net/v1</code></td>
+</tr>
+<tr>
+<td><code>anthropic</code></td>
+<td>anthropic</td>
+<td><code>ANTHROPIC_API_KEY</code></td>
+<td><code>ANTHROPIC_API_OPENAI</code></td>
+<td><code>https://api.anthropic.com/v1</code></td>
+</tr>
+<tr>
+<td><code>atlascloud</code></td>
+<td>openai</td>
+<td><code>ATLASCLOUD_API_KEY</code></td>
+<td><code>ATLASCLOUD_API_OPENAI</code></td>
+<td>(none, see note)</td>
+</tr>
+<tr>
+<td><code>avian</code></td>
+<td>openai</td>
+<td><code>AVIAN_API_KEY</code></td>
+<td><code>AVIAN_API_OPENAI</code></td>
+<td><code>https://api.avian.io/v1</code></td>
+</tr>
+<tr>
+<td><code>baseten</code></td>
+<td>openai</td>
+<td><code>BASETEN_API_KEY</code></td>
+<td><code>BASETEN_API_OPENAI</code></td>
+<td><code>https://inference.baseten.co/v1</code></td>
+</tr>
+<tr>
+<td><code>cerebras</code></td>
+<td>openai</td>
+<td><code>CEREBRAS_API_KEY</code></td>
+<td><code>CEREBRAS_API_OPENAI</code></td>
+<td><code>https://api.cerebras.ai/v1</code></td>
+</tr>
+<tr>
+<td><code>chutes</code></td>
+<td>openai</td>
+<td><code>CHUTES_API_KEY</code></td>
+<td><code>CHUTES_API_OPENAI</code></td>
+<td><code>https://llm.chutes.ai/v1</code></td>
+</tr>
+<tr>
+<td><code>deepinfra</code></td>
+<td>openai</td>
+<td><code>DEEPINFRA_API_KEY</code></td>
+<td><code>DEEPINFRA_API_OPENAI</code></td>
+<td><code>https://api.deepinfra.com/v1/openai</code></td>
+</tr>
+<tr>
+<td><code>deepseek</code></td>
+<td>openai</td>
+<td><code>DEEPSEEK_API_KEY</code></td>
+<td><code>DEEPSEEK_API_OPENAI</code></td>
+<td><code>https://api.deepseek.com/v1</code></td>
+</tr>
+<tr>
+<td><code>enfer</code></td>
+<td>openai</td>
+<td><code>ENFER_API_KEY</code></td>
+<td><code>ENFER_API_OPENAI</code></td>
+<td><code>https://api.enfer.ai/v1</code></td>
+</tr>
+<tr>
+<td><code>featherless</code></td>
+<td>openai</td>
+<td><code>FEATHERLESS_API_KEY</code></td>
+<td><code>FEATHERLESS_API_OPENAI</code></td>
+<td><code>https://api.featherless.ai/v1</code></td>
+</tr>
+<tr>
+<td><code>fireworks</code></td>
+<td>openai</td>
+<td><code>FIREWORKS_API_KEY</code></td>
+<td><code>FIREWORKS_API_OPENAI</code></td>
+<td><code>https://api.fireworks.ai/inference/v1</code></td>
+</tr>
+<tr>
+<td><code>friendli</code></td>
+<td>openai</td>
+<td><code>FRIENDLI_TOKEN</code></td>
+<td><code>FRIENDLI_API_OPENAI</code></td>
+<td><code>https://api.friendli.ai/serverless/v1</code></td>
+</tr>
+<tr>
+<td><code>gemini</code></td>
+<td>openai</td>
+<td><code>GOOGLE_API_KEY</code></td>
+<td><code>GEMINI_API_OPENAI</code></td>
+<td><code>https://generativelanguage.googleapis.com/v1beta/openai</code></td>
+</tr>
+<tr>
+<td><code>groq</code></td>
+<td>openai</td>
+<td><code>GROQ_API_KEY</code></td>
+<td><code>GROQ_API_OPENAI</code></td>
+<td><code>https://api.groq.com/openai/v1</code></td>
+</tr>
+<tr>
+<td><code>huggingface</code></td>
+<td>openai</td>
+<td><code>HUGGINGFACEHUB_API_TOKEN</code></td>
+<td><code>HUGGINGFACE_API_OPENAI</code></td>
+<td><code>https://router.huggingface.co/v1</code></td>
+</tr>
+<tr>
+<td><code>hyperbolic</code></td>
+<td>openai</td>
+<td><code>HYPERBOLIC_API_KEY</code></td>
+<td><code>HYPERBOLIC_API_OPENAI</code></td>
+<td><code>https://api.hyperbolic.xyz/v1</code></td>
+</tr>
+<tr>
+<td><code>inference</code></td>
+<td>openai</td>
+<td><code>INFERENCENET_API_KEY</code></td>
+<td><code>INFERENCENET_API_OPENAI</code></td>
+<td><code>https://api.inference.net/v1</code></td>
+</tr>
+<tr>
+<td><code>infermatic</code></td>
+<td>openai</td>
+<td><code>INFERMATIC_API_KEY</code></td>
+<td><code>INFERMATIC_API_OPENAI</code></td>
+<td><code>https://api.totalgpt.ai/v1</code></td>
+</tr>
+<tr>
+<td><code>litellm</code></td>
+<td>url</td>
+<td>(none)</td>
+<td><code>LITELLM_API_OPENAI</code></td>
+<td><code>https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json</code></td>
+</tr>
+<tr>
+<td><code>llm7</code></td>
+<td>openai</td>
+<td><code>LLM7_API_KEY</code></td>
+<td><code>LLM7_API_OPENAI</code></td>
+<td><code>https://api.llm7.io/v1</code></td>
+</tr>
+<tr>
+<td><code>lmstudio</code></td>
+<td>openai</td>
+<td><code>LMSTUDIO_API_KEY</code></td>
+<td><code>LMSTUDIO_API_OPENAI</code></td>
+<td><code>http://othello.local:1234/v1</code></td>
+</tr>
+<tr>
+<td><code>mancer</code></td>
+<td>openai</td>
+<td><code>MANCER_API_KEY</code></td>
+<td><code>MANCER_API_OPENAI</code></td>
+<td><code>https://neuro.mancer.tech/oai/v1</code></td>
+</tr>
+<tr>
+<td><code>mistral</code></td>
+<td>openai</td>
+<td><code>MISTRAL_API_KEY</code></td>
+<td><code>MISTRAL_API_OPENAI</code></td>
+<td><code>https://api.mistral.ai/v1</code></td>
+</tr>
+<tr>
+<td><code>moonshot</code></td>
+<td>openai</td>
+<td><code>MOONSHOT_API_KEY</code></td>
+<td><code>MOONSHOT_API_OPENAI</code></td>
+<td><code>https://api.moonshot.ai/v1</code></td>
+</tr>
+<tr>
+<td><code>morphllm</code></td>
+<td>openai</td>
+<td><code>MORPHLLM_API_KEY</code></td>
+<td><code>MORPHLLM_API_OPENAI</code></td>
+<td><code>https://api.morphllm.com/v1</code></td>
+</tr>
+<tr>
+<td><code>nebius</code></td>
+<td>openai</td>
+<td><code>NEBIUS_API_KEY</code></td>
+<td><code>NEBIUS_API_OPENAI</code></td>
+<td><code>https://api.studio.nebius.com/v1</code></td>
+</tr>
+<tr>
+<td><code>nineteenai</code></td>
+<td>openai</td>
+<td><code>NINETEENAI_API_KEY</code></td>
+<td><code>NINETEENAI_API_OPENAI</code></td>
+<td><code>https://api.nineteen.ai/v1</code></td>
+</tr>
+<tr>
+<td><code>novita</code></td>
+<td>openai</td>
+<td><code>NOVITA_API_KEY</code></td>
+<td><code>NOVITA_API_OPENAI</code></td>
+<td><code>https://api.novita.ai/v3/openai</code></td>
+</tr>
+<tr>
+<td><code>openai</code></td>
+<td>openai</td>
+<td><code>OPENAI_API_KEY</code></td>
+<td><code>OPENAI_API_OPENAI</code></td>
+<td><code>https://api.openai.com/v1</code></td>
+</tr>
+<tr>
+<td><code>openrouter</code></td>
+<td>openai</td>
+<td><code>OPENROUTER_API_KEY</code></td>
+<td><code>OPENROUTER_API_OPENAI</code></td>
+<td><code>https://openrouter.ai/api/v1</code></td>
+</tr>
+<tr>
+<td><code>parasail</code></td>
+<td>openai</td>
+<td><code>PARASAIL_API_KEY</code></td>
+<td><code>PARASAIL_API_OPENAI</code></td>
+<td><code>https://api.parasail.io/v1</code></td>
+</tr>
+<tr>
+<td><code>poe</code></td>
+<td>openai</td>
+<td><code>POE_API_KEY</code></td>
+<td><code>POE_API_OPENAI</code></td>
+<td><code>https://api.poe.com/v1</code></td>
+</tr>
+<tr>
+<td><code>pollinations</code></td>
+<td>openai</td>
+<td><code>POLLINATIONS_API_KEY</code></td>
+<td><code>POLLINATIONS_API_OPENAI</code></td>
+<td><code>https://text.pollinations.ai/openai</code></td>
+</tr>
+<tr>
+<td><code>redpill</code></td>
+<td>openai</td>
+<td><code>REDPILL_API_KEY</code></td>
+<td><code>REDPILL_API_OPENAI</code></td>
+<td><code>https://api.redpill.ai/v1</code></td>
+</tr>
+<tr>
+<td><code>sambanova</code></td>
+<td>openai</td>
+<td><code>SAMBANOVA_API_KEY</code></td>
+<td><code>SAMBANOVA_API_OPENAI</code></td>
+<td><code>https://api.sambanova.ai/v1</code></td>
+</tr>
+<tr>
+<td><code>targon</code></td>
+<td>openai</td>
+<td><code>TARGON_API_KEY</code></td>
+<td><code>TARGON_API_OPENAI</code></td>
+<td><code>https://api.targon.com/v1</code></td>
+</tr>
+<tr>
+<td><code>togetherai</code></td>
+<td>openai</td>
+<td><code>TOGETHERAI_API_KEY</code></td>
+<td><code>TOGETHERAI_API_OPENAI</code></td>
+<td><code>https://api.together.xyz/v1</code></td>
+</tr>
+<tr>
+<td><code>xai</code></td>
+<td>openai</td>
+<td><code>XAI_API_KEY</code></td>
+<td><code>XAI_API_OPENAI</code></td>
+<td><code>https://api.x.ai/v1</code></td>
+</tr>
+<tr>
+<td><code>zai</code></td>
+<td>openai</td>
+<td><code>ZAI_API_KEY</code></td>
+<td><code>ZAI_API_OPENAI</code></td>
+<td><code>https://api.z.ai/api/paas/v4</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">atlascloud has no default base URL</p>
+<p>In the default URL table, the <code>atlascloud</code> entry is keyed <code>ATLASCLOUD_API_KEY</code> instead of <code>ATLASCLOUD_API_OPENAI</code>. As a result the package sets no default for <code>ATLASCLOUD_API_OPENAI</code>, and it also writes the URL into <code>ATLASCLOUD_API_KEY</code> when that variable is not already set. Set both variables yourself to use this provider:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ATLASCLOUD_API_KEY</span><span class="o">=</span><span class="s2">"..."</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ATLASCLOUD_API_OPENAI</span><span class="o">=</span><span class="s2">"https://api.atlascloud.ai/v1"</span>
+</code></pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">lmstudio points at a local host name</p>
+<p>The default for <code>lmstudio</code> is <code>http://othello.local:1234/v1</code>, a machine on the author's network. Plain <code>http://</code> is only accepted for <code>localhost</code> and <code>127.0.0.1</code>, so the default is rejected by the URL check. Set <code>LMSTUDIO_API_OPENAI</code> to your own server, for example <code>http://localhost:1234/v1</code>.</p>
+</div>
+<h2 id="providers-with-special-handling">Providers with special handling<a class="headerlink" href="#providers-with-special-handling" title="Permanent link">&para;</a></h2>
+<dl>
+<dt><code>litellm</code></dt>
+<dd>A <code>url</code> provider. Its base URL is the JSON file <code>model_prices_and_context_window.json</code> in the LiteLLM repository, so no key is needed. The response is an object keyed by model ID; the <code>sample_spec</code> key is left out of the model ID list.</dd>
+<dt><code>chutes</code></dt>
+<dd>After the normal <code>/models</code> request, the tool also requests <code>https://api.chutes.ai/chutes/?include_public=true&amp;include_schemas=false</code> and merges the extra fields into the matching model entries. If the second request fails, the tool logs a warning and keeps the first response.</dd>
+<dt><code>lmstudio</code></dt>
+<dd>The only provider in the table allowed to use plain <code>http://</code>, and only for <code>localhost</code> or <code>127.0.0.1</code>.</dd>
+</dl>
+<h2 id="url-check">URL check<a class="headerlink" href="#url-check" title="Permanent link">&para;</a></h2>
+<p>Before each request the tool checks the URL. It must use <code>https://</code>; plain <code>http://</code> is accepted only for <code>localhost</code> and <code>127.0.0.1</code>, and only for <code>lmstudio</code>. Host names that contain patterns such as <code>metadata</code>, <code>internal</code>, <code>private</code>, <code>169.254</code> or <code>10.</code> are rejected. A rejected URL fails the provider with a message that starts with <code>SECURITY: URL failed security validation</code>.</p>
+<h2 id="response-formats">Response formats<a class="headerlink" href="#response-formats" title="Permanent link">&para;</a></h2>
+<p>The tool accepts three response shapes and extracts model IDs from each:</p>
+<table>
+<thead>
+<tr>
+<th>Shape</th>
+<th>Example</th>
+<th>Model IDs taken from</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenAI style</td>
+<td><code>{"data": [{"id": "gpt-4o"}, …]}</code></td>
+<td>each <code>data[].id</code>; <code>data</code> is sorted by <code>id</code></td>
+</tr>
+<tr>
+<td>Object keyed by ID</td>
+<td><code>{"gpt-4o": {…}, …}</code></td>
+<td>the keys, except <code>sample_spec</code>; keys are sorted</td>
+</tr>
+<tr>
+<td>Plain array</td>
+<td><code>[{"id": "gpt-4o"}, …]</code></td>
+<td>each <code>id</code>; the array is sorted by <code>id</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="check-a-provider">Check a provider<a class="headerlink" href="#check-a-provider" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>vmc<span class="w"> </span>providers<span class="w"> </span>show<span class="w"> </span>groq<span class="w">      </span><span class="c1"># type, key variable, base URL, failure stats</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>vmc<span class="w"> </span>validate<span class="w"> </span>groq<span class="w">            </span><span class="c1"># is the key set? is a base URL available?</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>vmc<span class="w"> </span>provider_health<span class="w"> </span>groq<span class="w">     </span><span class="c1"># does the endpoint answer?</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+          <div class="md-top" data-md-component="top" hidden>
+  <div class="md-top__center">
+    <button type="button" class="md-top__button md-top__button--main" data-md-action="top">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+      <span>Back to top</span>
+    </button>
+    
+      
+      
+      <label class="md-top__button md-top__side md-top__side--nav" for="__drawer" >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-panel-left" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/></svg>
+      </label>
+    
+    
+      
+      
+      <label class="md-top__button md-top__side md-top__side--toc" for="__toc" >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-panel-right" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M15 3v18"/></svg>
+      </label>
+    
+  </div>
+</div>
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../cli/" class="md-footer__link md-footer__link--prev" aria-label="Previous: CLI reference">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                CLI reference
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../output-files/" class="md-footer__link md-footer__link--next" aria-label="Next: Output files">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Output files
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://jaywhj.github.io/mkdocs-materialx/" target="_blank" rel="noopener">
+      MaterialX
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "code": null, "features": ["navigation.sections", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "code.collapse": "Collapse", "code.download": "Download", "code.expand": "Expand remaining # lines", "code.select": "Toggle line selection", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fc193f93.min.js"></script>
+      
+    
+  </body>
+</html>

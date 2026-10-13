@@ -1,5 +1,7 @@
 # Vexy Co Model Catalog
 
+**Documentation:** https://vexy.dev/vexy-co-model-catalog/
+
 A robust, import-safe Python library and CLI tool for fetching, normalizing, and storing AI model catalogs from various providers. Supports 45+ AI providers including OpenAI, Anthropic, Groq, and others, enabling seamless integration with third-party tools like aichat, codex, and mods.
 
 ## Overview

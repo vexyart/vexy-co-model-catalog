@@ -11,7 +11,7 @@
 #------------------------------------------------------------------------------
 [project]
 name = 'vexy-co-model-catalog' # Package name on PyPI
-description = 'Enterprise-grade AI model catalog manager for 40+ providers with CLI, caching, and tool integration' # Short description
+description = 'Fetch, normalize and store AI model catalogs from 40 providers, and generate model configs for aichat, codex and mods' # Short description
 readme = 'README.md' # Path to README file
 requires-python = '>=3.10' # Minimum Python version
 keywords = [
@@ -42,7 +42,7 @@ classifiers = [
 
 dependencies = [
     "fire>=0.7.1",
-    "httpx>=0.28.1",
+    "httpx[http2]>=0.28.1",
     "loguru>=0.7.3",
     "psutil>=6.1.0",
     "pyyaml>=6.0.2",
@@ -53,6 +53,10 @@ dependencies = [
 
 # Author information
 [[project.authors]]
+name = 'Adam Twardoch'
+email = 'adam+github@twardoch.com'
+
+[[project.authors]]
 name = 'Fontlab Ltd.'
 email = 'opensource@vexy.art'
 
@@ -62,9 +66,10 @@ text = 'MIT'
 
 # Project URLs
 [project.urls]
-Documentation = 'https://github.com/vexyart/vexy-co-model-catalog#readme'
+Documentation = 'https://vexy.dev/vexy-co-model-catalog/'
+Homepage = 'https://vexy.dev/vexy-co-model-catalog/'
+Repository = 'https://github.com/vexyart/vexy-co-model-catalog'
 Issues = 'https://github.com/vexyart/vexy-co-model-catalog/issues'
-Source = 'https://github.com/vexyart/vexy-co-model-catalog'
 
 #------------------------------------------------------------------------------
 # OPTIONAL DEPENDENCIES
@@ -131,13 +136,24 @@ build-backend = 'hatchling.build' # Specifies Hatchling as the build backend
 # how to handle versioning.
 #------------------------------------------------------------------------------
 [tool.hatch.build.targets.wheel]
-sources = ["src"]
+packages = ["src/vexy_co_model_catalog"]
+
+# Source distribution: ship the package, tests and project metadata only
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/vexy_co_model_catalog",
+    "tests",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "pyproject.toml",
+]
 
 
 # Version control system hook configuration
 # Automatically updates the version file from git tags
 [tool.hatch.build.hooks.vcs]
-version-file = "src/vexy_co_model_catalog/__version__.py"
+version-file = "src/vexy_co_model_catalog/_version.py"
 
 # Version source configuration
 [tool.hatch.version]

@@ -46,6 +46,7 @@ def optimize_cli_class(cli_class: type) -> type:
     original_help = getattr(cli_class, "help", None)
     original_version = getattr(cli_class, "version", None)
 
+    @wraps(original_init)  # expose the real (self) signature so Fire does not treat arguments as constructor args
     def optimized_init(self, *args: Any, **kwargs: Any) -> None:
         """Optimized initialization with performance tracking."""
         start_time = time.time()
