@@ -710,3 +710,9 @@ this_file: CHANGELOG.md
 - **EXTENSIBLE**: Clean architecture ready for additional providers and tools
 - Documentation implementation scheduled for post-code-completion
 - Focus on positioning vexy-co-model-catalog as definitive AI model catalog solution
+
+## 2026-10-18: documentation plugins
+
+- Use MaterialX search, inherited metadata and a topic index; keep ordered navigation in awesome-nav.
+- The documentation wrapper installs the plugins required by this site.
+- Strict documentation build and rendered output checks passed.

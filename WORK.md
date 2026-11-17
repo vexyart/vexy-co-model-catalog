@@ -262,3 +262,9 @@ The project successfully delivers on its core promise:
 - **Production Ready**: Error handling, logging, failure tracking
 - **CLI-First Design**: User-friendly command-line interface
 - **Extensible Architecture**: Easy to add new providers and tools
+
+## 2026-10-18: documentation plugins
+
+- Use MaterialX search, inherited metadata and a topic index; keep ordered navigation in awesome-nav.
+- The documentation wrapper installs the plugins required by this site.
+- Strict documentation build and rendered output checks passed.

@@ -1,3 +1,8 @@
+---
+this_file: src_docs/md/configuration.md
+tags: [Configuration]
+---
+
 # Configuration
 
 `vmc` has no configuration file. It is controlled by environment variables and by the directory you run it from.

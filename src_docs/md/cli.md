@@ -1,3 +1,8 @@
+---
+this_file: src_docs/md/cli.md
+tags: [Command line]
+---
+
 # CLI reference
 
 The command is `vmc`; `vexy-model-catalog` and `python -m vexy_co_model_catalog` run the same program. Every command below is a method of the `CLI` class in `src/vexy_co_model_catalog/cli.py`, exposed through [Python Fire](https://github.com/google/python-fire).
