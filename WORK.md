@@ -268,3 +268,8 @@ The project successfully delivers on its core promise:
 - Use MaterialX search, inherited metadata and a topic index; keep ordered navigation in awesome-nav.
 - The documentation wrapper installs the plugins required by this site.
 - Strict documentation build and rendered output checks passed.
+
+## 2026-11-24 documentation theme
+
+- `./build.sh docs` rebuilt the tracked Pages site with fly-january 0.1.1 and zero warnings. All 13 HTML pages use unbranded navigation and the stock MaterialX favicon. All 888 internal links and fragments resolved.
+- Pytest collected 399 tests in both trees. The original revision (`8c795bc`) had 316 passes and 83 failures. The migrated worktree had 320 passes and 79 failures. All 79 also failed on the original revision.

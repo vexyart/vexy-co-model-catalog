@@ -6,6 +6,8 @@ this_file: CHANGELOG.md
 
 ## [Unreleased] - 2025-01-09
 
+- Site now uses the fly-january 0.1.1 theme (chrome: none)
+
 ### Phase 31 Complete: Critical Production Reliability & Standards Enhancement ✅
 
 #### Test Suite Enhancement & Exception Specificity - Production Stability Excellence ✅

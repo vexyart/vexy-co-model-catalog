@@ -1,4 +1,4 @@
-# vexy-co-model-catalog
+# Model Catalog {#vexy-co-model-catalog}
 
 `vexy-co-model-catalog` downloads the list of available models from AI providers, writes each list to disk in a stable, sorted form, and keeps track of which providers answered and which failed. It ships a command-line tool, `vmc` (also installed as `vexy-model-catalog`), and a Python package, `vexy_co_model_catalog`.
 
