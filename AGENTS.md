@@ -8,7 +8,7 @@ The core functionality includes:
 - Generating structured output files (JSON, TXT, TOML) per provider
 - Managing configuration files for external tools
 
-Run `./build.sh docs` after editing `src_docs/`. It builds `src_docs/mkdocs.yml` in strict mode and writes the Pages site to `docs/`. With fly-january 0.3.0 or later, keep `extra.fly.chrome` set to `none` for this unofficial site.
+Run `./build.sh docs` after editing `src_docs/`. It builds `src_docs/mkdocs.yml` in strict mode and writes the Pages site to `docs/`. With fly-january 0.4.0 or later (remote theme assets), keep `extra.fly.chrome` set to `none` for this unofficial site.
 
 PyPI releases go through `.github/workflows/release.yml` with Trusted Publishing in the `pypi` environment. `./publish.sh` dispatches the workflow on the remote default branch.
 

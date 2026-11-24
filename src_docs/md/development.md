@@ -81,7 +81,7 @@ The source distribution contains the package, the tests, `README.md`, `CHANGELOG
 
 ## Documentation
 
-ProperDocs builds the site with fly-january 0.3.0 or later. The build script installs the theme, and `extra.fly.chrome: none` keeps the header and footer unbranded. Edit pages in `src_docs/md/` and site settings in `src_docs/mkdocs.yml`.
+ProperDocs builds the site with fly-january 0.4.0 or later (remote theme assets). The build script installs the theme, and `extra.fly.chrome: none` keeps the header and footer unbranded. Edit pages in `src_docs/md/` and site settings in `src_docs/mkdocs.yml`.
 
 ```bash
 src_docs/build.sh          # strict build into docs/

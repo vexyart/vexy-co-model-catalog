@@ -2,7 +2,7 @@
 
 **Documentation:** https://vexy.dev/vexy-co-model-catalog/
 
-Run `./build.sh docs` to rebuild the site in `docs/`. The strict ProperDocs build uses fly-january 0.3.0 or later with unbranded navigation.
+Run `./build.sh docs` to rebuild the site in `docs/`. The strict ProperDocs build uses fly-january 0.4.0 or later (remote theme assets) with unbranded navigation.
 
 A robust, import-safe Python library and CLI tool for fetching, normalizing, and storing AI model catalogs from various providers. Supports 45+ AI providers including OpenAI, Anthropic, Groq, and others, enabling seamless integration with third-party tools like aichat, codex, and mods.
 

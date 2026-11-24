@@ -6,6 +6,7 @@ this_file: CHANGELOG.md
 
 ## [Unreleased] - 2025-01-09
 
+- The documentation site now uses fly-january 0.4.0 or later (remote theme assets).
 - The documentation build now accepts fly-january 0.3.0 or later.
 - Site now uses the fly-january 0.2.1 theme (chrome: none)
 - Documented the existing PyPI Trusted Publishing release flow (`5d19853`). The PyPI project needs a Trusted Publisher for `vexyart/vexy-co-model-catalog`, workflow `release.yml` and environment `pypi`. The 1.0.6 wheel and source archive attestations identify that publisher.
