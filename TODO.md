@@ -291,7 +291,7 @@ Drawing from the comprehensive external/ reference materials:
 - `external/chutes_chutes.json`: Real-world provider catalog structure
 
 ### Documentation Infrastructure Setup
-- [x] Configure the documentation site in `src_docs/mkdocs.yml` with fly-january 0.1.1 and unbranded navigation.
+- [x] Configure the documentation site in `src_docs/mkdocs.yml` with fly-january 0.2.1 and unbranded navigation.
 - [ ] Automated API reference generation from code docstrings
 - [ ] Code example testing integration in CI/CD pipeline
 - [ ] Cross-reference validation and link checking automation

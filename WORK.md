@@ -273,3 +273,5 @@ The project successfully delivers on its core promise:
 
 - `./build.sh docs` rebuilt the tracked Pages site with fly-january 0.1.1 and zero warnings. All 13 HTML pages use unbranded navigation and the stock MaterialX favicon. All 888 internal links and fragments resolved.
 - Pytest collected 399 tests in both trees. The original revision (`8c795bc`) had 316 passes and 83 failures. The migrated worktree had 320 passes and 79 failures. All 79 also failed on the original revision.
+
+- Updated the documentation build to fly-january 0.2.1. The strict rebuild completed with zero warnings.

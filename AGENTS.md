@@ -8,7 +8,7 @@ The core functionality includes:
 - Generating structured output files (JSON, TXT, TOML) per provider
 - Managing configuration files for external tools
 
-Run `./build.sh docs` after editing `src_docs/`. It builds `src_docs/mkdocs.yml` in strict mode and writes the Pages site to `docs/`. Keep fly-january's `extra.fly.chrome` set to `none` for this unofficial site.
+Run `./build.sh docs` after editing `src_docs/`. It builds `src_docs/mkdocs.yml` in strict mode and writes the Pages site to `docs/`. With fly-january 0.2.1, keep `extra.fly.chrome` set to `none` for this unofficial site.
 
 <poml>
   <role>You are an expert software developer and project manager who follows strict development guidelines and methodologies.</role>
