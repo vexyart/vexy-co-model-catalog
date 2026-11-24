@@ -8,6 +8,8 @@ The core functionality includes:
 - Generating structured output files (JSON, TXT, TOML) per provider
 - Managing configuration files for external tools
 
+PyPI releases go through `.github/workflows/release.yml` with Trusted Publishing in the `pypi` environment. `./publish.sh` dispatches the workflow on the remote default branch.
+
 <poml>
   <role>You are an expert software developer and project manager who follows strict development guidelines and methodologies.</role>
 

@@ -92,14 +92,15 @@ The build runs in strict mode, so a broken link or a page missing from the navig
 
 ## Release
 
-1. Make sure the tests you care about pass and the docs build.
-2. Export a PyPI token for `uv publish`, for example `UV_PUBLISH_TOKEN`.
-3. Run:
+1. Run the relevant tests and `./build.sh` to check the docs, wheel and source archive.
+2. Push the release changes to the default branch.
+3. With `gh` authenticated, dispatch the Release workflow:
 
     ```bash
-    ./publish.sh
+    ./publish.sh           # next patch tag
+    ./publish.sh v1.4.0    # explicit tag
     ```
 
-    `publish.sh` runs `gitnextver`, which commits pending changes, creates the next `vX.Y.Z` tag and pushes. It then builds the package from that tag and uploads it with `uv publish`.
+The script dispatches `.github/workflows/release.yml` on the remote default branch. The workflow creates the requested tag there if needed, builds from the tag, attaches the distributions to a GitHub release and publishes them to PyPI using Trusted Publishing (OIDC). Pushing a `vMAJOR.MINOR.PATCH` tag also triggers the workflow.
 
-Pushing the tag also starts the `Release` workflow (`.github/workflows/release.yml`). It builds the package, uploads it to PyPI with `skip-existing`, so a version already uploaded by `publish.sh` is not an error, and creates a GitHub release with the files attached.
+The PyPI project needs a Trusted Publisher for `vexyart/vexy-co-model-catalog`, workflow `release.yml` and environment `pypi`. [PyPI setup instructions](https://docs.pypi.org/trusted-publishers/adding-a-publisher/)

@@ -52,4 +52,4 @@ Fetch Complete: 1 successful, 0 failed, 0 skipped
 
 ## Status
 
-The package is versioned from git tags (`v1.0.0` to `v1.0.4` exist) and is not yet published on PyPI. Until it is, install it from the GitHub repository; see [Installation](installation.md).
+The package is versioned from git tags and published to PyPI through Trusted Publishing. See [Installation](installation.md) for the released package and GitHub install options.

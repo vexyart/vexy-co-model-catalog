@@ -995,16 +995,17 @@
 <p>The build runs in strict mode, so a broken link or a page missing from the navigation stops it. The <code>Docs</code> workflow (<code>.github/workflows/docs.yml</code>) rebuilds <code>docs/</code> on every push to <code>main</code> that touches <code>src_docs/</code> and commits the result.</p>
 <h2 id="release">Release<a aria-label="Permanent link" class="headerlink" href="#release" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Make sure the tests you care about pass and the docs build.</li>
-<li>Export a PyPI token for <code>uv publish</code>, for example <code>UV_PUBLISH_TOKEN</code>.</li>
+<li>Run the relevant tests and <code>./build.sh</code> to check the docs, wheel and source archive.</li>
+<li>Push the release changes to the default branch.</li>
 <li>
-<p>Run:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>./publish.sh
+<p>With <code>gh</code> authenticated, dispatch the Release workflow:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>./publish.sh<span class="w">           </span><span class="c1"># next patch tag</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>./publish.sh<span class="w"> </span>v1.4.0<span class="w">    </span><span class="c1"># explicit tag</span>
 </code></pre></div>
-<p><code>publish.sh</code> runs <code>gitnextver</code>, which commits pending changes, creates the next <code>vX.Y.Z</code> tag and pushes. It then builds the package from that tag and uploads it with <code>uv publish</code>.</p>
 </li>
 </ol>
-<p>Pushing the tag also starts the <code>Release</code> workflow (<code>.github/workflows/release.yml</code>). It builds the package, uploads it to PyPI with <code>skip-existing</code>, so a version already uploaded by <code>publish.sh</code> is not an error, and creates a GitHub release with the files attached.</p>
+<p>The script dispatches <code>.github/workflows/release.yml</code> on the remote default branch. The workflow creates the requested tag there if needed, builds from the tag, attaches the distributions to a GitHub release and publishes them to PyPI using Trusted Publishing (OIDC). Pushing a <code>vMAJOR.MINOR.PATCH</code> tag also triggers the workflow.</p>
+<p>The PyPI project needs a Trusted Publisher for <code>vexyart/vexy-co-model-catalog</code>, workflow <code>release.yml</code> and environment <code>pypi</code>. <a href="https://docs.pypi.org/trusted-publishers/adding-a-publisher/">PyPI setup instructions</a></p>
 
 
 

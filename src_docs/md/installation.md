@@ -13,9 +13,15 @@ tags: [Installation]
 
 The package depends on `fire`, `httpx[http2]`, `loguru`, `psutil`, `pyyaml`, `rich`, `tomli` and `tomli-w`. The installer pulls them in.
 
+**Install the released package from PyPI.**
+
+```bash
+uv tool install vexy-co-model-catalog
+```
+
 ## Install from GitHub
 
-The package is not yet on PyPI. Install it straight from the repository.
+Use the repository to install the latest commit.
 
 === "uv"
 
@@ -30,12 +36,6 @@ The package is not yet on PyPI. Install it straight from the repository.
     ```
 
 Both commands build the package from the latest commit. The version string comes from the nearest git tag, so a build made after `v1.0.4` reports a version such as `1.0.5.dev0+g<commit>`.
-
-Once the package is on PyPI, the shorter form will work:
-
-```bash
-uv tool install vexy-co-model-catalog
-```
 
 ## Install from a local checkout
 

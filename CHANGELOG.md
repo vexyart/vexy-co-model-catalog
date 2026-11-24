@@ -7,6 +7,41 @@ this_file: CHANGELOG.md
 ## [Unreleased] - 2025-01-09
 
 - Site now uses the fly-january 0.2.1 theme (chrome: none)
+- Documented the existing PyPI Trusted Publishing release flow (`5d19853`). The PyPI project needs a Trusted Publisher for `vexyart/vexy-co-model-catalog`, workflow `release.yml` and environment `pypi`. The 1.0.6 wheel and source archive attestations identify that publisher.
+
+### Documentation milestones
+
+- Added the documentation home and ordered navigation (`54f6523`, `8c795bc`).
+- Added a quick start for the normal CLI workflow (`54f6523`, `quickstart.md`).
+- Added installation instructions for GitHub and local checkouts (`54f6523`, `installation.md`).
+- Documented the provider system and API modes (`54f6523`, `providers.md`).
+- Documented the fetch pipeline and HTTP error mapping (`54f6523`, `cli.md` and `python-api.md`).
+- Documented storage layout, atomic writes and output formats (`54f6523`, `output-files.md`).
+- Added the CLI command reference (`54f6523`, `cli.md`).
+- Documented tool configuration output and generation limits (`54f6523`, `output-files.md`).
+- Documented OpenAI in the shared provider table and API mode guide (`54f6523`, `providers.md`).
+- Documented Anthropic in the shared provider table and API mode guide (`54f6523`, `providers.md`).
+- Documented OpenRouter in the shared provider table and API mode guide (`54f6523`, `providers.md`).
+- Documented Groq in the shared provider table and API mode guide (`54f6523`, `providers.md`).
+- Documented Cerebras in the shared provider table and API mode guide (`54f6523`, `providers.md`).
+- Documented Together AI in the shared provider table and API mode guide (`54f6523`, `providers.md`).
+- Documented Hugging Face in the shared provider table and API mode guide (`54f6523`, `providers.md`).
+- Documented Chutes’ dual-API fetch (`54f6523`, `providers.md`; `test_chutes_special_handling` passed).
+- Documented the aichat configuration file layout and format (`54f6523`, `output-files.md`).
+- Documented the codex configuration file layout and format (`54f6523`, `output-files.md`).
+- Documented the mods configuration file layout and format (`54f6523`, `output-files.md`).
+- Documented bulk provider selection and fetch flags (`54f6523`, `cli.md`).
+- Documented response caching and its settings (`54f6523`, `configuration.md`).
+- Documented retries and error handling (`54f6523`, `cli.md` and `troubleshooting.md`).
+- Added troubleshooting for startup, provider and output errors (`54f6523`, `troubleshooting.md`).
+- Documented the core catalog and registry API (`54f6523`, `python-api.md`).
+- Documented the provider API and `ProviderConfig` (`54f6523`, `python-api.md`).
+- Documented the storage API (`54f6523`, `python-api.md`).
+- Documented contributor setup and development commands (`54f6523`, `development.md`).
+- Documented testing commands and options (`54f6523`, `development.md`).
+- Added a basic Python fetch example (`54f6523`, `python-api.md`).
+- Added a multi-provider fetch example (`54f6523`, `quickstart.md`).
+- Automated strict documentation builds and cross-reference checks in the Docs workflow (`54f6523`, `8c795bc`, `./build.sh docs`).
 
 ### Phase 31 Complete: Critical Production Reliability & Standards Enhancement ✅
 

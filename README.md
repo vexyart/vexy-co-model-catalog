@@ -212,6 +212,10 @@ hatch run lint
 hatch run format
 ```
 
+### Release
+
+Run `./build.sh` and the relevant tests before pushing release changes to the default branch. Use `./publish.sh` to dispatch the GitHub release workflow for the next patch tag, or pass an explicit `vMAJOR.MINOR.PATCH` tag. The workflow builds from the tag and uploads to PyPI through Trusted Publishing (OIDC).
+
 ## License
 
 MIT License 
